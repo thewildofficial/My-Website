@@ -1,0 +1,95 @@
+{
+  "main": {
+    "id": "0495971f9456120d",
+    "type": "split",
+    "children": [
+      {
+        "id": "493aef196ffb2bfa",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "content/posts/test.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5dc7af24e36d7562",
+    "type": "split",
+    "children": [
+      {
+        "id": "6584e9e94ed21ad3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a6a51755c8c4b5eb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "ee45e7f6a7cc5787",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "70e66af2b9952e9b",
+    "type": "split",
+    "children": [
+      {
+        "id": "9d1040d6c53b522f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aaccf32f3e13f025",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/posts/test.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "493aef196ffb2bfa",
+  "lastOpenFiles": [
+    "content/posts/test.md",
+    "content/about.md",
+    "content/posts/how to become a better hacker.md"
+  ]
+}
