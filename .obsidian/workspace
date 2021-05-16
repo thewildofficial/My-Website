@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/posts/test.md",
+            "file": "content/posts/Learning to hack: a resource guide..md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/test.md",
+                "file": "content/posts/Learning to hack: a resource guide..md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,8 +88,9 @@
   },
   "active": "493aef196ffb2bfa",
   "lastOpenFiles": [
-    "content/posts/test.md",
+    "content/posts/Learning to hack: a resource guide..md",
     "content/about.md",
+    "content/posts/test.md",
     "content/posts/how to become a better hacker.md"
   ]
 }
