@@ -43,3 +43,4 @@ assuming you have done all of the above,you can say with certainity that you hav
 your next step might be researching about fun domains like **Bug bounties** or **freelance pentesting**
 
 else,you may also want to do rooms (similar to TryHackMe) on [HackTheBox](https://app.hackthebox.eu/)
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Byte Geek</title>
+    <link>/</link>
+    <description>Recent content on Byte Geek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 16 May 2021 10:54:36 +0530</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning to Hack: A Resource Guide</title>
+      <link>/posts/learning-to-hack-a-resource-guide./</link>
+      <pubDate>Sun, 16 May 2021 10:54:36 +0530</pubDate>
+      
+      <guid>/posts/learning-to-hack-a-resource-guide./</guid>
+      <description>Being a hacker sounds really cool. but how do you become one?
+In this resource guide,i will try to tackle this question by indentifying a few essential skills and websites that helped (and is continuing to help) me learn how to hack.
+1. googling This is one of the most underrated and valuable skills to have as someone who works with computers.being able to find information and research will certainly get you further in the cybersphere.</description>
+    </item>
+    
+  </channel>
+</rss>

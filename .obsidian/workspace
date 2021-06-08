@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "493aef196ffb2bfa",
+        "id": "16ea27f962ab0e0a",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/posts/Learning to hack: a resource guide..md",
-            "mode": "source"
+            "file": "content/posts/Deep Work by Cal Newport:book review.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/Learning to hack: a resource guide..md",
+                "file": "content/posts/Deep Work by Cal Newport:book review.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,11 +86,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "493aef196ffb2bfa",
+  "active": "16ea27f962ab0e0a",
   "lastOpenFiles": [
+    "content/posts/Deep Work by Cal Newport:book review.md",
+    "themes/hermit/README.md",
     "content/posts/Learning to hack: a resource guide..md",
-    "content/about.md",
-    "content/posts/test.md",
-    "content/posts/how to become a better hacker.md"
+    "archetypes/default.md",
+    "layouts/partials/Untitled.md",
+    "content/posts/Learning from media vs learning from experience: which is better?.md",
+    "static/favicon-32x32.png",
+    "static/android-chrome-512x512.png",
+    "static/apple-touch-icon.png",
+    "content/posts/Deep Work - by Cal Newport: review.md"
   ]
 }

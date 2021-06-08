@@ -1,0 +1,46 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on Byte Geek</title>
+		<link>/posts/</link>
+		<description>Recent content in Posts on Byte Geek</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<lastBuildDate>Sun, 16 May 2021 10:54:36 +0530</lastBuildDate>
+		<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Learning to Hack: A Resource Guide</title>
+			<link>/posts/learning-to-hack-a-resource-guide./</link>
+			<pubDate>Sun, 16 May 2021 10:54:36 +0530</pubDate>
+			
+			<guid>/posts/learning-to-hack-a-resource-guide./</guid>
+			<description>Being a hacker sounds really cool. but how do you become one?
+In this resource guide,i will try to tackle this question by indentifying a few essential skills and websites that helped (and is continuing to help) me learn how to hack.
+1. googling This is one of the most underrated and valuable skills to have as someone who works with computers.being able to find information and research will certainly get you further in the cybersphere.</description>
+			<content type="html"><![CDATA[<h2 id="being-a-hacker-sounds-really-cool"><strong>Being a hacker sounds really cool.</strong></h2>
+<p>but how do you become one?</p>
+<p>In this resource guide,i will try to tackle this question by indentifying a few essential <em>skills and websites</em> that helped (and is continuing to help) me learn how to hack.</p>
+<h1 id="1-googling">1. googling</h1>
+<p>This is one of the most underrated and valuable skills to have as someone who works with computers.being able to <em>find information</em> and <em>research</em> will certainly get you further in the cybersphere.</p>
+<h1 id="2-linux">2. Linux</h1>
+<p>Anyone who aspires to become a hacker <strong>must</strong> have atleast a passable knowledge of linux.although you could work with operating systems like Windows or MacOS,it is ill advised because <em>most tools and framework</em> are made for linux in specific.</p>
+<p>popular hacking (more commonly called as &ldquo;pentesting&rdquo;) frameworks like Kali linux or ParrotOS have a lot of tools built-in,which is very convenient</p>
+<h1 id="3-capture-the-flag">3. Capture the flag</h1>
+<p>Now we are starting to enter the more interesting stuff!</p>
+<p>capture the flag (CTFs) are minigames that are hosted on a platform to enable hackers to practice their skills in a safe environment.
+Most CTFs have a system wherein you have to enumerate a system and find a certain file or so-called &ldquo;flag&rdquo;</p>
+<p>one of my favorite CTF is the <a href="https://overthewire.org/wargames/">over the wire</a>,and it really helped me starting off</p>
+<h1 id="4tryhackme-boxes">4.TryHackMe boxes</h1>
+<p><a href="https://tryhackme.com/">TryHackMe</a> is an excellent website to start understanding tools and frameworks.
+They have amazing rooms like the metasploit and nmap walkthroughs that really help you grasp how a tool or a framework works.</p>
+<p>You can also go down one of their <a href="https://tryhackme.com/paths">learning paths</a>,which will have you understanding a concept at a deeper level.</p>
+<h1 id="where-next">Where Next?</h1>
+<p>assuming you have done all of the above,you can say with certainity that you have <strong>mastered the basics of hacking.</strong></p>
+<p>🎊  congrats!
+your next step might be researching about fun domains like <strong>Bug bounties</strong> or <strong>freelance pentesting</strong></p>
+<p>else,you may also want to do rooms (similar to TryHackMe) on <a href="https://app.hackthebox.eu/">HackTheBox</a></p>
+]]></content>
+		</item>
+		
+	</channel>
+</rss>
