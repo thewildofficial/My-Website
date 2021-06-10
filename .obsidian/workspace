@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/posts/Deep Work by Cal Newport:book review.md",
+            "file": "themes/hermit/README.md",
             "mode": "preview"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/Deep Work by Cal Newport:book review.md",
+                "file": "themes/hermit/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,12 +88,12 @@
   },
   "active": "16ea27f962ab0e0a",
   "lastOpenFiles": [
-    "content/posts/Deep Work by Cal Newport:book review.md",
     "themes/hermit/README.md",
+    "content/posts/Deep Work by Cal Newport:book review.md",
+    "content/posts/Learning from media vs learning from experience: which is better?.md",
     "content/posts/Learning to hack: a resource guide..md",
     "archetypes/default.md",
     "layouts/partials/Untitled.md",
-    "content/posts/Learning from media vs learning from experience: which is better?.md",
     "static/favicon-32x32.png",
     "static/android-chrome-512x512.png",
     "static/apple-touch-icon.png",

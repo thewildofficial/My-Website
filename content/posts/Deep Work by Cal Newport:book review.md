@@ -40,3 +40,4 @@ I highly recommend the book to anyone who has the hunger for sucess in this ever
 you can find the book on [amazon](https://www.amazon.com/gp/product/B00X47ZVXM) 
 
 happy reading!
+
