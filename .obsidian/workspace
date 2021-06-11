@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "16ea27f962ab0e0a",
+        "id": "12288918559fc162",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "themes/hermit/README.md",
-            "mode": "preview"
+            "file": "content/posts/The importance of sleep in learning.md",
+            "mode": "source"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "themes/hermit/README.md",
+                "file": "content/posts/The importance of sleep in learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,17 +86,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "16ea27f962ab0e0a",
+  "active": "12288918559fc162",
   "lastOpenFiles": [
+    "content/posts/The importance of sleep in learning.md",
+    "archetypes/default.md",
+    "content/The importance of sleep in learning.md",
+    "content/posts/Learning to hack: a resource guide..md",
+    "content/posts/Untitled.md",
     "themes/hermit/README.md",
     "content/posts/Deep Work by Cal Newport:book review.md",
     "content/posts/Learning from media vs learning from experience: which is better?.md",
-    "content/posts/Learning to hack: a resource guide..md",
-    "archetypes/default.md",
     "layouts/partials/Untitled.md",
-    "static/favicon-32x32.png",
-    "static/android-chrome-512x512.png",
-    "static/apple-touch-icon.png",
-    "content/posts/Deep Work - by Cal Newport: review.md"
+    "static/favicon-32x32.png"
   ]
 }
