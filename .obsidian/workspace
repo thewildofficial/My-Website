@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/posts/The importance of sleep in learning.md",
+            "file": "content/posts/Digital Minimilism by Cal Newport: Book Review.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/The importance of sleep in learning.md",
+                "file": "content/posts/Digital Minimilism by Cal Newport: Book Review.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "12288918559fc162",
   "lastOpenFiles": [
+    "content/posts/Digital Minimilism by Cal Newport: Book Review.md",
+    "content/posts/Learning from media vs learning from experience: which is better?.md",
+    "content/posts/Learning to hack: a resource guide..md",
+    "content/posts/Deep Work by Cal Newport:book review.md",
     "content/posts/The importance of sleep in learning.md",
+    "content/posts/Untitled.md",
     "archetypes/default.md",
     "content/The importance of sleep in learning.md",
-    "content/posts/Learning to hack: a resource guide..md",
-    "content/posts/Untitled.md",
     "themes/hermit/README.md",
-    "content/posts/Deep Work by Cal Newport:book review.md",
-    "content/posts/Learning from media vs learning from experience: which is better?.md",
-    "layouts/partials/Untitled.md",
-    "static/favicon-32x32.png"
+    "layouts/partials/Untitled.md"
   ]
 }
