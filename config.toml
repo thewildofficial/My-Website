@@ -19,6 +19,9 @@ enableEmoji=true
 	[[params.social]]
 		name="youtube"
 		url = "https://www.youtube.com/channel/UCgmwvznKWmu-bAEtIbTT05w"
+	[[params.social]]
+		name="twitter"
+		url="https://twitter.com/AbanHasan7"
 
 
 
