@@ -17,6 +17,9 @@ enableEmoji=true
   	dateformNumTime = "2006-01-02 15:04 -0700"
 	relatedPosts=true
 	themeColor = "#181a1b"
+	code_copy_button = true
+	#customCSS = ["css/foo.css"]
+
 
 
 	homeSubtitle="always learning."
@@ -28,7 +31,7 @@ enableEmoji=true
 		url = "https://www.youtube.com/channel/UCgmwvznKWmu-bAEtIbTT05w"
 	[[params.social]]
 		name="twitter"
-		url="https://twitter.com/AbanHasan7"
+		url="https://twitter.com/0xwild"
 
 
 
@@ -41,3 +44,13 @@ enableEmoji=true
 	#	 name = "About"
 	#	 url = "/about"
 	#	 weight = 10
+
+
+
+
+
+
+
+
+
+
