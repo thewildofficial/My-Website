@@ -1,0 +1,59 @@
+@mixin dark {
+  --color-theme: #018574;
+  --color-text: #e8eef2;
+  --color-light-grey: #28282c;
+  --color-dark-grey: #181a1b;
+  --color-highlight-grey: #7d828a;
+  --color-midnightblue: #2c3e50;
+}
+
+@mixin light {
+  --color-theme: #018574;
+  --color-text: #2a2a2e;
+  --color-light-grey: light(#dee7ec, 6%);
+  --color-dark-grey: light(#dee7ec, 3%);
+  --color-highlight-grey: #7d828a;
+  --color-midnightblue: #2c3e50;
+}
+
+body[data-theme='light'] {
+  @include light();
+}
+
+body[data-theme='dark'] {
+  @include dark();
+}
+
+// Colors
+//
+$theme: var(--color-theme);
+$text: var(--color-text);
+$light-grey: var(--color-light-grey);
+$dark-grey: var(--color-dark-grey);
+$highlight-grey: var(--color-highlight-grey);
+$midnightblue: var(--color-midnightblue);
+
+// Fonts
+//
+$fonts: "Trebuchet MS", Verdana, "Verdana Ref", "Segoe UI", Candara, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+$code-fonts: Consolas, "Andale Mono WT", "Andale Mono", Menlo, Monaco, "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, "YaHei Consolas Hybrid", monospace, "Segoe UI Emoji", "PingFang SC", "Microsoft YaHei";
+
+// Mixins
+//
+@mixin dimmed {
+  opacity: .6;
+}
+
+@mixin aTag {
+  a {
+    word-wrap: break-word;
+    border: none;
+    box-shadow: inset 0 -4px 0 $theme;
+    transition-property: box-shadow;
+    transition-duration: .1s;
+
+    &:hover {
+      box-shadow: inset 0 -1em 0 $theme;
+    }
+  }
+}

@@ -4,14 +4,21 @@ title = "Byte Geek"
 theme="hermit"
 enableEmoji=true
 
+[taxonomies]
+  tag = "tags"
+
 [author]
 	name = "thewildofficial"
 [params]
+	
 	dateform        = "Jan 2, 2006"
   	dateformShort   = "Jan 2"
   	dateformNum     = "2006-01-02"
   	dateformNumTime = "2006-01-02 15:04 -0700"
 	relatedPosts=true
+	themeColor = "#181a1b"
+
+
 	homeSubtitle="always learning."
 	[[params.social]]
 		name="github"
