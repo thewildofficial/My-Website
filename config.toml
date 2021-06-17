@@ -18,6 +18,7 @@ enableEmoji=true
 	relatedPosts=true
 	themeColor = "#181a1b"
 	code_copy_button = true
+	description = "Micro blogs about Technology,Books and the art of learning."
 	#customCSS = ["css/foo.css"]
 
 
