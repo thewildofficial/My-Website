@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "12288918559fc162",
+        "id": "00380e9edc88399e",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/posts/Deep Work by Cal Newport:book review.md",
+            "file": "content/posts/Atomic Habits by James Clear.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/Deep Work by Cal Newport:book review.md",
+                "file": "content/posts/Atomic Habits by James Clear.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,17 +86,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "12288918559fc162",
+  "active": "00380e9edc88399e",
   "lastOpenFiles": [
+    "content/posts/Atomic Habits by James Clear.md",
     "content/posts/Deep Work by Cal Newport:book review.md",
+    "content/posts/Atomic Habits.md",
+    "content/posts/Learning from media vs learning from experience: which is better?.md",
     "archetypes/default.md",
     "content/posts/Digital Minimilism by Cal Newport: Book Review.md",
-    "content/posts/Learning from media vs learning from experience: which is better?.md",
     "content/posts/Learning to hack: a resource guide..md",
     "content/posts/The importance of sleep in learning.md",
     "content/posts/Untitled.md",
-    "content/The importance of sleep in learning.md",
-    "themes/hermit/README.md",
-    "layouts/partials/Untitled.md"
+    "content/The importance of sleep in learning.md"
   ]
 }
