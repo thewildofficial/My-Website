@@ -18,7 +18,7 @@ googleAnalytics = "UA-200805095-1"
 	relatedPosts=true
 	themeColor = "#181a1b"
 	code_copy_button = true
-	description = "Micro blogs about Technology,Books and the art of learning."
+	description = "Hi I'm Aban. Im 15 and  love learning. In my extremely succinct blog posts I explore novel and arbritary concepts in a fun way!"
 	#customCSS = ["css/foo.css"]
 
 
@@ -55,3 +55,4 @@ googleAnalytics = "UA-200805095-1"
 
 
 
+# SEO TITLE : Byte Geek: Short Reads About Productivity And Technology
