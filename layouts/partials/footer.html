@@ -1,4 +1,5 @@
 <footer id="site-footer" class="section-inner thin animated fadeIn faster">
     <p>&copy; {{ now.Format "2006" }} <a href="{{ .Site.BaseURL }}">{{ .Site.Author.name }}</a>{{ .Site.Params.footerCopyright | safeHTML }}</p>
+    {{ template "_internal/google_analytics.html" . }}
 </footer>
 {{ if .Params.katex}}{{ partial "katex.html" . }}{{ end }}

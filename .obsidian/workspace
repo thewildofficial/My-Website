@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/posts/Atomic Habits by James Clear.md",
+            "file": "content/posts/The Concept Of Motivation:How To Always Get Things Done.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/Atomic Habits by James Clear.md",
+                "file": "content/posts/The Concept Of Motivation:How To Always Get Things Done.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "00380e9edc88399e",
   "lastOpenFiles": [
+    "content/posts/The Concept Of Motivation:How To Always Get Things Done.md",
     "content/posts/Atomic Habits by James Clear.md",
+    "content/posts/Digital Minimilism by Cal Newport: Book Review.md",
+    "content/posts/Learning from media vs learning from experience: which is better?.md",
     "content/posts/Deep Work by Cal Newport:book review.md",
     "content/posts/Atomic Habits.md",
-    "content/posts/Learning from media vs learning from experience: which is better?.md",
     "archetypes/default.md",
-    "content/posts/Digital Minimilism by Cal Newport: Book Review.md",
     "content/posts/Learning to hack: a resource guide..md",
     "content/posts/The importance of sleep in learning.md",
-    "content/posts/Untitled.md",
-    "content/The importance of sleep in learning.md"
+    "content/posts/Untitled.md"
   ]
 }
