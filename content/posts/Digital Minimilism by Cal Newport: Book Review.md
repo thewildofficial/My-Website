@@ -1,5 +1,5 @@
 ---
-title: "Digital Minimilism by Cal Newport: Book Review"
+title: "Digital Minimalism by Cal Newport: Book Review"
 date: 2021-06-16T16:06:37+05:30
 draft: false
 toc: true
@@ -46,6 +46,6 @@ If we are reasonable with this power, we will succeed as a species.
 
 ### Footnotes
 
-read the [book](https://www.amazon.com/Digital-Minimalism-Choosing-Focused-Noisy/dp/0525536515). Seriously.
+Read the [book](https://www.amazon.com/Digital-Minimalism-Choosing-Focused-Noisy/dp/0525536515). Seriously.
 
 Thank you to [cal's](https://www.calnewport.com/blog/) and [Samuel D. Davis's](https://www.samuelthomasdavies.com/book-summaries/business/digital-minimalism/) blogs for helping me consolidate my thoughts.
