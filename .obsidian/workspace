@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "00380e9edc88399e",
+        "id": "f7b18912fbd357e6",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -86,17 +86,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "00380e9edc88399e",
+  "active": "f7b18912fbd357e6",
   "lastOpenFiles": [
     "content/posts/The Concept Of Motivation:How To Always Get Things Done.md",
-    "content/posts/Atomic Habits by James Clear.md",
-    "content/posts/Digital Minimilism by Cal Newport: Book Review.md",
+    "content/posts/The importance of sleep in learning.md",
+    "content/posts/Learning to hack: a resource guide..md",
     "content/posts/Learning from media vs learning from experience: which is better?.md",
+    "content/posts/Digital Minimilism by Cal Newport: Book Review.md",
     "content/posts/Deep Work by Cal Newport:book review.md",
+    "content/posts/Atomic Habits by James Clear.md",
     "content/posts/Atomic Habits.md",
     "archetypes/default.md",
-    "content/posts/Learning to hack: a resource guide..md",
-    "content/posts/The importance of sleep in learning.md",
     "content/posts/Untitled.md"
   ]
 }
