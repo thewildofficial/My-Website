@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/posts/The Concept Of Motivation:How To Always Get Things Done.md",
-            "mode": "source"
+            "file": "content/posts/Benefits Of Cold Showers.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/The Concept Of Motivation:How To Always Get Things Done.md",
+                "file": "content/posts/Benefits Of Cold Showers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "f7b18912fbd357e6",
   "lastOpenFiles": [
+    "content/posts/Benefits Of Cold Showers.md",
+    "content/posts/The importance of sleep in learning.md",
     "content/posts/The Concept Of Motivation:How To Always Get Things Done.md",
     "content/posts/Deep Work by Cal Newport:book review.md",
     "content/posts/Digital Minimilism by Cal Newport: Book Review.md",
     "content/posts/Atomic Habits by James Clear.md",
     "content/posts/Learning to hack: a resource guide..md",
     "content/posts/Learning from media vs learning from experience: which is better?.md",
-    "content/posts/The importance of sleep in learning.md",
     "content/posts/Atomic Habits.md",
-    "archetypes/default.md",
-    "content/posts/Untitled.md"
+    "archetypes/default.md"
   ]
 }
