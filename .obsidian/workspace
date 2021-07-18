@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "f7b18912fbd357e6",
+        "id": "b2439981ceabd7c9",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/posts/Benefits Of Cold Showers.md",
+            "file": "content/posts/How to type faster.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/Benefits Of Cold Showers.md",
+                "file": "content/posts/How to type faster.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,8 +86,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f7b18912fbd357e6",
+  "active": "b2439981ceabd7c9",
   "lastOpenFiles": [
+    "content/posts/How to type faster.md",
     "content/posts/Benefits Of Cold Showers.md",
     "content/posts/The importance of sleep in learning.md",
     "content/posts/The Concept Of Motivation:How To Always Get Things Done.md",
@@ -96,7 +97,6 @@
     "content/posts/Atomic Habits by James Clear.md",
     "content/posts/Learning to hack: a resource guide..md",
     "content/posts/Learning from media vs learning from experience: which is better?.md",
-    "content/posts/Atomic Habits.md",
-    "archetypes/default.md"
+    "content/posts/Atomic Habits.md"
   ]
 }
