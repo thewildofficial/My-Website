@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/posts/How to type faster.md",
+            "file": "content/posts/The Practice of Journaling in Self-Improvement.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/How to type faster.md",
+                "file": "content/posts/The Practice of Journaling in Self-Improvement.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "b2439981ceabd7c9",
   "lastOpenFiles": [
-    "content/posts/How to type faster.md",
+    "content/posts/The Practice of Journalling in Self-Improvement.md",
+    "content/posts/Atomic Habits by James Clear.md",
     "content/posts/Benefits Of Cold Showers.md",
-    "content/posts/The importance of sleep in learning.md",
-    "content/posts/The Concept Of Motivation:How To Always Get Things Done.md",
     "content/posts/Deep Work by Cal Newport:book review.md",
     "content/posts/Digital Minimilism by Cal Newport: Book Review.md",
-    "content/posts/Atomic Habits by James Clear.md",
-    "content/posts/Learning to hack: a resource guide..md",
+    "content/posts/How to type faster.md",
     "content/posts/Learning from media vs learning from experience: which is better?.md",
-    "content/posts/Atomic Habits.md"
+    "content/posts/Learning to hack: a resource guide..md",
+    "content/posts/The Concept Of Motivation:How To Always Get Things Done.md",
+    "content/posts/The importance of sleep in learning.md"
   ]
 }

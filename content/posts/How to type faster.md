@@ -1,4 +1,4 @@
----
+	---
 author: "thewildofficial"
 date: 2021-07-17
 title: How to Type Faster
