@@ -27,11 +27,13 @@ Not a lot. Just a book and a pen (you could also use a [note-taking app like obs
 The process is pretty simple. Set a time when you will write a few words, and then just do it every day.
 It can be anything.
 
-Here is a general rule-of-thumb you can use in your daily reviews:
+Here is a general rule-of-thumb you can use in your daily reviews
+
 - [ ] How did I feel today?
 - [ ] What cool experience did I have?
 - [ ] What did I learn?
 - [ ] How can I get better tomorrow?
+
 ### Gratitude Journaling
 Your mindset is the most important thing you physically have.
 > How you do one thing is how you do everything.

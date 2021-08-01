@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "b2439981ceabd7c9",
+        "id": "5537dc2b290d030b",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/posts/The Practice of Journaling in Self-Improvement.md",
+            "file": "content/posts/Eating Clean: How to maintain a guilt-free calorie defict.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/The Practice of Journaling in Self-Improvement.md",
+                "file": "content/posts/Eating Clean: How to maintain a guilt-free calorie defict.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,17 +86,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b2439981ceabd7c9",
+  "active": "5537dc2b290d030b",
   "lastOpenFiles": [
-    "content/posts/The Practice of Journalling in Self-Improvement.md",
-    "content/posts/Atomic Habits by James Clear.md",
+    "content/posts/Eating Clean: How to maintain a guilt-free calorie defict.md",
+    "content/posts/The importance of sleep in learning.md",
+    "content/posts/The Concept Of Motivation:How To Always Get Things Done.md",
+    "content/posts/Learning to hack: a resource guide..md",
+    "content/posts/Learning from media vs learning from experience: which is better?.md",
+    "content/posts/How to type faster.md",
     "content/posts/Benefits Of Cold Showers.md",
     "content/posts/Deep Work by Cal Newport:book review.md",
-    "content/posts/Digital Minimilism by Cal Newport: Book Review.md",
-    "content/posts/How to type faster.md",
-    "content/posts/Learning from media vs learning from experience: which is better?.md",
-    "content/posts/Learning to hack: a resource guide..md",
-    "content/posts/The Concept Of Motivation:How To Always Get Things Done.md",
-    "content/posts/The importance of sleep in learning.md"
+    "content/posts/The Practice of Journaling in Self-Improvement.md",
+    "content/posts/The Practice of Journalling in Self-Improvement.md"
   ]
 }
