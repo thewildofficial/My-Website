@@ -71,9 +71,10 @@ That being said, there are cases in which you may notice a significant decrease 
 Therefore, even though your fat % is actually decreasing, the weighing scale may show that you are not losing any weight as such.
 ### Setting a reasonable goal
 A lot of people I have talked to, who plan to become lean often say the following things
+
 > I'm going to the gym and lift x kg of weight every day, and not eat anything but chicken breasts!
 
-> i will focus just on working out, and eat my regular foods
+> I will focus just on working out, and eat my regular foods
 
 
 I used to think like this, but realized it can be severely unsustainable. Making your perfect body requires *willpower* and *consistency*.
