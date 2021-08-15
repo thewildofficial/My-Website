@@ -16,7 +16,9 @@ A lot of us approach studying as a chore just because our parents, teachers and 
 ### Why can be studying so difficult
 studying may not be the most appealing thing in the world. Sitting for multiple hours looking at static books is not exactly what our survivalist brains were made for. There are a myriad of reasons why we may find studying undesirable, some of them being:
 
+
  #### Delayed gratification as against Instant gratification
+ 
  Apparently we all have an inner, pesky reptilian mind. The metaphorical term the internet likes to call it is something called the **lizard brain.** Our lizard brain likes to live in the present and loves to have instant results. 
  Studies for one, that too in our education system will never yield instant results. Often deadlines (*final exams, graduations,Entrance exams*) are years or months in the future. Unless you think rationally, it is likely that our lizard brain will try to convince us that there is no point in learning seemingly useless materials.
  
@@ -27,8 +29,13 @@ studying may not be the most appealing thing in the world. Sitting for multiple 
  --- 
  
 
+
+
  #### Previously unsatisfactory results
+ 
 If you have never gotten good grades before (like me), trying to score straight A's may seem unattainable. The mind does reject the chance we can ever achieve it, so why even try is? is what the inner voice keeps taunting.
+ 
+ 
  
 #### Peer pressure
 People (mostly Asians I think) have this culture of comparison. You may be compared to friend, family member or a successful person often. This may cause us to become more demotivated and associate getting good grades with people who you think are smarter than you, not yourself.
