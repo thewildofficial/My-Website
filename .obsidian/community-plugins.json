@@ -1,4 +1,6 @@
 [
   "obsidian-autocomplete-plugin",
-  "obsidian-languagetool-plugin"
+  "obsidian-languagetool-plugin",
+  "table-extended",
+  "markdown-prettifier"
 ]
