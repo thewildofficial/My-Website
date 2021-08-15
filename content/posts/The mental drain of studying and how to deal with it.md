@@ -44,8 +44,11 @@ I for one, have been a chronic procrastinator. For this reason, I have almost ne
  
  #### Builds a solid foundation
  There is so much learning we can acquire out of the act of studying. It enhances our ability to absorb information and learn about multiple subjects. It is said that Knowledge and Information is power, and this journey will equip us with a deep understanding of what we are trying to learn.
+ 
  #### Develops a growth mindset
 The knowledge that we gain enables us to develop a growth mindset. The journey in academia requires constant improvement over a lifetime. It builds discipline, team work, and competitiveness, which further can be utilized in various other endeavors that we undertake in our lifetimes.
+
+
  #### Leads to a safe, secure career
  study well, get a safe secure job is the reason we hear the most from society and parents, it is pretty blue-pilled  and may sound like a cliché. However, It does have a bit of truth. It is a fact that 90% of wealth goes to the top 3 -5 % of people. Not necessarily that excelling in academics will allow us to become those few elite people, but at least becoming the top few % in studies will open up pathways in our future careers and thereby giving us a head start.
  
