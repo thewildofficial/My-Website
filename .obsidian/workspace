@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "9e276b050da7709e",
+        "id": "1373434f7cad430e",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/posts/The mental drain of studying and how to deal with it.md",
+            "file": "content/posts/How to pick a programming language.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/The mental drain of studying and how to deal with it.md",
+                "file": "content/posts/How to pick a programming language.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,17 +86,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "9e276b050da7709e",
+  "active": "1373434f7cad430e",
   "lastOpenFiles": [
-    "content/posts/The mental drain of studying and how to deal with it.md",
+    "content/posts/How to pick a programming language.md",
+    "content/posts/How to type faster.md",
     "content/posts/The importance of sleep in learning.md",
+    "content/posts/The Practice of Journaling in Self-Improvement.md",
+    "content/posts/The mental drain of studying and how to deal with it.md",
     "content/posts/The Concept Of Motivation:How To Always Get Things Done.md",
     "content/posts/Learning from media vs learning from experience: which is better?.md",
     "content/posts/Deep Work by Cal Newport:book review.md",
     "content/posts/Benefits Of Cold Showers.md",
-    "archetypes/default.md",
-    "themes/hermit/exampleSite/content/posts/goisforlovers.md",
-    "static/favicon-32x32.png",
-    "content/posts/Digital Minimilism by Cal Newport: Book Review.md"
+    "archetypes/default.md"
   ]
 }
