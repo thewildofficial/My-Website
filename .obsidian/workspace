@@ -4,14 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1373434f7cad430e",
+        "id": "d24e2c69100dd04b",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "content/posts/How to pick a programming language.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -68,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/How to pick a programming language.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,17 +82,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "1373434f7cad430e",
+  "active": "d24e2c69100dd04b",
   "lastOpenFiles": [
+    "content/posts/The Internet:Advantages and Disadvantages.md",
+    "content/posts/The Hidden Demon: Habit Friction.md",
+    "content/posts/Benefits Of Cold Showers.md",
+    "static/images/lizard_brain.png",
+    "static/android-chrome-192x192.png",
+    "content/posts/The Concept Of Motivation:How To Always Get Things Done.md",
     "content/posts/How to pick a programming language.md",
     "content/posts/How to type faster.md",
     "content/posts/The importance of sleep in learning.md",
-    "content/posts/The Practice of Journaling in Self-Improvement.md",
-    "content/posts/The mental drain of studying and how to deal with it.md",
-    "content/posts/The Concept Of Motivation:How To Always Get Things Done.md",
-    "content/posts/Learning from media vs learning from experience: which is better?.md",
-    "content/posts/Deep Work by Cal Newport:book review.md",
-    "content/posts/Benefits Of Cold Showers.md",
-    "archetypes/default.md"
+    "content/posts/The Practice of Journaling in Self-Improvement.md"
   ]
 }
