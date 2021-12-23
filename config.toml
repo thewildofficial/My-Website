@@ -8,7 +8,7 @@ googleAnalytics = "UA-200805095-1"
   tag = "tags"
 
 [author]
-	name = "thewildofficial"
+	name = "Aban Hasan"
 [params]
 	
 	dateform        = "Jan 2, 2006"
@@ -18,7 +18,7 @@ googleAnalytics = "UA-200805095-1"
 	relatedPosts=true
 	themeColor = "#181a1b"
 	code_copy_button = true
-	description = "Hi I'm Aban. Im 15 and  love learning. In my extremely succinct blog posts I explore novel and arbritary concepts in a fun way!"
+	description = "Hi I'm Aban. Im 16 and  love learning. In my extremely succinct blog posts I explore novel and arbritary concepts in a fun way!"
 	#customCSS = ["css/foo.css"]
 
 

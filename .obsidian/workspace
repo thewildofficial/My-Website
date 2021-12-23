@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/posts/The Art of Human Connection- how to make friends.md",
+            "file": "archetypes/default.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Site Author ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/The Art of Human Connection- how to make friends.md",
+                "file": "archetypes/default.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,10 +88,14 @@
   },
   "active": "a9dc74c1d8438300",
   "lastOpenFiles": [
+    "archetypes/default.md",
+    "themes/hermit/exampleSite/content/posts/creating-a-new-theme.md",
+    "content/posts/The Concept Of Motivation:How To Always Get Things Done.md",
+    "content/posts/How to type faster.md",
+    "content/posts/Atomic Habits by James Clear.md",
     "content/posts/The Art of Human Connection- how to make friends.md",
     "content/posts/The mental drain of studying and how to deal with it.md",
     "content/posts/The Internet:Advantages and Disadvantages.md",
-    "content/posts/The importance of sleep in learning.md",
-    "content/posts/The Concept Of Motivation:How To Always Get Things Done.md"
+    "content/posts/The importance of sleep in learning.md"
   ]
 }
