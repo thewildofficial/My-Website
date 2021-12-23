@@ -9,6 +9,8 @@
     "margin": "0",
     "downscalePercent": 100
   },
-  "vimMode": false,
-  "spellcheck": true
+  "vimMode": true,
+  "spellcheck": false,
+  "legacyEditor": true,
+  "livePreview": true
 }

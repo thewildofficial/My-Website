@@ -1,15 +1,15 @@
 {
   "main": {
-    "id": "91f3344dc533d7cf",
+    "id": "5267147ba19e158d",
     "type": "split",
     "children": [
       {
-        "id": "4729c50376ad2c76",
+        "id": "a9dc74c1d8438300",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/posts/Doing what you got to do: a systematic pathway to success.md",
+            "file": "content/posts/The Art of Human Connection- how to make friends.md",
             "mode": "source"
           }
         }
@@ -18,15 +18,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "5dc7af24e36d7562",
+    "id": "2613444899983b1e",
     "type": "split",
     "children": [
       {
-        "id": "6584e9e94ed21ad3",
+        "id": "780e38d78dfd407c",
         "type": "tabs",
         "children": [
           {
-            "id": "a6a51755c8c4b5eb",
+            "id": "c5d22c91cc4aaf73",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -34,7 +34,7 @@
             }
           },
           {
-            "id": "ee45e7f6a7cc5787",
+            "id": "3100ecf2a84bb982",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -55,20 +55,20 @@
     "width": 300
   },
   "right": {
-    "id": "70e66af2b9952e9b",
+    "id": "22cb04c25ee70041",
     "type": "split",
     "children": [
       {
-        "id": "9d1040d6c53b522f",
+        "id": "9f34134136050289",
         "type": "tabs",
         "children": [
           {
-            "id": "aaccf32f3e13f025",
+            "id": "331526afe8f5d172",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/Doing what you got to do: a systematic pathway to success.md",
+                "file": "content/posts/The Art of Human Connection- how to make friends.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,17 +86,12 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "4729c50376ad2c76",
+  "active": "a9dc74c1d8438300",
   "lastOpenFiles": [
-    "content/posts/Doing what you got to do: a systematic pathway to success.md",
+    "content/posts/The Art of Human Connection- how to make friends.md",
     "content/posts/The mental drain of studying and how to deal with it.md",
-    "content/posts/The Practice of Journaling in Self-Improvement.md",
     "content/posts/The Internet:Advantages and Disadvantages.md",
     "content/posts/The importance of sleep in learning.md",
-    "content/posts/The Concept Of Motivation:How To Always Get Things Done.md",
-    "content/posts/Learning to hack: a resource guide..md",
-    "content/posts/Learning from media vs learning from experience: which is better?.md",
-    "content/posts/How to type faster.md",
-    "content/posts/How to pick a programming language.md"
+    "content/posts/The Concept Of Motivation:How To Always Get Things Done.md"
   ]
 }
