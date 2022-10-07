@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Byte Geek"
+title = "Aban Hasan"
 theme="hermit"
 enableEmoji=true
 googleAnalytics = "UA-200805095-1"
@@ -18,12 +18,12 @@ googleAnalytics = "UA-200805095-1"
 	relatedPosts=true
 	themeColor = "#181a1b"
 	code_copy_button = true
-	description = "Hi I'm Aban. Im 16 and  love learning. In my extremely succinct blog posts I explore novel and arbritary concepts in a fun way!"
-	#customCSS = ["css/foo.css"]
+	description = "Hi I'm Aban.This website is meant to document my journey of building my tech empire. This is my quest of becoming more competent in the realms of human endevour which i choose to embark in"
+	customCSS = ["css/foo.css"]
 
 
 
-	homeSubtitle="always learning."
+	homeSubtitle="King Of Hearts"
 	[[params.social]]
 		name="github"
 		url = "https://github.com/thewildofficial"
@@ -32,7 +32,7 @@ googleAnalytics = "UA-200805095-1"
 		url = "https://www.youtube.com/channel/UCgmwvznKWmu-bAEtIbTT05w"
 	[[params.social]]
 		name="twitter"
-		url="https://twitter.com/0xwild"
+		url="https://twitter.com/abantheseeker"
 
 
 
@@ -40,11 +40,11 @@ googleAnalytics = "UA-200805095-1"
 	[[menu.main]]
     	name = "Posts"
     	url = "/posts/"
-    	weight = 10
-	#[[menu.main]]
-	#	 name = "About"
-	#	 url = "/about"
-	#	 weight = 10
+    	weight = 1
+	[[menu.main]]
+        name = "About"
+	url = "/about"
+	weight = 2
 
 
 
