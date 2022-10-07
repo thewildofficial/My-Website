@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Aban Hasan"
 theme="hermit"
 enableEmoji=true
-googleAnalytics = "G-G3F606BLYN"
+googleAnalyticsID = "G-G3F606BLYN"
 [taxonomies]
   tag = "tags"
 
