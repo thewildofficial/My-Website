@@ -23,7 +23,7 @@ googleAnalyticsID = "G-G3F606BLYN"
 
 
 
-	homeSubtitle="King Of Hearts"
+	homeSubtitle="Always Improving..."
 	[[params.social]]
 		name="github"
 		url = "https://github.com/thewildofficial"
@@ -45,7 +45,10 @@ googleAnalyticsID = "G-G3F606BLYN"
         name = "About"
 	url = "/about"
 	weight = 2
-
+	[[menu.main]]
+	name = "Portfolio"
+	url = "/portfolio"
+	weight = 3
 
 
 
@@ -56,3 +59,12 @@ googleAnalyticsID = "G-G3F606BLYN"
 
 
 # SEO TITLE : Byte Geek: Short Reads About Productivity And Technology
+
+
+
+[markup]
+  defaultMarkdownHandler = 'goldmark'
+ [markup.goldmark]
+   [markup.goldmark.renderer]
+      unsafe = true
+
