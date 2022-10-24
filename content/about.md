@@ -1,12 +1,25 @@
 # :wave: Hello, I'm Aban
-I'm 17 and currently live in India, and the world at large.
 
-I commit myself to making the world a better place through innovation and mastery.
+I'm about to turn 17, currently living in India, and in my final term of Grade 12.
+
+I see myself as an ambitious and perispicatious individual and have always been fascinated by computers and human relationships. I believe that business and technology skills are a powerful combination and hence really seek to equip myself with the best of both worlds.
+
+I commit myself to make the world a better place through technology, personal development and innovation.
 
 I believe it is my duty to guide myself and others around me into becoming more competent and self-aware human beings.
 
-This website is dedicated to documenting my projects, and serves as a hub for my online presence.
+This website is dedicated to documenting my projects and serves as a hub for my online presence.
 
+## Interests 
+
+
+In my spare time, I read, play chess, and lift heavy weights. 
+
+I am also facinated by ideas in geopolitics, philosophy, spirituality and the sciences. 
+
+If there are two things I love the most about this world, it is people and machines.
+
+Computers are miraculous devices. I’ve found myself drawn to sub-fields like Cyber-security, Artificial Intelligence and Machine-Human interfaces.
 
 ## Projects
 - **[Skill Tree](https://projectskilltree.com/)**: A mobile app and discord bot which aims to gamify self-improvement. I was involved in developing the [discord bot](https://discord.gg/RM7dmv5ubX), which is currently used by over 2800 users. 
@@ -32,18 +45,10 @@ This website is dedicated to documenting my projects, and serves as a hub for my
 </div>
 
 <script>
-    new GitHubCalendar(".calendar", "thewildofficial");
+    new GitHubCalendar(".calendar", "thewildofficial", { responsive: true });
 </script>
 
-
-## Interests
-In my free time, I play chess, read, lift heavy weights.
-I am facinated by ideas in geopolitics,philosophy,religion and the sciences.
-If there are two things I love the most about this world, it are *people* and *machines*.
-
-Computers are miraculous devices and I've found myself drawn to sub-fields like Cyber-security, Artificial Intelligence and Machine-Human interfaces  
-
-## Contact Me
+# Contact Me
 You can reach out to me through
 
 discord: THEWILDOFFICIAL#8030
