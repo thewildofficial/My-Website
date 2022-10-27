@@ -24,30 +24,6 @@ Computers are miraculous devices. I’ve found myself drawn to sub-fields like C
 ## Projects
 - **[Skill Tree](https://projectskilltree.com/)**: A mobile app and discord bot which aims to gamify self-improvement. I was involved in developing the [discord bot](https://discord.gg/RM7dmv5ubX), which is currently used by over 2800 users. 
 
-- **Github**: I am an opensource-enthusiast, frequently tinkering with code in multiple projects.
-
-<!-- Prepare a container for your calendar. -->
-<script
-  src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"
->
-</script>
-
-<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-<link
-  rel="stylesheet"
-  href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
-/>
-
-<!-- Prepare a container for your calendar. -->
-<div class="calendar">
-    <!-- Loading stuff -->
-    Loading Github Data...
-</div>
-
-<script>
-    new GitHubCalendar(".calendar", "thewildofficial", { responsive: true });
-</script>
-
 # Contact Me
 You can reach out to me through
 
