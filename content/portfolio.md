@@ -4,17 +4,16 @@
 
 <h3 align="center"> Student | Cybernaut | Dreamer</h3>
 
+
+I have been writing code ever since I was 12.From that point, I have been absolutely engrossed with computers and the cyberspace. Here are some of the projects I've worked on: 
 # Projects
+- **[Project Skilltree](https://www.projectskilltree.com/)**:  A revolutionary discord bot/app used by over 5,000+ users which aims to gamify the journey of self improvement. I was instrumental in developing significant parts of the bot interface and API.
 
-I have been writing code ever since I was 12.From that point, I have been absolutely engrossed computers and the cyberspace. Here are some projects i have worked on: 
+- **Clevered.com Internship**: Successfully completed a 4-month long internship on Artificial Intelligence(AI), mentored by a senior Oxford professor.I developed a project that involved a website which predicts and forcasts sentiment and emotional response of any tweet using Natural Language Processing (NLP).
 
-- **[Project Skilltree](https://www.projectskilltree.com/)**:  A revolutionary discord bot/app used by 5,000+ users which aims to gamify the journey of self improvement. I worked on significant parts of the bot interface and API.
+- **[Nexus Aurora](https://nexusaurora.org/)**: Former project lead at Nexus Aurora, An open-source space colonization community (Winners of the [2020 Mars Society City State Compitition](https://www.marssociety.org/news/2020/10/23/top-5-winners-of-mars-city-state-design-competition-announced/)). My work involved designing door security systems, using RFIDs. Also, I facilitated and collaborated in committees involving sports and linguistics in Mars. I also lead in developing the discord bot for the server.
 
-- **Clevered.com Internship**: completed a 4-month long AI internship, mentored by a senior oxford professor. In this time, i made a website which predicts and forcasts sentiment of any tweet using Natural Language Processing (NLP).
-
-- **[Nexus Aurora](https://nexusaurora.org/)**: Former project lead in Nexus Aurora, An open-source space colonization community (Winners of the [2020 Mars Society City State Compitition](https://www.marssociety.org/news/2020/10/23/top-5-winners-of-mars-city-state-design-competition-announced/)). My work involved designing door security systems, using RFIDs. Also, I was involved in discussions involving sports and linguistics in Mars. I also helped develop the discord bot for the server.
-
-- **[Perspective AI](https://www.amazon.com/Perspective-Artificial-Intelligence-Aban-Hasan/dp/1678985988)**: This is a book i wrote with a friend in 8th grade. It is meant to be a teenager's perspective on the advent of artificial intelligence, and how we predict AI will impact our lives and the future.
+- **[Perspective AI](https://www.amazon.com/Perspective-Artificial-Intelligence-Aban-Hasan/dp/1678985988)**: I co-authored this book along with a schoolmate during my grade 8. It is meant to be a teenager's perspective on the advent of artificial intelligence, and how we predict AI will impact our lives and the future.
 
 - **[TryHackMe](https://tryhackme.com/p/thewildofficial) and CTFs**: I have always had a deep interest in cybersecurity, and this obsession has led me to being ranked in the top 2% of hackers on tryhackme.com, a website which organizes hacking challenges.
 
@@ -42,13 +41,22 @@ I have been writing code ever since I was 12.From that point, I have been absolu
 </script>
 <hr>
 
-# Extracurriculars
+# Extracurriculars and Initiatives
 
 - National level contestant of the French Word Power examination, Organized by the Quebec Government Office in Mumbai. I speak french to a moderate level of proficiency, estimated to be around B1.
-- 3 time Model United Nations (MUN) winner. My deep interest in leadership and geopolitics lead me to frequently participate in Model United Nations conferences.
-- Read over 150 books in the last two years!
-- Founder of an unofficial "Self-Improvement Club" in my college.
-- Other hobbies include Chess, Tennis, Taekwondo and Horse-back riding.
+
+- 3 time Model United Nations (MUN) winner. My deep interest in leadership and geopolitics lead me to frequently participate in Model United Nations conferences.This has developed my professional and collaborative network, and has immensly benefited in my public speaking and criticial thinking skills.
+
+- Read over 150 books in the last two years on books ranging anywhere from Self-Development, Finance, Health and Philosophy. This has given me wider perspective and broadened my mind to alternative possibilities.
+
+- Frequent volunteer in school events, I find purpose in constructively engaging with my wider student-community.It has taught me to stick to my promises and shown me the value of contributing to greater causes.
+
+- School Valedictorian in grade 10, and Student Council member in grade 11 and 12. I learnt how to resolve conflicts, and find amicable solutions that leads to a win-win.
+
+- Founder of an unofficial "Self-Improvement Club" in my college. I took this initiative to find a sense of brotherhood, and it has lead to a culture of constant growth within my friend-circle. This further has helped me become accountable and disciplined.
+	> "The More I Teach, the More I Learn!" 
+
+- Other hobbies include Weightlifting, Chess, Tennis, Taekwondo and Horse-back riding.
 
 
 
