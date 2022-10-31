@@ -1,8 +1,10 @@
-# :wave: Hello, I'm Aban
+---
+---
+<h1 align="center"><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="32"> Hi, I'm Aban!</h1>
 
-I'm about to turn 17, currently living in India, and in my final term of Grade 12.
+I'm 17 and currently living in India, and in my final term of Grade 12.
 
-I see myself as an ambitious and perispicatious individual and have always been fascinated by computers and human relationships. I believe that business and technology skills are a powerful combination and hence really seek to equip myself with the best of both worlds.
+I see myself as an ambitious and perispicacious individual and have always been fascinated by computers and human relationships. I believe that business and technology skills are a powerful combination and hence really seek to equip myself with the best of both worlds.
 
 I commit myself to make the world a better place through technology, personal development and innovation.
 
@@ -20,10 +22,6 @@ I am also facinated by ideas in geopolitics, philosophy, spirituality and the sc
 If there are two things I love the most about this world, it is people and machines.
 
 Computers are miraculous devices. I’ve found myself drawn to sub-fields like Cyber-security, Artificial Intelligence and Machine-Human interfaces.
-
-## Projects
-- **[Skill Tree](https://projectskilltree.com/)**: A mobile app and discord bot which aims to gamify self-improvement. I was involved in developing the [discord bot](https://discord.gg/RM7dmv5ubX), which is currently used by over 2800 users. 
-
 # Contact Me
 You can reach out to me through
 
