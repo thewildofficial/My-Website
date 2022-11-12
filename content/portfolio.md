@@ -43,7 +43,7 @@ I have been writing code ever since I was 12.From that point, I have been absolu
 
 
 
-# Extracurriculars and Initiatives
+<h1> Extracurriculars and Initiatives </h1>
 
 - National level contestant of the French Word Power examination, Organized by the Quebec Government Office in Mumbai. I speak french to a moderate level of proficiency, estimated to be around B1.
 
