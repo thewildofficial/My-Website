@@ -30,6 +30,15 @@ discord: THEWILDOFFICIAL#8030
 email: abanhasan@tutanota.com
 
 
+
+
+
+
+
+
+
+
+
 ## Reading List
 Here are some books I have read and enjoyed:
 
