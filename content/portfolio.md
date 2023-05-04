@@ -46,36 +46,14 @@ I have been writing code ever since I was 12.From that point, I have been absolu
 <h1> Extracurriculars and Initiatives </h1>
 
 <ul>
-<li> National level contestant of the French Word Power examination, Organized by the Quebec Government Office in Mumbai. I speak french to a moderate level of proficiency, estimated to be around B1.
-</li>
-
-<li>
- 3 time Model United Nations (MUN) winner. My deep interest in leadership and geopolitics lead me to frequently participate in Model United Nations conferences.This has developed my professional and collaborative network, and has immensly benefited in my public speaking and criticial thinking skills.
-</li>
-
-<li>
- Read over 150 books in the last two years on books ranging anywhere from Self-Development, Finance, Health and Philosophy. This has given me wider perspective and broadened my mind to alternative possibilities.
-</li>
-
-<li>
- Frequent volunteer in school events, I find purpose in constructively engaging with my wider student-community.It has taught me to stick to my promises and shown me the value of contributing to greater causes.
-</li>
-
-<li>
- School Valedictorian in grade 10, and Student Council member in grade 11 and 12. I learnt how to resolve conflicts, and find amicable solutions that leads to a win-win.
-</li>
-
-<li>
- Founder of an unofficial "Self-Improvement Club" in my college. I took this initiative to find a sense of brotherhood, and it has lead to a culture of constant growth for me and my friend-circle.
-</li>
-<li>
- Other hobbies include Weightlifting, Chess, Tennis, Taekwondo and Horse-back riding.
-</li>
-
+  <li>National level contestant of the French Word Power examination, Organized by the Quebec Government Office in Mumbai. I speak French to a moderate level of proficiency, estimated to be around B1.</li>
+  <li>3-time Model United Nations (MUN) winner. My deep interest in leadership and geopolitics lead me to frequently participate in Model United Nations conferences. This has developed my professional and collaborative network, and has immensely benefited my public speaking and critical thinking skills.</li>
+  <li>Read over 150 books in the last two years on books ranging anywhere from Self-Development, Finance, Health and Philosophy. This has given me wider perspective and broadened my mind to alternative possibilities.</li>
+  <li>Frequent volunteer in school events, I find purpose in constructively engaging with my wider student-community. It has taught me to stick to my promises and shown me the value of contributing to greater causes.</li>
+  <li>School Valedictorian in grade 10, and Student Council member in grade 11 and 12. I learnt how to resolve conflicts, and find amicable solutions that leads to a win-win.</li>
+  <li>Founder of an unofficial "Self-Improvement Club" in my college. I took this initiative to find a sense of brotherhood, and it has lead to a culture of constant growth within my friend-circle. This further has helped me become accountable and disciplined.</li>
+  <li>Other hobbies include Weightlifting, Chess, Tennis, Taekwondo, and Horse-back riding.</li>
 </ul>
-
-
-
 <!---
 
 # Extracurriculars and Initiatives
