@@ -5,7 +5,10 @@ title: How I Trained the Worst AI Classification Model
 draft: false
 katex: true
 description: In my quest to learn how to leverage AI and ML to propel me into the zenith of technology prowess, I find that i'm making some wierd mistakes. This is my Analysis of that.
-tags:AI, ML, CS
+tags:
+    - Artificial Intelligence
+    - Machine Learning
+    - Computer Science   
 ---
 
 AI has certainly been a term that has been blowing up in the last few months.Tools like ChatGPT and the image generators like Midjourney and Stable Diffusion has taken the world by storms (funnily enough, pretty as I predicted)
