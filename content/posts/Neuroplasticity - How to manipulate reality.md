@@ -1,7 +1,7 @@
 ---
 title: "Neuroplasticity: How to Manipulate Reality"
 date: 2023-06-16T00:08:35+05:30
-draft: true
+draft: false
 tags: 
   - psychology
   - self-improvement
