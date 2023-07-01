@@ -49,6 +49,11 @@ googleAnalyticsID = "G-G3F606BLYN"
 	name = "Portfolio"
 	url = "/portfolio"
 	weight = 3
+	[[menu.main]]
+	name = "🤖 Prometheus"
+	url = "/prometheus"
+	weight = 3
+
 
 
 
