@@ -6,7 +6,7 @@
   <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f916/512.gif" alt="🤖" width="64" height="64">
 </picture>
 
-## Prometheus : The world's greatest Artificial Intelligence Automation Agency   
+# Prometheus : The world's greatest Artificial Intelligence Automation Agency   
 
 Welcome to Prometheus, the forefront of Artificial Intelligence Automation.
 

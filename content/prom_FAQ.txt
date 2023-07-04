@@ -1,0 +1,21 @@
+q:  
+a: Send an email at abanhasan@tutanota.com, and Aban will respond to your query shortly
+q: how can Prometheus help my business?
+a: We offer a variety of services that can level-up your business. 
+You can request services such as, but not limited to:
+- Staff Training Chatbots
+- Knowledge Base Chatbots
+- Cold Outreach Email Auto-Responder
+- Human-like Cold Outreach
+Email us if you have specific requirements, and we will respond to you shortly!
+
+q: How much do your services cost?
+a: Costs vary depending on the project, but AI automation pays for itself quickly through increased efficiency and reduced man-hours.
+We have both retainer, and one-time models, with monthly-retainers having features like active feedback, regular updates and faster AIs.
+
+
+q: How secure is AI automation? Is my data safe?
+a: All data you hand over is securely saved and encrypted. We use a as-need data policy, which means that we do not ask access for more data than we absolutely need
+
+q: Do I need a tech-savvy team to leverage AI automation?
+a: No, our solutions are user-friendly and with our services, we also provide training and support for your team.
