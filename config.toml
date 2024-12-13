@@ -1,68 +1,64 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "Aban Hasan"
-theme="hermit"
-enableEmoji=true
+theme = "hermit"
+enableEmoji = true
 googleAnalyticsID = "G-G3F606BLYN"
+
 [taxonomies]
   tag = "tags"
+  # Add the author taxonomy if needed
+  author = "authors"
 
-[author]
-	name = "Aban Hasan"
 [params]
-	dateform        = "Jan 2, 2006"
-  	dateformShort   = "Jan 2"
-  	dateformNum     = "2006-01-02"
-  	dateformNumTime = "2006-01-02 15:04 -0700"
-	relatedPosts=true
-	themeColor = "#181a1b"
-	code_copy_button = true
-	description = "Hi I'm Aban.This website is meant to document my journey of building my tech empire. This is my quest of becoming more competent in the realms of human endevour which i choose to embark in"
-	customCSS = ["css/foo.css"]
+  dateform = "Jan 2, 2006"
+  dateformShort = "Jan 2"
+  dateformNum = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+  relatedPosts = true
+  themeColor = "#181a1b"
+  code_copy_button = true
+  description = "Hi I'm Aban.This website is meant to document my journey of building my tech empire. This is my quest of becoming more competent in the realms of human endeavor which I choose to embark in"
+  customCSS = ["css/foo.css"]
+  homeSubtitle = "Always Improving..."
 
-
-
-	homeSubtitle="Always Improving..."
-	[[params.social]]
-		name="github"
-		url = "https://github.com/thewildofficial"
-	[[params.social]]
-		name="youtube"
-		url = "https://www.youtube.com/channel/UCgmwvznKWmu-bAEtIbTT05w"
-	[[params.social]]
-		name="twitter"
-		url="https://twitter.com/abantheseeker"
-
-
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/thewildofficial"
+  [[params.social]]
+    name = "youtube"
+    url = "https://www.youtube.com/channel/UCgmwvznKWmu-bAEtIbTT05w"
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/abantheseeker"
 
 [menu]
-	[[menu.main]]
-    	name = "Posts"
-    	url = "/posts/"
-    	weight = 1
-	[[menu.main]]
-        name = "About"
-		url = "/about"
-		weight = 2
-	[[menu.main]]
-		name = "Portfolio"
-		url = "/portfolio"
-		weight = 3
-
-
-
-
-
-
-
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 2
+  [[menu.main]]
+    name = "Portfolio"
+    url = "/portfolio"
+    weight = 3
 
 # SEO TITLE : Byte Geek: Short Reads About Productivity And Technology
 
-
-
 [markup]
   defaultMarkdownHandler = 'goldmark'
- [markup.goldmark]
-   [markup.goldmark.renderer]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
       unsafe = true
 
+# Define language settings to prevent `.Site.Language.Get` error
+[languages]
+  [languages.en]
+    weight = 1
+    languageName = "English"
+    contentDir = "content"
+    # This tells Hugo to use the default language (en)
+    params = [ "author", "description", "social" ]  # Optional, just for consistency

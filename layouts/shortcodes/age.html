@@ -1,0 +1,6 @@
+{{ $birthYear := 2005 }}
+{{ $birthMonth := 11 }}
+{{ $birthDay := 2 }}
+{{ $now := time.Now }}
+{{ $age := $now.Year | int | sub $birthYear | sub (cond (or (lt $now.Month $birthMonth) (and (eq $now.Month $birthMonth) (lt $now.Day $birthDay))) 1 0) }}
+{{ $age }}
