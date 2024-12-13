@@ -1,64 +1,68 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>productivity on Byte Geek</title>
-    <link>/tags/productivity/</link>
-    <description>Recent content in productivity on Byte Geek</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Productivity on Aban Hasan</title>
+    <link>//localhost:1313/tags/productivity/</link>
+    <description>Recent content in Productivity on Aban Hasan</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Dec 2021 19:49:54 +0530</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Art of Human Connection: How to become the leader of your tribe</title>
+      <link>//localhost:1313/posts/the-art-of-human-connection--how-to-make-friends/</link>
+      <pubDate>Fri, 10 Dec 2021 19:49:54 +0530</pubDate>
+      <guid>//localhost:1313/posts/the-art-of-human-connection--how-to-make-friends/</guid>
+      <description>&lt;h3 id=&#34;are-you-an-extrovert-or-introvert&#34;&gt;Are you an Extrovert or Introvert?&lt;/h3&gt;&#xA;&lt;p&gt;Irrelevant question.&#xA;Why? Because all of us need, and deserve, a meaningful social connection, regardless of how we feel like in social situations.&#xA;We deserve to not feel awkward around other people, because inevitably we will have to deal with them.&#xA;The complex social structure of our society is what truly makes us human.&#xA;I have noticed many in the self-improvement community trying to act like this &lt;a href=&#34;https://www.urbandictionary.com/define.php?term=sigma%20male&#34;&gt;lone wolf, sigma male character&lt;/a&gt;, thinking that would help you excel in your work and ambitions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Doing What You Got to Do: A Systematic Pathway to Success</title>
+      <link>//localhost:1313/posts/doing-what-you-got-to-do--a-systematic-pathway-to-success/</link>
+      <pubDate>Sun, 05 Dec 2021 11:01:26 +0530</pubDate>
+      <guid>//localhost:1313/posts/doing-what-you-got-to-do--a-systematic-pathway-to-success/</guid>
+      <description>&lt;h3 id=&#34;there-is-something-extremely-important-that-i-have-learned-over-the-last-few-months&#34;&gt;There is something extremely important that I have learned over the last few months.&lt;/h3&gt;&#xA;&lt;p&gt;If one has gotten into their self-improvement journey, they will eventually realize one thing: you would have to &lt;strong&gt;do the hard work, ESPECIALLY when you don&amp;rsquo;t feel like it&lt;/strong&gt;.&#xA;There is great power in getting something hard or boring to become a routine habit just by doing it repeatedly. Imagine going to the gym in the morning without a single word of protest every day. Or… studying for 6 hours with no feelings of resentment.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Mental Drain of Studying and How to Deal With It</title>
+      <link>//localhost:1313/posts/the-mental-drain-of-studying-and-how-to-deal-with-it/</link>
+      <pubDate>Sun, 08 Aug 2021 18:45:50 +0530</pubDate>
+      <guid>//localhost:1313/posts/the-mental-drain-of-studying-and-how-to-deal-with-it/</guid>
+      <description>&lt;h3 id=&#34;the-mental-drain-of-studying&#34;&gt;The mental drain of Studying&lt;/h3&gt;&#xA;&lt;p&gt;A lot of us approach studying as a chore just because our parents, teachers and society in general expects us to do well in our academics. The academic journey can be rather inundating and boring. The very thought of studying and examinations can cause a lot of distress for students(at least I can speak for myself).&lt;/p&gt;&#xA;&lt;h3 id=&#34;why-can-be-studying-so-difficult&#34;&gt;Why can be studying so difficult&lt;/h3&gt;&#xA;&lt;p&gt;studying may not be the most appealing thing in the world. Sitting for multiple hours looking at static books is not exactly what our survivalist brains were made for. There are a myriad of reasons why we may find studying undesirable, some of them being:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Practice of Journaling in Self-Improvement</title>
-      <link>/posts/the-practice-of-journaling-in-self-improvement/</link>
+      <link>//localhost:1313/posts/the-practice-of-journaling-in-self-improvement/</link>
       <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/the-practice-of-journaling-in-self-improvement/</guid>
-      <description>“Fill your paper with the breathings of your heart.” – William Wordsworth
- I have recently taken to the habit of journaling. I have come to appreciate the process of putting your thoughts on paper, and I hope I can convince you to do the same 🧠 📄
-Why Journal? Journaling as a practice has enormous benefits. The main one that attracted me, was that it helps declutter and lapidify your thoughts.</description>
+      <guid>//localhost:1313/posts/the-practice-of-journaling-in-self-improvement/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;“Fill your paper with the breathings of your heart.” – William Wordsworth&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;I have recently taken to the habit of journaling. I have come to appreciate the process of putting your thoughts on paper, and I hope I can convince you to do the same 🧠 📄&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-journal&#34;&gt;Why Journal?&lt;/h2&gt;&#xA;&lt;p&gt;Journaling as a practice has enormous benefits. The main one that attracted me, was that it helps declutter and lapidify your thoughts.&#xA;In the modern internet age, there is a phenomena called &lt;em&gt;information overload&lt;/em&gt;. If you don&amp;rsquo;t actively preserve them, your thoughts end up fleeting, and you lose so many potentially incredible ideas.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>The Concept of Motivation:How to Always Get Things Done</title>
-      <link>/posts/the-concept-of-motivationhow-to-always-get-things-done/</link>
+      <link>//localhost:1313/posts/the-concept-of-motivation---how-to-always-get-things-done/</link>
       <pubDate>Tue, 29 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/the-concept-of-motivationhow-to-always-get-things-done/</guid>
-      <description>Motivation has a shelf life. It changes like the weather. Although it is a seasonal phenomenon, it still carries a great deal of power.
-In this blog post, I aim to explain how you can motivate yourself to do hard habits, even though you may feel low.
-Step One: Genuinely be interested in whatever you want to pursue. You cannot be internally motivated to do anything when you do not like doing it.</description>
+      <guid>//localhost:1313/posts/the-concept-of-motivation---how-to-always-get-things-done/</guid>
+      <description>&lt;h2 id=&#34;motivation-has-a-shelf-life&#34;&gt;Motivation has a shelf life.&lt;/h2&gt;&#xA;&lt;p&gt;It changes like the weather.&#xA;Although it is a seasonal phenomenon, it still carries a great deal of power.&lt;/p&gt;&#xA;&lt;p&gt;In this blog post, I aim to explain how you can motivate yourself to do hard habits, even though you may feel low.&lt;/p&gt;&#xA;&lt;h2 id=&#34;step-one-genuinely-be-interested-in-whatever-you-want-to-pursue&#34;&gt;Step One: Genuinely be interested in whatever you want to pursue.&lt;/h2&gt;&#xA;&lt;p&gt;You cannot be internally motivated to do anything when you do not like doing it. If you pursue a skill or task that you generally like (or have a strong incentive to do), you are more likely to have the motivation to become very good at it.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Atomic Habits by James Clear:Book Review</title>
-      <link>/posts/atomic-habits-by-james-clear/</link>
+      <link>//localhost:1313/posts/atomic-habits-by-james-clear/</link>
       <pubDate>Sat, 26 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/atomic-habits-by-james-clear/</guid>
-      <description>This is a legendary book, its reputation proceeds it. All the productivity greats like Thomas Frank and Ali Abdaal have recommended it…so this month I have decided to check it out.
-And boy, does it deliver.
-Core ideas First, I think we should define what an “Atomic Habit” really is. Many of us think that to be successful, we should do great feats…but in fact, that is not true at all!</description>
+      <guid>//localhost:1313/posts/atomic-habits-by-james-clear/</guid>
+      <description>&lt;h2 id=&#34;this-is-a-legendary-book-its-reputation-proceeds-it&#34;&gt;This is a legendary book, its reputation proceeds it.&lt;/h2&gt;&#xA;&lt;p&gt;All the productivity greats like &lt;a href=&#34;https://www.youtube.com/user/electrickeye91&#34;&gt;Thomas Frank&lt;/a&gt; and &lt;a href=&#34;https://www.youtube.com/c/aliabdaal/videos&#34;&gt;Ali Abdaal&lt;/a&gt; have recommended it…so this month I have decided to check it out.&lt;/p&gt;&#xA;&lt;p&gt;And boy, does it deliver.&lt;/p&gt;&#xA;&lt;h2 id=&#34;core-ideas&#34;&gt;Core ideas&lt;/h2&gt;&#xA;&lt;p&gt;First, I think we should define what an “Atomic Habit” really is.&#xA;Many of us think that to be successful, we should do great feats…but in fact, that is &lt;strong&gt;not&lt;/strong&gt; true at all!&#xA;The Greatest achievements come from the smallest changes that are done &lt;em&gt;consistently&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>The Importance of Sleep in Learning</title>
-      <link>/posts/the-importance-of-sleep-in-learning/</link>
+      <link>//localhost:1313/posts/the-importance-of-sleep-in-learning/</link>
       <pubDate>Fri, 11 Jun 2021 23:49:25 +0530</pubDate>
-      
-      <guid>/posts/the-importance-of-sleep-in-learning/</guid>
-      <description>I am writing this blog post at 11:55 AM out of a great need to express my thoughts about sleep,the tame death that envelopes us all.
-I find that in our modern world,sleep is often put aside,or even overlooked. I have recently found a study by the american goverment that asserts that 1 in 3 adults are chronically sleep deprived. These numbers are shocking and should make us reconsider our view on sleep.</description>
+      <guid>//localhost:1313/posts/the-importance-of-sleep-in-learning/</guid>
+      <description>&lt;p&gt;I am writing this blog post at 11:55 AM out of a great need to express my thoughts about sleep,the tame death that envelopes us all.&lt;/p&gt;&#xA;&lt;p&gt;I find that in our modern world,sleep is often put aside,or even overlooked. I have recently found a &lt;a href=&#34;https://www.cdc.gov/media/releases/2016/p0215-enough-sleep.html&#34;&gt;study&lt;/a&gt; by the american goverment that asserts that 1 in 3 adults &lt;strong&gt;are chronically sleep deprived.&lt;/strong&gt; These numbers are shocking and should make us reconsider our &lt;em&gt;view&lt;/em&gt; on sleep.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Deep Work by Cal Newport:Book Review</title>
-      <link>/posts/deep-work-by-cal-newportbook-review/</link>
+      <link>//localhost:1313/posts/deep-work-by-cal-newport-book-review/</link>
       <pubDate>Tue, 08 Jun 2021 11:57:29 +0530</pubDate>
-      
-      <guid>/posts/deep-work-by-cal-newportbook-review/</guid>
-      <description>Productivity books, we all read them kinda is becoming my guilty pleasure at this point. However, I have to give the book “Deep Work” some credit. Although this is my second reading, I still find enormous meaning from it.
-The book is a non-fiction thesis on how “knowledge work” is valued in the economy, and how top achievers actually succeed. It also tackles the idea of “information overload” in our modern digital age.</description>
+      <guid>//localhost:1313/posts/deep-work-by-cal-newport-book-review/</guid>
+      <description>&lt;h1 id=&#34;productivity-books-we-all-read-them&#34;&gt;Productivity books, we all read them&lt;/h1&gt;&#xA;&lt;p&gt;kinda is becoming my guilty pleasure at this point. However, I have to give the book “Deep Work” some credit.&#xA;Although this is my second reading, I still find enormous meaning from it.&lt;/p&gt;&#xA;&lt;p&gt;The book is a non-fiction thesis on how “knowledge work” is valued in the economy, and how top achievers actually succeed. It also tackles the idea of “information overload” in our modern digital age.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computer Science on Aban Hasan</title>
+    <link>//localhost:1313/tags/computer-science/</link>
+    <description>Recent content in Computer Science on Aban Hasan</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/computer-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I Trained the Worst AI Classification Model</title>
+      <link>//localhost:1313/posts/how-i-trained-the-worst-ai-classification-model/</link>
+      <pubDate>Mon, 12 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/how-i-trained-the-worst-ai-classification-model/</guid>
+      <description>&lt;p&gt;AI has certainly been a term that has been blowing up in the last few months.Tools like ChatGPT and the image generators like Midjourney and Stable Diffusion has taken the world by storms (funnily enough, pretty as I predicted)&lt;/p&gt;&#xA;&lt;p&gt;In the year 2020, when all of us were stuck indoors all day, I was bored out of my mind and ran into OpenAI&amp;rsquo;s novel text generation project, GPT-3.&lt;/p&gt;&#xA;&lt;p&gt;Immediately I saw the potential.&#xA;In fact, a business idea popped into my head.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -16,10 +16,16 @@ I have been writing code ever since I was 12.From that point, I have been absolu
 - **[Perspective AI](https://www.amazon.com/Perspective-Artificial-Intelligence-Aban-Hasan/dp/1678985988)**: I co-authored this book along with a schoolmate during my grade 8. It is meant to be a teenager's perspective on the advent of artificial intelligence, and how we predict AI will impact our lives and the future.
 
 - **[TryHackMe](https://tryhackme.com/p/thewildofficial) and CTFs**: I have always had a deep interest in cybersecurity, and this obsession has led me to being ranked in the top 2% of hackers on tryhackme.com, a website which organizes hacking challenges.
-
+- **[IIT Ropar Minor in AI/ML](https://www.iitrpr.ac.in/iit-ropar-ai)** in 2025, I would have completed my Minor Degree from the prestigious IIT program on Artificial Intelligence! this program has equipped me with the crucial know-how in a rapidly transforming digital landscape, as we find ourselves facing the enormous threat, as well as opportunity, of AGI
 <p align="center">
-  <a href="https://tryhackme.com/p/thewildofficial"><img src="https://www.linkpicture.com/q/tryhackme.png" alt="TryHackMe" width="1000" /></a>
+  <a href="https://tryhackme.com/r/p/thewildofficial">
+    <figure>
+      <img src="/images/tryhackme.png" alt="TryHackMe" />
+      <figcaption>(Used to hold) top 1% of hackers on TryHackMe.com!</figcaption>
+    </figure>
+  </a>
 </p>
+
 <hr>
 <p align="center" ><b> My Github Activity </b></p>
 <script
@@ -46,12 +52,13 @@ I have been writing code ever since I was 12.From that point, I have been absolu
 <h1> Extracurriculars and Initiatives </h1>
 
 <ul>
-  <li>National level contestant of the French Word Power examination, Organized by the Quebec Government Office in Mumbai. I speak French to a moderate level of proficiency, estimated to be around B1.</li>
-  <li>3-time Model United Nations (MUN) winner. My deep interest in leadership and geopolitics lead me to frequently participate in Model United Nations conferences. This has developed my professional and collaborative network, and has immensely benefited my public speaking and critical thinking skills.</li>
-  <li>Read over 150 books in the last two years on books ranging anywhere from Self-Development, Finance, Health and Philosophy. This has given me wider perspective and broadened my mind to alternative possibilities.</li>
+  <li>National level contestant of the French Word Power examination, Organized by the Quebec Government Office in Mumbai. I speak French to a moderate level of proficiency, estimated to be around B1. (also sold D2D in Gatineau en français, I guess that's a plus!)</li>
+  <li>5-time Model United Nations (MUN) winner. My deep interest in leadership and geopolitics lead me to frequently participate in Model United Nations conferences. This has developed my professional and collaborative network, and has immensely benefited my public speaking and critical thinking skills.I also have a borderline obsession with foreign relations, diplomacy, debate, especially when it comes to trade and conflicts around the world </li>
+  <li>Read over 150 books in the last two years on books ranging anywhere from Self-Development, Finance,Strategy,History,Economics Health and Philosophy. This has given me wider perspective and broadened my mind to alternative possibilities.</li>
   <li>Frequent volunteer in school events, I find purpose in constructively engaging with my wider student-community. It has taught me to stick to my promises and shown me the value of contributing to greater causes.</li>
   <li>School Valedictorian in grade 10, and Student Council member in grade 11 and 12. I learnt how to resolve conflicts, and find amicable solutions that leads to a win-win.</li>
-  <li>Founder of an unofficial "Self-Improvement Club" in my college. I took this initiative to find a sense of brotherhood, and it has lead to a culture of constant growth within my friend-circle. This further has helped me become accountable and disciplined.</li>
+  <li>Founder of an unofficial "Self-Improvement Club" at Carleton University, with over 50 engaged members on our discord!. I took this initiative to find a sense of brotherhood, and it has lead to a culture of constant growth within my friend-circle. This further has helped me become accountable and disciplined.</li>
+   <li>Door-to-door sales experience with InsightPest Control in Ottawa and Gatineau in the summer of '24. Sold $20K worth of pest control in just 2 months, learning valuable interpersonal skills, sales techniques, customer service, and service delivery.</li>
   <li>Other hobbies include Weightlifting, Chess, Tennis, Taekwondo, and Horse-back riding.</li>
 </ul>
 <!---
