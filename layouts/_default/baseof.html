@@ -49,7 +49,6 @@
 	{{ $theme_script := resources.Get "js/theme-control.js" | minify | fingerprint -}}
 	<script src="{{ $theme_script.Permalink }}" {{ printf "integrity=%q" $theme_script.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>
 
-	{{- partial "analytics.html" . }}
 	{{- if templates.Exists "partials/extra-foot.html" -}}
 	{{ partial "extra-foot.html" . }}
 	{{- end }}
