@@ -61,12 +61,22 @@ I have been writing code ever since I was 12.From that point, I have been absolu
    <li>Door-to-door sales experience with InsightPest Control in Ottawa and Gatineau in the summer of '24. Sold $20K worth of pest control in just 2 months, learning valuable interpersonal skills, sales techniques, customer service, and service delivery.</li>
   <li>Other hobbies include Weightlifting, Chess, Tennis, Taekwondo, and Horse-back riding.</li>
 </ul>
+
+<h2>🌍 Languages Spoken</h2>
+<ul style="list-style: none; padding: 0;">
+    <li><span style="font-size: 1.2em;">🇺🇸</span> <strong>English</strong> (Native)</li>
+    <li><span style="font-size: 1.2em;">🇨🇦</span> <strong>French</strong> (B1)</li>
+    <li><span style="font-size: 1.2em;">🇩🇪</span> <strong>German</strong> (A2)</li>
+    <li><span style="font-size: 1.2em;">🇾🇪</span> <strong>Arabic</strong> Just gotten started!</li>
+</ul>
+
 <!---
+
+
 
 # Extracurriculars and Initiatives
 
 I am a firm believer that every person must be the leader of their own mind.I have an affinity for leadership roles because I have a deep desire to see meaningful improvements in myself, in people around me and society as a whole:
-
 
 
 * This is precisely why I ran for Student council in grade 12. Through being a council member, I organised school events, contributed to associations/clubs, and served as a collaborator between students and staff. 
