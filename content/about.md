@@ -2,7 +2,7 @@
 ---
 <h1 align="center"><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="32"> Hi, I'm Aban!</h1>
 
-I'm {{< age >}}, currently studying Computer Science Honours (AI/ML) at [Carleton University](https://carleton.ca/) in Ottawa 🇨🇦
+I'm 19 years old, currently based in Ottawa 🇨🇦
 
 
 I see myself as an ambitious and perispicacious individual and have always been fascinated by computers and human relationships. I believe that business and technology skills are a powerful combination and hence really seek to equip myself with the best of both worlds.
