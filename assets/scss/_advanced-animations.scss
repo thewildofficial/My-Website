@@ -1,0 +1,176 @@
+// Advanced animations for portfolio
+
+// Fix for header visibility issues
+h1.gradient-text, 
+.gradient-border.animate-fade-in {
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 10;
+  position: relative !important;
+  display: block !important;
+}
+
+// 3D card effect for project cards
+.project-card {
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
+  &:hover {
+    transform: rotateY(5deg) translateZ(10px);
+    box-shadow: -5px 5px 15px rgba(69, 104, 220, 0.3),
+                5px -5px 15px rgba(176, 106, 179, 0.3);
+  }
+  
+  // Interactive border animation
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(69, 104, 220, 0.4), transparent);
+    background-size: 400% 400%;
+    z-index: -1;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.6s;
+    animation: gradientBorder 3s ease infinite;
+  }
+  
+  &:hover::before {
+    opacity: 0.6;
+  }
+}
+
+// Advanced gradient animations
+@keyframes gradientBorder {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+// Focus effect for main header
+.gradient-text {
+  text-shadow: 0 0 5px rgba(69, 104, 220, 0.3);
+  animation: textFocus 2s ease-out;
+  
+  @keyframes textFocus {
+    0% { filter: blur(5px); opacity: 0; transform: scale(0.95); }
+    100% { filter: blur(0); opacity: 1; transform: scale(1); }
+  }
+}
+
+// Floating elements with parallax effect
+.floating {
+  animation: float 3s ease-in-out infinite;
+  
+  &:nth-child(2n) {
+    animation-delay: 0.5s;
+  }
+  
+  &:nth-child(3n) {
+    animation-delay: 1s;
+  }
+}
+
+// Custom styling for language cards
+.language-container > div {
+  position: relative;
+  overflow: hidden;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgba(255, 255, 255, 0.3),
+      transparent
+    );
+    transform: rotate(30deg);
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  
+  &:hover::after {
+    animation: shineEffect 1.5s forwards;
+  }
+}
+
+@keyframes shineEffect {
+  0% { transform: rotate(30deg) translateX(-300%); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: rotate(30deg) translateX(300%); opacity: 0; }
+}
+
+// Progress bar animation
+.skill-bar {
+  position: relative;
+  overflow: hidden;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgba(255, 255, 255, 0.6),
+      transparent
+    );
+    animation: progressShine 3s linear infinite;
+  }
+}
+
+@keyframes progressShine {
+  0% { left: -100%; }
+  100% { left: 200%; }
+}
+
+// Particle canvas styling
+#particle-canvas {
+  opacity: 0.7;
+  filter: blur(0.5px);
+  background: radial-gradient(
+    ellipse at top,
+    rgba(69, 104, 220, 0.1),
+    transparent
+  );
+}
+
+// Fixed intro box styling
+.gradient-border {
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    padding: 2px;
+    background: linear-gradient(45deg, #4568DC, #B06AB3, #4568DC);
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    animation: gradientFlow 3s ease infinite;
+    background-size: 200% auto;
+  }
+}
+
+// Responsive fixes
+@media (max-width: 768px) {
+  .project-card {
+    transform: none !important;
+    &:hover {
+      transform: translateY(-5px) !important;
+    }
+  }
+}
