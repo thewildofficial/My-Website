@@ -13,17 +13,17 @@
 	<meta name="msapplication-TileColor" content="#181a1b">
 
   <meta itemprop="name" content="Aban Hasan">
-  <meta itemprop="description" content="Aban Hasan ⚡ Student | 🌐 Cybernaut | 🚀 Innovator Building the digital future, one project at a time">
-  <meta itemprop="wordCount" content="846"><meta property="og:url" content="//localhost:1313/portfolio/">
+  <meta itemprop="description" content="💬 Get In Touch I&#39;m always interested in new opportunities and collaborations!">
+  <meta itemprop="wordCount" content="945"><meta property="og:url" content="//localhost:1313/portfolio/">
   <meta property="og:site_name" content="Aban Hasan">
   <meta property="og:title" content="Aban Hasan">
-  <meta property="og:description" content="Aban Hasan ⚡ Student | 🌐 Cybernaut | 🚀 Innovator Building the digital future, one project at a time">
+  <meta property="og:description" content="💬 Get In Touch I&#39;m always interested in new opportunities and collaborations!">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Aban Hasan">
-  <meta name="twitter:description" content="Aban Hasan ⚡ Student | 🌐 Cybernaut | 🚀 Innovator Building the digital future, one project at a time">
+  <meta name="twitter:description" content="💬 Get In Touch I&#39;m always interested in new opportunities and collaborations!">
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -33,7 +33,7 @@
 	<link rel="shortcut icon" href="/favicon.ico">
 
 	<title></title>
-	<link rel="stylesheet" href="//localhost:1313/css/style.min.de516b90406206b5613054d89d1bb669bc7deec8ed06139cca20068868166e59.css" integrity="sha256-3lFrkEBiBrVhMFTYnRu2abx97sjtBhOcyiAGiGgWblk=" crossorigin="anonymous">
+	<link rel="stylesheet" href="//localhost:1313/css/style.min.641554b2eb24b66f82427516edb6a383bc1391f2922439bfffb935ba309a78c8.css" integrity="sha256-ZBVUsusktm+CQnUW7bajg7wTkfKSJDm//7k1ujCaeMg=" crossorigin="anonymous">
 	
 	<link rel="stylesheet" href="//localhost:1313/css/foo.css"><html>
 
@@ -157,6 +157,22 @@
   animation: float 3s ease-in-out infinite;
 }
 
+/* Dark mode compatibility */
+.intro-box {
+  background-color: rgba(30, 30, 30, 0.7);
+  color: #f0f0f0;
+  padding: 20px;
+  border-radius: 9px;
+}
+
+/* For light mode if needed */
+@media (prefers-color-scheme: light) {
+  .intro-box {
+    background-color: white;
+    color: #333;
+  }
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .language-container {
@@ -165,16 +181,125 @@
   }
 }
 </style>
+<!-- Script imports for enhanced animations -->
+<script src="/js/3d-background.js" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Fix for header visibility - redundant but ensures it works
+  setTimeout(function() {
+    const header = document.querySelector('h1.gradient-text');
+    const introBox = document.querySelector('.gradient-border.animate-fade-in');
+    
+    if (header) {
+      header.style.opacity = '1';
+      header.style.visibility = 'visible';
+      header.style.position = 'relative';
+      header.style.zIndex = '100';
+    }
+    
+    if (introBox) {
+      introBox.style.opacity = '1';
+      introBox.style.visibility = 'visible';
+      introBox.style.position = 'relative';
+      introBox.style.zIndex = '90';
+    }
+  }, 100);
+});
+</script>
+<!-- Interactive Contact Widget -->
+<div id="contact-widget" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+  <div class="contact-button animate-pulse" style="width: 60px; height: 60px; background: linear-gradient(45deg, #4568DC, #B06AB3); border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+    <span style="font-size: 24px; color: white;">💬</span>
+  </div>
+  <div id="contact-popup" style="position: absolute; bottom: 70px; right: 0; width: 300px; background: white; border-radius: 8px; padding: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); display: none;">
+    <h3 style="margin-top: 0; color: #4568DC;">Get In Touch</h3>
+    <p style="font-size: 0.9em;">I'm always interested in new opportunities and collaborations!</p>
+    <form id="contact-form" style="display: flex; flex-direction: column;">
+      <input type="email" placeholder="Your Email" style="margin-bottom: 10px; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+      <textarea placeholder="Your Message" rows="3" style="margin-bottom: 10px; padding: 8px; border: 1px solid #ddd; border-radius: 4px;"></textarea>
+      <button type="button" style="background: linear-gradient(45deg, #4568DC, #B06AB3); border: none; color: white; padding: 8px; border-radius: 4px; cursor: pointer;">Send Message</button>
+    </form>
+  </div>
+</div>
+<script>
+  // Contact widget functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const contactButton = document.querySelector('.contact-button');
+    const contactPopup = document.getElementById('contact-popup');
+    
+    if (contactButton && contactPopup) {
+      contactButton.addEventListener('click', function() {
+        if (contactPopup.style.display === 'none') {
+          contactPopup.style.display = 'block';
+        } else {
+          contactPopup.style.display = 'none';
+        }
+      });
+    }
+  });
+</script>
 <h1 align="center" class="gradient-text animate-fade-in">Aban Hasan</h1>
 <h3 align="center" class="animate-fade-in delay-200">⚡ Student | 🌐 Cybernaut | 🚀 Innovator</h3>
 <p align="center" class="animate-fade-in delay-300">
   <i>Building the digital future, one project at a time</i>
 </p>
 <div class="gradient-border animate-fade-in delay-400">
-  <div style="background: white; padding: 20px; border-radius: 9px;">
+  <div class="intro-box">
     <p>I've been immersed in the world of code since I was 12 years old. What began as curiosity evolved into a passion that drives me to explore the endless possibilities of the digital frontier. My journey combines technical expertise with a deep appreciation for how technology can solve real-world problems.</p>
   </div>
 </div>
+<!-- Animated Stats Counter -->
+<div class="stats-container animate-fade-in" style="display: flex; flex-wrap: wrap; justify-content: space-around; margin: 40px 0; text-align: center;">
+  <div class="stat-item" style="padding: 15px; margin: 10px;">
+    <div class="stat-number gradient-text" style="font-size: 2.5em; font-weight: bold;" data-target="5000">0</div>
+    <div class="stat-label">Users Impacted</div>
+  </div>
+  <div class="stat-item" style="padding: 15px; margin: 10px;">
+    <div class="stat-number gradient-text" style="font-size: 2.5em; font-weight: bold;" data-target="150">0</div>
+    <div class="stat-label">Books Read</div>
+  </div>
+  <div class="stat-item" style="padding: 15px; margin: 10px;">
+    <div style="font-size: 2.5em; font-weight: bold;">
+      <span class="stat-number gradient-text" style="display: inline-block;" data-target="5">0</span><span class="gradient-text" style="display: inline-block;">+</span>
+    </div>
+    <div class="stat-label">Languages</div>
+  </div>
+</div>
+<script>
+  // Animated counter
+  document.addEventListener('DOMContentLoaded', function() {
+    function animateValue(obj, start, end, duration) {
+      let startTimestamp = null;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        obj.innerHTML = Math.floor(progress * (end - start) + start);
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      };
+      window.requestAnimationFrame(step);
+    }
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counters = document.querySelectorAll('.stat-number');
+          counters.forEach(counter => {
+            const target = parseInt(counter.getAttribute('data-target'));
+            animateValue(counter, 0, target, 2000);
+          });
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    
+    const statsContainer = document.querySelector('.stats-container');
+    if (statsContainer) {
+      observer.observe(statsContainer);
+    }
+  });
+</script>
 <h1 class="gradient-text animate-fade-in">🛠️ Featured Projects</h1>
 <div class="project-card animate-fade-in delay-100">
   <h3><a href="https://geomonitor.abanhasan.net/" target="_blank">🌎 GeoMonitor</a></h3>
@@ -311,161 +436,39 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
-<!---
-
-
-
-# Extracurriculars and Initiatives
-
-I am a firm believer that every person must be the leader of their own mind.I have an affinity for leadership roles because I have a deep desire to see meaningful improvements in myself, in people around me and society as a whole:
-
-
-* This is precisely why I ran for Student council in grade 12. Through being a council member, I organised school events, contributed to associations/clubs, and served as a collaborator between students and staff. 
-* I have attended plenty of Model United Nations contests and public speaking workshops, where I have learnt the importance of interpersonal skills.
-* My desire for finding a circle of individuals on self-improvement led me to join the online community of a popular youtuber known as [Hamza](https://www.youtube.com/c/Hamza97/videos). In this community I have actively participated and have given lectures on topics like Social Skills, Debating and Reading. For my contributions, I have been recognized and nominated as the moderator of the discord server.
-* In this community, I found a persisting pain point of people in general, who perceived that although they are working to improve themselves, it was challenging to track their habits and monitor their progress. This lead me to collaborate with members of the community in creating [project skill tree](https://www.projectskilltree.com/).
-* Skill Tree is a discord bot interface (and future app) aimed to "gamify" and chart one's self improvement journey. It is currently used by over 5000 unique users, and charts habits like Journalling, Meditation and Weightlifting. I worked extensively on the front-end and API of this Interface. Working on this project taught me a lot about teamwork, User Experience, Deadlines and Marketing.
-* OpenAI GPT-3 Official Beta tester, I was among the first to use GPT-3 Technology, with special approval from the OpenAI CEO.
-* My earliest venture was when I, as a 14 year old during class 8 where along with my two other classmates found a company, where we organised discussions and participated in our cities tech competitions. I learnt a lot about business stratagies and a taste of what it means to be a CEO/Founder.
-
-
-<p align="center">Top 2% of TryHackMe Hackers, with over X points!</p>
-
-
-<p align="center">Github Contribution Heatmap</p>
-
-
-<style type="text/css">table{
-border : 1px solid #000000;
-} </style>
-<table id="activity-table" class="summaryTable " summary="" style="border : 1px solid #000000;">
-    <thead>
-        <tr>
-           <th scope="col" style="width: 10em;">Start Date</th>
-            <th scope="col" style="width: 10em;">To Date</th>
-            <th scope="col" style="width: 17em;">Activity</th>
-            <th scope="col" style="width: 15em;">Employer</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="row-even">
-            <td style="width: 10em;">2022-09</td>
-            <td style="width: 10em;">2022-09</td>
-            <td style="width: 17em;">DataScience 101 Certified</td>
-            <td style="width: 15em;">IBM</td>
-        </tr>
-        <tr class="row-odd">
-            <td style="width: 10em;">2022-09</td>
-            <td style="width: 10em;">2022-09</td>
-            <td style="width: 17em;">French Word Power A2.1</td>
-            <td style="width: 15em;">Bereau Du Quebec, Mumbai</td>
-        </tr>
-        <tr class="row-even">
-            <td style="width: 10em;">2022-09</td>
-            <td style="width: 10em;">2022-10</td>
-            <td style="width: 17em;">MUN - Special Mention</td>
-            <td style="width: 15em;">Harvard Student Agencies</td>
-        </tr>
-        <tr class="row-odd">
-            <td style="width: 10em;">2022-06</td>
-            <td style="width: 10em;">2022-09</td>
-            <td style="width: 17em;">AI - Internship</td>
-            <td style="width: 15em;">clevered.com</td>
-        </tr>
-        <tr class="row-even">
-            <td style="width: 10em;">2022-04</td>
-            <td style="width: 10em;">Present</td>
-            <td style="width: 17em;">Student Council-Class Rep</td>
-            <td style="width: 15em;">St Aloysius PU College</td>
-        </tr>
-        <tr class="row-odd">
-            <td style="width: 10em;">2021-11</td>
-            <td style="width: 10em;">2021-11</td>
-            <td style="width: 17em;">Hard Sell contest winner</td>
-            <td style="width: 15em;">St Aloysius PU College</td>
-        </tr>
-        <tr class="row-even">
-            <td style="width: 10em;">2021-09</td>
-            <td style="width: 10em;">2021-09</td>
-            <td style="width: 17em;">SAPMUN 2021 Winner</td>
-            <td style="width: 15em;">St Aloysius PU College</td>
-        </tr>
-        <tr class="row-odd">
-            <td style="width: 10em;">2021-05</td>
-            <td style="width: 10em;">2021-05</td>
-            <td style="width: 17em;">Quiz Winner</td>
-            <td style="width: 15em;">St Aloysius PU College</td>
-        </tr>
-        <tr class="row-even">
-            <td style="width: 10em;">2020-11</td>
-            <td style="width: 10em;">2020-11</td>
-            <td style="width: 17em;">Debate Workshop</td>
-            <td style="width: 15em;">Debate Mate</td>
-        </tr>
-        <tr class="row-odd">
-            <td style="width: 10em;">2020-08</td>
-            <td style="width: 10em;">2020-08</td>
-            <td style="width: 17em;">French-A1 Certified</td>
-            <td style="width: 15em;">Busuu</td>
-        </tr>
-        <tr class="row-even">
-            <td style="width: 10em;">2020-04</td>
-            <td style="width: 10em;">2021-03</td>
-            <td style="width: 17em;">Computer Club Secretary</td>
-            <td style="width: 15em;">St Aloysius PU College</td>
-        </tr>
-        <tr class="row-odd">
-            <td style="width: 10em;">2020-01</td>
-            <td style="width: 10em;">Present</td>
-            <td style="width: 17em;">Lead Developer</td>
-            <td style="width: 15em;">projec­tskilltree.com</td>
-        </tr>
-        <tr class="row-even">
-            <td style="width: 10em;">2019-11</td>
-            <td style="width: 10em;">2019-11</td>
-            <td style="width: 17em;">SAPMUN 2019 Participant</td>
-            <td style="width: 15em;">St Aloysius PU College</td>
-        </tr>
-        <tr class="row-odd">
-            <td style="width: 10em;">2019-11</td>
-            <td style="width: 10em;">2020-06</td>
-            <td style="width: 17em;">Project Lead</td>
-            <td style="width: 15em;">Nexus Aurora</td>
-        </tr>
-        <tr class="row-even">
-            <td style="width: 10em;">2019-11</td>
-            <td style="width: 10em;">2019-11</td>
-            <td style="width: 17em;">Science Expo Participant</td>
-            <td style="width: 15em;">Vikaas College</td>
-        </tr>
-        <tr class="row-odd">
-            <td style="width: 10em;">2019-09</td>
-            <td style="width: 10em;">2019-12</td>
-            <td style="width: 17em;">Book Author</td>
-            <td style="width: 15em;">BookTitle: Perspective AI</td>
-        </tr>
-        <tr class="row-even">
-            <td style="width: 10em;">2019-06</td>
-            <td style="width: 10em;">2020-04</td>
-            <td style="width: 17em;">Class Valedi­ctorian</td>
-            <td style="width: 15em;">St Theresa's School</td>
-        </tr>
-        <tr class="row-odd">
-            <td style="width: 10em;">2018-02</td>
-            <td style="width: 10em;">2018-02</td>
-            <td style="width: 17em;">National Champion</td>
-            <td style="width: 15em;">Conquest IQ Olympiad</td>
-        </tr>
-        <tr class="row-even">
-            <td style="width: 10em;">2017-09</td>
-            <td style="width: 10em;">2018-06</td>
-            <td style="width: 17em;">District Winner</td>
-            <td style="width: 15em;">Wiz National Spell Bee</td>
-        </tr>
-    </tbody>
-</table>
-
----
+<!-- Timeline Widget -->
+<h2 class="gradient-text animate-fade-in">📊 Career Timeline</h2>
+<div class="timeline animate-fade-in" style="position: relative; max-width: 1200px; margin: 20px auto;">
+  <div class="timeline-line" style="position: absolute; top: 0; bottom: 0; left: 50%; width: 4px; background: linear-gradient(to bottom, #4568DC, #B06AB3); transform: translateX(-50%);"></div>
+  <div class="timeline-item" style="position: relative; margin-bottom: 30px; padding-left: 50%; clear: both;">
+    <div class="timeline-content project-card" style="position: relative; margin-left: 30px;">
+      <span class="timeline-date" style="position: absolute; left: -110px; background: linear-gradient(45deg, #4568DC, #B06AB3); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8em;">2022</span>
+      <h3>IIT Ropar AI Program</h3>
+      <p>Started the prestigious IIT program on Artificial Intelligence to deepen my knowledge in this rapidly evolving field.</p>
+    </div>
+  </div>
+  <div class="timeline-item" style="position: relative; margin-bottom: 30px; padding-right: 50%; clear: both; text-align: right;">
+    <div class="timeline-content project-card" style="position: relative; margin-right: 30px;">
+      <span class="timeline-date" style="position: absolute; right: -110px; background: linear-gradient(45deg, #B06AB3, #4568DC); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8em;">2021</span>
+      <h3>GeoMonitor Launch</h3>
+      <p>Developed and launched the cross-platform geopolitical news aggregator with AI-powered translation and analysis.</p>
+    </div>
+  </div>
+  <div class="timeline-item" style="position: relative; margin-bottom: 30px; padding-left: 50%; clear: both;">
+    <div class="timeline-content project-card" style="position: relative; margin-left: 30px;">
+      <span class="timeline-date" style="position: absolute; left: -110px; background: linear-gradient(45deg, #4568DC, #B06AB3); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8em;">2020</span>
+      <h3>Clevered.com Internship</h3>
+      <p>Completed a 4-month AI internship mentored by an Oxford professor, developing sentiment analysis for social media.</p>
+    </div>
+  </div>
+  <div class="timeline-item" style="position: relative; margin-bottom: 30px; padding-right: 50%; clear: both; text-align: right;">
+    <div class="timeline-content project-card" style="position: relative; margin-right: 30px;">
+      <span class="timeline-date" style="position: absolute; right: -110px; background: linear-gradient(45deg, #B06AB3, #4568DC); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8em;">2019</span>
+      <h3>Published "Perspective AI"</h3>
+      <p>Co-authored and published my first book on artificial intelligence from a teenager's perspective.</p>
+    </div>
+  </div>
+</div>
 
 		</div>
 		<div id="comments" class="thin">
