@@ -620,3 +620,27 @@ a:hover {
         margin-bottom: 2rem;
     }
 }
+
+/* Blockquote styling */
+blockquote {
+    border-left: 2px solid var(--highlight-color);
+    margin: 1.5rem 0;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: rgba(255, 51, 133, 0.05);
+}
+
+blockquote p {
+    margin: 0;
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--faded-text);
+    font-style: normal;
+}
