@@ -25,11 +25,16 @@
 	<link rel="stylesheet" href="{{ $style.Permalink }}" {{ printf "integrity=%q" $style.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous">
 	{{- block "head" . -}}{{- end }}
 	{{- range .Site.Params.customCSS }}
-	<link rel="stylesheet" href="{{ . | absURL }}">
-	{{- end }}
-	{{- if templates.Exists "partials/extra-head.html" -}}
-	{{ partial "extra-head.html" . }}
-	{{- end }}
+<link rel="stylesheet" href="{{ . | absURL }}">
+{{- end }}
+
+<!-- Umami Analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="3cdd3019-b071-4bdc-bbaa-b57689ffce5a"></script>
+<!-- End Umami Analytics -->
+
+{{- if templates.Exists "partials/extra-head.html" -}}
+{{ partial "extra-head.html" . }}
+{{- end }}
 </head>
 
 <body id="page">
