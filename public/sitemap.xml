@@ -5,10 +5,19 @@
     <loc>//localhost:1313/</loc>
     <lastmod>2025-03-31T08:38:35+05:30</lastmod>
   </url><url>
+    <loc>//localhost:1313/tags/agency/</loc>
+    <lastmod>2025-03-31T08:38:35+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/autonomy/</loc>
+    <lastmod>2025-03-31T08:38:35+05:30</lastmod>
+  </url><url>
     <loc>//localhost:1313/tags/philosophy/</loc>
     <lastmod>2025-03-31T08:38:35+05:30</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/</loc>
+    <lastmod>2025-03-31T08:38:35+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/self-development/</loc>
     <lastmod>2025-03-31T08:38:35+05:30</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/</loc>
@@ -22,6 +31,24 @@
   </url><url>
     <loc>//localhost:1313/posts/technofeudalism-and-the-return-to-the-real/</loc>
     <lastmod>2025-01-23T12:34:29+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/attention-economy/</loc>
+    <lastmod>2024-07-26T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/clarity/</loc>
+    <lastmod>2024-07-26T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/digital-life/</loc>
+    <lastmod>2024-07-26T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/cyber-slaves/</loc>
+    <lastmod>2024-07-26T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/society/</loc>
+    <lastmod>2024-07-26T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/technology/</loc>
+    <lastmod>2024-07-26T10:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/neuroplasticity---how-to-manipulate-reality/</loc>
     <lastmod>2023-06-16T00:08:35+05:30</lastmod>
@@ -84,9 +111,6 @@
     <lastmod>2021-07-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/how-to-type-faster/</loc>
-    <lastmod>2021-07-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/technology/</loc>
     <lastmod>2021-07-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/typing/</loc>
