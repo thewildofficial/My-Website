@@ -1,10 +1,11 @@
 {{- /* Replace with Hyvor Talk embed code */ -}}
-{{- if not hugo.IsServer }} {{/* Only render comments in production, not during local dev server unless needed */}}
+{{- /* Render comments only in production environment (e.g., Netlify build) */ -}}
+{{- if ne hugo.Environment "development" }}
 <script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
 <hyvor-talk-comments
   website-id="13053"
   page-id="{{ .File.UniqueID }}"
 ></hyvor-talk-comments>
 {{- else }}
-<p><i>Comments are disabled during local development (hugo server). They will appear on the live site.</i></p>
+<p><i>Comments are disabled during local development (hugo server). They will appear in production.</i></p>
 {{- end }}
