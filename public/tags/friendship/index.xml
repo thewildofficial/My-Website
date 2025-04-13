@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Friendship on Aban Hasan</title>
-    <link>//localhost:1313/tags/friendship/</link>
+    <link>/tags/friendship/</link>
     <description>Recent content in Friendship on Aban Hasan</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 10 Dec 2021 19:49:54 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/friendship/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/friendship/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Art of Human Connection: How to become the leader of your tribe</title>
-      <link>//localhost:1313/posts/the-art-of-human-connection--how-to-make-friends/</link>
+      <link>/posts/the-art-of-human-connection--how-to-make-friends/</link>
       <pubDate>Fri, 10 Dec 2021 19:49:54 +0530</pubDate>
-      <guid>//localhost:1313/posts/the-art-of-human-connection--how-to-make-friends/</guid>
+      <guid>/posts/the-art-of-human-connection--how-to-make-friends/</guid>
       <description>&lt;h3 id=&#34;are-you-an-extrovert-or-introvert&#34;&gt;Are you an Extrovert or Introvert?&lt;/h3&gt;&#xA;&lt;p&gt;Irrelevant question.&#xA;Why? Because all of us need, and deserve, a meaningful social connection, regardless of how we feel like in social situations.&#xA;We deserve to not feel awkward around other people, because inevitably we will have to deal with them.&#xA;The complex social structure of our society is what truly makes us human.&#xA;I have noticed many in the self-improvement community trying to act like this &lt;a href=&#34;https://www.urbandictionary.com/define.php?term=sigma%20male&#34;&gt;lone wolf, sigma male character&lt;/a&gt;, thinking that would help you excel in your work and ambitions.&lt;/p&gt;</description>
     </item>
   </channel>
