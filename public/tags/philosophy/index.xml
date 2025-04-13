@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Philosophy on Aban Hasan</title>
-    <link>//localhost:1313/tags/philosophy/</link>
+    <link>/tags/philosophy/</link>
     <description>Recent content in Philosophy on Aban Hasan</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 31 Mar 2025 08:38:35 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/philosophy/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The War Against Heteronomy</title>
-      <link>//localhost:1313/posts/thewaragainstheteronomy/</link>
-      <pubDate>Mon, 31 Mar 2025 08:38:35 +0530</pubDate>
-      <guid>//localhost:1313/posts/thewaragainstheteronomy/</guid>
-      <description>&lt;p&gt;&#xA;  &lt;img src=&#34;//localhost:1313/images/autonomy-header.jpg&#34; alt=&#34;A person standing at a crossroads with multiple paths branching outward&#34;&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Image: The Pathways of Choice - representing the autonomy that comes from recognizing our power to choose&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;prelude&#34;&gt;Prelude&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Our Great War&amp;rsquo;s a spiritual war. Our Great Depression is our lives.&lt;/p&gt;&#xA;&lt;p&gt;— Tyler Durden, Fight Club&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Recently, I came across a thread on X by the brilliant Andrej Karpathy, which made me reflect deeply on the nature of action and its relation to both individual fulfillment and collective progress.&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Sun, 13 Apr 2025 10:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/philosophy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Feeding the Hydra: Musings on Cyberslavery</title>
-      <link>//localhost:1313/posts/cyber-slaves/</link>
-      <pubDate>Fri, 26 Jul 2024 10:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/cyber-slaves/</guid>
-      <description>&lt;h2 id=&#34;the-hunger-for-clarity&#34;&gt;The Hunger for Clarity&lt;/h2&gt;&#xA;&lt;p&gt;Clarity.&lt;/p&gt;&#xA;&lt;p&gt;All we seek is clarity. Yet, it appears that everything around us – everything we see, everything we touch – is designed to be noisy, to disrupt every thought we have before it can fully form. Entire teams of researchers, scientists, psychologists devote their lives to finding and &amp;ldquo;pulling the right&amp;rdquo; switch in our minds, optimizing for engagement, for distraction.&lt;/p&gt;&#xA;&lt;p&gt;Our inherent capital – the finite time and vibrant youth we possess – is systematically siphoned off to feed the mainframe, the ever-hungry digital systems that thrive on our attention.&lt;/p&gt;</description>
+      <link>/posts/cyber-slaves/</link>
+      <pubDate>Sun, 13 Apr 2025 10:00:00 +0000</pubDate>
+      <guid>/posts/cyber-slaves/</guid>
+      <description>&lt;p&gt;Clarity.&lt;/p&gt;&#xA;&lt;p&gt;All we seek is clarity. Yet, it appears that everything around us – everything we see, everything we touch – is designed to be noisy, to disrupt every thought we have before it can fully form. Entire teams of researchers, scientists, psychologists devote their lives to finding and &amp;ldquo;pulling the right&amp;rdquo; switch in our minds, optimizing for engagement, for distraction.&lt;/p&gt;&#xA;&lt;p&gt;Our inherent capital – the finite time and vibrant youth we possess – is systematically siphoned off to feed the mainframe, the ever-hungry digital systems that thrive on our attention.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The War Against Heteronomy</title>
+      <link>/posts/thewaragainstheteronomy/</link>
+      <pubDate>Mon, 31 Mar 2025 08:38:35 +0530</pubDate>
+      <guid>/posts/thewaragainstheteronomy/</guid>
+      <description>&lt;p&gt;&#xA;  &lt;img src=&#34;/images/autonomy-header.jpg&#34; alt=&#34;A person standing at a crossroads with multiple paths branching outward&#34;&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Image: The Pathways of Choice - representing the autonomy that comes from recognizing our power to choose&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;prelude&#34;&gt;Prelude&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Our Great War&amp;rsquo;s a spiritual war. Our Great Depression is our lives.&lt;/p&gt;&#xA;&lt;p&gt;— Tyler Durden, Fight Club&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Recently, I came across a thread on X by the brilliant Andrej Karpathy, which made me reflect deeply on the nature of action and its relation to both individual fulfillment and collective progress.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
