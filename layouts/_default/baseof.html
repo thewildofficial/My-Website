@@ -23,6 +23,7 @@
 	{{ end -}}
 	{{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "css/style.css" . | toCSS | minify | fingerprint -}}
 	<link rel="stylesheet" href="{{ $style.Permalink }}" {{ printf "integrity=%q" $style.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous">
+	<link rel="stylesheet" href="{{ "css/tooltips.css" | relURL }}">
 	{{- block "head" . -}}{{- end }}
 	{{- range .Site.Params.customCSS }}
 <link rel="stylesheet" href="{{ . | absURL }}">
@@ -49,6 +50,16 @@
 	{{ end }}
 	{{ $theme_script := resources.Get "js/theme-control.js" | minify | fingerprint -}}
 	<script src="{{ $theme_script.Permalink }}" {{ printf "integrity=%q" $theme_script.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>
+
+<!-- Stagewise Toolbar (Development Only) -->
+{{ if eq (getenv "HUGO_ENV") "development" }}
+<script type="module">
+  import { initToolbar } from 'https://cdn.jsdelivr.net/npm/@stagewise/toolbar/+esm';
+  const stagewiseConfig = { plugins: [] };
+  initToolbar(stagewiseConfig);
+</script>
+{{ end }}
+<!-- End Stagewise Toolbar -->
 
 {{- if templates.Exists "partials/extra-foot.html" -}}
 {{ partial "extra-foot.html" . }}

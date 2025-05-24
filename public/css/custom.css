@@ -9,6 +9,12 @@
     --faded-text: #777;
     --button-bg: #333;
     --button-hover-bg: #444;
+    --background: #fff;
+    --primary-text: #333;
+    --secondary-text: #555;
+    --hover-bg: #f0f0f0;
+    --accent-color: #007bff;
+    --accent-text-color: #fff;
 }
 
 /* Base styles */
@@ -391,152 +397,6 @@ a:hover {
     border-bottom: none;
 }
 
-/* Table of Contents */
-#toc {
-    background-color: rgba(17, 17, 17, 0.5);
-    border: 1px solid rgba(51, 51, 51, 0.5);
-    border-radius: 4px;
-    padding: 1rem;
-    margin: 2rem 0;
-    position: relative;
-    transition: all 0.3s ease;
-    max-width: 300px;
-}
-
-.toc-title {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    color: var(--highlight-color);
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-#TableOfContents {
-    list-style: none;
-    padding: 0;
-}
-
-#TableOfContents ul {
-    list-style: none;
-    padding-left: 1rem;
-    margin: 0.5rem 0;
-}
-
-#TableOfContents a {
-    display: block;
-    padding: 0.25rem 0;
-    color: var(--text-color);
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-#TableOfContents a:hover {
-    color: var(--highlight-color);
-    text-decoration: none;
-}
-
-#TableOfContents li {
-    margin: 0.25rem 0;
-}
-
-/* Add a subtle close button */
-#toc .close-btn {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    width: 1.2rem;
-    height: 1.2rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    color: var(--text-color);
-    opacity: 0.5;
-    transition: opacity 0.2s ease;
-}
-
-#toc .close-btn:hover {
-    opacity: 1;
-}
-
-/* Add a subtle expand button */
-#toc .expand-btn {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    width: 1.2rem;
-    height: 1.2rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    color: var(--highlight-color);
-    opacity: 0.7;
-    transition: opacity 0.2s ease;
-    display: none;
-}
-
-#toc.collapsed .expand-btn {
-    display: block;
-}
-
-#toc.collapsed .close-btn {
-    display: none;
-}
-
-#toc.collapsed {
-    height: 3rem;
-    overflow: hidden;
-    padding-bottom: 0.5rem;
-}
-
-/* Add hover effect */
-#toc:hover {
-    background-color: rgba(17, 17, 17, 0.7);
-    border-color: rgba(51, 51, 51, 0.7);
-}
-
-/* Add scroll indicator */
-#toc::after {
-    content: '';
-    position: absolute;
-    right: 0.5rem;
-    bottom: 0.5rem;
-    width: 2px;
-    height: calc(100% - 1rem);
-    background: linear-gradient(
-        to bottom,
-        transparent 0%,
-        rgba(255, 255, 255, 0.1) 25%,
-        rgba(255, 255, 255, 0.1) 75%,
-        transparent 100%
-    );
-    opacity: 0.3;
-    pointer-events: none;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    #toc {
-        max-width: 100%;
-        margin: 1rem 0;
-    }
-
-    .toc-title {
-        font-size: 0.9rem;
-    }
-}
-
-/* Active section highlighting */
-#toc .active {
-    color: var(--highlight-color);
-    font-weight: 500;
-    margin-left: -0.2rem;
-    padding-left: 0.2rem;
-    border-left: 2px solid var(--highlight-color);
-}
-
 /* Copy button for code blocks */
 .copy-button {
     position: absolute;
@@ -644,3 +504,139 @@ blockquote cite {
     color: var(--faded-text);
     font-style: normal;
 }
+
+/* Table of Contents Styling - Updated to use theme variables */
+nav.toc {
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 2em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    max-height: 1000px;
+    opacity: 1;
+    visibility: visible;
+    overflow: hidden;
+}
+
+nav.toc h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: var(--highlight-color);
+}
+
+nav.toc ul, nav.toc ol {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+nav.toc ul ul, nav.toc ol ol {
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+nav.toc li {
+    margin-bottom: 8px;
+}
+
+nav.toc li a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav.toc li a:hover {
+    background-color: var(--button-hover-bg);
+    color: var(--highlight-color);
+}
+
+nav.toc li a.active {
+    background-color: var(--highlight-color);
+    color: var(--bg-color);
+    font-weight: bold;
+}
+
+/* ToC Header for Buttons */
+.toc-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Styling for ToC buttons */
+.toc-close-btn, .toc-expand-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 0 5px;
+    line-height: 1;
+    margin-left: 5px;
+}
+
+.toc-close-btn:hover, .toc-expand-btn:hover {
+    color: var(--highlight-color);
+}
+
+/* Collapsed state for ToC */
+nav.toc.collapsed {
+    max-height: 45px;
+    opacity: 0.9;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav.toc.collapsed > h2,
+nav.toc.collapsed > ul,
+nav.toc.collapsed > ol {
+    display: none;
+}
+
+/* Control button visibility based on collapsed state */
+nav.toc .toc-expand-btn {
+    display: none;
+}
+
+nav.toc.collapsed .toc-close-btn {
+    display: none;
+}
+
+nav.toc.collapsed .toc-expand-btn {
+    display: inline-block;
+}
+
+nav.toc.collapsed .toc-header {
+    margin-bottom: 0;
+}
+
+/* If you want the ToC to be sticky/fixed on the side */
+/*
+@media (min-width: 1024px) { 
+    nav.toc {
+        position: sticky;
+        top: 20px; 
+        width: 250px; 
+        float: right; 
+        margin-left: 20px;
+        max-height: calc(100vh - 40px); 
+        overflow-y: auto; 
+    }
+}
+*/
+
+/* Removed redundant :root block that defined generic fallbacks */
+
+/* Example for a dark theme if your site has one (already handled by main :root) */
+/*
+body.dark-mode {
+    ...
+}
+*/

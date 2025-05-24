@@ -2,171 +2,178 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Aban Hasan</title>
-    <link>/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content on Aban Hasan</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 13 Apr 2025 10:00:00 +0000</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Silicon &amp; Six-Shooters: AI as Manifest Destiny</title>
+      <link>//localhost:1313/posts/cowboys/</link>
+      <pubDate>Fri, 23 May 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/cowboys/</guid>
+      <description>&lt;div class=&#34;intro-blockquote&#34;&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;To be in software in 2025 is to be a cowboy in 1900. You&amp;rsquo;re living on the precipice of a bygone era, one that you barely comprehend is gone, as the industrial giants and their Pinkerton armies push you further west, towards an unknown horizon.&lt;/p&gt;&#xA;&lt;p&gt;The open range is closing, fences are going up, and the rules are changing. This isn&amp;rsquo;t just a shift; it&amp;rsquo;s a reckoning.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;&#xA;  &lt;img src=&#34;//localhost:1313/images/cowboy-precipice.jpg&#34; alt=&#34;A cowboy gazing from a precipice at a sprawling, futuristic landscape, symbolizing the new frontier of AI&#34;&gt;&#xA;{.styled-image}&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Feeding the Hydra: Musings on Cyberslavery</title>
-      <link>/posts/cyber-slaves/</link>
+      <link>//localhost:1313/posts/cyber-slaves/</link>
       <pubDate>Sun, 13 Apr 2025 10:00:00 +0000</pubDate>
-      <guid>/posts/cyber-slaves/</guid>
+      <guid>//localhost:1313/posts/cyber-slaves/</guid>
       <description>&lt;p&gt;Clarity.&lt;/p&gt;&#xA;&lt;p&gt;All we seek is clarity. Yet, it appears that everything around us – everything we see, everything we touch – is designed to be noisy, to disrupt every thought we have before it can fully form. Entire teams of researchers, scientists, psychologists devote their lives to finding and &amp;ldquo;pulling the right&amp;rdquo; switch in our minds, optimizing for engagement, for distraction.&lt;/p&gt;&#xA;&lt;p&gt;Our inherent capital – the finite time and vibrant youth we possess – is systematically siphoned off to feed the mainframe, the ever-hungry digital systems that thrive on our attention.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The War Against Heteronomy</title>
-      <link>/posts/thewaragainstheteronomy/</link>
+      <link>//localhost:1313/posts/thewaragainstheteronomy/</link>
       <pubDate>Mon, 31 Mar 2025 08:38:35 +0530</pubDate>
-      <guid>/posts/thewaragainstheteronomy/</guid>
-      <description>&lt;p&gt;&#xA;  &lt;img src=&#34;/images/autonomy-header.jpg&#34; alt=&#34;A person standing at a crossroads with multiple paths branching outward&#34;&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Image: The Pathways of Choice - representing the autonomy that comes from recognizing our power to choose&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;prelude&#34;&gt;Prelude&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Our Great War&amp;rsquo;s a spiritual war. Our Great Depression is our lives.&lt;/p&gt;&#xA;&lt;p&gt;— Tyler Durden, Fight Club&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Recently, I came across a thread on X by the brilliant Andrej Karpathy, which made me reflect deeply on the nature of action and its relation to both individual fulfillment and collective progress.&lt;/p&gt;</description>
+      <guid>//localhost:1313/posts/thewaragainstheteronomy/</guid>
+      <description>&lt;p&gt;&#xA;  &lt;img src=&#34;//localhost:1313/images/autonomy-header.jpg&#34; alt=&#34;A person standing at a crossroads with multiple paths branching outward&#34;&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Image: The Pathways of Choice - representing the autonomy that comes from recognizing our power to choose&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;prelude&#34;&gt;Prelude&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Our Great War&amp;rsquo;s a spiritual war. Our Great Depression is our lives.&lt;/p&gt;&#xA;&lt;p&gt;— Tyler Durden, Fight Club&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Recently, I came across a thread on X by the brilliant Andrej Karpathy, which made me reflect deeply on the nature of action and its relation to both individual fulfillment and collective progress.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Technofeudalism and the Return to the Real</title>
-      <link>/posts/technofeudalism-and-the-return-to-the-real/</link>
+      <link>//localhost:1313/posts/technofeudalism-and-the-return-to-the-real/</link>
       <pubDate>Thu, 23 Jan 2025 12:34:29 +0530</pubDate>
-      <guid>/posts/technofeudalism-and-the-return-to-the-real/</guid>
+      <guid>//localhost:1313/posts/technofeudalism-and-the-return-to-the-real/</guid>
       <description>&lt;p&gt;What makes the modern manifestation of cloud capital, integral to the &lt;a href=&#34;https://thebeautifultruth.org/the-basics/what-is-technofeudalism/&#34;&gt;Technofeudalism&lt;/a&gt; system we live under, is that it&amp;rsquo;s impossible to go anywhere without having it glaring at you. It hovers above the heads of modern people like a cloud, taking all our attention and carefully curating it, effectively extracting life energy and transmuting it into data and narrative.&lt;/p&gt;&#xA;&lt;p&gt;Nick Land extensively talks about hyperstition, and the memesis we see via social media enables false narratives to take on a life of their own, often manufactured by the techno-oligarchs themselves in service of their political ambitions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Neuroplasticity: How to Manipulate Reality</title>
-      <link>/posts/neuroplasticity---how-to-manipulate-reality/</link>
+      <link>//localhost:1313/posts/neuroplasticity---how-to-manipulate-reality/</link>
       <pubDate>Fri, 16 Jun 2023 00:08:35 +0530</pubDate>
-      <guid>/posts/neuroplasticity---how-to-manipulate-reality/</guid>
+      <guid>//localhost:1313/posts/neuroplasticity---how-to-manipulate-reality/</guid>
       <description>&lt;h2 id=&#34;the-remarkable-capacity-for-change-in-the-human-brain&#34;&gt;The Remarkable Capacity for Change in the Human Brain&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Most people go through their entire lives without truly understanding the astonishing potential for change that exists within the human brain.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;It is commonly believed that our capacity for learning diminishes over time, with the assumption that we can only learn effectively during our childhood years. While this may be true for the majority, I argue that by following specific protocols, not only can we sustain learning throughout our lives, but we can also enhance it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Art of Human Connection: How to become the leader of your tribe</title>
-      <link>/posts/the-art-of-human-connection--how-to-make-friends/</link>
+      <link>//localhost:1313/posts/the-art-of-human-connection--how-to-make-friends/</link>
       <pubDate>Fri, 10 Dec 2021 19:49:54 +0530</pubDate>
-      <guid>/posts/the-art-of-human-connection--how-to-make-friends/</guid>
+      <guid>//localhost:1313/posts/the-art-of-human-connection--how-to-make-friends/</guid>
       <description>&lt;h3 id=&#34;are-you-an-extrovert-or-introvert&#34;&gt;Are you an Extrovert or Introvert?&lt;/h3&gt;&#xA;&lt;p&gt;Irrelevant question.&#xA;Why? Because all of us need, and deserve, a meaningful social connection, regardless of how we feel like in social situations.&#xA;We deserve to not feel awkward around other people, because inevitably we will have to deal with them.&#xA;The complex social structure of our society is what truly makes us human.&#xA;I have noticed many in the self-improvement community trying to act like this &lt;a href=&#34;https://www.urbandictionary.com/define.php?term=sigma%20male&#34;&gt;lone wolf, sigma male character&lt;/a&gt;, thinking that would help you excel in your work and ambitions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Doing What You Got to Do: A Systematic Pathway to Success</title>
-      <link>/posts/doing-what-you-got-to-do--a-systematic-pathway-to-success/</link>
+      <link>//localhost:1313/posts/doing-what-you-got-to-do--a-systematic-pathway-to-success/</link>
       <pubDate>Sun, 05 Dec 2021 11:01:26 +0530</pubDate>
-      <guid>/posts/doing-what-you-got-to-do--a-systematic-pathway-to-success/</guid>
+      <guid>//localhost:1313/posts/doing-what-you-got-to-do--a-systematic-pathway-to-success/</guid>
       <description>&lt;h3 id=&#34;there-is-something-extremely-important-that-i-have-learned-over-the-last-few-months&#34;&gt;There is something extremely important that I have learned over the last few months.&lt;/h3&gt;&#xA;&lt;p&gt;If one has gotten into their self-improvement journey, they will eventually realize one thing: you would have to &lt;strong&gt;do the hard work, ESPECIALLY when you don&amp;rsquo;t feel like it&lt;/strong&gt;.&#xA;There is great power in getting something hard or boring to become a routine habit just by doing it repeatedly. Imagine going to the gym in the morning without a single word of protest every day. Or… studying for 6 hours with no feelings of resentment.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Learning From Media vs Learning From Experience: Which Is Better?</title>
-      <link>/posts/mediavsexperience/</link>
+      <link>//localhost:1313/posts/mediavsexperience/</link>
       <pubDate>Sun, 28 Nov 2021 17:23:57 +0530</pubDate>
-      <guid>/posts/mediavsexperience/</guid>
+      <guid>//localhost:1313/posts/mediavsexperience/</guid>
       <description>&lt;h2 id=&#34;times-have-changed&#34;&gt;Times have changed.&lt;/h2&gt;&#xA;&lt;p&gt;Today, the man who can adapt the fastest and handle the most information is the man who wins.&lt;/p&gt;&#xA;&lt;p&gt;This shift in focus of the economy from physical labor to &lt;em&gt;intellectual&lt;/em&gt; labor has created an industry around learning, in contrast to education.&lt;/p&gt;&#xA;&lt;p&gt;This industry is what I like to call, the &lt;strong&gt;absorb and learn&lt;/strong&gt; niche, which serves information through media like:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;watchable courses (YouTube, udemy, skillshare and the plethora of other course providers)&lt;/li&gt;&#xA;&lt;li&gt;pamphlets and books&lt;/li&gt;&#xA;&lt;li&gt;certifications&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;All these options, makes it more difficult to choose a medium and stick with it. Personally,i find myself searching on sites rather than actually doing some deliberate practice.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Internet:Advantages and Disadvantages</title>
-      <link>/posts/the-internet---advantages-and-disadvantages/</link>
+      <link>//localhost:1313/posts/the-internet---advantages-and-disadvantages/</link>
       <pubDate>Sun, 21 Nov 2021 18:53:12 +0530</pubDate>
-      <guid>/posts/the-internet---advantages-and-disadvantages/</guid>
+      <guid>//localhost:1313/posts/the-internet---advantages-and-disadvantages/</guid>
       <description>&lt;h2 id=&#34;foreword&#34;&gt;Foreword&lt;/h2&gt;&#xA;&lt;p&gt;Hello dear reader! This is a college essay i wrote a couple of weeks ago for a school project, I thought why not upload it on my blog, since i havent done that in so long lol.&lt;/p&gt;&#xA;&lt;p&gt;Well, dont take this as an actual post, more of a filler that you may or may not want to read :D&lt;/p&gt;&#xA;&lt;h1 id=&#34;the-advantages-and-disadvantages-of-the-internet-college-essay&#34;&gt;The Advantages and disadvantages of the internet: college essay&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;For better or for worse,&#xA;The internet has become a ubiquitous tool in our modern-day existence.&#xA;It has become a means of propagating communication,scholarly research, Ideas.&#xA;The internet is a repository containing all of known human history.&#xA;It is a place to turn to when you want to find unique solutions.&#xA;However, Not everything is sunshine and rainbows in the interwebs. There are serious concerns that will have to be addressed for what we call the internet a constructive,free and complimentary platform&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to Pick a Programming Language</title>
-      <link>/posts/how-to-pick-a-programming-language/</link>
+      <link>//localhost:1313/posts/how-to-pick-a-programming-language/</link>
       <pubDate>Fri, 20 Aug 2021 12:33:41 +0530</pubDate>
-      <guid>/posts/how-to-pick-a-programming-language/</guid>
+      <guid>//localhost:1313/posts/how-to-pick-a-programming-language/</guid>
       <description>&lt;h2 id=&#34;software-really-is-a-beautiful-thing&#34;&gt;Software really is a beautiful thing.&lt;/h2&gt;&#xA;&lt;p&gt;We often take the magical applications we use every single day for granted. Chances are that if you are reading this, you are curious on how to make your own, but you find the dozens of languages and frameworks intimidating.&#xA;I hope to guide you through the SE world through this blog post, and clear up the misconceptions one may have.&lt;/p&gt;&#xA;&lt;p&gt;I for one, have struggled to know what kind of developer I wanted to be when I first got exposed to the idea of writing code as a hobby. There are so many avenues and specializations one can take. I always pictured a branched tree or void-black tunnels.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Mental Drain of Studying and How to Deal With It</title>
-      <link>/posts/the-mental-drain-of-studying-and-how-to-deal-with-it/</link>
+      <link>//localhost:1313/posts/the-mental-drain-of-studying-and-how-to-deal-with-it/</link>
       <pubDate>Sun, 08 Aug 2021 18:45:50 +0530</pubDate>
-      <guid>/posts/the-mental-drain-of-studying-and-how-to-deal-with-it/</guid>
+      <guid>//localhost:1313/posts/the-mental-drain-of-studying-and-how-to-deal-with-it/</guid>
       <description>&lt;h3 id=&#34;the-mental-drain-of-studying&#34;&gt;The mental drain of Studying&lt;/h3&gt;&#xA;&lt;p&gt;A lot of us approach studying as a chore just because our parents, teachers and society in general expects us to do well in our academics. The academic journey can be rather inundating and boring. The very thought of studying and examinations can cause a lot of distress for students(at least I can speak for myself).&lt;/p&gt;&#xA;&lt;h3 id=&#34;why-can-be-studying-so-difficult&#34;&gt;Why can be studying so difficult&lt;/h3&gt;&#xA;&lt;p&gt;studying may not be the most appealing thing in the world. Sitting for multiple hours looking at static books is not exactly what our survivalist brains were made for. There are a myriad of reasons why we may find studying undesirable, some of them being:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Eating Clean: How to Maintain a Guilt Free Calorie Defict</title>
-      <link>/posts/eating-clean--how-to-maintain-a-guilt-free-calorie-defict/</link>
+      <link>//localhost:1313/posts/eating-clean--how-to-maintain-a-guilt-free-calorie-defict/</link>
       <pubDate>Sat, 31 Jul 2021 20:31:06 +0530</pubDate>
-      <guid>/posts/eating-clean--how-to-maintain-a-guilt-free-calorie-defict/</guid>
+      <guid>//localhost:1313/posts/eating-clean--how-to-maintain-a-guilt-free-calorie-defict/</guid>
       <description>&lt;h3 id=&#34;why-eat-cleaner&#34;&gt;Why eat cleaner&lt;/h3&gt;&#xA;&lt;p&gt;You may have noticed it, our foods have gotten more &lt;strong&gt;processed and less nutritious&lt;/strong&gt; in the last hundred years.&#xA;Nutrition has commercially lost all value.&#xA;Companies now tend to prioritize easily consumable and producible foods. But have you ever considered how this may be impacting your health?&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-dangers-of-highly-processed-foods&#34;&gt;The dangers of highly processed foods&lt;/h3&gt;&#xA;&lt;p&gt;heavily processed foods often interfere with natural macro levels. They tend to not have necessary vitamins and fibers, and are filled with excess fats, sugars and sodium.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Practice of Journaling in Self-Improvement</title>
-      <link>/posts/the-practice-of-journaling-in-self-improvement/</link>
+      <link>//localhost:1313/posts/the-practice-of-journaling-in-self-improvement/</link>
       <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>/posts/the-practice-of-journaling-in-self-improvement/</guid>
+      <guid>//localhost:1313/posts/the-practice-of-journaling-in-self-improvement/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;“Fill your paper with the breathings of your heart.” – William Wordsworth&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;I have recently taken to the habit of journaling. I have come to appreciate the process of putting your thoughts on paper, and I hope I can convince you to do the same 🧠 📄&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-journal&#34;&gt;Why Journal?&lt;/h2&gt;&#xA;&lt;p&gt;Journaling as a practice has enormous benefits. The main one that attracted me, was that it helps declutter and lapidify your thoughts.&#xA;In the modern internet age, there is a phenomena called &lt;em&gt;information overload&lt;/em&gt;. If you don&amp;rsquo;t actively preserve them, your thoughts end up fleeting, and you lose so many potentially incredible ideas.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to Type Faster</title>
-      <link>/posts/how-to-type-faster/</link>
+      <link>//localhost:1313/posts/how-to-type-faster/</link>
       <pubDate>Sat, 17 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>/posts/how-to-type-faster/</guid>
+      <guid>//localhost:1313/posts/how-to-type-faster/</guid>
       <description>&lt;h1 id=&#34;typing-has-become-and-exceedingly-useful-skill-over-the-last-few-years&#34;&gt;Typing has become and exceedingly useful skill over the last few years.&lt;/h1&gt;&#xA;&lt;p&gt;My journey started with a single link. A friend wanted to compare our typing speeds. At the time, i was pretty slow, having to look down at my keyboard every time I wanted to type a single character (I cringe at the thought, in retrospect).&#xA;At the time, everyone were much faster than me, I was at a slow 25 WPM and didn&amp;rsquo;t care much about it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Benefits of Cold Showers</title>
-      <link>/posts/benefits-of-cold-showers/</link>
+      <link>//localhost:1313/posts/benefits-of-cold-showers/</link>
       <pubDate>Wed, 07 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>/posts/benefits-of-cold-showers/</guid>
+      <guid>//localhost:1313/posts/benefits-of-cold-showers/</guid>
       <description>&lt;h2 id=&#34;cold-showers-are-becoming-cool-again&#34;&gt;Cold Showers are becoming cool again.&lt;/h2&gt;&#xA;&lt;p&gt;From the lifestyles of US Marines, to the legendary Wim Hof (AKA the Iceman), cold showers have become synonymous with the Healthy Grind set.&#xA;Many reports, backed by plenty of &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5025014/&#34;&gt;studies&lt;/a&gt; have found pretty eye-opening benefits from this seemingly trivial ritual. Some benefits often talked about are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Increased testosterone/alertness&lt;/li&gt;&#xA;&lt;li&gt;Stronger Immunity&lt;/li&gt;&#xA;&lt;li&gt;Faster Recovery after exercising&lt;/li&gt;&#xA;&lt;li&gt;Better Skin Quality&lt;/li&gt;&#xA;&lt;li&gt;Helps in burning fat&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;sounds-good-but-why&#34;&gt;Sounds good… But why?&lt;/h2&gt;&#xA;&lt;p&gt;I think that the idea of cold showers is more of a mindset thing. In the current day and age, most of us take things for granted and become very &lt;em&gt;comfortable&lt;/em&gt; with our lives. This is a problem because the moment we bask in the luxuries of modern living, we &lt;strong&gt;stop growing&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Concept of Motivation:How to Always Get Things Done</title>
-      <link>/posts/the-concept-of-motivation---how-to-always-get-things-done/</link>
+      <link>//localhost:1313/posts/the-concept-of-motivation---how-to-always-get-things-done/</link>
       <pubDate>Tue, 29 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>/posts/the-concept-of-motivation---how-to-always-get-things-done/</guid>
+      <guid>//localhost:1313/posts/the-concept-of-motivation---how-to-always-get-things-done/</guid>
       <description>&lt;h2 id=&#34;motivation-has-a-shelf-life&#34;&gt;Motivation has a shelf life.&lt;/h2&gt;&#xA;&lt;p&gt;It changes like the weather.&#xA;Although it is a seasonal phenomenon, it still carries a great deal of power.&lt;/p&gt;&#xA;&lt;p&gt;In this blog post, I aim to explain how you can motivate yourself to do hard habits, even though you may feel low.&lt;/p&gt;&#xA;&lt;h2 id=&#34;step-one-genuinely-be-interested-in-whatever-you-want-to-pursue&#34;&gt;Step One: Genuinely be interested in whatever you want to pursue.&lt;/h2&gt;&#xA;&lt;p&gt;You cannot be internally motivated to do anything when you do not like doing it. If you pursue a skill or task that you generally like (or have a strong incentive to do), you are more likely to have the motivation to become very good at it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Atomic Habits by James Clear:Book Review</title>
-      <link>/posts/atomic-habits-by-james-clear/</link>
+      <link>//localhost:1313/posts/atomic-habits-by-james-clear/</link>
       <pubDate>Sat, 26 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>/posts/atomic-habits-by-james-clear/</guid>
+      <guid>//localhost:1313/posts/atomic-habits-by-james-clear/</guid>
       <description>&lt;h2 id=&#34;this-is-a-legendary-book-its-reputation-proceeds-it&#34;&gt;This is a legendary book, its reputation proceeds it.&lt;/h2&gt;&#xA;&lt;p&gt;All the productivity greats like &lt;a href=&#34;https://www.youtube.com/user/electrickeye91&#34;&gt;Thomas Frank&lt;/a&gt; and &lt;a href=&#34;https://www.youtube.com/c/aliabdaal/videos&#34;&gt;Ali Abdaal&lt;/a&gt; have recommended it…so this month I have decided to check it out.&lt;/p&gt;&#xA;&lt;p&gt;And boy, does it deliver.&lt;/p&gt;&#xA;&lt;h2 id=&#34;core-ideas&#34;&gt;Core ideas&lt;/h2&gt;&#xA;&lt;p&gt;First, I think we should define what an “Atomic Habit” really is.&#xA;Many of us think that to be successful, we should do great feats…but in fact, that is &lt;strong&gt;not&lt;/strong&gt; true at all!&#xA;The Greatest achievements come from the smallest changes that are done &lt;em&gt;consistently&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Digital Minimalism by Cal Newport: Book Review</title>
-      <link>/posts/digital-minimilism-by-cal-newport--book-review/</link>
+      <link>//localhost:1313/posts/digital-minimilism-by-cal-newport--book-review/</link>
       <pubDate>Wed, 16 Jun 2021 16:06:37 +0530</pubDate>
-      <guid>/posts/digital-minimilism-by-cal-newport--book-review/</guid>
+      <guid>//localhost:1313/posts/digital-minimilism-by-cal-newport--book-review/</guid>
       <description>&lt;h2 id=&#34;yet-another-cal-newport-review-ay&#34;&gt;Yet Another Cal Newport Review, ay?&lt;/h2&gt;&#xA;&lt;p&gt;You may be beginning to notice a pattern here. But seriously, The man is such an intuitive and practical writer.&lt;/p&gt;&#xA;&lt;p&gt;If you are anything like me, you may find that a lot of precious time gets sucked away by the internet, or digital world. In fact, this has become such a problem that &lt;a href=&#34;https://www.pewresearch.org/internet/2015/04/09/teens-social-media-technology-2015/&#34;&gt;92% of teens go online daily, and 24% say they go online “almost constantly.”&lt;/a&gt;&#xA;The internet may be really useful, but if it manages to control US, we know that we are making some serious mistakes.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Importance of Sleep in Learning</title>
-      <link>/posts/the-importance-of-sleep-in-learning/</link>
+      <link>//localhost:1313/posts/the-importance-of-sleep-in-learning/</link>
       <pubDate>Fri, 11 Jun 2021 23:49:25 +0530</pubDate>
-      <guid>/posts/the-importance-of-sleep-in-learning/</guid>
+      <guid>//localhost:1313/posts/the-importance-of-sleep-in-learning/</guid>
       <description>&lt;p&gt;I am writing this blog post at 11:55 AM out of a great need to express my thoughts about sleep,the tame death that envelopes us all.&lt;/p&gt;&#xA;&lt;p&gt;I find that in our modern world,sleep is often put aside,or even overlooked. I have recently found a &lt;a href=&#34;https://www.cdc.gov/media/releases/2016/p0215-enough-sleep.html&#34;&gt;study&lt;/a&gt; by the american goverment that asserts that 1 in 3 adults &lt;strong&gt;are chronically sleep deprived.&lt;/strong&gt; These numbers are shocking and should make us reconsider our &lt;em&gt;view&lt;/em&gt; on sleep.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Deep Work by Cal Newport:Book Review</title>
-      <link>/posts/deep-work-by-cal-newport-book-review/</link>
+      <link>//localhost:1313/posts/deep-work-by-cal-newport-book-review/</link>
       <pubDate>Tue, 08 Jun 2021 11:57:29 +0530</pubDate>
-      <guid>/posts/deep-work-by-cal-newport-book-review/</guid>
+      <guid>//localhost:1313/posts/deep-work-by-cal-newport-book-review/</guid>
       <description>&lt;h1 id=&#34;productivity-books-we-all-read-them&#34;&gt;Productivity books, we all read them&lt;/h1&gt;&#xA;&lt;p&gt;kinda is becoming my guilty pleasure at this point. However, I have to give the book “Deep Work” some credit.&#xA;Although this is my second reading, I still find enormous meaning from it.&lt;/p&gt;&#xA;&lt;p&gt;The book is a non-fiction thesis on how “knowledge work” is valued in the economy, and how top achievers actually succeed. It also tackles the idea of “information overload” in our modern digital age.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Learning to Hack: A Resource Guide</title>
-      <link>/posts/learning-to-hack---a-resource-guide./</link>
+      <link>//localhost:1313/posts/learning-to-hack---a-resource-guide./</link>
       <pubDate>Sun, 16 May 2021 10:54:36 +0530</pubDate>
-      <guid>/posts/learning-to-hack---a-resource-guide./</guid>
+      <guid>//localhost:1313/posts/learning-to-hack---a-resource-guide./</guid>
       <description>&lt;h2 id=&#34;being-a-hacker-sounds-really-cool&#34;&gt;&lt;strong&gt;Being a hacker sounds really cool.&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;But how do you become one?&lt;/p&gt;&#xA;&lt;p&gt;In this resource guide, i will try to tackle this question by identifying a few essential &lt;em&gt;skills and websites&lt;/em&gt; that helped (and is continuing to help) me learn how to hack.&lt;/p&gt;&#xA;&lt;h1 id=&#34;1-googling&#34;&gt;1. googling&lt;/h1&gt;&#xA;&lt;p&gt;This is one of the most underrated and valuable skills to have as someone who works with computers. Being able to &lt;em&gt;find information&lt;/em&gt; and &lt;em&gt;research&lt;/em&gt; will certainly get you further in the cybersphere.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>/about/</link>
+      <link>//localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/about/</guid>
+      <guid>//localhost:1313/about/</guid>
       <description>&lt;h1 align=&#34;center&#34;&gt;&lt;img src=&#34;https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif&#34; width=&#34;32&#34;&gt; Hi, I&#39;m Aban!&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;m 19 years old, currently based in Ottawa 🇨🇦&lt;/p&gt;&#xA;&lt;p&gt;I see myself as an ambitious and perispicacious individual and have always been fascinated by computers and human relationships. I believe that business and technology skills are a powerful combination and hence really seek to equip myself with the best of both worlds.&lt;/p&gt;&#xA;&lt;p&gt;I commit myself to make the world a better place through technology, personal development and innovation.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>/portfolio/</link>
+      <link>//localhost:1313/portfolio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/portfolio/</guid>
-      <description>&lt;style&gt;&#xA;/* Base animations */&#xA;@keyframes fadeIn {&#xA;  from { opacity: 0; transform: translateY(20px); }&#xA;  to { opacity: 1; transform: translateY(0); }&#xA;}&#xA;&#xA;@keyframes pulse {&#xA;  0% { transform: scale(1); }&#xA;  50% { transform: scale(1.05); }&#xA;  100% { transform: scale(1); }&#xA;}&#xA;&#xA;@keyframes gradientFlow {&#xA;  0% { background-position: 0% 50%; }&#xA;  50% { background-position: 100% 50%; }&#xA;  100% { background-position: 0% 50%; }&#xA;}&#xA;&#xA;@keyframes float {&#xA;  0% { transform: translateY(0px); }&#xA;  50% { transform: translateY(-10px); }&#xA;  100% { transform: translateY(0px); }&#xA;}&#xA;&#xA;/* Apply animations to elements */&#xA;.animate-fade-in {&#xA;  animation: fadeIn 0.8s ease forwards;&#xA;  opacity: 0;&#xA;}&#xA;&#xA;.animate-pulse:hover {&#xA;  animation: pulse 1s infinite;&#xA;}&#xA;&#xA;.delay-100 { animation-delay: 0.1s; }&#xA;.delay-200 { animation-delay: 0.2s; }&#xA;.delay-300 { animation-delay: 0.3s; }&#xA;.delay-400 { animation-delay: 0.4s; }&#xA;.delay-500 { animation-delay: 0.5s; }&#xA;&#xA;/* Enhanced styling */&#xA;.gradient-text {&#xA;  background: linear-gradient(45deg, #4568DC, #B06AB3, #4568DC);&#xA;  background-size: 200% auto;&#xA;  background-clip: text;&#xA;  -webkit-background-clip: text;&#xA;  -webkit-text-fill-color: transparent;&#xA;  animation: gradientFlow 3s ease infinite;&#xA;}&#xA;&#xA;.gradient-border {&#xA;  position: relative;&#xA;  border-radius: 10px;&#xA;  padding: 1px;&#xA;  background: linear-gradient(45deg, #4568DC, #B06AB3, #4568DC);&#xA;  background-size: 200% auto;&#xA;  animation: gradientFlow 3s ease infinite;&#xA;}&#xA;&#xA;.project-card {&#xA;  transition: transform 0.3s, box-shadow 0.3s;&#xA;  border-left: 4px solid transparent;&#xA;  background: rgba(255, 255, 255, 0.05);&#xA;  border-radius: 8px;&#xA;  padding: 20px;&#xA;  margin-bottom: 15px;&#xA;}&#xA;&#xA;.project-card:hover {&#xA;  transform: translateY(-5px);&#xA;  box-shadow: 0 10px 20px rgba(0,0,0,0.1);&#xA;  border-left: 4px solid #4568DC;&#xA;}&#xA;&#xA;.floating {&#xA;  animation: float 3s ease-in-out infinite;&#xA;}&#xA;&#xA;/* Dark mode compatibility */&#xA;.intro-box {&#xA;  background-color: rgba(30, 30, 30, 0.7);&#xA;  color: #f0f0f0;&#xA;  padding: 20px;&#xA;  border-radius: 9px;&#xA;}&#xA;&#xA;/* For light mode if needed */&#xA;@media (prefers-color-scheme: light) {&#xA;  .intro-box {&#xA;    background-color: white;&#xA;    color: #333;&#xA;  }&#xA;}&#xA;&#xA;/* Responsive adjustments */&#xA;@media (max-width: 768px) {&#xA;  .language-container {&#xA;    flex-direction: column;&#xA;    align-items: center;&#xA;  }&#xA;}&#xA;&lt;/style&gt;&#xA;&lt;!-- Script imports for enhanced animations --&gt;&#xA;&lt;script src=&#34;/js/3d-background.js&#34; defer&gt;&lt;/script&gt;&#xA;&lt;script&gt;&#xA;document.addEventListener(&#39;DOMContentLoaded&#39;, function() {&#xA;  // Fix for header visibility - redundant but ensures it works&#xA;  setTimeout(function() {&#xA;    const header = document.querySelector(&#39;h1.gradient-text&#39;);&#xA;    const introBox = document.querySelector(&#39;.gradient-border.animate-fade-in&#39;);&#xA;    &#xA;    if (header) {&#xA;      header.style.opacity = &#39;1&#39;;&#xA;      header.style.visibility = &#39;visible&#39;;&#xA;      header.style.position = &#39;relative&#39;;&#xA;      header.style.zIndex = &#39;100&#39;;&#xA;    }&#xA;    &#xA;    if (introBox) {&#xA;      introBox.style.opacity = &#39;1&#39;;&#xA;      introBox.style.visibility = &#39;visible&#39;;&#xA;      introBox.style.position = &#39;relative&#39;;&#xA;      introBox.style.zIndex = &#39;90&#39;;&#xA;    }&#xA;  }, 100);&#xA;});&#xA;&lt;/script&gt;&#xA;&lt;!-- Interactive Contact Widget --&gt;&#xA;&lt;div id=&#34;contact-widget&#34; style=&#34;position: fixed; bottom: 20px; right: 20px; z-index: 1000;&#34;&gt;&#xA;  &lt;div class=&#34;contact-button animate-pulse&#34; style=&#34;width: 60px; height: 60px; background: linear-gradient(45deg, #4568DC, #B06AB3); border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.2);&#34;&gt;&#xA;    &lt;span style=&#34;font-size: 24px; color: white;&#34;&gt;💬&lt;/span&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div id=&#34;contact-popup&#34; style=&#34;position: absolute; bottom: 70px; right: 0; width: 300px; background: white; border-radius: 8px; padding: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); display: none;&#34;&gt;&#xA;    &lt;h3 style=&#34;margin-top: 0; color: #4568DC;&#34;&gt;Get In Touch&lt;/h3&gt;&#xA;    &lt;p style=&#34;font-size: 0.9em;&#34;&gt;I&#39;m always interested in new opportunities and collaborations!&lt;/p&gt;</description>
+      <guid>//localhost:1313/portfolio/</guid>
+      <description>&lt;style&gt;&#xA;/* Base animations */&#xA;@keyframes fadeIn {&#xA;  from { opacity: 0; transform: translateY(20px); }&#xA;  to { opacity: 1; transform: translateY(0); }&#xA;}&#xA;&#xA;@keyframes pulse {&#xA;  0% { transform: scale(1); }&#xA;  50% { transform: scale(1.05); }&#xA;  100% { transform: scale(1); }&#xA;}&#xA;&#xA;@keyframes gradientFlow {&#xA;  0% { background-position: 0% 50%; }&#xA;  50% { background-position: 100% 50%; }&#xA;  100% { background-position: 0% 50%; }&#xA;}&#xA;&#xA;@keyframes float {&#xA;  0% { transform: translateY(0px); }&#xA;  50% { transform: translateY(-10px); }&#xA;  100% { transform: translateY(0px); }&#xA;}&#xA;&#xA;/* Apply animations to elements */&#xA;.animate-fade-in {&#xA;  animation: fadeIn 0.8s ease forwards;&#xA;  opacity: 0;&#xA;}&#xA;&#xA;.animate-pulse:hover {&#xA;  animation: pulse 1s infinite;&#xA;}&#xA;&#xA;.delay-100 { animation-delay: 0.1s; }&#xA;.delay-200 { animation-delay: 0.2s; }&#xA;.delay-300 { animation-delay: 0.3s; }&#xA;.delay-400 { animation-delay: 0.4s; }&#xA;.delay-500 { animation-delay: 0.5s; }&#xA;&#xA;/* Enhanced styling */&#xA;.gradient-text {&#xA;  background: linear-gradient(45deg, #4568DC, #B06AB3, #4568DC);&#xA;  background-size: 200% auto;&#xA;  background-clip: text;&#xA;  -webkit-background-clip: text;&#xA;  -webkit-text-fill-color: transparent;&#xA;  animation: gradientFlow 3s ease infinite;&#xA;}&#xA;&#xA;.gradient-border {&#xA;  position: relative;&#xA;  border-radius: 10px;&#xA;  padding: 1px;&#xA;  background: linear-gradient(45deg, #4568DC, #B06AB3, #4568DC);&#xA;  background-size: 200% auto;&#xA;  animation: gradientFlow 3s ease infinite;&#xA;}&#xA;&#xA;.project-card {&#xA;  transition: transform 0.3s, box-shadow 0.3s;&#xA;  border-left: 4px solid transparent;&#xA;  background: rgba(255, 255, 255, 0.05);&#xA;  border-radius: 8px;&#xA;  padding: 20px;&#xA;  margin-bottom: 15px;&#xA;}&#xA;&#xA;.project-card:hover {&#xA;  transform: translateY(-5px);&#xA;  box-shadow: 0 10px 20px rgba(0,0,0,0.1);&#xA;  border-left: 4px solid #4568DC;&#xA;}&#xA;&#xA;.floating {&#xA;  animation: float 3s ease-in-out infinite;&#xA;}&#xA;&#xA;/* Dark mode compatibility */&#xA;.intro-box {&#xA;  background-color: rgba(30, 30, 30, 0.7);&#xA;  color: #f0f0f0;&#xA;  padding: 20px;&#xA;  border-radius: 9px;&#xA;}&#xA;&#xA;/* For light mode if needed */&#xA;@media (prefers-color-scheme: light) {&#xA;  .intro-box {&#xA;    background-color: white;&#xA;    color: #333;&#xA;  }&#xA;}&#xA;&#xA;/* Responsive adjustments */&#xA;@media (max-width: 768px) {&#xA;  .language-container {&#xA;    flex-direction: column;&#xA;    align-items: center;&#xA;  }&#xA;}&#xA;&lt;/style&gt;&#xA;&lt;!-- Script imports for enhanced animations --&gt;&#xA;&lt;script src=&#34;//localhost:1313/js/3d-background.js&#34; defer&gt;&lt;/script&gt;&#xA;&lt;script&gt;&#xA;document.addEventListener(&#39;DOMContentLoaded&#39;, function() {&#xA;  // Fix for header visibility - redundant but ensures it works&#xA;  setTimeout(function() {&#xA;    const header = document.querySelector(&#39;h1.gradient-text&#39;);&#xA;    const introBox = document.querySelector(&#39;.gradient-border.animate-fade-in&#39;);&#xA;    &#xA;    if (header) {&#xA;      header.style.opacity = &#39;1&#39;;&#xA;      header.style.visibility = &#39;visible&#39;;&#xA;      header.style.position = &#39;relative&#39;;&#xA;      header.style.zIndex = &#39;100&#39;;&#xA;    }&#xA;    &#xA;    if (introBox) {&#xA;      introBox.style.opacity = &#39;1&#39;;&#xA;      introBox.style.visibility = &#39;visible&#39;;&#xA;      introBox.style.position = &#39;relative&#39;;&#xA;      introBox.style.zIndex = &#39;90&#39;;&#xA;    }&#xA;  }, 100);&#xA;});&#xA;&lt;/script&gt;&#xA;&lt;!-- Interactive Contact Widget --&gt;&#xA;&lt;div id=&#34;contact-widget&#34; style=&#34;position: fixed; bottom: 20px; right: 20px; z-index: 1000;&#34;&gt;&#xA;  &lt;div class=&#34;contact-button animate-pulse&#34; style=&#34;width: 60px; height: 60px; background: linear-gradient(45deg, #4568DC, #B06AB3); border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.2);&#34;&gt;&#xA;    &lt;span style=&#34;font-size: 24px; color: white;&#34;&gt;💬&lt;/span&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div id=&#34;contact-popup&#34; style=&#34;position: absolute; bottom: 70px; right: 0; width: 300px; background: white; border-radius: 8px; padding: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); display: none;&#34;&gt;&#xA;    &lt;h3 style=&#34;margin-top: 0; color: #4568DC;&#34;&gt;Get In Touch&lt;/h3&gt;&#xA;    &lt;p style=&#34;font-size: 0.9em;&#34;&gt;I&#39;m always interested in new opportunities and collaborations!&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>/prometheus/</link>
+      <link>//localhost:1313/prometheus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/prometheus/</guid>
+      <guid>//localhost:1313/prometheus/</guid>
       <description>&lt;picture&gt;&#xA;  &lt;source srcset=&#34;https://fonts.gstatic.com/s/e/notoemoji/latest/1f916/512.webp&#34; type=&#34;image/webp&#34;&gt;&#xA;  &lt;img src=&#34;https://fonts.gstatic.com/s/e/notoemoji/latest/1f916/512.gif&#34; alt=&#34;🤖&#34; width=&#34;64&#34; height=&#34;64&#34;&gt;&#xA;&lt;/picture&gt;&#xA;&lt;h1 id=&#34;prometheus--the-worlds-greatest-artificial-intelligence-automation-agency&#34;&gt;Prometheus : The world&amp;rsquo;s greatest Artificial Intelligence Automation Agency&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to Prometheus, the forefront of Artificial Intelligence Automation.&lt;/p&gt;&#xA;&lt;p&gt;In this era of boundless possibilities in generative AI, we stand tall as the world&amp;rsquo;s greatest AI agency, equipped with cutting-edge technologies like ChatGPT and Stable Diffusion.&lt;/p&gt;&#xA;&lt;p&gt;Since 2020, we have continuously pushed the boundaries of AI innovation. In fact, we were at the vanguard of the AI revolution, having developed a groundbreaking prototype that would later be revived as the revolutionary ChatGPT. Our early experimentation with tools like GPT-3 allowed us to foresee the immense potential they held.&lt;/p&gt;</description>
     </item>
   </channel>

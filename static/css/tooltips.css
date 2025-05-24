@@ -1,0 +1,70 @@
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted var(--color-accent, #5c88c5); /* Optional: style the term itself */
+  cursor: help;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: var(--color-tooltip-bg, #333);
+  color: var(--color-tooltip-text, #fff);
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position the tooltip above the text */
+  left: 50%;
+  margin-left: -110px; /* Use half of the width (220/2 = 110) to center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+  font-size: 0.9em;
+  line-height: 1.4;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--color-tooltip-bg, #333) transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Optional: Add some variables for easier customization in your main CSS or here */
+:root {
+  --color-accent: #5c88c5; /* Example accent color for the dotted underline */
+  --color-tooltip-bg: #333;
+  --color-tooltip-text: #fff;
+}
+
+/* If your site uses a dark theme, you might want to adjust tooltip colors */
+/* For example, if your body has a .dark-mode class:
+body.dark-mode .tooltip .tooltiptext {
+  background-color: #eee;
+  color: #333;
+}
+body.dark-mode .tooltip .tooltiptext::after {
+  border-top-color: #eee;
+}
+body.dark-mode .tooltip {
+  border-bottom: 1px dotted var(--color-accent-dark, #8ab4f8);
+}
+:root {
+ --color-accent-dark: #8ab4f8;
+}
+*/ 

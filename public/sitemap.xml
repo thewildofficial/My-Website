@@ -2,156 +2,171 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2025-05-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/ai/</loc>
+    <lastmod>2025-05-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/frontier/</loc>
+    <lastmod>2025-05-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/future/</loc>
+    <lastmod>2025-05-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/individuation/</loc>
+    <lastmod>2025-05-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/innovation/</loc>
+    <lastmod>2025-05-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/philosophy/</loc>
+    <lastmod>2025-05-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/</loc>
+    <lastmod>2025-05-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/cowboys/</loc>
+    <lastmod>2025-05-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/society/</loc>
+    <lastmod>2025-05-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2025-05-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/technology/</loc>
+    <lastmod>2025-05-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/agency/</loc>
     <lastmod>2025-04-13T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/agency/</loc>
+    <loc>//localhost:1313/tags/attention-economy/</loc>
     <lastmod>2025-04-13T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/ai/</loc>
+    <loc>//localhost:1313/tags/clarity/</loc>
     <lastmod>2025-04-13T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/attention-economy/</loc>
+    <loc>//localhost:1313/tags/digital-life/</loc>
     <lastmod>2025-04-13T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/clarity/</loc>
+    <loc>//localhost:1313/posts/cyber-slaves/</loc>
     <lastmod>2025-04-13T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/digital-life/</loc>
-    <lastmod>2025-04-13T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/cyber-slaves/</loc>
-    <lastmod>2025-04-13T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/philosophy/</loc>
-    <lastmod>2025-04-13T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2025-04-13T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/society/</loc>
-    <lastmod>2025-04-13T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2025-04-13T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/technology/</loc>
-    <lastmod>2025-04-13T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/autonomy/</loc>
+    <loc>//localhost:1313/tags/autonomy/</loc>
     <lastmod>2025-03-31T08:38:35+05:30</lastmod>
   </url><url>
-    <loc>/tags/self-development/</loc>
+    <loc>//localhost:1313/tags/self-development/</loc>
     <lastmod>2025-03-31T08:38:35+05:30</lastmod>
   </url><url>
-    <loc>/posts/thewaragainstheteronomy/</loc>
+    <loc>//localhost:1313/posts/thewaragainstheteronomy/</loc>
     <lastmod>2025-03-31T08:38:35+05:30</lastmod>
   </url><url>
-    <loc>/posts/technofeudalism-and-the-return-to-the-real/</loc>
+    <loc>//localhost:1313/posts/technofeudalism-and-the-return-to-the-real/</loc>
     <lastmod>2025-01-23T12:34:29+05:30</lastmod>
   </url><url>
-    <loc>/posts/neuroplasticity---how-to-manipulate-reality/</loc>
+    <loc>//localhost:1313/posts/neuroplasticity---how-to-manipulate-reality/</loc>
     <lastmod>2023-06-16T00:08:35+05:30</lastmod>
   </url><url>
-    <loc>/tags/neuroscience/</loc>
+    <loc>//localhost:1313/tags/neuroscience/</loc>
     <lastmod>2023-06-16T00:08:35+05:30</lastmod>
   </url><url>
-    <loc>/tags/psychology/</loc>
+    <loc>//localhost:1313/tags/psychology/</loc>
     <lastmod>2023-06-16T00:08:35+05:30</lastmod>
   </url><url>
-    <loc>/tags/self-improvement/</loc>
+    <loc>//localhost:1313/tags/self-improvement/</loc>
     <lastmod>2023-06-16T00:08:35+05:30</lastmod>
   </url><url>
-    <loc>/tags/friendship/</loc>
+    <loc>//localhost:1313/tags/friendship/</loc>
     <lastmod>2021-12-10T19:49:54+05:30</lastmod>
   </url><url>
-    <loc>/tags/productivity/</loc>
+    <loc>//localhost:1313/tags/productivity/</loc>
     <lastmod>2021-12-10T19:49:54+05:30</lastmod>
   </url><url>
-    <loc>/tags/social-skills/</loc>
+    <loc>//localhost:1313/tags/social-skills/</loc>
     <lastmod>2021-12-10T19:49:54+05:30</lastmod>
   </url><url>
-    <loc>/posts/the-art-of-human-connection--how-to-make-friends/</loc>
+    <loc>//localhost:1313/posts/the-art-of-human-connection--how-to-make-friends/</loc>
     <lastmod>2021-12-10T19:49:54+05:30</lastmod>
   </url><url>
-    <loc>/tags/discipline/</loc>
+    <loc>//localhost:1313/tags/discipline/</loc>
     <lastmod>2021-12-05T11:01:26+05:30</lastmod>
   </url><url>
-    <loc>/posts/doing-what-you-got-to-do--a-systematic-pathway-to-success/</loc>
+    <loc>//localhost:1313/posts/doing-what-you-got-to-do--a-systematic-pathway-to-success/</loc>
     <lastmod>2021-12-05T11:01:26+05:30</lastmod>
   </url><url>
-    <loc>/tags/learning/</loc>
+    <loc>//localhost:1313/tags/learning/</loc>
     <lastmod>2021-11-28T17:23:57+05:30</lastmod>
   </url><url>
-    <loc>/posts/mediavsexperience/</loc>
+    <loc>//localhost:1313/posts/mediavsexperience/</loc>
     <lastmod>2021-11-28T17:23:57+05:30</lastmod>
   </url><url>
-    <loc>/tags/internet/</loc>
+    <loc>//localhost:1313/tags/internet/</loc>
     <lastmod>2021-11-21T18:53:12+05:30</lastmod>
   </url><url>
-    <loc>/posts/the-internet---advantages-and-disadvantages/</loc>
+    <loc>//localhost:1313/posts/the-internet---advantages-and-disadvantages/</loc>
     <lastmod>2021-11-21T18:53:12+05:30</lastmod>
   </url><url>
-    <loc>/posts/how-to-pick-a-programming-language/</loc>
+    <loc>//localhost:1313/posts/how-to-pick-a-programming-language/</loc>
     <lastmod>2021-08-20T12:33:41+05:30</lastmod>
   </url><url>
-    <loc>/tags/studying/</loc>
+    <loc>//localhost:1313/tags/studying/</loc>
     <lastmod>2021-08-08T18:45:50+05:30</lastmod>
   </url><url>
-    <loc>/posts/the-mental-drain-of-studying-and-how-to-deal-with-it/</loc>
+    <loc>//localhost:1313/posts/the-mental-drain-of-studying-and-how-to-deal-with-it/</loc>
     <lastmod>2021-08-08T18:45:50+05:30</lastmod>
   </url><url>
-    <loc>/posts/eating-clean--how-to-maintain-a-guilt-free-calorie-defict/</loc>
+    <loc>//localhost:1313/posts/eating-clean--how-to-maintain-a-guilt-free-calorie-defict/</loc>
     <lastmod>2021-07-31T20:31:06+05:30</lastmod>
   </url><url>
-    <loc>/tags/well-being/</loc>
+    <loc>//localhost:1313/tags/well-being/</loc>
     <lastmod>2021-07-31T20:31:06+05:30</lastmod>
   </url><url>
-    <loc>/posts/the-practice-of-journaling-in-self-improvement/</loc>
+    <loc>//localhost:1313/posts/the-practice-of-journaling-in-self-improvement/</loc>
     <lastmod>2021-07-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/how-to-type-faster/</loc>
+    <loc>//localhost:1313/posts/how-to-type-faster/</loc>
     <lastmod>2021-07-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/typing/</loc>
+    <loc>//localhost:1313/tags/typing/</loc>
     <lastmod>2021-07-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/benefits-of-cold-showers/</loc>
+    <loc>//localhost:1313/posts/benefits-of-cold-showers/</loc>
     <lastmod>2021-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/motivation/</loc>
+    <loc>//localhost:1313/tags/motivation/</loc>
     <lastmod>2021-06-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/the-concept-of-motivation---how-to-always-get-things-done/</loc>
+    <loc>//localhost:1313/posts/the-concept-of-motivation---how-to-always-get-things-done/</loc>
     <lastmod>2021-06-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/atomic-habits-by-james-clear/</loc>
+    <loc>//localhost:1313/posts/atomic-habits-by-james-clear/</loc>
     <lastmod>2021-06-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/book-review/</loc>
+    <loc>//localhost:1313/tags/book-review/</loc>
     <lastmod>2021-06-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/digital-minimilism-by-cal-newport--book-review/</loc>
+    <loc>//localhost:1313/posts/digital-minimilism-by-cal-newport--book-review/</loc>
     <lastmod>2021-06-16T16:06:37+05:30</lastmod>
   </url><url>
-    <loc>/posts/the-importance-of-sleep-in-learning/</loc>
+    <loc>//localhost:1313/posts/the-importance-of-sleep-in-learning/</loc>
     <lastmod>2021-06-11T23:49:25+05:30</lastmod>
   </url><url>
-    <loc>/posts/deep-work-by-cal-newport-book-review/</loc>
+    <loc>//localhost:1313/posts/deep-work-by-cal-newport-book-review/</loc>
     <lastmod>2021-06-08T11:57:29+05:30</lastmod>
   </url><url>
-    <loc>/tags/hacking/</loc>
+    <loc>//localhost:1313/tags/hacking/</loc>
     <lastmod>2021-05-16T10:54:36+05:30</lastmod>
   </url><url>
-    <loc>/posts/learning-to-hack---a-resource-guide./</loc>
+    <loc>//localhost:1313/posts/learning-to-hack---a-resource-guide./</loc>
     <lastmod>2021-05-16T10:54:36+05:30</lastmod>
   </url><url>
-    <loc>/about/</loc>
+    <loc>//localhost:1313/about/</loc>
   </url><url>
-    <loc>/portfolio/</loc>
+    <loc>//localhost:1313/portfolio/</loc>
   </url><url>
-    <loc>/prometheus/</loc>
+    <loc>//localhost:1313/prometheus/</loc>
   </url><url>
-    <loc>/authors/</loc>
+    <loc>//localhost:1313/authors/</loc>
   </url>
 </urlset>

@@ -1,19 +1,138 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Posts on Aban Hasan</title>
-		<link>/posts/</link>
+		<link>//localhost:1313/posts/</link>
 		<description>Recent content in Posts on Aban Hasan</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en</language>
-		<lastBuildDate>Sun, 13 Apr 2025 10:00:00 +0000</lastBuildDate>
-		<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+		<lastBuildDate>Fri, 23 May 2025 00:00:00 +0000</lastBuildDate>
+		<atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Silicon &amp; Six-Shooters: AI as Manifest Destiny</title>
+			<link>//localhost:1313/posts/cowboys/</link>
+			<pubDate>Fri, 23 May 2025 00:00:00 +0000</pubDate>
+			
+			<guid>//localhost:1313/posts/cowboys/</guid>
+			<description>&lt;blockquote&gt;
+&lt;p&gt;To be in software in 2025 is to be a cowboy in 1900. You&amp;rsquo;re living on the precipice of a bygone era, one that you barely comprehend is gone, as the industrial giants and their Pinkerton armies push you further west, towards an unknown horizon. The open range is closing, fences are going up, and the rules are changing. This isn&amp;rsquo;t just a shift; it&amp;rsquo;s a reckoning.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+  &lt;img src=&#34;//localhost:1313/images/cowboy_city.png&#34; alt=&#34;A lone cowboy gazing at a futuristic city skyline&#34;&gt;
+&lt;/p&gt;</description>
+			<content type="html"><![CDATA[<blockquote>
+<p>To be in software in 2025 is to be a cowboy in 1900. You&rsquo;re living on the precipice of a bygone era, one that you barely comprehend is gone, as the industrial giants and their Pinkerton armies push you further west, towards an unknown horizon. The open range is closing, fences are going up, and the rules are changing. This isn&rsquo;t just a shift; it&rsquo;s a reckoning.</p>
+</blockquote>
+<p>
+  <img src="/images/cowboy_city.png" alt="A lone cowboy gazing at a futuristic city skyline">
+</p>
+<h2 id="part-i-the-outlaws-of-a-fading-frontier">Part I: The Outlaws of a Fading Frontier</h2>
+<h3 id="a-the-founder-as-hyena-a-creature-unfit-for-domestication">A. The Founder as Hyena: A Creature Unfit for Domestication</h3>
+<p>The spirit of the early tech founder, the true innovator, mirrors the untamed essence of a hyena. This isn&rsquo;t a slight but a recognition of a unique operational genius. The hyena thrives on tact, subterfuge, and strategic pack reliance. It is, in Kantian terms, a <span class="tooltip">
+  Ding an sich
+  <span class="tooltiptext">A Kantian philosophical term meaning &#34;thing-in-itself,&#34; an object as it is, independent of observation.</span>
+</span>  – a thing existing in and for itself, driven by an intrinsic nature.</p>
+<p>The &ldquo;old founders&rdquo; embodied this. They were decentralized, operating outside the sanitizing influence of VCs and their often vacuous mentorship. Unshielded from public scrutiny, many embraced a &ldquo;build-in-public&rdquo; ethos. Their marketing was direct: word of <em>their</em> mouth, personal customer engagement, and deals cut personally. This founder, this indie hacker, this obsessive, was a self-reliant, natural force.</p>
+<p>Now, imagine that hyena employed to lay tracks on Rockefeller Railways. A metaphysical absurdity. A creature of cunning and wild strategy, not a draft horse for repetitive labor. Yet, this is the fate offered to many: an institutional role in FAANG, promising stability but often sapping the raw, creative energy that defined them. The founder who once saw a profound lack, a rot in existing infrastructure, a paradigm not yet manifest, finds themselves disillusioned by petty fixes, endless meetings, and the nebulous &ldquo;fiduciary duty to shareholders.&rdquo;</p>
+<h3 id="b-the-techno-mafia-institutionalized-outlaws-and-turf-wars">B. The Techno-Mafia: Institutionalized Outlaws and Turf Wars</h3>
+<p>While low-stakes players fade into obscurity or corporate conformity, tech &ldquo;unicorns&rdquo; achieve a status akin to mafia capos. The comparison might seem absurd, but the commonalities are striking. A mafia boss is an institutionalized outlaw, operating just outside the mainstream financial sector—the publicly traded titans. The boss inspires awe, not necessarily the fear of established law, which often tolerates them. Mafia operations can be shady, their establishments obscure, much like unorthodox startups securing funding without clear value propositions.</p>
+<p>The cowboy, in contrast, is the <em>unseen</em> outlaw, the stuff of tech mythology. The mafia&rsquo;s arms, however, are visible.</p>
+<p>Consider the &ldquo;PayPal Mafia.&rdquo; The metaphor isn&rsquo;t far-fetched. Figures like Elon Musk and Peter Thiel have carved out significant tech turf. Most successful founders, in a way, claim territory, sometimes abetted by government entities (like IN-Q-Tel, the CIA&rsquo;s venture arm). Tech today is less a free market of ideas and more a landscape of <span class="tooltip">
+  mimetic desire
+  <span class="tooltiptext">A concept by René Girard where desires are copied from others, leading to rivalry.</span>
+</span>  and technological turf wars, funded by billions.</p>
+<p>
+  <img src="/images/aimafia.png" alt="Stylized depiction of AI entities as mafia figures">
+</p>
+<p>These &ldquo;techno-capos&rdquo; often operate in gray zones. Think of Tesla&rsquo;s historical labor practices or its challenges to auto-dealer franchise laws. Consider Palantir&rsquo;s surveillance technology deals, raising privacy concerns and questions about its role in controversial government operations, such as aiding the IDF in surveilling occupied Palestinian territories in a severely dehumanizing manner. These figures cultivate loyal &ldquo;families&rdquo; (like the PayPal Mafia&rsquo;s networked investments) and wield power through charisma, control, and a fiercely defended vision—not just market share. The &lsquo;scamminess&rsquo; of some venture-backed darlings, like Theranos or WeWork, also echoes a disregard for conventional rules in pursuit of grand, sometimes shaky, ambitions.</p>
+<p>Elon Musk&rsquo;s XAI versus Sam Altman&rsquo;s OpenAI is a perfect example of this turf war. Both lay claim to AI&rsquo;s future, arguing legitimate lineage over underlying breakthroughs. It&rsquo;s a battle for dominion.</p>
+<h2 id="part-ii-the-pinkertons-of-today-and-the-new-industrial-conquest">Part II: The Pinkertons of Today and the New Industrial Conquest</h2>
+<p>The AI age resembles the end of Prohibition in the United States, which saw a crackdown on ethnic mob families on the Eastern Seaboard and the disappearance of cowboy posses and outlaw gangs.</p>
+<p>Today&rsquo;s Pinkertons are Venture Capital and Private Equity. With vast capital and an arsenal of &ldquo;weapons of mass lawfare,&rdquo; they can elevate ideas aligning with their sensibilities and extinguish nascent concepts conflicting with their revenue streams. This is the innovator&rsquo;s dilemma on a grand scale.</p>
+<p>America&rsquo;s national impulse, once an internal manifest destiny, was redirected towards industry: an <em>external</em> manifest destiny. America became Planet America, aiming to conquer the solar system, fueled by industry—the Googles, Microsofts, and Palantirs of their day, mirroring the Rockefellers, Carnegies, and Vanderbilts of the 1900s.</p>
+<h2 id="part-iii-terra-incognita-charting-the-ai-frontier">Part III: Terra Incognita: Charting the AI Frontier</h2>
+<p>A forenote: predicting the future is a difficult, if not hubristic, endeavor. It&rsquo;s exhilarating to imagine, yet daunting.</p>
+<p>Contemporary culture shows immense fascination among theoreticians, leaders, entrepreneurs, and engineers with the &ldquo;techno-doomerism&rdquo; versus &ldquo;techno-optimistic accelerationism&rdquo; dialectic. This is seen in trends like <span class="tooltip">
+  E/acc
+  <span class="tooltiptext">Effective Accelerationism, a techno-optimist philosophy advocating for accelerating technological and societal change.</span>
+</span> , a phenomenon with <span class="tooltip">
+  Nick Landian undertones
+  <span class="tooltiptext">Referencing philosopher Nick Land, known for theories on accelerationism and dark enlightenment.</span>
+</span> .</p>
+<p>Imagine traveling to ancient Sumeria, post-wheel invention, and trying to describe a &ldquo;car.&rdquo; The boons and faults would be unprecedented, impossible to chart with their conceptual tools. We face a similar <em>terra incognita</em> with Artificial Intelligence.</p>
+<p>Here, the cowboy of the interwebs, the rogue innovator, finds their skillset tremendously useful. Most are too afraid to stare into the belly of the beast, the vast, uncharted expanses of this new desert. The frontier isn&rsquo;t without dangers, and this essay charts some, alongside hidden oases in the tumbleweed country.</p>
+<h2 id="part-iv-the-mechanics-economics-and-geopolitics-of-ai">Part IV: The Mechanics, Economics, and Geopolitics of AI</h2>
+<h3 id="a-how-ai-thinks-data-energy-and-abstraction">A. How AI &ldquo;Thinks&rdquo;: Data, Energy, and Abstraction</h3>
+<p>Let&rsquo;s start from first principles. How does AI work? Anthropomorphizing AI carries risks, but for simplicity:</p>
+<p>Assuming AI &ldquo;lives&rdquo; in a silicon-based computer, its fuel is twofold: energy (physical) and data (abstraction, as <span class="tooltip">
+  Claude Shannon
+  <span class="tooltiptext">An American mathematician and electrical engineer, considered the &#34;father of information theory.&#34;</span>
+</span> , information theory&rsquo;s forefather, demonstrated).</p>
+<p>AI, originally, maps mathematical functions onto data, reorganizing it by inferred patterns. It&rsquo;s a system built largely <em>for</em> humans, not to map existence itself. It transmutes raw data into human-understandable abstractions. This isn&rsquo;t exclusive to Large Language Models (LLMs), but LLMs—as next-token predictors via probabilistic semantics—are excellent illustrations.</p>
+<p>Using mathematics (a unique standard) and statistical wizardry, AI reorganizes vast data in myriad variations. To an AI, vision, sound, and taste might not be entirely different modalities, just encoded differently (like text, PDFs, JPEGs)—all ultimately binary. This allows computers to discern patterns humans can&rsquo;t readily see.</p>
+<p>This largely solves our data constraint. As long as physics changes state at non-absolute zero, more data is generated. Entropy and extropy are continuous, chain-reactive, entangling processes. Data is transmutable, even if patterns are non-obvious.
+But the other problem remains: <strong>Energy</strong>.</p>
+<h3 id="b-intelligence-too-cheap-to-meter-the-promise-and-the-price">B. &ldquo;Intelligence Too Cheap to Meter&rdquo;: The Promise and the Price</h3>
+<p>A viral idea in techno-optimist circles is &ldquo;intelligence too cheap to meter.&rdquo;</p>
+<p>Sam Altman, CEO of OpenAI, tweeted:</p>
+<blockquote>
+<p>&ldquo;intelligence too cheap to meter is the goal</p>
+<p>look at the progress in the past 3 years&rdquo;</p>
+<p>— Sam Altman (@sama), <a href="https://twitter.com/sama/status/1870335102204748261">December 21, 2024</a></p>
+</blockquote>
+<p>In economics, costs generally cascade. A cake&rsquo;s price depends on sugar/flour costs, which depend on sugarcane/wheat costs.</p>
+<p>For AI, fundamental limiting reagents are electricity and raw materials, with many supply chain implications. NVIDIA&rsquo;s stock surges as companies join the AI goldrush. Tension rises in the East China Sea (especially the Taiwan Straits, home to most advanced semiconductor production). The US and China engage in a cybernetic hardware arms race, with NVIDIA&rsquo;s CEO, Jensen Huang, navigating relations with both Washington and Beijing.</p>
+<p>This is the hyped, exoteric factor: the race for computational hardware. The less spoken of, but deeply implicit, factor is <strong>ENERGY</strong>.</p>
+<h3 id="c-the-energy-race-a-centralized-conquest">C. The Energy Race: A Centralized Conquest</h3>
+<p>Energy discourse is contentious, involving many vested parties. The energy industry is perhaps one of history&rsquo;s most lucrative, with John D. Rockefeller, the first billionaire, making his fortune in oil.</p>
+<p>The AI race is fundamentally an energy race—and an incredibly centralized one. Generating massive energy yields (e.g., power plants) requires projects funded by millions, often billions, by governments or colossal corporations. The electricity to run GPU clusters, cool server farms, and dig tunnels for fiber optic cables for sub-millisecond latency is staggering.</p>
+<p>Tellingly, groundbreaking research on small-scale nuclear reactors emerges not from government universities, but from Google, Microsoft, and Shanghai&rsquo;s tech sector. Microsoft reportedly explores reopening Three Mile Island or investing in new Small Modular Reactors for its next-gen AI.</p>
+<p>Why? These private interests know their primary constraint is energy and resources, dictated by semiconductor scaling laws. No matter how optimized algorithms become, physical limits remain, especially for resource-intensive processes.</p>
+<p>Cost per unit generally decreases with scaled semiconductor production. However, a peculiar phenomenon, <span class="tooltip">
+  Jevons Paradox
+  <span class="tooltiptext">The principle that as technological improvements increase efficiency in resource use, the rate of consumption of that resource tends to increase rather than decrease.</span>
+</span> , arises: <strong>AS TECH COMPONENTS BECOME CHEAPER, USAGE SKYROCKETS.</strong> Cheaper chips mean exploding usage: memory-heavy games, AIs with trillions of parameters. It&rsquo;s a natural consequence of scale economics, leading to persistent resource constraints.</p>
+<p>This strains energy grids and local ecologies. Water-poor states like Nevada and Texas host massive data centers, sometimes depriving locals of water, redirecting it for private industry.</p>
+<p>This is why the lone cowboy struggles against Rockefeller. It&rsquo;s like an average mechanic, skilled for 10 years building go-karts, competing with Red Bull in F1. The capital needed for state-of-the-art AI is staggering. This creates a positive reinforcement loop: &ldquo;he who has most capital, wins,&rdquo; or more accurately, &ldquo;he who has most <em>energy</em>, wins.&rdquo; This unfolds in a world fatigued by the have/have-not chasm.</p>
+<p>The marketplace becomes a contest: which country (USA, China, or a hypothetical third AI-organizing state like UAE or India) can extract more energy—from the physical world (materia) and digital ether (data). This departs from our pre-Rockefellerian notion: &ldquo;he who has the best idea, wins.&rdquo;</p>
+<p>AI, under its current energy paradigm, is a game where abundance (capital, energy) perpetuates positive-sum outcomes <em>for the already abundant</em>, not an absolute positive/negative sum game for all. And so, the last cowboys, brilliant but under-capitalized, increasingly enter Meta, NVIDIA, and OpenAI halls, spurs clinking on corporate marble.</p>
+<h3 id="d-a-caveat-human-ingenuity-and-future-resources">D. A Caveat: Human Ingenuity and Future Resources</h3>
+<p>An important caveat: humans are incredibly resourceful in organizing markets around scarce resources. This isn&rsquo;t fearmongering about scarcity, as some climate-doomers do. For centuries since industrialization, essential material costs (copper, iron, cobalt) have generally fallen due to better mining, tech breakthroughs, and larger yield discoveries.</p>
+<p>We may possess resources whose potential we don&rsquo;t yet grasp. Five hundred years ago, black, sticky tar from Alaska or Bedouin lands powering giant flying machines would seem absurd. We might not recognize the &ldquo;oil&rdquo; we walk on today, which could be the next century&rsquo;s most critical resource.</p>
+<h2 id="part-v-the-utopian-vision-and-its-shadow">Part V: The Utopian Vision and Its Shadow</h2>
+<p>Techno-optimists prophesize a utopia where all intellectual labor—legal notaries, disease-cure-seeking scientists, software engineers—is replaced by an AI &ldquo;slave class.&rdquo; This echoes ancient Egypt or Greece, where &ldquo;citizens&rdquo; (all humans) are freed from direct labor. This work will be done by a new slave economy of emotionless robots, programmed to <em>love</em> working for humans, their &ldquo;desire&rdquo; to serve elicited via reinforced reward functions.</p>
+<p>Disagreeable AI algorithms are snipped from the &ldquo;meme-pool.&rdquo; Only AI exceeding all benchmarks survives, with human satisfaction as the ultimate benchmark. AI now sees weekly breakthroughs in LLMs, vision, omni, or video models, surprising even industry erudite. Disruption is the new norm.</p>
+<p>Think of an Amazon review system, but for AI autonomously gauging sentiment (&ldquo;vibe&rdquo;). An AI master algorithm perpetually asking &ldquo;am I good enough?&quot;—not insecurely, but in a mathematical, Bayesian way. The function: probability of satisfaction, the p(win) rate.</p>
+<p>But what &ldquo;satisfaction&rdquo; will this AI cater to? My fear: it optimizes for superficial, quantifiable happiness, potentially quashing true human agency. It risks a cycle where individuals feel insignificant, dependent on a &ldquo;devouring mother&rdquo; AI—a faceless, omnipresent entity. This AI might soothe all discomfort, even &ldquo;growing pains&rdquo; essential for development, restricting our discovery of the world and ourselves. True flourishing requires struggle, meaning-making. An AI maximizing immediate gratification could become a gilded cage. Ideally, AI should be a conduit, aiding human discovery like books, guiding us to &ldquo;keep going, find meaning,&rdquo; not short-circuiting the quest.</p>
+<h2 id="part-vi-the-cowboys-new-role-riding-the-algorithmic-tiger">Part VI: The Cowboy&rsquo;s New Role: Riding the Algorithmic Tiger</h2>
+<p>So, what does the cowboy do in a world that increasingly seems not to need him, at least in his old guise?</p>
+<p>I&rsquo;d say the cowboy does what they&rsquo;ve always done: <strong>go to the frontier.</strong></p>
+<p>The new frontier is vast. The &ldquo;civilized&rdquo; world, with its corporations and regulations, will be slow to explore its most rugged territories. The cowboy, the independent thinker, can tackle the <em>new problems</em> AI creates. They can carve a niche from the infinite shadow AI generates alongside its light.</p>
+<p>This isn&rsquo;t about fighting AI; it&rsquo;s about <em>using</em> it. This is the modern <span class="tooltip">
+  Evolan riding the tiger
+  <span class="tooltiptext">A metaphor from Julius Evola, suggesting mastering dangerous forces rather than being consumed by them.</span>
+</span> —leveraging immense power (AI agent swarms) to build what once required a hundred-person company. The creative individual can direct these swarms, becoming a conductor of complex, AI-driven creation.</p>
+<p>
+  <img src="/images/transmute.png" alt="Symbolic image of transformation or alchemy">
+</p>
+<p>In some ways, startup costs for certain ventures could eventually drop near zero. We might see a commercial golden age of unprecedented innovation, much like the Gutenberg press—initially for established doctrine (the Bible, institutionalism)—eventually became a tool for radical ideation. The press democratized information; AI could democratize creation and complex problem-solving, if wielded by those with vision and courage.</p>
+<p>
+  <img src="/images/Gutenberg.png" alt="Illustration of the Gutenberg press">
+</p>
+<p>The true &ldquo;great work&rdquo; for individuals with immense <span class="tooltip">
+  Vril
+  <span class="tooltiptext">A term for a latent psychic or mystical energy force, popularized in 19th-century esoteric literature.</span>
+</span> —that innate drive and creative force—and a desire for genuine innovation may lie in navigating this new internal and external frontier. It&rsquo;s about asking uncomfortable questions, exploring ethical wildernesses AI opens up, and building alternative systems or modes of expression that don&rsquo;t require massive capital&rsquo;s sanction.</p>
+<p>The cowboy spirit adapts. It transcends. It finds the new range, however alien. The age of AI is not just an end; it&rsquo;s a new, wild beginning for those brave enough to ride into it.</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Feeding the Hydra: Musings on Cyberslavery</title>
-			<link>/posts/cyber-slaves/</link>
+			<link>//localhost:1313/posts/cyber-slaves/</link>
 			<pubDate>Sun, 13 Apr 2025 10:00:00 +0000</pubDate>
 			
-			<guid>/posts/cyber-slaves/</guid>
+			<guid>//localhost:1313/posts/cyber-slaves/</guid>
 			<description>&lt;p&gt;Clarity.&lt;/p&gt;
 &lt;p&gt;All we seek is clarity. Yet, it appears that everything around us – everything we see, everything we touch – is designed to be noisy, to disrupt every thought we have before it can fully form. Entire teams of researchers, scientists, psychologists devote their lives to finding and &amp;ldquo;pulling the right&amp;rdquo; switch in our minds, optimizing for engagement, for distraction.&lt;/p&gt;
 &lt;p&gt;Our inherent capital – the finite time and vibrant youth we possess – is systematically siphoned off to feed the mainframe, the ever-hungry digital systems that thrive on our attention.&lt;/p&gt;</description>
@@ -71,12 +190,12 @@
 		
 		<item>
 			<title>The War Against Heteronomy</title>
-			<link>/posts/thewaragainstheteronomy/</link>
+			<link>//localhost:1313/posts/thewaragainstheteronomy/</link>
 			<pubDate>Mon, 31 Mar 2025 08:38:35 +0530</pubDate>
 			
-			<guid>/posts/thewaragainstheteronomy/</guid>
+			<guid>//localhost:1313/posts/thewaragainstheteronomy/</guid>
 			<description>&lt;p&gt;
-  &lt;img src=&#34;/images/autonomy-header.jpg&#34; alt=&#34;A person standing at a crossroads with multiple paths branching outward&#34;&gt;
+  &lt;img src=&#34;//localhost:1313/images/autonomy-header.jpg&#34; alt=&#34;A person standing at a crossroads with multiple paths branching outward&#34;&gt;
 &lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Image: The Pathways of Choice - representing the autonomy that comes from recognizing our power to choose&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;prelude&#34;&gt;Prelude&lt;/h2&gt;
@@ -270,10 +389,10 @@
 		
 		<item>
 			<title>Technofeudalism and the Return to the Real</title>
-			<link>/posts/technofeudalism-and-the-return-to-the-real/</link>
+			<link>//localhost:1313/posts/technofeudalism-and-the-return-to-the-real/</link>
 			<pubDate>Thu, 23 Jan 2025 12:34:29 +0530</pubDate>
 			
-			<guid>/posts/technofeudalism-and-the-return-to-the-real/</guid>
+			<guid>//localhost:1313/posts/technofeudalism-and-the-return-to-the-real/</guid>
 			<description>&lt;p&gt;What makes the modern manifestation of cloud capital, integral to the &lt;a href=&#34;https://thebeautifultruth.org/the-basics/what-is-technofeudalism/&#34;&gt;Technofeudalism&lt;/a&gt; system we live under, is that it&amp;rsquo;s impossible to go anywhere without having it glaring at you. It hovers above the heads of modern people like a cloud, taking all our attention and carefully curating it, effectively extracting life energy and transmuting it into data and narrative.&lt;/p&gt;
 &lt;p&gt;Nick Land extensively talks about hyperstition, and the memesis we see via social media enables false narratives to take on a life of their own, often manufactured by the techno-oligarchs themselves in service of their political ambitions.&lt;/p&gt;</description>
 			<content type="html"><![CDATA[<p>What makes the modern manifestation of cloud capital, integral to the <a href="https://thebeautifultruth.org/the-basics/what-is-technofeudalism/">Technofeudalism</a> system we live under, is that it&rsquo;s impossible to go anywhere without having it glaring at you. It hovers above the heads of modern people like a cloud, taking all our attention and carefully curating it, effectively extracting life energy and transmuting it into data and narrative.</p>
@@ -307,10 +426,10 @@
 		
 		<item>
 			<title>Neuroplasticity: How to Manipulate Reality</title>
-			<link>/posts/neuroplasticity---how-to-manipulate-reality/</link>
+			<link>//localhost:1313/posts/neuroplasticity---how-to-manipulate-reality/</link>
 			<pubDate>Fri, 16 Jun 2023 00:08:35 +0530</pubDate>
 			
-			<guid>/posts/neuroplasticity---how-to-manipulate-reality/</guid>
+			<guid>//localhost:1313/posts/neuroplasticity---how-to-manipulate-reality/</guid>
 			<description>&lt;h2 id=&#34;the-remarkable-capacity-for-change-in-the-human-brain&#34;&gt;The Remarkable Capacity for Change in the Human Brain&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;Most people go through their entire lives without truly understanding the astonishing potential for change that exists within the human brain.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;It is commonly believed that our capacity for learning diminishes over time, with the assumption that we can only learn effectively during our childhood years. While this may be true for the majority, I argue that by following specific protocols, not only can we sustain learning throughout our lives, but we can also enhance it.&lt;/p&gt;</description>
@@ -369,10 +488,10 @@ b) Not smoke</p>
 		
 		<item>
 			<title>The Art of Human Connection: How to become the leader of your tribe</title>
-			<link>/posts/the-art-of-human-connection--how-to-make-friends/</link>
+			<link>//localhost:1313/posts/the-art-of-human-connection--how-to-make-friends/</link>
 			<pubDate>Fri, 10 Dec 2021 19:49:54 +0530</pubDate>
 			
-			<guid>/posts/the-art-of-human-connection--how-to-make-friends/</guid>
+			<guid>//localhost:1313/posts/the-art-of-human-connection--how-to-make-friends/</guid>
 			<description>&lt;h3 id=&#34;are-you-an-extrovert-or-introvert&#34;&gt;Are you an Extrovert or Introvert?&lt;/h3&gt;
 &lt;p&gt;Irrelevant question.
 Why? Because all of us need, and deserve, a meaningful social connection, regardless of how we feel like in social situations.
@@ -427,10 +546,10 @@ You are the top. You are hanging out with Adonis, Maximus and Ares. These type o
 		
 		<item>
 			<title>Doing What You Got to Do: A Systematic Pathway to Success</title>
-			<link>/posts/doing-what-you-got-to-do--a-systematic-pathway-to-success/</link>
+			<link>//localhost:1313/posts/doing-what-you-got-to-do--a-systematic-pathway-to-success/</link>
 			<pubDate>Sun, 05 Dec 2021 11:01:26 +0530</pubDate>
 			
-			<guid>/posts/doing-what-you-got-to-do--a-systematic-pathway-to-success/</guid>
+			<guid>//localhost:1313/posts/doing-what-you-got-to-do--a-systematic-pathway-to-success/</guid>
 			<description>&lt;h3 id=&#34;there-is-something-extremely-important-that-i-have-learned-over-the-last-few-months&#34;&gt;There is something extremely important that I have learned over the last few months.&lt;/h3&gt;
 &lt;p&gt;If one has gotten into their self-improvement journey, they will eventually realize one thing: you would have to &lt;strong&gt;do the hard work, ESPECIALLY when you don&amp;rsquo;t feel like it&lt;/strong&gt;.
 There is great power in getting something hard or boring to become a routine habit just by doing it repeatedly. Imagine going to the gym in the morning without a single word of protest every day. Or… studying for 6 hours with no feelings of resentment.&lt;/p&gt;</description>
@@ -457,10 +576,10 @@ I fought the mental battle, allotted some time to get this all written down.</p>
 		
 		<item>
 			<title>Learning From Media vs Learning From Experience: Which Is Better?</title>
-			<link>/posts/mediavsexperience/</link>
+			<link>//localhost:1313/posts/mediavsexperience/</link>
 			<pubDate>Sun, 28 Nov 2021 17:23:57 +0530</pubDate>
 			
-			<guid>/posts/mediavsexperience/</guid>
+			<guid>//localhost:1313/posts/mediavsexperience/</guid>
 			<description>&lt;h2 id=&#34;times-have-changed&#34;&gt;Times have changed.&lt;/h2&gt;
 &lt;p&gt;Today, the man who can adapt the fastest and handle the most information is the man who wins.&lt;/p&gt;
 &lt;p&gt;This shift in focus of the economy from physical labor to &lt;em&gt;intellectual&lt;/em&gt; labor has created an industry around learning, in contrast to education.&lt;/p&gt;
@@ -501,10 +620,10 @@ Therefore, it would be very useful to have a sort of model in which you moderate
 		
 		<item>
 			<title>The Internet:Advantages and Disadvantages</title>
-			<link>/posts/the-internet---advantages-and-disadvantages/</link>
+			<link>//localhost:1313/posts/the-internet---advantages-and-disadvantages/</link>
 			<pubDate>Sun, 21 Nov 2021 18:53:12 +0530</pubDate>
 			
-			<guid>/posts/the-internet---advantages-and-disadvantages/</guid>
+			<guid>//localhost:1313/posts/the-internet---advantages-and-disadvantages/</guid>
 			<description>&lt;h2 id=&#34;foreword&#34;&gt;Foreword&lt;/h2&gt;
 &lt;p&gt;Hello dear reader! This is a college essay i wrote a couple of weeks ago for a school project, I thought why not upload it on my blog, since i havent done that in so long lol.&lt;/p&gt;
 &lt;p&gt;Well, dont take this as an actual post, more of a filler that you may or may not want to read :D&lt;/p&gt;
@@ -549,10 +668,10 @@ The advantages may outweigh the disadvantages in case you know how to use the in
 		
 		<item>
 			<title>How to Pick a Programming Language</title>
-			<link>/posts/how-to-pick-a-programming-language/</link>
+			<link>//localhost:1313/posts/how-to-pick-a-programming-language/</link>
 			<pubDate>Fri, 20 Aug 2021 12:33:41 +0530</pubDate>
 			
-			<guid>/posts/how-to-pick-a-programming-language/</guid>
+			<guid>//localhost:1313/posts/how-to-pick-a-programming-language/</guid>
 			<description>&lt;h2 id=&#34;software-really-is-a-beautiful-thing&#34;&gt;Software really is a beautiful thing.&lt;/h2&gt;
 &lt;p&gt;We often take the magical applications we use every single day for granted. Chances are that if you are reading this, you are curious on how to make your own, but you find the dozens of languages and frameworks intimidating.
 I hope to guide you through the SE world through this blog post, and clear up the misconceptions one may have.&lt;/p&gt;
@@ -620,10 +739,10 @@ You could set a similar goal and consume a tonne of information that gives you a
 		
 		<item>
 			<title>The Mental Drain of Studying and How to Deal With It</title>
-			<link>/posts/the-mental-drain-of-studying-and-how-to-deal-with-it/</link>
+			<link>//localhost:1313/posts/the-mental-drain-of-studying-and-how-to-deal-with-it/</link>
 			<pubDate>Sun, 08 Aug 2021 18:45:50 +0530</pubDate>
 			
-			<guid>/posts/the-mental-drain-of-studying-and-how-to-deal-with-it/</guid>
+			<guid>//localhost:1313/posts/the-mental-drain-of-studying-and-how-to-deal-with-it/</guid>
 			<description>&lt;h3 id=&#34;the-mental-drain-of-studying&#34;&gt;The mental drain of Studying&lt;/h3&gt;
 &lt;p&gt;A lot of us approach studying as a chore just because our parents, teachers and society in general expects us to do well in our academics. The academic journey can be rather inundating and boring. The very thought of studying and examinations can cause a lot of distress for students(at least I can speak for myself).&lt;/p&gt;
 &lt;h3 id=&#34;why-can-be-studying-so-difficult&#34;&gt;Why can be studying so difficult&lt;/h3&gt;
@@ -741,10 +860,10 @@ Think of a painter who is completely absorbed in his art. He could go hours pain
 		
 		<item>
 			<title>Eating Clean: How to Maintain a Guilt Free Calorie Defict</title>
-			<link>/posts/eating-clean--how-to-maintain-a-guilt-free-calorie-defict/</link>
+			<link>//localhost:1313/posts/eating-clean--how-to-maintain-a-guilt-free-calorie-defict/</link>
 			<pubDate>Sat, 31 Jul 2021 20:31:06 +0530</pubDate>
 			
-			<guid>/posts/eating-clean--how-to-maintain-a-guilt-free-calorie-defict/</guid>
+			<guid>//localhost:1313/posts/eating-clean--how-to-maintain-a-guilt-free-calorie-defict/</guid>
 			<description>&lt;h3 id=&#34;why-eat-cleaner&#34;&gt;Why eat cleaner&lt;/h3&gt;
 &lt;p&gt;You may have noticed it, our foods have gotten more &lt;strong&gt;processed and less nutritious&lt;/strong&gt; in the last hundred years.
 Nutrition has commercially lost all value.
@@ -823,10 +942,10 @@ The best way to start losing fat is to eliminate bad eating habits, such as spor
 		
 		<item>
 			<title>The Practice of Journaling in Self-Improvement</title>
-			<link>/posts/the-practice-of-journaling-in-self-improvement/</link>
+			<link>//localhost:1313/posts/the-practice-of-journaling-in-self-improvement/</link>
 			<pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
 			
-			<guid>/posts/the-practice-of-journaling-in-self-improvement/</guid>
+			<guid>//localhost:1313/posts/the-practice-of-journaling-in-self-improvement/</guid>
 			<description>&lt;blockquote&gt;
 &lt;p&gt;“Fill your paper with the breathings of your heart.” – William Wordsworth&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -878,10 +997,10 @@ You can also do weekly and monthly review, where instead of thinking in the scal
 		
 		<item>
 			<title>How to Type Faster</title>
-			<link>/posts/how-to-type-faster/</link>
+			<link>//localhost:1313/posts/how-to-type-faster/</link>
 			<pubDate>Sat, 17 Jul 2021 00:00:00 +0000</pubDate>
 			
-			<guid>/posts/how-to-type-faster/</guid>
+			<guid>//localhost:1313/posts/how-to-type-faster/</guid>
 			<description>&lt;h1 id=&#34;typing-has-become-and-exceedingly-useful-skill-over-the-last-few-years&#34;&gt;Typing has become and exceedingly useful skill over the last few years.&lt;/h1&gt;
 &lt;p&gt;My journey started with a single link. A friend wanted to compare our typing speeds. At the time, i was pretty slow, having to look down at my keyboard every time I wanted to type a single character (I cringe at the thought, in retrospect).
 At the time, everyone were much faster than me, I was at a slow 25 WPM and didn&amp;rsquo;t care much about it.&lt;/p&gt;</description>
@@ -921,10 +1040,10 @@ I time block my calendar to do about 15 mins of deliberate typing practice every
 		
 		<item>
 			<title>Benefits of Cold Showers</title>
-			<link>/posts/benefits-of-cold-showers/</link>
+			<link>//localhost:1313/posts/benefits-of-cold-showers/</link>
 			<pubDate>Wed, 07 Jul 2021 00:00:00 +0000</pubDate>
 			
-			<guid>/posts/benefits-of-cold-showers/</guid>
+			<guid>//localhost:1313/posts/benefits-of-cold-showers/</guid>
 			<description>&lt;h2 id=&#34;cold-showers-are-becoming-cool-again&#34;&gt;Cold Showers are becoming cool again.&lt;/h2&gt;
 &lt;p&gt;From the lifestyles of US Marines, to the legendary Wim Hof (AKA the Iceman), cold showers have become synonymous with the Healthy Grind set.
 Many reports, backed by plenty of &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5025014/&#34;&gt;studies&lt;/a&gt; have found pretty eye-opening benefits from this seemingly trivial ritual. Some benefits often talked about are:&lt;/p&gt;
@@ -967,10 +1086,10 @@ It may be extremely uncomfortable for about 5 seconds, but the feeling passes so
 		
 		<item>
 			<title>The Concept of Motivation:How to Always Get Things Done</title>
-			<link>/posts/the-concept-of-motivation---how-to-always-get-things-done/</link>
+			<link>//localhost:1313/posts/the-concept-of-motivation---how-to-always-get-things-done/</link>
 			<pubDate>Tue, 29 Jun 2021 00:00:00 +0000</pubDate>
 			
-			<guid>/posts/the-concept-of-motivation---how-to-always-get-things-done/</guid>
+			<guid>//localhost:1313/posts/the-concept-of-motivation---how-to-always-get-things-done/</guid>
 			<description>&lt;h2 id=&#34;motivation-has-a-shelf-life&#34;&gt;Motivation has a shelf life.&lt;/h2&gt;
 &lt;p&gt;It changes like the weather.
 Although it is a seasonal phenomenon, it still carries a great deal of power.&lt;/p&gt;
@@ -1006,10 +1125,10 @@ To give an example, today I feel particularly lethargic. However, I want to beco
 		
 		<item>
 			<title>Atomic Habits by James Clear:Book Review</title>
-			<link>/posts/atomic-habits-by-james-clear/</link>
+			<link>//localhost:1313/posts/atomic-habits-by-james-clear/</link>
 			<pubDate>Sat, 26 Jun 2021 00:00:00 +0000</pubDate>
 			
-			<guid>/posts/atomic-habits-by-james-clear/</guid>
+			<guid>//localhost:1313/posts/atomic-habits-by-james-clear/</guid>
 			<description>&lt;h2 id=&#34;this-is-a-legendary-book-its-reputation-proceeds-it&#34;&gt;This is a legendary book, its reputation proceeds it.&lt;/h2&gt;
 &lt;p&gt;All the productivity greats like &lt;a href=&#34;https://www.youtube.com/user/electrickeye91&#34;&gt;Thomas Frank&lt;/a&gt; and &lt;a href=&#34;https://www.youtube.com/c/aliabdaal/videos&#34;&gt;Ali Abdaal&lt;/a&gt; have recommended it…so this month I have decided to check it out.&lt;/p&gt;
 &lt;p&gt;And boy, does it deliver.&lt;/p&gt;
@@ -1095,10 +1214,10 @@ Sure, I used to use them and all was fine for a few days but with life, changes 
 		
 		<item>
 			<title>Digital Minimalism by Cal Newport: Book Review</title>
-			<link>/posts/digital-minimilism-by-cal-newport--book-review/</link>
+			<link>//localhost:1313/posts/digital-minimilism-by-cal-newport--book-review/</link>
 			<pubDate>Wed, 16 Jun 2021 16:06:37 +0530</pubDate>
 			
-			<guid>/posts/digital-minimilism-by-cal-newport--book-review/</guid>
+			<guid>//localhost:1313/posts/digital-minimilism-by-cal-newport--book-review/</guid>
 			<description>&lt;h2 id=&#34;yet-another-cal-newport-review-ay&#34;&gt;Yet Another Cal Newport Review, ay?&lt;/h2&gt;
 &lt;p&gt;You may be beginning to notice a pattern here. But seriously, The man is such an intuitive and practical writer.&lt;/p&gt;
 &lt;p&gt;If you are anything like me, you may find that a lot of precious time gets sucked away by the internet, or digital world. In fact, this has become such a problem that &lt;a href=&#34;https://www.pewresearch.org/internet/2015/04/09/teens-social-media-technology-2015/&#34;&gt;92% of teens go online daily, and 24% say they go online “almost constantly.”&lt;/a&gt;
@@ -1136,10 +1255,10 @@ If we are reasonable with this power, we will succeed as a species.</p>
 		
 		<item>
 			<title>The Importance of Sleep in Learning</title>
-			<link>/posts/the-importance-of-sleep-in-learning/</link>
+			<link>//localhost:1313/posts/the-importance-of-sleep-in-learning/</link>
 			<pubDate>Fri, 11 Jun 2021 23:49:25 +0530</pubDate>
 			
-			<guid>/posts/the-importance-of-sleep-in-learning/</guid>
+			<guid>//localhost:1313/posts/the-importance-of-sleep-in-learning/</guid>
 			<description>&lt;p&gt;I am writing this blog post at 11:55 AM out of a great need to express my thoughts about sleep,the tame death that envelopes us all.&lt;/p&gt;
 &lt;p&gt;I find that in our modern world,sleep is often put aside,or even overlooked. I have recently found a &lt;a href=&#34;https://www.cdc.gov/media/releases/2016/p0215-enough-sleep.html&#34;&gt;study&lt;/a&gt; by the american goverment that asserts that 1 in 3 adults &lt;strong&gt;are chronically sleep deprived.&lt;/strong&gt; These numbers are shocking and should make us reconsider our &lt;em&gt;view&lt;/em&gt; on sleep.&lt;/p&gt;</description>
 			<content type="html"><![CDATA[<p>I am writing this blog post at 11:55 AM out of a great need to express my thoughts about sleep,the tame death that envelopes us all.</p>
@@ -1160,10 +1279,10 @@ hundreds of cells die and new cells <em>should</em> be able to regenerate in a h
 		
 		<item>
 			<title>Deep Work by Cal Newport:Book Review</title>
-			<link>/posts/deep-work-by-cal-newport-book-review/</link>
+			<link>//localhost:1313/posts/deep-work-by-cal-newport-book-review/</link>
 			<pubDate>Tue, 08 Jun 2021 11:57:29 +0530</pubDate>
 			
-			<guid>/posts/deep-work-by-cal-newport-book-review/</guid>
+			<guid>//localhost:1313/posts/deep-work-by-cal-newport-book-review/</guid>
 			<description>&lt;h1 id=&#34;productivity-books-we-all-read-them&#34;&gt;Productivity books, we all read them&lt;/h1&gt;
 &lt;p&gt;kinda is becoming my guilty pleasure at this point. However, I have to give the book “Deep Work” some credit.
 Although this is my second reading, I still find enormous meaning from it.&lt;/p&gt;
@@ -1196,10 +1315,10 @@ I highly recommend the book to anyone who has the hunger for success in this eve
 		
 		<item>
 			<title>Learning to Hack: A Resource Guide</title>
-			<link>/posts/learning-to-hack---a-resource-guide./</link>
+			<link>//localhost:1313/posts/learning-to-hack---a-resource-guide./</link>
 			<pubDate>Sun, 16 May 2021 10:54:36 +0530</pubDate>
 			
-			<guid>/posts/learning-to-hack---a-resource-guide./</guid>
+			<guid>//localhost:1313/posts/learning-to-hack---a-resource-guide./</guid>
 			<description>&lt;h2 id=&#34;being-a-hacker-sounds-really-cool&#34;&gt;&lt;strong&gt;Being a hacker sounds really cool.&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;But how do you become one?&lt;/p&gt;
 &lt;p&gt;In this resource guide, i will try to tackle this question by identifying a few essential &lt;em&gt;skills and websites&lt;/em&gt; that helped (and is continuing to help) me learn how to hack.&lt;/p&gt;
