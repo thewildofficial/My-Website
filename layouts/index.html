@@ -46,4 +46,22 @@
 			
 		</div>
 	</div>
+
+{{/* Stagewise Toolbar - Development Only */}}
+{{ if hugo.IsDevelopment }}
+<script src="https://unpkg.com/@stagewise/toolbar"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (window.Stagewise && window.Stagewise.initToolbar) {
+      const stagewiseConfig = {
+        plugins: []
+      };
+      window.Stagewise.initToolbar(stagewiseConfig);
+    } else {
+      console.error("Stagewise Toolbar not found. Ensure the script is loaded.");
+    }
+  });
+</script>
+{{ end }}
+
 {{ end }}

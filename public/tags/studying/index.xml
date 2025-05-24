@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Studying on Aban Hasan</title>
-    <link>/tags/studying/</link>
+    <link>//localhost:1313/tags/studying/</link>
     <description>Recent content in Studying on Aban Hasan</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 08 Aug 2021 18:45:50 +0530</lastBuildDate>
-    <atom:link href="/tags/studying/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/studying/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Mental Drain of Studying and How to Deal With It</title>
-      <link>/posts/the-mental-drain-of-studying-and-how-to-deal-with-it/</link>
+      <link>//localhost:1313/posts/the-mental-drain-of-studying-and-how-to-deal-with-it/</link>
       <pubDate>Sun, 08 Aug 2021 18:45:50 +0530</pubDate>
-      <guid>/posts/the-mental-drain-of-studying-and-how-to-deal-with-it/</guid>
+      <guid>//localhost:1313/posts/the-mental-drain-of-studying-and-how-to-deal-with-it/</guid>
       <description>&lt;h3 id=&#34;the-mental-drain-of-studying&#34;&gt;The mental drain of Studying&lt;/h3&gt;&#xA;&lt;p&gt;A lot of us approach studying as a chore just because our parents, teachers and society in general expects us to do well in our academics. The academic journey can be rather inundating and boring. The very thought of studying and examinations can cause a lot of distress for students(at least I can speak for myself).&lt;/p&gt;&#xA;&lt;h3 id=&#34;why-can-be-studying-so-difficult&#34;&gt;Why can be studying so difficult&lt;/h3&gt;&#xA;&lt;p&gt;studying may not be the most appealing thing in the world. Sitting for multiple hours looking at static books is not exactly what our survivalist brains were made for. There are a myriad of reasons why we may find studying undesirable, some of them being:&lt;/p&gt;</description>
     </item>
   </channel>
