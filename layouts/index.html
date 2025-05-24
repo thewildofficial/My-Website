@@ -48,7 +48,7 @@
 	</div>
 
 {{/* Stagewise Toolbar - Development Only */}}
-{{ if hugo.IsDevelopment }}
+{{ if eq (getenv "HUGO_ENV") "development" }}
 <script src="https://unpkg.com/@stagewise/toolbar"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
