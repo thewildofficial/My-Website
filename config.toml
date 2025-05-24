@@ -27,9 +27,6 @@ googleAnalyticsID = "G-G3F606BLYN"
     name = "github"
     url = "https://github.com/thewildofficial"
   [[params.social]]
-    name = "youtube"
-    url = "https://www.youtube.com/channel/UCgmwvznKWmu-bAEtIbTT05w"
-  [[params.social]]
     name = "twitter"
     url = "https://twitter.com/abantheseeker"
 
