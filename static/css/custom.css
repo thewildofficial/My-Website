@@ -640,3 +640,99 @@ body.dark-mode {
     ...
 }
 */
+
+/* ===== Table of Contents (for aside#toc) ===== */
+aside#toc {
+    background-color: var(--bg-color); /* Dark background from your theme */
+    /* border-left: 1px solid var(--border-color); */ /* Vertical line removed */
+    padding: 20px;
+    width: 280px; /* Adjust width as needed */
+    position: fixed; /* Fixed position on the viewport */
+    right: -300px; /* Start off-screen to the right */
+    top: 100px; /* Adjust top to clear your sticky header, if any */
+    height: calc(100vh - 120px); /* Adjust height, considering top offset and some bottom padding */
+    overflow-y: auto;
+    z-index: 999; /* Below sticky header (100) but above most content */
+    transition: right 0.4s ease-in-out;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+}
+
+aside#toc.show-toc {
+    right: 0; /* Slide in from the right */
+}
+
+aside#toc .toc-title, /* Assuming a title element might exist or be added by JS */
+aside#toc h2, /* If the theme uses a plain h2 */
+aside#toc h3, /* Or h3 */
+aside#toc h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: var(--highlight-color); /* Highlight color for title */
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+aside#toc ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside#toc ul ul {
+    padding-left: 15px; /* Indent nested lists */
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+aside#toc li {
+    margin-bottom: 0.5em;
+}
+
+aside#toc li a {
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+aside#toc li a:hover {
+    color: var(--highlight-color);
+    background-color: var(--button-bg); /* Subtle hover from your theme */
+}
+
+aside#toc li a.active { /* If your JS adds an .active class */
+    color: var(--highlight-color);
+    font-weight: bold;
+    border-left: 2px solid var(--highlight-color);
+    padding-left: 8px; /* Adjust to align with border */
+    background-color: rgba(255, 51, 133, 0.1); /* Faint highlight background */
+}
+
+/* Hide on smaller screens if it becomes too intrusive, or adjust width/position */
+@media (max-width: 1024px) {
+    aside#toc {
+        /* Example: hide it or make it a modal/drawer */
+        /* display: none; */ 
+        /* For now, let's make it narrower and ensure it doesn't overlap too much */
+        width: 220px;
+        right: -240px; /* Adjust if width changes */
+        top: 80px; 
+        height: calc(100vh - 100px);
+    }
+    aside#toc.show-toc {
+        right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    aside#toc {
+        display: none; /* Often best to hide fixed sidebars on mobile */
+                     /* Your theme might have a mobile-specific menu/ToC button instead */
+    }
+}
+/* ===== End Table of Contents (for aside#toc) ===== */
