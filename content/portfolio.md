@@ -192,6 +192,103 @@
   margin-top: 15px;
   align-self: flex-start;
 }
+
+.journey-container {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.journey-step {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.journey-step-0, .journey-step-1, .journey-step-2, .journey-step-3 {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+}
+
+.journey-step-0 {
+    background-image: linear-gradient(45deg, rgba(10, 10, 15, 0.9), rgba(20, 20, 20, 0.95));
+    z-index: 0;
+}
+
+.journey-step-1 {
+    background-image: linear-gradient(45deg, rgba(20, 30, 80, 0.8), rgba(30, 20, 50, 0.85));
+    z-index: 1;
+}
+
+.journey-step-2 {
+    background-image: linear-gradient(45deg, rgba(100, 40, 20, 0.8), rgba(30, 10, 10, 0.9));
+    z-index: 2;
+}
+
+.journey-step-3 {
+    background-image: linear-gradient(45deg, rgba(176, 106, 179, 0.7), rgba(69, 104, 220, 0.8));
+    z-index: 3;
+}
+
+.journey-content {
+    text-align: center;
+    max-width: 750px;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transform: translateY(30px);
+    opacity: 0;
+    animation: journey-fade-in 0.8s ease-out forwards;
+}
+
+@keyframes journey-fade-in {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.journey-content h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+.journey-content h2 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.journey-content p, .journey-content blockquote {
+    font-size: 1.2em;
+    line-height: 1.7;
+    color: #e0e0e0;
+}
+
+.journey-content blockquote {
+    font-style: italic;
+    border: none;
+    padding: 0;
+    margin: 25px 0;
+    opacity: 0.9;
+}
+
+.flag-emoji {
+    opacity: 1 !important;
+}
 </style>
 
 <!-- Script imports for enhanced animations -->
@@ -255,13 +352,34 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 </script>
 
-<h1 align="center" class="gradient-text animate-fade-in">Aban Hasan</h1>
-
-<h3 align="center" class="animate-fade-in delay-200">⚡ Student | 🌐 Cybernaut | 🚀 Innovator</h3>
-
-<p align="center" class="animate-fade-in delay-300">
-  <i>Building the digital future, one project at a time</i>
-</p>
+<div class="journey-container">
+    <div class="journey-step journey-step-0">
+        <div class="journey-content">
+            <h1 align="center" class="gradient-text">Aban Hasan</h1>
+            <h3 align="center" style="color: #e0e0e0; font-weight: 300;">⚡ Student | 🌐 Cybernaut | 🚀 Innovator</h3>
+            <p align="center" style="font-style: italic; opacity: 0.8;">Building the digital future, one project at a time</p>
+        </div>
+    </div>
+    <div class="journey-step journey-step-1">
+        <div class="journey-content">
+            <h2 class="gradient-text">Foundations in Ottawa <span class="flag-emoji">🇨🇦</span></h2>
+            <p>I began my formal journey in Computer Science at Carleton University, building a strong foundation in algorithmic thinking and software development while nurturing a community of like-minded builders.</p>
+        </div>
+    </div>
+    <div class="journey-step journey-step-2">
+        <div class="journey-content">
+            <h2 class="gradient-text">The New Frontier</h2>
+            <blockquote>"To be in software in 2025 is to be a cowboy in 1900... The open range is closing, fences are going up, and the rules are changing. This isn't just a shift; it's a reckoning."</blockquote>
+            <p>Recognizing the paradigm shift, I made the cowboy's choice: to ride out towards the new, untamed frontier of AI, trading established comfort for the chance to build on truly new ground.</p>
+        </div>
+    </div>
+    <div class="journey-step journey-step-3">
+        <div class="journey-content">
+            <h2 class="gradient-text">Forging the Future in Bangalore <span class="flag-emoji">🇮🇳</span></h2>
+            <p>Now, I am immersed in one of India's most selective tech programs at Scalar, while simultaneously pursuing a BS in Data Science from IIT Madras. This dual path is an intentional act of forging—combining deep industry practice with rigorous academic theory.</p>
+        </div>
+    </div>
+</div>
 
 <div class="gradient-border animate-fade-in delay-400">
   <div class="intro-box">
@@ -322,114 +440,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 </script>
-
-<!-- Cinematic Journey Section -->
-<style>
-.journey-container {
-    position: relative;
-    width: 100vw;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
-
-.journey-step {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    margin: 0;
-    padding: 0 20px;
-    color: #fff;
-}
-
-.journey-step-1, .journey-step-2, .journey-step-3 {
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Parallax effect */
-}
-
-.journey-step-1 {
-    background-image: linear-gradient(45deg, rgba(20, 30, 80, 0.7), rgba(30, 20, 50, 0.8));
-    z-index: 1;
-}
-
-.journey-step-2 {
-    background-image: linear-gradient(45deg, rgba(30, 30, 30, 0.8), rgba(10, 10, 10, 0.9));
-    z-index: 2;
-}
-
-.journey-step-3 {
-    background-image: linear-gradient(45deg, rgba(176, 106, 179, 0.7), rgba(69, 104, 220, 0.8));
-    z-index: 3;
-}
-
-.journey-content {
-    text-align: center;
-    max-width: 750px;
-    padding: 50px;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transform: translateY(30px);
-    opacity: 0;
-    animation: journey-fade-in 0.8s ease-out forwards;
-}
-
-@keyframes journey-fade-in {
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.journey-content h2 {
-    font-size: 3em;
-    margin-bottom: 15px;
-}
-
-.journey-content p, .journey-content blockquote {
-    font-size: 1.2em;
-    line-height: 1.7;
-    color: #e0e0e0;
-}
-
-.journey-content blockquote {
-    font-style: italic;
-    border: none;
-    padding: 0;
-    margin: 25px 0;
-    opacity: 0.9;
-}
-</style>
-
-<div class="journey-container">
-    <div class="journey-step journey-step-1">
-        <div class="journey-content">
-            <h2 class="gradient-text">Foundations in Ottawa 🇨🇦</h2>
-            <p>I began my formal journey in Computer Science at Carleton University, building a strong foundation in algorithmic thinking and software development while nurturing a community of like-minded builders.</p>
-        </div>
-    </div>
-    <div class="journey-step journey-step-2">
-        <div class="journey-content">
-            <h2 class="gradient-text">The Strategic Pivot</h2>
-            <blockquote>"The autonomous individual sees the signal from the noise, not from foresight, but from experimentation... It's never about settling for 'good enough'."</blockquote>
-            <p>Guided by a core philosophy of agency, I made the deliberate choice to pivot—seeking out an environment of intense, specialized learning to accelerate my growth.</p>
-        </div>
-    </div>
-    <div class="journey-step journey-step-3">
-        <div class="journey-content">
-            <h2 class="gradient-text">Forging the Future in Bangalore 🇮🇳</h2>
-            <p>Now, I am immersed in one of India's most selective tech programs at Scalar, while simultaneously pursuing a BS in Data Science from IIT Madras. This dual path is an intentional act of forging—combining deep industry practice with rigorous academic theory.</p>
-        </div>
-    </div>
-</div>
 
 <h1 class="gradient-text animate-fade-in">🛠️ Featured Projects</h1>
 
