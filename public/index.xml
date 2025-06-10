@@ -37,13 +37,6 @@
       <description>&lt;p&gt;What makes the modern manifestation of cloud capital, integral to the &lt;a href=&#34;https://thebeautifultruth.org/the-basics/what-is-technofeudalism/&#34;&gt;Technofeudalism&lt;/a&gt; system we live under, is that it&amp;rsquo;s impossible to go anywhere without having it glaring at you. It hovers above the heads of modern people like a cloud, taking all our attention and carefully curating it, effectively extracting life energy and transmuting it into data and narrative.&lt;/p&gt;&#xA;&lt;p&gt;Nick Land extensively talks about hyperstition, and the memesis we see via social media enables false narratives to take on a life of their own, often manufactured by the techno-oligarchs themselves in service of their political ambitions.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Credentials &amp; Academic Journey</title>
-      <link>//localhost:1313/credentials/</link>
-      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/credentials/</guid>
-      <description>&lt;div class=&#34;credentials-hero&#34;&gt;&#xA;    &lt;div class=&#34;journey-header&#34;&gt;&#xA;        &lt;h1&gt;🔓 Pathways Unlocked&lt;/h1&gt;&#xA;        &lt;p class=&#34;hero-subtitle&#34;&gt;A showcase of the recognitions, opportunities, and learning credentials that have shaped my journey in tech.&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;geographic-journey&amp;quot;&amp;gt;&#xA;    &amp;lt;div class=&amp;quot;journey-path&amp;quot;&amp;gt;&#xA;        &amp;lt;div class=&amp;quot;location-marker ottawa&amp;quot;&amp;gt;&#xA;            &amp;lt;span class=&amp;quot;flag&amp;quot;&amp;gt;🇨🇦&amp;lt;/span&amp;gt;&#xA;            &amp;lt;span class=&amp;quot;city&amp;quot;&amp;gt;Ottawa&amp;lt;/span&amp;gt;&#xA;            &amp;lt;span class=&amp;quot;status&amp;quot;&amp;gt;Completed Year 1&amp;lt;/span&amp;gt;&#xA;        &amp;lt;/div&amp;gt;&#xA;        &amp;lt;div class=&amp;quot;path-connector&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&#xA;        &amp;lt;div class=&amp;quot;location-marker bangalore active&amp;quot;&amp;gt;&#xA;            &amp;lt;span class=&amp;quot;flag&amp;quot;&amp;gt;🇮🇳&amp;lt;/span&amp;gt;&#xA;            &amp;lt;span class=&amp;quot;city&amp;quot;&amp;gt;Bangalore&amp;lt;/span&amp;gt;&#xA;            &amp;lt;span class=&amp;quot;status&amp;quot;&amp;gt;Current Hub&amp;lt;/span&amp;gt;&#xA;        &amp;lt;/div&amp;gt;&#xA;    &amp;lt;/div&amp;gt;&#xA;&amp;lt;/div&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;credentials-grid&#34;&gt;&#xA;&lt;h2 id=&#34;-university-offers--admissions&#34;&gt;🎓 University Offers &amp;amp; Admissions&lt;/h2&gt;&#xA;&lt;div class=&#34;credential-section university-offers&#34;&gt;&#xA;&lt;div class=&#34;credential-card waterloo&#34; data-institution=&#34;waterloo&#34;&gt;&#xA;    &lt;div class=&#34;card-header&#34;&gt;&#xA;        &lt;div class=&#34;institution-info&#34;&gt;&#xA;            &lt;h3&gt;University of Waterloo&lt;/h3&gt;&#xA;            &lt;p class=&#34;program&#34;&gt;BSc Honours in Mathematics&lt;/p&gt;&#xA;        &lt;/div&gt;&#xA;        &lt;div class=&#34;card-status&#34;&gt;&#xA;            &lt;span class=&#34;status-badge offered&#34;&gt;Offered&lt;/span&gt;&#xA;        &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;card-content&#34;&gt;&#xA;        &lt;p class=&#34;description&#34;&gt;Renowned for its rigorous mathematics program and co-op opportunities in tech.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Neuroplasticity: How to Manipulate Reality</title>
       <link>//localhost:1313/posts/neuroplasticity---how-to-manipulate-reality/</link>
       <pubDate>Fri, 16 Jun 2023 00:08:35 +0530</pubDate>
@@ -164,13 +157,6 @@
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/about/</guid>
-      <description>&lt;h1 align=&#34;center&#34;&gt;&lt;img src=&#34;https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif&#34; width=&#34;32&#34;&gt; Hi, I&#39;m Aban!&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;m 19 years old, currently based in Bangalore 🇮🇳 (previously Ottawa 🇨🇦)&lt;/p&gt;&#xA;&lt;p&gt;I see myself as an ambitious and perispicacious individual and have always been fascinated by computers and human relationships. I believe that business and technology skills are a powerful combination and hence really seek to equip myself with the best of both worlds.&lt;/p&gt;&#xA;&lt;p&gt;I commit myself to make the world a better place through technology, personal development and innovation.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
       <link>//localhost:1313/portfolio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/portfolio/</guid>
@@ -182,6 +168,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/prometheus/</guid>
       <description>&lt;picture&gt;&#xA;  &lt;source srcset=&#34;https://fonts.gstatic.com/s/e/notoemoji/latest/1f916/512.webp&#34; type=&#34;image/webp&#34;&gt;&#xA;  &lt;img src=&#34;https://fonts.gstatic.com/s/e/notoemoji/latest/1f916/512.gif&#34; alt=&#34;🤖&#34; width=&#34;64&#34; height=&#34;64&#34;&gt;&#xA;&lt;/picture&gt;&#xA;&lt;h1 id=&#34;prometheus--the-worlds-greatest-artificial-intelligence-automation-agency&#34;&gt;Prometheus : The world&amp;rsquo;s greatest Artificial Intelligence Automation Agency&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to Prometheus, the forefront of Artificial Intelligence Automation.&lt;/p&gt;&#xA;&lt;p&gt;In this era of boundless possibilities in generative AI, we stand tall as the world&amp;rsquo;s greatest AI agency, equipped with cutting-edge technologies like ChatGPT and Stable Diffusion.&lt;/p&gt;&#xA;&lt;p&gt;Since 2020, we have continuously pushed the boundaries of AI innovation. In fact, we were at the vanguard of the AI revolution, having developed a groundbreaking prototype that would later be revived as the revolutionary ChatGPT. Our early experimentation with tools like GPT-3 allowed us to foresee the immense potential they held.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>//localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/about/</guid>
+      <description>&lt;div class=&#34;about-hero&#34;&gt;&#xA;&lt;div class=&#34;hero-content&#34;&gt;&#xA;&lt;h1&gt;&lt;img src=&#34;https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif&#34; width=&#34;32&#34;&gt; Hi, I&#39;m Aban&lt;/h1&gt;&#xA;&lt;p class=&#34;location-tag&#34;&gt;19 • Bangalore 🇮🇳 (previously Ottawa 🇨🇦)&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;about-main&#34;&gt;&#xA;&lt;h2 id=&#34;who-i-am&#34;&gt;Who I Am&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m someone who thinks deeply about technology&amp;rsquo;s role in shaping human potential. Not in the shallow &amp;ldquo;tech will save us&amp;rdquo; way, but in wrestling with the real questions: &lt;em&gt;Are we building tools that extend human agency, or are we creating digital cages that hollow us out?&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Currently, I&amp;rsquo;m building forward from two angles: studying Data Science &amp;amp; Applications at IIT Madras while diving deep into practical engineering at Scalar School of Technology. This isn&amp;rsquo;t about collecting credentials—it&amp;rsquo;s about understanding both the theoretical foundations and the pragmatic realities of building systems that matter.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
