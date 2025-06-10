@@ -65,9 +65,6 @@
     <loc>//localhost:1313/posts/technofeudalism-and-the-return-to-the-real/</loc>
     <lastmod>2025-01-23T12:34:29+05:30</lastmod>
   </url><url>
-    <loc>//localhost:1313/credentials/</loc>
-    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/posts/neuroplasticity---how-to-manipulate-reality/</loc>
     <lastmod>2023-06-16T00:08:35+05:30</lastmod>
   </url><url>
@@ -164,11 +161,11 @@
     <loc>//localhost:1313/posts/learning-to-hack---a-resource-guide./</loc>
     <lastmod>2021-05-16T10:54:36+05:30</lastmod>
   </url><url>
-    <loc>//localhost:1313/about/</loc>
-  </url><url>
     <loc>//localhost:1313/portfolio/</loc>
   </url><url>
     <loc>//localhost:1313/prometheus/</loc>
+  </url><url>
+    <loc>//localhost:1313/about/</loc>
   </url><url>
     <loc>//localhost:1313/authors/</loc>
   </url>
