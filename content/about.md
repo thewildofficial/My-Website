@@ -63,30 +63,40 @@ title: "About"
 <div class="category">
 <h3>Films</h3>
 <div class="items-grid">
-<div class="favorite-card">
-<h4>Limitless</h4>
-<p class="quote">"I don't have delusions of grandeur, I have an actual recipe for grandeur."</p>
-<span class="year">2011</span>
+<div class="favorite-item">
+<div class="favorite-content">
+<div class="favorite-title">Limitless</div>
+<div class="favorite-quote">"I don't have delusions of grandeur, I have an actual recipe for grandeur."</div>
 </div>
-<div class="favorite-card">
-<h4>Fight Club</h4>
-<p class="quote">"You are not your job, you're not how much money you have in the bank."</p>
-<span class="year">1999</span>
+<div class="favorite-year">2011</div>
 </div>
-<div class="favorite-card">
-<h4>Zorba the Greek</h4>
-<p class="quote">"A man needs a little madness, or else he never dares cut the rope and be free."</p>
-<span class="year">1964</span>
+<div class="favorite-item">
+<div class="favorite-content">
+<div class="favorite-title">Fight Club</div>
+<div class="favorite-quote">"You are not your job, you're not how much money you have in the bank."</div>
 </div>
-<div class="favorite-card">
-<h4>Cars</h4>
-<p class="quote">"Speed. I am speed."</p>
-<span class="year">2006</span>
+<div class="favorite-year">1999</div>
 </div>
-<div class="favorite-card">
-<h4>Whiplash</h4>
-<p class="quote">"There are no two words in the English language more harmful than 'good job'."</p>
-<span class="year">2014</span>
+<div class="favorite-item">
+<div class="favorite-content">
+<div class="favorite-title">Zorba the Greek</div>
+<div class="favorite-quote">"A man needs a little madness, or else he never dares cut the rope and be free."</div>
+</div>
+<div class="favorite-year">1964</div>
+</div>
+<div class="favorite-item">
+<div class="favorite-content">
+<div class="favorite-title">Cars</div>
+<div class="favorite-quote">"Speed. I am speed."</div>
+</div>
+<div class="favorite-year">2006</div>
+</div>
+<div class="favorite-item">
+<div class="favorite-content">
+<div class="favorite-title">Whiplash</div>
+<div class="favorite-quote">"There are no two words in the English language more harmful than 'good job'."</div>
+</div>
+<div class="favorite-year">2014</div>
 </div>
 </div>
 </div>
@@ -94,35 +104,45 @@ title: "About"
 <div class="category">
 <h3>Books</h3>
 <div class="items-grid">
-<div class="favorite-card">
-<h4>The Red Book</h4>
-<p class="quote">"The privilege of a lifetime is to become who you truly are."</p>
-<span class="year">2009</span>
-<p class="author">Carl Jung</p>
+<div class="favorite-item">
+<div class="favorite-content">
+<div class="favorite-title">The Red Book</div>
+<div class="favorite-author">Carl Jung</div>
+<div class="favorite-quote">"The privilege of a lifetime is to become who you truly are."</div>
 </div>
-<div class="favorite-card">
-<h4>Reign of Quantity</h4>
-<p class="quote">"Modern civilization has lost all sense of the sacred."</p>
-<span class="year">1945</span>
-<p class="author">René Guénon</p>
+<div class="favorite-year">2009</div>
 </div>
-<div class="favorite-card">
-<h4>Theodore Roosevelt Biography</h4>
-<p class="quote">"Far better it is to dare mighty things than to take rank with those poor timid spirits."</p>
-<span class="year">2001</span>
-<p class="author">Edmund Morris</p>
+<div class="favorite-item">
+<div class="favorite-content">
+<div class="favorite-title">Reign of Quantity</div>
+<div class="favorite-author">René Guénon</div>
+<div class="favorite-quote">"Modern civilization has lost all sense of the sacred."</div>
 </div>
-<div class="favorite-card">
-<h4>Nassim Taleb Works</h4>
-<p class="quote">"The three most harmful addictions are heroin, carbohydrates, and a monthly salary."</p>
-<span class="year">2001-2018</span>
-<p class="author">Nassim Taleb</p>
+<div class="favorite-year">1945</div>
 </div>
-<div class="favorite-card">
-<h4>Industrial Society</h4>
-<p class="quote">"The system does not and cannot exist to satisfy human needs."</p>
-<span class="year">1995</span>
-<p class="author">Theodore Kaczynski</p>
+<div class="favorite-item">
+<div class="favorite-content">
+<div class="favorite-title">Theodore Roosevelt Biography</div>
+<div class="favorite-author">Edmund Morris</div>
+<div class="favorite-quote">"Far better it is to dare mighty things than to take rank with those poor timid spirits."</div>
+</div>
+<div class="favorite-year">2001</div>
+</div>
+<div class="favorite-item">
+<div class="favorite-content">
+<div class="favorite-title">Nassim Taleb Works</div>
+<div class="favorite-author">Nassim Taleb</div>
+<div class="favorite-quote">"The three most harmful addictions are heroin, carbohydrates, and a monthly salary."</div>
+</div>
+<div class="favorite-year">2001-2018</div>
+</div>
+<div class="favorite-item">
+<div class="favorite-content">
+<div class="favorite-title">Industrial Society</div>
+<div class="favorite-author">Theodore Kaczynski</div>
+<div class="favorite-quote">"The system does not and cannot exist to satisfy human needs."</div>
+</div>
+<div class="favorite-year">1995</div>
 </div>
 </div>
 </div>
