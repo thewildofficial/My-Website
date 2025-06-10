@@ -43,6 +43,10 @@ googleAnalyticsID = "G-G3F606BLYN"
     name = "Portfolio"
     url = "/portfolio"
     weight = 3
+  [[menu.main]]
+    name = "Credentials"
+    url = "/credentials"
+    weight = 4
 
 # SEO TITLE : Byte Geek: Short Reads About Productivity And Technology
 
