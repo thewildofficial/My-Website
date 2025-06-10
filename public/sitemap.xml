@@ -163,6 +163,8 @@
   </url><url>
     <loc>//localhost:1313/about/</loc>
   </url><url>
+    <loc>//localhost:1313/credentials/</loc>
+  </url><url>
     <loc>//localhost:1313/portfolio/</loc>
   </url><url>
     <loc>//localhost:1313/prometheus/</loc>

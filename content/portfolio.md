@@ -79,6 +79,20 @@
   animation: float 3s ease-in-out infinite;
 }
 
+.tech-tags {
+  margin-top: 15px;
+}
+
+.tech-tag {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #B06AB3;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  margin: 4px 4px 4px 0;
+}
+
 /* Dark mode compatibility */
 .intro-box {
   background-color: rgba(30, 30, 30, 0.7);
@@ -102,10 +116,87 @@
     align-items: center;
   }
 }
+
+.extracurriculars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.extracurricular-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 25px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-left: 4px solid transparent;
+}
+
+.extracurricular-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-left-color: #4568DC;
+}
+
+.extracurricular-card strong {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.extracurricular-icon {
+  font-size: 1.5em;
+  margin-right: 15px;
+  display: inline-block;
+  width: 30px; /* For alignment */
+  text-align: center;
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.philosophy-card {
+  background: rgba(30, 30, 30, 0.7);
+  color: #f0f0f0;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.philosophy-card h3 {
+  font-size: 1.3em;
+  margin: 0 0 15px 0;
+  color: #fff;
+  border-left: 3px solid #B06AB3;
+  padding-left: 10px;
+}
+
+.philosophy-card p {
+  font-style: italic;
+  opacity: 0.8;
+  flex-grow: 1;
+}
+
+.philosophy-card a {
+  color: #4568DC;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 15px;
+  align-self: flex-start;
+}
 </style>
 
 <!-- Script imports for enhanced animations -->
 <script src="/js/3d-background.js" defer></script>
+<script src="/js/credential-viewer.js" defer></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Fix for header visibility - redundant but ensures it works
@@ -138,10 +229,10 @@ document.addEventListener('DOMContentLoaded', function() {
   <div id="contact-popup" style="position: absolute; bottom: 70px; right: 0; width: 300px; background: white; border-radius: 8px; padding: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); display: none;">
     <h3 style="margin-top: 0; color: #4568DC;">Get In Touch</h3>
     <p style="font-size: 0.9em;">I'm always interested in new opportunities and collaborations!</p>
-    <form id="contact-form" style="display: flex; flex-direction: column;">
-      <input type="email" placeholder="Your Email" style="margin-bottom: 10px; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
-      <textarea placeholder="Your Message" rows="3" style="margin-bottom: 10px; padding: 8px; border: 1px solid #ddd; border-radius: 4px;"></textarea>
-      <button type="button" style="background: linear-gradient(45deg, #4568DC, #B06AB3); border: none; color: white; padding: 8px; border-radius: 4px; cursor: pointer;">Send Message</button>
+    <form id="contact-form" name="contact" method="POST" data-netlify="true" style="display: flex; flex-direction: column;">
+      <input type="email" name="email" placeholder="Your Email" style="margin-bottom: 10px; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+      <textarea name="message" placeholder="Your Message" rows="3" style="margin-bottom: 10px; padding: 8px; border: 1px solid #ddd; border-radius: 4px;"></textarea>
+      <button type="submit" style="background: linear-gradient(45deg, #4568DC, #B06AB3); border: none; color: white; padding: 8px; border-radius: 4px; cursor: pointer;">Send Message</button>
     </form>
   </div>
 </div>
@@ -174,7 +265,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="gradient-border animate-fade-in delay-400">
   <div class="intro-box">
-    <p>I've been immersed in the world of code since I was 12 years old. What began as curiosity evolved into a passion that drives me to explore the endless possibilities of the digital frontier. My journey combines technical expertise with a deep appreciation for how technology can solve real-world problems.</p>
+    <p>I've been immersed in the world of code since I was 12 years old. After starting my journey at Carleton University in Ottawa 🇨🇦, I made the strategic decision to return to my roots in Bangalore 🇮🇳. I am now pursuing a highly specialized and intensive tech education, combining the best of industry-focused learning and rigorous academic programs to solve real-world problems.</p>
   </div>
 </div>
 
@@ -232,36 +323,167 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 </script>
 
+<!-- Cinematic Journey Section -->
+<style>
+.journey-container {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.journey-step {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.journey-step-1, .journey-step-2, .journey-step-3 {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+}
+
+.journey-step-1 {
+    background-image: linear-gradient(45deg, rgba(20, 30, 80, 0.7), rgba(30, 20, 50, 0.8));
+    z-index: 1;
+}
+
+.journey-step-2 {
+    background-image: linear-gradient(45deg, rgba(30, 30, 30, 0.8), rgba(10, 10, 10, 0.9));
+    z-index: 2;
+}
+
+.journey-step-3 {
+    background-image: linear-gradient(45deg, rgba(176, 106, 179, 0.7), rgba(69, 104, 220, 0.8));
+    z-index: 3;
+}
+
+.journey-content {
+    text-align: center;
+    max-width: 750px;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transform: translateY(30px);
+    opacity: 0;
+    animation: journey-fade-in 0.8s ease-out forwards;
+}
+
+@keyframes journey-fade-in {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.journey-content h2 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.journey-content p, .journey-content blockquote {
+    font-size: 1.2em;
+    line-height: 1.7;
+    color: #e0e0e0;
+}
+
+.journey-content blockquote {
+    font-style: italic;
+    border: none;
+    padding: 0;
+    margin: 25px 0;
+    opacity: 0.9;
+}
+</style>
+
+<div class="journey-container">
+    <div class="journey-step journey-step-1">
+        <div class="journey-content">
+            <h2 class="gradient-text">Foundations in Ottawa 🇨🇦</h2>
+            <p>I began my formal journey in Computer Science at Carleton University, building a strong foundation in algorithmic thinking and software development while nurturing a community of like-minded builders.</p>
+        </div>
+    </div>
+    <div class="journey-step journey-step-2">
+        <div class="journey-content">
+            <h2 class="gradient-text">The Strategic Pivot</h2>
+            <blockquote>"The autonomous individual sees the signal from the noise, not from foresight, but from experimentation... It's never about settling for 'good enough'."</blockquote>
+            <p>Guided by a core philosophy of agency, I made the deliberate choice to pivot—seeking out an environment of intense, specialized learning to accelerate my growth.</p>
+        </div>
+    </div>
+    <div class="journey-step journey-step-3">
+        <div class="journey-content">
+            <h2 class="gradient-text">Forging the Future in Bangalore 🇮🇳</h2>
+            <p>Now, I am immersed in one of India's most selective tech programs at Scalar, while simultaneously pursuing a BS in Data Science from IIT Madras. This dual path is an intentional act of forging—combining deep industry practice with rigorous academic theory.</p>
+        </div>
+    </div>
+</div>
+
 <h1 class="gradient-text animate-fade-in">🛠️ Featured Projects</h1>
 
 <div class="project-card animate-fade-in delay-100">
   <h3><a href="https://geomonitor.abanhasan.net/" target="_blank">🌎 GeoMonitor</a></h3>
   <p>A sophisticated real-time geopolitical news aggregator that analyzes global flashpoints using advanced AI. The system automatically translates content from multiple languages, ranks significance, and visualizes developments on interactive maps. This cross-platform solution provides crucial geopolitical insights through visual representation and intelligent analysis.</p>
-  <div style="font-size: 0.9em; opacity: 0.8;"><i>Technologies: AI/ML, NLP, Interactive Maps, Cross-platform Development</i></div>
+  <div class="tech-tags">
+    <span class="tech-tag">AI/ML</span>
+    <span class="tech-tag">NLP</span>
+    <span class="tech-tag">Data Visualization</span>
+    <span class="tech-tag">Cross-Platform</span>
+  </div>
 </div>
 
 <div class="project-card animate-fade-in delay-200">
   <h3><a href="https://www.projectskilltree.com/" target="_blank">🌱 Project Skilltree</a></h3>
   <p>A revolutionary discord bot/app used by over 5,000+ users which aims to gamify the journey of self improvement. I was instrumental in developing significant parts of the bot interface and API, creating an engaging system that helps users track their growth and stay motivated.</p>
-  <div style="font-size: 0.9em; opacity: 0.8;"><i>Technologies: Discord API, Gamification, User Experience Design</i></div>
+  <div class="tech-tags">
+    <span class="tech-tag">Discord API</span>
+    <span class="tech-tag">Gamification</span>
+    <span class="tech-tag">UX Design</span>
+    <span class="tech-tag">API Development</span>
+  </div>
 </div>
 
 <div class="project-card animate-fade-in delay-300">
   <h3><a href="https://thewildofficial.github.io/monkey-typewriter/" target="_blank">🐒 Monkey Typewriter Simulation</a></h3>
   <p>An elegant visualization of the famous "infinite monkey theorem" using Bayesian statistics. This interactive algorithm demonstrates how long it would take a monkey randomly typing to produce specific literary works. The simulation provides insights into probability theory and randomness through an engaging visual interface.</p>
-  <div style="font-size: 0.9em; opacity: 0.8;"><i>Technologies: Bayesian Statistics, Data Visualization, Interactive Web Design</i></div>
+  <div class="tech-tags">
+    <span class="tech-tag">Bayesian Statistics</span>
+    <span class="tech-tag">Data Visualization</span>
+    <span class="tech-tag">Web App</span>
+  </div>
 </div>
 
 <div class="project-card animate-fade-in delay-400">
   <h3>🧠 Clevered.com Internship <a href="/documents/Aban-AI Internship.pdf" target="_blank">[View Certificate]</a></h3>
   <p>Successfully completed a 4-month long internship on Artificial Intelligence(AI), mentored by a senior Oxford professor. I developed a project that involved a website which predicts and forecasts sentiment and emotional response of any tweet using Natural Language Processing (NLP).</p>
-  <div style="font-size: 0.9em; opacity: 0.8;"><i>Technologies: NLP, Sentiment Analysis, Predictive Modeling</i></div>
+  <div class="tech-tags">
+    <span class="tech-tag">NLP</span>
+    <span class="tech-tag">Sentiment Analysis</span>
+    <span class="tech-tag">Predictive Modeling</span>
+    <span class="tech-tag">Python</span>
+  </div>
 </div>
 
 <div class="project-card animate-fade-in delay-500">
   <h3><a href="https://nexusaurora.org/" target="_blank">🚀 Nexus Aurora</a></h3>
   <p>Former project lead at Nexus Aurora, An open-source space colonization community (Winners of the <a href="https://www.marssociety.org/news/2020/10/23/top-5-winners-of-mars-city-state-design-competition-announced/" target="_blank">2020 Mars Society City State Competition</a>). My work involved designing door security systems using RFIDs, facilitating discussions about sports and linguistics on Mars, and developing the community's Discord bot.</p>
-  <div style="font-size: 0.9em; opacity: 0.8;"><i>Technologies: RFID Systems, Community Management, Bot Development</i></div>
+  <div class="tech-tags">
+    <span class="tech-tag">RFID Systems</span>
+    <span class="tech-tag">Community Management</span>
+    <span class="tech-tag">Bot Development</span>
+  </div>
 </div>
 
 <div class="project-card animate-fade-in delay-100">
@@ -272,11 +494,37 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="project-card animate-fade-in delay-200">
   <h3><a href="https://tryhackme.com/p/thewildofficial" target="_blank">🔐 TryHackMe and CTFs</a></h3>
   <p>I have always had a deep interest in cybersecurity, and this obsession has led me to being ranked in the top 2% of hackers on tryhackme.com, a website which organizes hacking challenges. My passion for security has equipped me with a strong foundation in defensive and offensive security practices.</p>
+  <div class="tech-tags">
+    <span class="tech-tag">Cybersecurity</span>
+    <span class="tech-tag">Penetration Testing</span>
+    <span class="tech-tag">CTF</span>
+  </div>
 </div>
 
 <div class="project-card animate-fade-in delay-300">
   <h3><a href="https://www.iitrpr.ac.in/iit-ropar-ai" target="_blank">🎓 IIT Ropar Minor in AI/ML</a></h3>
-  <p>By 2025, I will have completed my Minor Degree from the prestigious IIT program on Artificial Intelligence. This program has equipped me with crucial knowledge in a rapidly transforming digital landscape, preparing me to navigate both the opportunities and challenges of advanced AI systems.</p>
+  <p>Currently in my final semester of the prestigious Minor Degree from the IIT program on Artificial Intelligence. This program has equipped me with crucial knowledge in a rapidly transforming digital landscape, preparing me to navigate both the opportunities and challenges of advanced AI systems.</p>
+</div>
+
+<div class="project-card animate-fade-in delay-400">
+  <h3>🚀 Scalar School of Technology</h3>
+  <p>Currently attending Scalar School of Technology in Bangalore 🇮🇳 — one of India's most selective tech programs with an acceptance rate of around 3%. The curriculum focuses on building rock-solid fundamentals in computer science, algorithms, and system design, learning alongside some of the brightest minds in tech.</p>
+  <div class="tech-tags">
+    <span class="tech-tag">Advanced Algorithms</span>
+    <span class="tech-tag">System Design</span>
+    <span class="tech-tag">Full-Stack Development</span>
+  </div>
+</div>
+
+<div class="project-card animate-fade-in delay-500">
+  <h3>📊 IIT Madras - BS Data Science & Applications</h3>
+  <p>Pursuing the 4-year Bachelor's degree program in Data Science and Applications from IIT Madras in parallel with my Scalar studies. This program combines statistical foundations with practical applications, giving me a comprehensive understanding of how data drives decision-making in the modern world.</p>
+  <div class="tech-tags">
+    <span class="tech-tag">Statistical Modeling</span>
+    <span class="tech-tag">Machine Learning</span>
+    <span class="tech-tag">Data Analytics</span>
+    <span class="tech-tag">Python</span>
+  </div>
 </div>
 
 <div class="animate-fade-in delay-400" style="text-align: center; margin: 30px 0;">
@@ -315,30 +563,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <h1 class="gradient-text animate-fade-in">🌟 Extracurriculars and Initiatives</h1>
 
-<ul class="achievements-list animate-fade-in" style="list-style-type: none; padding-left: 0;">
-  <li class="project-card delay-100">
-    <strong>🌍 Multilingual Communicator:</strong> National level contestant of the French Word Power examination, Organized by the Quebec Government Office in Mumbai. I speak French to a moderate level of proficiency, estimated to be around B1. (Also sold D2D in Gatineau en français, I guess that's a plus!)
+<ul class="extracurriculars-grid animate-fade-in">
+  <li class="extracurricular-card delay-100">
+    <strong><span class="extracurricular-icon">🌍</span>Multilingual Communicator</strong>
+    National level contestant of the French Word Power examination. I speak French to a moderate level of proficiency (B1), and have put it to the test doing D2D sales in Gatineau.
   </li>
-  <li class="project-card delay-200">
-    <strong>🏛️ Diplomatic Excellence:</strong> 5-time Model United Nations (MUN) winner. My deep interest in leadership and geopolitics lead me to frequently participate in Model United Nations conferences. This has developed my professional and collaborative network, and has immensely benefited my public speaking and critical thinking skills. I also have a borderline obsession with foreign relations, diplomacy, debate, especially when it comes to trade and conflicts around the world.
+  <li class="extracurricular-card delay-200">
+    <strong><span class="extracurricular-icon">🏛️</span>Diplomatic Excellence</strong>
+    5-time Model United Nations (MUN) winner. Participating in MUNs has honed my public speaking, critical thinking, and collaborative skills, feeding my interest in geopolitics and debate.
   </li>
-  <li class="project-card delay-300">
-    <strong>📚 Voracious Reader:</strong> Read over 150 books in the last two years spanning Self-Development, Finance, Strategy, History, Economics, Health and Philosophy. This has given me wider perspective and broadened my mind to alternative possibilities.
+  <li class="extracurricular-card delay-300">
+    <strong><span class="extracurricular-icon">📚</span>Voracious Reader</strong>
+    I've read over 150 books in the last two years spanning Self-Development, Finance, Strategy, History, and Philosophy, constantly broadening my perspective.
   </li>
-  <li class="project-card delay-400">
-    <strong>🤝 Community Engager:</strong> Frequent volunteer in school events, I find purpose in constructively engaging with my wider student-community. It has taught me to stick to my promises and shown me the value of contributing to greater causes.
+  <li class="extracurricular-card delay-400">
+    <strong><span class="extracurricular-icon">🌱</span>Community Builder</strong>
+    Founded a "Self-Improvement Club" at Carleton University, growing it to over 50 members. This taught me the power of accountability, discipline, and shared growth.
   </li>
-  <li class="project-card delay-100">
-    <strong>🎓 Campus Leader:</strong> School Valedictorian in grade 10, and Student Council member in grade 11 and 12. I learnt how to resolve conflicts, and find amicable solutions that leads to a win-win.
+  <li class="extracurricular-card delay-100">
+    <strong><span class="extracurricular-icon">🎓</span>Campus Leader</strong>
+    Served as School Valedictorian and Student Council member. These roles taught me conflict resolution and the art of finding amicable, win-win solutions.
   </li>
-  <li class="project-card delay-200">
-    <strong>🌱 Community Builder:</strong> Founder of an unofficial "Self-Improvement Club" at Carleton University, with over 50 engaged members on our discord! I took this initiative to find a sense of brotherhood, and it has lead to a culture of constant growth within my friend-circle. This further has helped me become accountable and disciplined.
+  <li class="extracurricular-card delay-200">
+    <strong><span class="extracurricular-icon">💼</span>Sales Experience</strong>
+    Generated $20K in sales over 2 months doing door-to-door sales. This experience was a masterclass in interpersonal skills, resilience, customer service, and service delivery.
   </li>
-  <li class="project-card delay-300">
-    <strong>💼 Sales Experience:</strong> Door-to-door sales experience with InsightPest Control in Ottawa and Gatineau in the summer of '24. Sold $20K worth of pest control in just 2 months, learning valuable interpersonal skills, sales techniques, customer service, and service delivery.
+  <li class="extracurricular-card delay-300">
+    <strong><span class="extracurricular-icon">🏋️</span>Holistic Development</strong>
+    Beyond tech and academics, I pursue hobbies that build discipline and strategy, including Weightlifting, Chess, Tennis, Taekwondo, and Horse-back riding.
   </li>
-  <li class="project-card delay-400">
-    <strong>🏋️ Holistic Development:</strong> Other hobbies include Weightlifting, Chess, Tennis, Taekwondo, and Horse-back riding.
+  <li class="extracurricular-card delay-400">
+    <strong><span class="extracurricular-icon">🤝</span>Community Engager</strong>
+    As a frequent volunteer in school events, I find purpose in constructively engaging with my community, learning to stick to my promises and contribute to greater causes.
   </li>
 </ul>
 
@@ -363,6 +619,25 @@ document.addEventListener('DOMContentLoaded', function() {
         <span style="font-size: 2em;">🇾🇪</span><br>
         <strong>Arabic</strong><br>
         Beginner
+    </div>
+</div>
+
+<h2 class="gradient-text animate-fade-in" style="margin-top: 60px;">💡 Core Philosophies</h2>
+<div class="philosophy-grid animate-fade-in">
+    <div class="philosophy-card delay-100">
+        <h3>The War on Heteronomy</h3>
+        <p>"The premier mark of autonomy is AUTODIDACTISM: the ability to self learn... If a tool or heuristic doesn't meet your needs... take the time to build your own."</p>
+        <a href="/posts/thewaragainstheteronomy/">Read More →</a>
+    </div>
+    <div class="philosophy-card delay-200">
+        <h3>Agency Over Intelligence</h3>
+        <p>"Any major boon that's attributed to a disrupter's intelligence is often actually the result of their agency – their capacity to act decisively and effectively in the world."</p>
+        <a href="/posts/thewaragainstheteronomy/">Read More →</a>
+    </div>
+    <div class="philosophy-card delay-300">
+        <h3>Authenticity in a Digital World</h3>
+        <p>"The mass-churning out of content only elicits the desire for the experience of that which is truly authentic: authentic friendship, real love, true intellectual novelty..."</p>
+        <a href="/posts/technofeudalism-and-the-return-to-the-real/">Read More →</a>
     </div>
 </div>
 
@@ -414,6 +689,22 @@ document.addEventListener('DOMContentLoaded', function() {
       <span class="timeline-date" style="position: absolute; right: -110px; background: linear-gradient(45deg, #B06AB3, #4568DC); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8em;">2022</span>
       <h3>IIT Ropar AI Program</h3>
       <p>Started the prestigious IIT program on Artificial Intelligence to deepen my knowledge in this rapidly evolving field.</p>
+    </div>
+  </div>
+  
+  <div class="timeline-item" style="position: relative; margin-bottom: 30px; padding-left: 50%; clear: both;">
+    <div class="timeline-content project-card" style="position: relative; margin-left: 30px;">
+      <span class="timeline-date" style="position: absolute; left: -110px; background: linear-gradient(45deg, #4568DC, #B06AB3); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8em;">2023</span>
+      <h3>Carleton Year 1 🇨🇦</h3>
+      <p>Completed the first year of my Computer Science degree at Carleton University, where I built a strong foundation and a community of like-minded peers before pivoting to a more specialized path.</p>
+    </div>
+  </div>
+  
+  <div class="timeline-item" style="position: relative; margin-bottom: 30px; padding-right: 50%; clear: both; text-align: right;">
+    <div class="timeline-content project-card" style="position: relative; margin-right: 30px;">
+      <span class="timeline-date" style="position: absolute; right: -110px; background: linear-gradient(45deg, #B06AB3, #4568DC); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8em;">2024</span>
+      <h3>Return to Bangalore 🇮🇳</h3>
+      <p>Made the strategic decision to return to India to attend Scalar School of Technology and pursue a parallel degree from IIT Madras, focusing on deep, specialized tech education.</p>
     </div>
   </div>
   
