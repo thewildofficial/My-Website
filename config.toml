@@ -19,8 +19,8 @@ googleAnalyticsID = "G-G3F606BLYN"
   themeColor = "#181a1b"
   code_copy_button = true
   description = "Hi I'm Aban.This website is meant to document my journey of building my tech empire. This is my quest of becoming more competent in the realms of human endeavor which I choose to embark in"
-  customCSS = ["css/custom.css"]
-  customJS = ["js/toc.js"]
+  customCSS = ["css/custom.css", "css/credentials.css"]
+  customJS = ["js/toc.js", "js/credentials.js"]
   homeSubtitle = "Always Improving..."
 
   [[params.social]]
