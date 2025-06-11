@@ -2,7 +2,7 @@
 author: "thewildofficial"
 date: 2021-07-17
 title: How to Type Faster
-draft: false
+draft: true
 katex: true
 description: Typing like someone from one of those hacking movies looks really cool and impressive.In this blog post,i will teach you how to get from looking at your keyboard everytime you want to put a letter,to an absolute keyboardmonkey
 tags:
