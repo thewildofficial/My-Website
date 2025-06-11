@@ -1,7 +1,7 @@
 ---
 title: "Digital Minimalism by Cal Newport: Book Review"
 date: 2021-06-16T16:06:37+05:30
-draft: false
+draft: true
 toc: true
 images:
 tags: 

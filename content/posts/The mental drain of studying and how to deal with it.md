@@ -1,7 +1,7 @@
 ---
 title: "The Mental Drain of Studying and How to Deal With It"
 date: 2021-08-08T18:45:50+05:30
-draft: false
+draft: true
 toc: true
 katex: true
 images:
