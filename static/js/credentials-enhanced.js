@@ -1,533 +1,304 @@
-// Enhanced Credentials Page JavaScript - Modern Interactions & Animations
+// Enhanced Credentials Page JavaScript - Simplified World Map Animation
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Add body class for credentials page
-    document.body.classList.add('credentials-page-active');
+console.log('🚀 Starting credentials page initialization...');
+
+// Initialize immediately when script loads
+(function() {
+    console.log('📍 Script loaded, setting up listeners...');
     
-    // Initialize all interactions
-    initScrollAnimations();
-    initProgressBars();
-    initCardInteractions();
-    initParallaxEffects();
-    initTypewriterEffect();
-    initIntersectionObserver();
-    initFloatingParticles();
-    
-    // Enhanced modal functionality
-    initEnhancedModal();
-    
-    // Initialize performance monitoring
-    console.log('🎨 Credentials page enhanced animations loaded successfully!');
-});
-
-// Smooth scroll animations for elements
-function initScrollAnimations() {
-    const scrollElements = document.querySelectorAll('.credential-card, .location-marker, .reflection-card');
-    
-    const elementInView = (el, dividend = 1) => {
-        const elementTop = el.getBoundingClientRect().top;
-        return (
-            elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend
-        );
-    };
-
-    const displayScrollElement = (element) => {
-        element.classList.add('scrolled');
-    };
-
-    const hideScrollElement = (element) => {
-        element.classList.remove('scrolled');
-    };
-
-    const handleScrollAnimation = () => {
-        scrollElements.forEach((el) => {
-            if (elementInView(el, 1.25)) {
-                displayScrollElement(el);
-            } else {
-                hideScrollElement(el);
-            }
-        })
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCredentialsPage);
+    } else {
+        initCredentialsPage();
     }
+})();
 
-    window.addEventListener('scroll', () => {
-        handleScrollAnimation();
-    });
+function initCredentialsPage() {
+    console.log('🎯 Initializing credentials page...');
+    
+    // Add body class
+    document.body.classList.add('credentials-page-active');
+    console.log('✅ Body class added');
+    
+    // Initialize world map immediately
+    setTimeout(() => {
+        initWorldMap();
+    }, 100);
+    
+    // Initialize other features
+    initBasicAnimations();
+    
+    console.log('✨ Credentials page initialization complete');
 }
 
-// Animated progress bars
-function initProgressBars() {
-    const progressBars = document.querySelectorAll('.progress-fill');
+function initWorldMap() {
+    console.log('🌍 Creating world map canvas...');
     
-    const animateProgressBar = (progressBar) => {
-        const targetWidth = progressBar.style.width || progressBar.getAttribute('data-width') || '0%';
-        progressBar.style.width = '0%';
+    try {
+        // Create canvas
+        const canvas = document.createElement('canvas');
+        canvas.id = 'worldMapCanvas';
+        canvas.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            opacity: 0.5;
+            pointer-events: none;
+            background: transparent;
+        `;
         
-        setTimeout(() => {
-            progressBar.style.width = targetWidth;
-        }, 300);
-    };
-
-    // Intersection Observer for progress bars
-    const progressObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const progressBar = entry.target.querySelector('.progress-fill');
-                if (progressBar) {
-                    animateProgressBar(progressBar);
+        // Add to body
+        document.body.insertBefore(canvas, document.body.firstChild);
+        console.log('✅ Canvas created and added to DOM');
+        
+        // Set canvas size
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        console.log(`📐 Canvas size: ${canvas.width}x${canvas.height}`);
+        
+        const ctx = canvas.getContext('2d');
+        if (!ctx) {
+            console.error('❌ Failed to get 2D context');
+            return;
+        }
+        
+        // Animation variables
+        let dots = [];
+        let connections = [];
+        let frame = 0;
+        
+        // Create world dots
+        function createDots() {
+            console.log('🔵 Creating dots...');
+            dots = [];
+            
+            // Simple world map regions
+            const regions = [
+                { x: 0.15, y: 0.25, w: 0.25, h: 0.3, count: 20 }, // North America
+                { x: 0.45, y: 0.2, w: 0.15, h: 0.2, count: 15 },  // Europe
+                { x: 0.65, y: 0.15, w: 0.3, h: 0.4, count: 25 },  // Asia
+                { x: 0.45, y: 0.35, w: 0.15, h: 0.25, count: 12 }, // Africa
+                { x: 0.25, y: 0.5, w: 0.1, h: 0.3, count: 10 },   // South America
+                { x: 0.8, y: 0.65, w: 0.12, h: 0.1, count: 8 }    // Australia
+            ];
+            
+            regions.forEach(region => {
+                for (let i = 0; i < region.count; i++) {
+                    const x = (region.x + Math.random() * region.w) * canvas.width;
+                    const y = (region.y + Math.random() * region.h) * canvas.height;
+                    
+                    dots.push({
+                        x: x,
+                        y: y,
+                        originalX: x,
+                        originalY: y,
+                        opacity: 0.3 + Math.random() * 0.7,
+                        size: 1 + Math.random() * 2,
+                        phase: Math.random() * Math.PI * 2,
+                        isActive: Math.random() < 0.2
+                    });
+                }
+            });
+            
+            console.log(`✅ Created ${dots.length} dots`);
+        }
+        
+        // Animation loop
+        function animate() {
+            frame++;
+            
+            // Clear canvas with dithered background
+            ctx.fillStyle = '#0A0E1A';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Add dithering pattern
+            if (frame % 3 === 0) { // Only every 3rd frame for performance
+                ctx.globalAlpha = 0.3;
+                for (let x = 0; x < canvas.width; x += 8) {
+                    for (let y = 0; y < canvas.height; y += 8) {
+                        if (Math.random() < 0.1) {
+                            ctx.fillStyle = Math.random() < 0.5 ? '#1A1F2E' : '#0F1218';
+                            ctx.fillRect(x, y, 2, 2);
+                        }
+                    }
+                }
+                ctx.globalAlpha = 1;
+            }
+            
+            // Update and draw dots
+            dots.forEach((dot, index) => {
+                // Update properties
+                const time = frame * 0.01;
+                dot.opacity = 0.3 + Math.sin(time + dot.phase) * 0.3;
+                dot.x = dot.originalX + Math.sin(time * 0.5 + dot.phase) * 1;
+                dot.y = dot.originalY + Math.cos(time * 0.3 + dot.phase) * 1;
+                
+                // Random flicker
+                if (Math.random() < 0.02) {
+                    dot.opacity *= 0.3;
+                }
+                
+                // Draw dot
+                const alpha = Math.max(0.1, dot.opacity);
+                
+                if (dot.isActive) {
+                    ctx.shadowColor = '#E2E8F0';
+                    ctx.shadowBlur = 4;
+                    ctx.fillStyle = `rgba(248, 250, 252, ${alpha})`;
+                } else {
+                    ctx.shadowBlur = 0;
+                    ctx.fillStyle = `rgba(203, 213, 225, ${alpha * 0.8})`;
+                }
+                
+                ctx.beginPath();
+                ctx.arc(dot.x, dot.y, dot.size, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Pixelation effect
+                if (Math.random() < 0.2) {
+                    ctx.fillStyle = `rgba(148, 163, 184, ${alpha * 0.4})`;
+                    ctx.fillRect(
+                        Math.floor(dot.x / 3) * 3,
+                        Math.floor(dot.y / 3) * 3,
+                        2, 2
+                    );
+                }
+            });
+            
+            // Create connections occasionally
+            if (frame % 60 === 0 && connections.length < 5) {
+                const dot1 = dots[Math.floor(Math.random() * dots.length)];
+                const dot2 = dots[Math.floor(Math.random() * dots.length)];
+                
+                if (dot1 !== dot2) {
+                    const distance = Math.sqrt(
+                        Math.pow(dot1.x - dot2.x, 2) + Math.pow(dot1.y - dot2.y, 2)
+                    );
+                    
+                    if (distance < 300) {
+                        connections.push({
+                            dot1: dot1,
+                            dot2: dot2,
+                            progress: 0,
+                            opacity: 0.5 + Math.random() * 0.3
+                        });
+                    }
                 }
             }
-        });
-    }, {
-        threshold: 0.5
-    });
-
-    // Observe progress containers
-    document.querySelectorAll('.progress-container').forEach(container => {
-        progressObserver.observe(container.parentElement);
-    });
+            
+            // Update and draw connections
+            for (let i = connections.length - 1; i >= 0; i--) {
+                const conn = connections[i];
+                conn.progress += 0.02;
+                
+                if (conn.progress >= 1) {
+                    connections.splice(i, 1);
+                    continue;
+                }
+                
+                // Draw connection
+                const currentX = conn.dot1.x + (conn.dot2.x - conn.dot1.x) * conn.progress;
+                const currentY = conn.dot1.y + (conn.dot2.y - conn.dot1.y) * conn.progress;
+                
+                const gradient = ctx.createLinearGradient(conn.dot1.x, conn.dot1.y, conn.dot2.x, conn.dot2.y);
+                gradient.addColorStop(0, `rgba(99, 102, 241, ${conn.opacity * 0.7})`);
+                gradient.addColorStop(0.5, `rgba(139, 92, 246, ${conn.opacity})`);
+                gradient.addColorStop(1, `rgba(6, 182, 212, ${conn.opacity * 0.5})`);
+                
+                ctx.strokeStyle = gradient;
+                ctx.lineWidth = 1;
+                ctx.globalAlpha = conn.opacity * (1 - conn.progress * 0.5);
+                
+                ctx.beginPath();
+                ctx.moveTo(conn.dot1.x, conn.dot1.y);
+                ctx.lineTo(currentX, currentY);
+                ctx.stroke();
+                
+                // Draw pulse
+                ctx.fillStyle = `rgba(248, 250, 252, ${conn.opacity})`;
+                ctx.shadowColor = '#6366F1';
+                ctx.shadowBlur = 3;
+                ctx.beginPath();
+                ctx.arc(currentX, currentY, 2, 0, Math.PI * 2);
+                ctx.fill();
+                
+                ctx.globalAlpha = 1;
+                ctx.shadowBlur = 0;
+            }
+            
+            requestAnimationFrame(animate);
+        }
+        
+        // Handle resize
+        function handleResize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            createDots(); // Recreate dots for new size
+        }
+        
+        window.addEventListener('resize', handleResize);
+        
+        // Start animation
+        createDots();
+        animate();
+        
+        console.log('🎯 World map animation started successfully!');
+        
+    } catch (error) {
+        console.error('❌ Error creating world map:', error);
+    }
 }
 
-// Enhanced card interactions
-function initCardInteractions() {
-    const cards = document.querySelectorAll('.credential-card');
+function initBasicAnimations() {
+    console.log('🎨 Initializing basic animations...');
     
+    // Simple card hover effects
+    const cards = document.querySelectorAll('.credential-card');
     cards.forEach(card => {
-        // Mouse move effect for 3D tilt
-        card.addEventListener('mousemove', (e) => {
-            if (window.innerWidth > 768) { // Only on desktop
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                
-                const centerX = rect.width / 2;
-                const centerY = rect.height / 2;
-                
-                const rotateX = (y - centerY) / 10;
-                const rotateY = (centerX - x) / 10;
-                
-                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px) scale(1.02)`;
-            }
+        card.addEventListener('mouseenter', () => {
+            card.style.transform = 'translateY(-10px) scale(1.02)';
         });
         
         card.addEventListener('mouseleave', () => {
             card.style.transform = '';
         });
-        
-        // Click animation
-        card.addEventListener('click', (e) => {
-            if (!e.target.closest('.doc-link')) {
-                card.style.transform = 'scale(0.98)';
-                setTimeout(() => {
-                    card.style.transform = '';
-                }, 150);
+    });
+    
+    // Intersection observer for fade-in
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
             }
         });
     });
-}
-
-// Parallax effects
-function initParallaxEffects() {
-    const hero = document.querySelector('.credentials-hero');
     
-    if (hero) {
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const rate = scrolled * -0.5;
-            
-            hero.style.transform = `translateY(${rate}px)`;
-        });
-    }
-}
-
-// Typewriter effect for hero title
-function initTypewriterEffect() {
-    const title = document.querySelector('.journey-header h1');
-    if (!title) return;
-    
-    const text = title.textContent;
-    title.textContent = '';
-    title.style.borderRight = '2px solid';
-    title.style.animation = 'blink 1s infinite';
-    
-    let i = 0;
-    const speed = 50;
-    
-    function typeWriter() {
-        if (i < text.length) {
-            title.textContent += text.charAt(i);
-            i++;
-            setTimeout(typeWriter, speed);
-        } else {
-            // Remove cursor after typing is complete
-            setTimeout(() => {
-                title.style.borderRight = 'none';
-                title.style.animation = 'none';
-            }, 1000);
-        }
-    }
-    
-    // Start typing after a short delay
-    setTimeout(typeWriter, 500);
-}
-
-// Enhanced Intersection Observer for staggered animations
-function initIntersectionObserver() {
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry, index) => {
-            if (entry.isIntersecting) {
-                setTimeout(() => {
-                    entry.target.classList.add('animate-in');
-                }, index * 100); // Staggered animation
-            }
-        });
-    }, observerOptions);
-    
-    // Observe all cards and sections
-    document.querySelectorAll('.credential-card, .credentials-section, .location-marker').forEach(el => {
+    // Observe elements
+    document.querySelectorAll('.credential-card, .location-marker').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'all 0.6s ease';
         observer.observe(el);
     });
+    
+    console.log('✅ Basic animations initialized');
 }
 
-// Enhanced modal with better UX
-function initEnhancedModal() {
-    const modal = document.getElementById('credentialModal');
-    const docLinks = document.querySelectorAll('.doc-link');
-    
-    if (!modal) return;
-    
-    // Create loading spinner
-    const createSpinner = () => {
-        return `
-            <div class="modal-loading">
-                <div class="loading-spinner">
-                    <div class="spinner"></div>
-                    <p>Loading document...</p>
-                </div>
-            </div>
-        `;
-    };
-    
-    docLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            
-            const url = link.href;
-            const title = link.getAttribute('aria-label') || 'Document';
-            
-            // Show modal with loading state
-            modal.style.display = 'flex';
-            modal.style.opacity = '0';
-            modal.innerHTML = `
-                <div class="modal-content">
-                    <span class="close-button">&times;</span>
-                    <h3>${title}</h3>
-                    ${createSpinner()}
-                </div>
-            `;
-            
-            // Animate in
-            requestAnimationFrame(() => {
-                modal.style.opacity = '1';
-            });
-            
-            // Load document
-            setTimeout(() => {
-                modal.querySelector('.modal-content').innerHTML = `
-                    <span class="close-button">&times;</span>
-                    <h3>${title}</h3>
-                    <iframe src="${url}" frameborder="0" style="width:100%; height:70vh; border-radius: 8px; border: 1px solid var(--border-light);"></iframe>
-                    <a href="${url}" target="_blank" class="doc-link" style="margin-top: 1rem; align-self: flex-start;">Open in new tab</a>
-                `;
-                
-                // Re-attach close handler
-                const closeBtn = modal.querySelector('.close-button');
-                closeBtn.addEventListener('click', closeModal);
-                
-            }, 800); // Simulate loading time
-        });
-    });
-    
-    // Close modal function
-    function closeModal() {
-        modal.style.opacity = '0';
-        setTimeout(() => {
-            modal.style.display = 'none';
-        }, 300);
+// Add basic styles
+const style = document.createElement('style');
+style.textContent = `
+    .credential-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     
-    // Close on outside click
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            closeModal();
-        }
-    });
-    
-    // Close on escape key
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && modal.style.display === 'flex') {
-            closeModal();
-        }
-    });
-}
-
-// Add CSS animations via JavaScript
-const addAnimationStyles = () => {
-    const style = document.createElement('style');
-    style.textContent = `
-        @keyframes blink {
-            0%, 50% { border-color: transparent; }
-            51%, 100% { border-color: var(--accent-primary); }
-        }
-        
-        .credential-card {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        .credential-card.animate-in {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-        .location-marker {
-            opacity: 0;
-            transform: scale(0.8);
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        .location-marker.animate-in {
-            opacity: 1;
-            transform: scale(1);
-        }
-        
-        .credentials-section {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.8s ease-out;
-        }
-        
-        .credentials-section.animate-in {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-        .modal-loading {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 300px;
-            flex-direction: column;
-        }
-        
-        .loading-spinner {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-        }
-        
-        .spinner {
-            width: 40px;
-            height: 40px;
-            border: 3px solid var(--border-light);
-            border-top: 3px solid var(--accent-primary);
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
-        /* Smooth scroll behavior */
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        
-        ::-webkit-scrollbar-track {
-            background: var(--bg-secondary);
-        }
-        
-        ::-webkit-scrollbar-thumb {
-            background: var(--gradient-primary);
-            border-radius: 4px;
-        }
-        
-        ::-webkit-scrollbar-thumb:hover {
-            background: var(--accent-secondary);
-        }
-    `;
-    document.head.appendChild(style);
-};
-
-// Initialize animation styles
-addAnimationStyles();
-
-// Performance optimization: Throttle scroll events
-function throttle(func, wait) {
-    let timeout;
-    return function executedFunction(...args) {
-        const later = () => {
-            clearTimeout(timeout);
-            func(...args);
-        };
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-    };
-}
-
-// Floating particles effect
-function initFloatingParticles() {
-    const particleContainer = document.createElement('div');
-    particleContainer.className = 'floating-particles';
-    particleContainer.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        z-index: -1;
-        overflow: hidden;
-    `;
-    
-    document.body.appendChild(particleContainer);
-    
-    // Create particles
-    for (let i = 0; i < 15; i++) {
-        setTimeout(() => {
-            createParticle(particleContainer);
-        }, i * 200);
+    .credential-card:hover {
+        box-shadow: 0 20px 40px rgba(0,0,0,0.2);
     }
-}
+`;
+document.head.appendChild(style);
 
-function createParticle(container) {
-    const particle = document.createElement('div');
-    const size = Math.random() * 6 + 2;
-    const hue = Math.random() * 60 + 200; // Blue-purple range
-    
-    particle.style.cssText = `
-        position: absolute;
-        width: ${size}px;
-        height: ${size}px;
-        background: linear-gradient(45deg, 
-            hsla(${hue}, 70%, 60%, 0.6), 
-            hsla(${hue + 30}, 70%, 70%, 0.3));
-        border-radius: 50%;
-        top: ${Math.random() * 100}vh;
-        left: ${Math.random() * 100}vw;
-        animation: float ${8 + Math.random() * 8}s ease-in-out infinite;
-        filter: blur(1px);
-    `;
-    
-    container.appendChild(particle);
-    
-    // Remove particle after animation
-    setTimeout(() => {
-        if (particle.parentNode) {
-            particle.parentNode.removeChild(particle);
-        }
-        // Create new particle to maintain count
-        createParticle(container);
-    }, (8 + Math.random() * 8) * 1000);
-}
-
-// Add floating animation keyframes
-const addFloatingAnimations = () => {
-    const style = document.createElement('style');
-    style.textContent += `
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0px) translateX(0px) rotate(0deg);
-                opacity: 0;
-            }
-            10% {
-                opacity: 1;
-            }
-            50% {
-                transform: translateY(-100px) translateX(50px) rotate(180deg);
-                opacity: 0.8;
-            }
-            90% {
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(-200px) translateX(-30px) rotate(360deg);
-                opacity: 0;
-            }
-        }
-    `;
-    document.head.appendChild(style);
-};
-
-// Initialize floating animations
-addFloatingAnimations();
-
-// Apply throttling to scroll events
-const throttledScroll = throttle(() => {
-    // Performance optimized scroll effects
-    const scrollPercent = window.pageYOffset / (document.documentElement.scrollHeight - window.innerHeight);
-    document.documentElement.style.setProperty('--scroll-percent', scrollPercent);
-}, 16); // ~60fps
-
-window.addEventListener('scroll', throttledScroll);
-
-// Add scroll-triggered micro-interactions
-window.addEventListener('scroll', () => {
-    const cards = document.querySelectorAll('.credential-card:not(.animate-in)');
-    cards.forEach(card => {
-        const rect = card.getBoundingClientRect();
-        if (rect.top < window.innerHeight * 0.8) {
-            card.classList.add('animate-in');
-        }
-    });
-});
-
-// Enhanced keyboard navigation
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Tab') {
-        document.body.classList.add('keyboard-navigation');
-    }
-});
-
-document.addEventListener('mousedown', () => {
-    document.body.classList.remove('keyboard-navigation');
-});
-
-// Add keyboard navigation styles
-const addKeyboardStyles = () => {
-    const style = document.createElement('style');
-    style.textContent += `
-        .keyboard-navigation .credential-card:focus,
-        .keyboard-navigation .doc-link:focus,
-        .keyboard-navigation .location-marker:focus {
-            outline: 2px solid var(--accent-primary);
-            outline-offset: 4px;
-            box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2);
-        }
-        
-        .credential-card {
-            transition: all var(--transition-normal);
-        }
-        
-        .credential-card:focus-visible {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-glow);
-        }
-    `;
-    document.head.appendChild(style);
-};
-
-addKeyboardStyles(); 
+console.log('🎉 Credentials enhanced script loaded!'); 

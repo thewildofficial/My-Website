@@ -12,28 +12,28 @@ markup: "html"
 
 <div class="credentials-hero">
   <div class="journey-header">
-    <h1>Pathways Forged: A Chronicle of Growth</h1>
-    <p class="hero-subtitle">Navigating the frontiers of technology, this is a curated showcase of milestones, recognitions, and pivotal learning experiences that chart my evolving expertise.</p>
+    <h1>Professional Milestones</h1>
+    <p class="hero-subtitle">These credentials document key points in my journey—not collected as achievements, but earned through dedicated pursuit of mastery in technology and continuous learning.</p>
   </div>
   <div class="geographic-journey">
     <div class="journey-path">
       <div class="location-marker ottawa">
         <span class="flag">🇨🇦</span>
-        <span class="city">Ottawa, ON</span>
-        <span class="status">Foundation & Discovery</span>
+        <span class="city">Ottawa</span>
+        <span class="status">Foundation</span>
       </div>
       <div class="path-connector"></div>
       <div class="location-marker bangalore active">
         <span class="flag">🇮🇳</span>
-        <span class="city">Bangalore, KA</span>
-        <span class="status">Innovation & Specialization</span>
+        <span class="city">Bangalore</span>
+        <span class="status">Specialization</span>
       </div>
     </div>
   </div>
 </div>
 
 <section class="credentials-section" id="university-offers">
-  <h2><i class="fas fa-graduation-cap"></i> University Admissions & Academic Foundations</h2>
+  <h2><i class="fas fa-graduation-cap"></i> University Admissions</h2>
   <div class="credentials-grid">
     <div class="credential-card" data-institution="waterloo-math">
       <div class="shimmer"></div>
@@ -46,7 +46,7 @@ markup: "html"
         <span class="status-badge offered">Admission Offered</span>
       </div>
       <div class="card-content">
-        <p class="description">Offered admission to a world-renowned mathematics program, known for its rigorous curriculum and significant contributions to computer science and cryptography.</p>
+        <p class="description">Accepted to the mathematics program at one of Canada's leading institutions for quantitative studies and computer science research.</p>
         <div class="card-actions">
           <a href="/credentials/waterloo-math-offer.pdf" class="doc-link" target="_blank" aria-label="View University of Waterloo Mathematics Offer Letter">📄 View Offer</a>
         </div>
@@ -64,7 +64,7 @@ markup: "html"
         <span class="status-badge offered">Admission Offered</span>
       </div>
       <div class="card-content">
-        <p class="description">Secured offer for a prestigious dual-degree program, integrating deep technical expertise in Computer Science with comprehensive Business Administration acumen.</p>
+        <p class="description">Accepted to the dual-degree program combining Computer Science technical depth with Business Administration principles.</p>
         <div class="card-actions">
           <a href="/credentials/waterloo-laurier-offer.pdf" class="doc-link" target="_blank" aria-label="View Waterloo Laurier Double Degree Offer Letter">📄 View Offer</a>
         </div>
@@ -82,7 +82,7 @@ markup: "html"
         <span class="status-badge completed-year-1">Year 1 Completed</span>
       </div>
       <div class="card-content">
-        <p class="description">Completed the foundational year with a focus on Artificial Intelligence and Machine Learning, achieving Dean's List recognition.</p>
+        <p class="description">Completed foundational year focusing on Artificial Intelligence and Machine Learning, achieving Dean's List recognition.</p>
         <div class="card-actions">
           <a href="/credentials/carleton-transcript.pdf" class="doc-link" target="_blank" aria-label="View Carleton University Transcript">📄 View Transcript</a>
         </div>
@@ -92,7 +92,7 @@ markup: "html"
 </section>
 
 <section class="credentials-section" id="current-studies">
-  <h2><i class="fas fa-book-open"></i> Current Academic & Professional Development</h2>
+  <h2><i class="fas fa-book-open"></i> Current Studies</h2>
   <div class="credentials-grid">
     <div class="credential-card" data-institution="scalar">
       <div class="shimmer"></div>
@@ -102,10 +102,10 @@ markup: "html"
           <h3>Scalar School of Technology</h3>
           <p class="program">Full-Stack Development & Algorithmic Problem Solving</p>
         </div>
-        <span class="status-badge current">Actively Enrolled</span>
+        <span class="status-badge current">Currently Enrolled</span>
       </div>
       <div class="card-content">
-        <p class="description">Engaged in an intensive, selective program (approx. 3% acceptance rate) focused on mastering advanced software engineering principles and scalable system design.</p>
+        <p class="description">Intensive program focused on advanced software engineering and scalable system design. Admission rate approximately 3%.</p>
         <div class="card-actions">
           <a href="/credentials/scalar-acceptance.pdf" class="doc-link" target="_blank" aria-label="View Scalar School Acceptance Letter">📄 View Acceptance</a>
         </div>
@@ -123,10 +123,10 @@ markup: "html"
         <span class="status-badge current">Year 1 Ongoing</span>
       </div>
       <div class="card-content">
-        <p class="description">Pursuing a comprehensive Bachelor of Science degree, building a strong theoretical and practical foundation in data analysis, machine learning, and statistical modeling.</p>
+        <p class="description">Building theoretical and practical foundation in data analysis, machine learning, and statistical modeling.</p>
         <div class="progress-container">
           <div class="progress-bar"><div class="progress-fill" style="width: 25%;"></div></div>
-          <span class="progress-text">25% Towards Degree</span>
+          <span class="progress-text">25% Complete</span>
         </div>
         <div class="card-actions">
           <a href="/credentials/iit-madras-enrollment.pdf" class="doc-link" target="_blank" aria-label="View IIT Madras Enrollment Confirmation">📄 View Enrollment</a>
@@ -145,10 +145,10 @@ markup: "html"
         <span class="status-badge final-sem">Final Semester</span>
       </div>
       <div class="card-content">
-        <p class="description">Completing a specialized 15-credit certification, focusing on industry-aligned AI and Machine Learning applications and research methodologies.</p>
+        <p class="description">15-credit certification focusing on industry-aligned AI and Machine Learning applications.</p>
         <div class="progress-container">
           <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
-          <span class="progress-text">90% Towards Certification</span>
+          <span class="progress-text">90% Complete</span>
         </div>
         <div class="card-actions">
           <a href="/credentials/iit-ropar-result.pdf" class="doc-link" target="_blank" aria-label="View IIT Ropar AI/ML Program Results">📄 View Results</a>
@@ -159,7 +159,7 @@ markup: "html"
 </section>
 
 <section class="credentials-section" id="recognitions">
-  <h2><i class="fas fa-award"></i> Recognitions & Professional Experience</h2>
+  <h2><i class="fas fa-award"></i> Recognition & Experience</h2>
   <div class="credentials-grid">
     <div class="credential-card" data-institution="carleton-scholarship">
       <div class="shimmer"></div>
@@ -167,12 +167,12 @@ markup: "html"
         <div class="institution-logo"><img src="/images/logos/carleton_logo.png" alt="Carleton Logo"></div>
         <div class="institution-info">
           <h3>Carleton University Entrance Scholarship</h3>
-          <p class="program">Recognition of Academic Excellence</p>
+          <p class="program">Academic Merit Recognition</p>
         </div>
         <span class="status-badge awarded">Awarded</span>
       </div>
       <div class="card-content">
-        <p class="description">Awarded a merit-based scholarship for outstanding academic achievements prior to university entry.</p>
+        <p class="description">Merit-based scholarship awarded for academic performance prior to university entry.</p>
         <div class="card-actions">
           <a href="/credentials/carleton-scholarship.pdf" class="doc-link" target="_blank" aria-label="View Carleton University Scholarship Letter">📄 View Award</a>
         </div>
@@ -190,7 +190,7 @@ markup: "html"
         <span class="status-badge experience">Research Experience</span>
       </div>
       <div class="card-content">
-        <p class="description">Contributed to AI research focusing on educational technologies, under the guidance of leading academics from the University of Oxford.</p>
+        <p class="description">AI research internship focused on educational technologies, mentored by University of Oxford faculty.</p>
         <div class="card-actions">
           <a href="/credentials/clevered-ai-certificate.pdf" class="doc-link" target="_blank" aria-label="View Clevered AI Internship Certificate">📄 View Certificate</a>
         </div>
@@ -200,18 +200,18 @@ markup: "html"
 </section>
 
 <section class="journey-reflection">
-  <h2><i class="fas fa-route"></i> Reflecting on the Path</h2>
+  <h2><i class="fas fa-route"></i> Perspective</h2>
   <div class="reflection-card">
     <div class="reflection-content">
-      <h3>Strategic Trajectory: From Foundation to Frontier</h3>
-      <p>My academic and professional path, from foundational studies in Ottawa to specialized tech programs in Bangalore, reflects a deliberate strategy of seeking out challenging environments and impactful learning opportunities. Each credential marks a step in building deep competency and a versatile skill set.</p>
-      <p>The pursuit of excellence is a constant, whether evidenced by acceptances into highly selective programs or by recognitions of academic merit. This journey is about more than collecting qualifications; it's about forging a robust capacity to innovate and contribute meaningfully in the ever-evolving landscape of technology.</p>
+      <h3>Learning Through Practice</h3>
+      <p>This path from Ottawa to Bangalore reflects a deliberate pursuit of challenging learning environments. Each program represents a commitment to building depth in technology and expanding problem-solving capabilities.</p>
+      <p>These credentials aren't the objective—they're documentation of sustained effort to understand complex systems and contribute meaningfully to technology development. The journey continues through hands-on work and continuous learning.</p>
     </div>
   </div>
 </section>
 
 <div class="credentials-footer">
-  <p><em>These credentials represent validated milestones in an ongoing journey of growth and contribution. Each document is available for verification.</em></p>
+  <p><em>Documentation of ongoing professional development. All credentials available for verification.</em></p>
 </div>
 
 </div> <!-- End .credentials-container -->
