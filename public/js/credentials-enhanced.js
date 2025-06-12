@@ -291,14 +291,14 @@ function initBasicAnimations() {
 // Add basic styles
 const style = document.createElement('style');
 style.textContent = `
-    .credential-card {
+        .credential-card {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    
+        }
+        
     .credential-card:hover {
         box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-    }
-`;
-document.head.appendChild(style);
+        }
+    `;
+    document.head.appendChild(style);
 
 console.log('🎉 Credentials enhanced script loaded!'); 
