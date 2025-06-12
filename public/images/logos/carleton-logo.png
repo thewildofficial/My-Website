@@ -1,0 +1,1031 @@
+
+<!doctype html>
+
+    <html id="bynder" class="no-js " lang="en&#95;US">
+
+
+<head>
+	<meta charset="utf-8" />
+	
+		<link rel="shortcut icon" href="/files/872f5320-4dc4-4d73-ad83-beeadb41aeb6?version=a0b1ec4b&account_id=0E1CDD20-4B09-4D72-9A86896E97D10615&signature=cqihUYcnxgsPjqGxDT5z8Y8upO3v2VhIbN%2BeXFIIMch4YbXnZYYrOlmzf%2BD8mz8TAbCjyRtW4ugKvzU%2B5Q0yDQ%3D%3D&expiry=1749945600000" />
+		
+		<title>Carleton University Brand Portal</title>
+		<meta http-equiv="version" content="4.3" />
+		<meta http-equiv="language" content="EN&#95;US" />
+		<meta name="base-cloudfront-url" content="https://d8ejoa1fys2rk.cloudfront.net/frontend/0.1.389/">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=1024,maximum-scale=1.0" />
+	
+		<meta name="robots" content="noindex, follow" />
+	
+<link href="https://d8ejoa1fys2rk.cloudfront.net/static/33185430905AC9EB912F52CF8143330F.cache.css" type="text/css" rel="stylesheet" /><link href="https://d8ejoa1fys2rk.cloudfront.net/static/DD9D031E8E52BA5D41CEBCE801D1401A.cache.css" type="text/css" rel="stylesheet" /><link href="https://d8ejoa1fys2rk.cloudfront.net/static/4F839B9CE72310CD1A9B52EBAE70724C.cache.css" type="text/css" rel="stylesheet" /><link href="https://d8ejoa1fys2rk.cloudfront.net/static/76C30EE1040A523A7ED1367E878B9D0C.cache.css" type="text/css" rel="stylesheet" /><link href="https://d8ejoa1fys2rk.cloudfront.net/static/7758D113B6F9A0A9A63861EF2570C822.cache.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://d8ejoa1fys2rk.cloudfront.net/5.0.5/includes/css/bynder/cookieBanner.css" />
+
+    
+        <link rel="stylesheet" href="https://d8ejoa1fys2rk.cloudfront.net/frontend/0.1.389/styles/css/notifications.css" />
+    
+	<style>.farbtastic *{position:absolute;cursor:crosshair}</style>
+	<link rel="stylesheet" href="/v7/portal/portals/
+		0e1cdd20-4b09-4d72-9a86-896e97d10615/theme?format=css">
+	
+		<link href="https://d8ejoa1fys2rk.cloudfront.net/5.0.5/includes/themes/default.css" type="text/css" rel="stylesheet" />
+	
+
+    <link rel="stylesheet" href="https://d8ejoa1fys2rk.cloudfront.net/5.0.5/includes/css/vendor/font-awesome.min.css" />
+
+    
+
+    
+        <script src="https://cmp.osano.com/16BhTKTaZ1RPo6e4Z/5b0f9e92-812e-44c1-8c6f-2698781f9286/osano.js"></script>
+        
+        <script>
+            try{
+                var privacyPolicyUrl = "";
+                var hasCustomPrivacyPolicy = false;
+                var hasAnalytics = false;
+                var hasDowntimeNotification = true;
+                var downtimeSetting = "{\"title\": \"Maintenance Bynder\", \"content\": \"Bynder is performing maintenance on Saturday, March 19th, 2022 between 9:00 and 17:00 CET. For more information see our <strong><a href='https://status.bynder.com/incidents/zb7hgh10b1sf'\\u00a0class='link-primary'>status page</a></strong>.\", \"appcodes\": [], \"accounts\": [], \"expiryDate\": \"2022-03-19 17:30\"}"; // Using ColdFusion Elvis operator(?:) to handle null or undefined
+                var downtimeSettingJson = downtimeSetting ? JSON.parse(downtimeSetting) : false;
+
+                if(downtimeSettingJson && downtimeSettingJson.expiryDate) {
+                    var expiryDate = new Date(downtimeSettingJson.expiryDate).getTime();
+                    var currentDate = new Date().getTime();
+
+                    hasDowntimeNotification = !downtimeSettingJson.expiryDate || expiryDate >= currentDate;
+                }
+
+                function openPrivacyPolicyModal(event) {
+                    event.preventDefault();
+                    document.dispatchEvent(new Event('open-privacy-policy-modal'));
+                }
+
+                function removeCookieByInnerText(resultList, text){
+                    const removeCookie = () => {
+                        for (const node of resultList.children) {
+                            if(node.innerText?.includes(text)) {
+                                node.remove();
+                            }
+                        }
+                    }
+
+                    // Observe async changes (api)
+                    const observer = new MutationObserver(removeCookie);
+                    observer.observe(resultList, { childList: true });
+
+                    // Remove if the list is already rendered
+                    removeCookie();
+                }
+
+                Osano.cm.addEventListener('osano-cm-initialized', () => {
+                    // Add event listener on main banner
+                    var mainBannerLink = document.querySelector('a.osano-cm-link');
+                    if (mainBannerLink) {
+
+                        mainBannerLink.href = privacyPolicyUrl || mainBannerLink.href;
+                        if (!privacyPolicyUrl && hasCustomPrivacyPolicy) {
+
+                            mainBannerLink.href = '';
+                            mainBannerLink.addEventListener('click', openPrivacyPolicyModal);
+                        }
+                    }
+
+                    // Set cookie tab event
+                    const cookieTab = document.getElementById('cookie-preferences-button');
+                    if(cookieTab) {
+                        cookieTab.addEventListener('click', function(event) {
+                            event.preventDefault();
+                            Osano.cm.showDrawer('osano-cm-dom-info-dialog-open');
+                        });
+                    }
+                });
+
+                // Add event listener on side panel
+                Osano.cm.addEventListener('osano-cm-ui-changed', (component, stateChange) => {
+                    // Hide useless marketing option on drawer and dialog
+                    if (component !== 'widget' && stateChange === 'show') {
+                        const marketingLabel = document.querySelector(`[for=osano-cm-${component}-toggle--category_MARKETING]`);
+                        const personalizationLabel = document.querySelector(`[for=osano-cm-${component}-toggle--category_PERSONALIZATION]`);
+                        const dontSellLabel = document.querySelector(`[for=osano-cm-${component}-toggle--category_OPT_OUT]`);
+                        const storageLabel = document.querySelector('.osano-cm-content .osano-cm-link--type_manage');
+
+                        if(storageLabel) {
+                            storageLabel.textContent = 'Cookie Preferences';
+                        }
+
+                        if(marketingLabel){
+                            marketingLabel.parentElement.hidden = true;
+                        }
+
+                        if(marketingLabel){
+                            personalizationLabel.parentElement.hidden = true;
+                        }
+
+                        if(dontSellLabel){
+                            dontSellLabel.parentElement.hidden = true;
+                        }
+                    }
+
+                    if (component === 'drawer' && stateChange === 'show') {
+                        // Set custom privacy policy
+                        var sidePanelLink = document.querySelector('.osano-cm-info--open a.osano-cm-link');
+
+                        if (sidePanelLink) {
+                            sidePanelLink.href = privacyPolicyUrl || sidePanelLink.href;
+
+                            if (!privacyPolicyUrl && hasCustomPrivacyPolicy) {
+                                sidePanelLink.href = '';
+                                sidePanelLink.addEventListener('click', openPrivacyPolicyModal);
+                            }
+                        }
+
+                        // Hide not used cookies (GA)
+                        if(!hasAnalytics) {
+                            const resultList = document.getElementById('osano-cm-ANALYTICS_disclosures');
+                            
+                            removeCookieByInnerText(resultList, 'Google LLC');
+                        }
+
+                        // hide portal-notification cookie if it's not active
+                        if(!hasDowntimeNotification) {
+                            const resultList = document.getElementById('osano-cm-ESSENTIAL_disclosures');
+
+                            removeCookieByInnerText(resultList, 'portal-notification');
+                        }
+                    }
+                });                               
+            } catch(error) {
+                console.error('An Error occured while displaying cookie banner:', error);
+            }
+        </script>
+    
+
+
+    
+
+         
+
+    <script src="https://d8ejoa1fys2rk.cloudfront.net/static/A0FCAD5EE5805A06560EAEBB67F4A131.cache.js" type="text/javascript"></script>
+
+    
+    <script type="text/javascript">
+        const dsn = 'https://2b555212b26f48dc98591a61c5ba0e5a@sentry10.bynder.cloud/14';
+        const release = '5\x2e0\x2e5-43fd1c3';
+        const environment = 'production';
+
+        var SentryClient = {
+            captureMessage: function() {},
+        };
+
+
+        try {
+            if(!dsn || !release) throw new Error("Sentry DSN or release not set");
+
+            SentryClient = SentryCustomClient.init({
+                dsn,
+                release,
+                environment,
+            });
+        } catch (err) {
+            console.error("Sentry initialization failed", err);
+        }
+
+        window.SentryClient.safeCaptureException = function(exc, message, obj) {
+            if (typeof obj === "undefined") {
+                var obj = {extra:{}};
+            }
+            if (typeof message === "undefined") {
+                message = "Error";
+            }
+            if (exc instanceof Error) {
+                obj.extra.traceback = exc.stack;
+                message += ": " + exc.message;
+            } else if (typeof exc === "string") {
+                message += ": " + exc;
+            }
+
+            return SentryClient.captureMessage(message, obj);
+        };
+
+    </script>
+
+
+
+    <!-- require modules setup // begin -->
+    <script type="text/javascript">
+        var require = {
+            waitSeconds: 0, // no timeouts, saves widget on slow connection;
+            baseUrl: 'https://d8ejoa1fys2rk.cloudfront.net/frontend/0.1.389/',
+            deps: ['requireSettings'],
+            paths: {
+                requireSettings: 'https://d8ejoa1fys2rk.cloudfront.net/frontend/0.1.389/scripts/modules/base/requireSettings'
+            }
+        };
+    </script>
+    <script src="https://d8ejoa1fys2rk.cloudfront.net/frontend/0.1.389/deps/requirejs/require.js" type="text/javascript"></script>
+    
+        <script type="text/javascript">
+            require(['requireSettings'], function (requireSettings) {
+                require(['Bynder'], function (Bynder) {
+                    Bynder.init();
+                });
+            });
+        </script>
+    
+    <!-- require modules setup // end -->
+
+    
+
+    
+
+    <script src="https://d8ejoa1fys2rk.cloudfront.net/static/29583BC138A2EDB63E827C17D0023F35.cache.js" type="text/javascript"></script>
+
+    <script>
+        bynder.Config.registerFeatures(["3d-previews","access-request-form","alternative-asset-detail-view","Appcues","archived-asset-notification","asset-permission-viewer","autocomplete-filter","autotags","bynder-support-opt-in","change-history","collection-embed","collection-options","collections-archivelimited","compact","crop","crop-canvas","custom-thumbnails","dashboard","disable-file-merge","disable-media-webversion","disable-pdf","disable-replyto","disable-sublevels","download-additionals","download-cdn","download-fallback","download-filename","download-intended-use-form","download-preselect","download-public","download-request","duplicate-view","enable-CDN","external-option-links","files-service","files-service-main-uploader","files-service-pod","files-service-wf-uploaders","focus-point","gdpr-message","hide-brands","hide-brandsnavigation","hide-bynder","hide-categories","hide-feedback","hide-styleguidebrandsfilter","improved-taxonomy-management","inspiration","legacy-oauth1","mark-as-public","media-detail-share","media-embed","meta","meta-selectall","metadata-presets","metadata-presets-sharing","metadata-write-csv","metadata-write-xmp","metapropertyLevelAccess","new-asset-notification","news","news-slider","notifications-center","oauth2-testing","pdfviewer","popover","public-filters","public-links","public-thumbnails","publicurlActive","pyusermanagement","readonly-individual-share","removed-asset-notification","rewriteUrls","robots-disallow","save-search-filter","search-active-assets","sf-update-maximumusers","share-login-required","show-prefix-download-btn","showOriginalFilename","sns-notification","spotlight-help-modal","spotlight-recent-searches","sqs","SSO","support-form","taxonomy-csv-import","terms","transfer","transfer-cdn","transfer-share-by-link","unified-header-rollout","updated-asset-meta-notification","updated-asset-notification","upload-for-approval","upload-manual-derivatives","uploadShowFileName","user-filter","user-timezone","version-updater","video-filter-duration","videothumbnail","waiting-room-filtering","watermark-date-picker","wr-mpo-approve-download-requests","x-robots-disallow"]);
+    </script>
+
+    <meta name="videojs" data-jsmin="true" content='<script src="https://d8ejoa1fys2rk.cloudfront.net/static/D1F13441208BC0929C48C9BFA921CDFC.cache.js" type="text/javascript"></script>'>
+
+
+    <script>
+        // Used by asset-fronted-sdk
+        bynder.Uploader = {
+            chunkSize: Number(5 * 1024 * 1024),
+        }
+
+        var defaultChunkSize = Number(5242880);
+        var minChunkSize = Number(5242880);
+        var maxChunkSize = Number(1048576000);
+        var chunkSize = Number(5 * 1024 * 1024);
+
+        if (!is.numeric(chunkSize)) {
+            chunkSize = defaultChunkSize;
+        }
+        else if (chunkSize < minChunkSize) {
+            chunkSize = minChunkSize;
+        }
+        else if (chunkSize > maxChunkSize) {
+            chunkSize = maxChunkSize;
+        }
+        bynder.Config.setSetting(
+            'default_chunk_size',
+            chunkSize
+        );
+        bynder.Config.tinymceUrl = 'https://d8ejoa1fys2rk.cloudfront.net/5.0.5/includes/js/vendor/tinymce-4.3.11/tinymce.min.js';
+        
+        
+            
+            
+                bynder.Config.setSetting('metaExtensionMapping', '4786BE2F-4507-4545-AFFC62FE2C6479FF');
+            
+        
+        
+            bynder.Config.setSetting('general-portal-notice', '\x7b\x22is\x5fenabled\x22\x3a\x20true\x2c\x20\x22content\x22\x3a\x20\x22Due\x20to\x20the\x20uptake\x20of\x20demand\x20for\x20user\x20seats\x2c\x20individual\x20logins\x20are\x20no\x20longer\x20available\x2e\x20Instead\x2c\x20departmental\x20logins\x20are\x20being\x20assigned\x20for\x20the\x20various\x20units\x2e\x20If\x20you\x20have\x20lost\x20access\x2c\x20please\x20check\x20with\x20your\x20faculty/department\x20to\x20see\x20if\x20an\x20account\x20has\x20been\x20made\x2e\x20If\x20not\x2c\x20contact\x20marketing\x40carleton\x2eca\x2e\x22\x2c\x20\x22browsers\x22\x3a\x20\x5b\x22all\x22\x5d\x7d');
+        
+    </script>
+
+    
+	
+    
+    <script>
+        bynder.Bynder.use('bynder.modules.Language', function(Language) {
+            Language.addKeys({"generalRemoveOnlineLink":"Remove online link","cropMultiplePath":"Multiple paths defined for this asset, cannot show minimum crop area.","generalCreateNew":"Create new %s","workflow.Job":"Job","trashSingleMediaDelete":"The chosen media was deleted","selectCollection":"Select a collection","bulkSelectCollection":"Select or add collection","generalDeselectAll":"Deselect all","workflow.No":"No","brandstoreDrafts":"Drafts","upload.whitelist.warning.short":"Cannot complete upload","modalActionDelete":"Delete","generalClose":"Close","relatedFor":"Related assets for","cropNotEnoughPixels":"Cannot create crop: The resolution of this asset is not sufficient.","generalStoreSelected":"Store selected files","uploadingNewVersion":"Uploading new version","download.progress":"download(s) being prepared","searching":"Searching...","pdfViewerWarning":"This PDF viewer is optimized for IE10+, Chrome, Firefox and Safari. With another browser or version you might see this PDF different from the original.","selectFromImagebank":"Choose image from image bank","collectionOptions.view":"View collection","generalShow":"Show","pendingRequest":"Pending request","generalDateEditFormatString":"mm/dd/yyyy","generalCancel":"Cancel","workflow.Name":"Name","FilesIETooBig":"Your browser is not supported for uploading files larger than 2GB. If you'd like to upload files larger than 2GB, please use a different browser, such as a recent version of Google Chrome (13+), Firefox (6+), Safari (6+) or Internet Explorer (10).","assetViewsTotal":"total views","trashSingleMediaRestore":"The chosen media was restored back to the image bank","alreadyInInspiration":"The selected image is already part of the inspiration.","cropButtonVersion":"Crop & save as version","uploadingAdditionalFiles":"Uploading additional files","requestSentDownload":"A request has been sent. Your download will begin shortly","profileGiveName":"Please enter a name for the profile","save":"Save","brandRemoving":"Removing brand...","meta.optionNameAlreadyExists":"An option with this name already exists.","cropButtonCrop":"Crop image","downloadInProgress":"download(s) being prepared","FilesSharingErrorRetrying":"An error occurred during the transfer, please check if the file is still available. We're trying the transfer again... If this takes too long please retry, or contact support.","uploadLeave":"Uploading files is canceled when leaving this page.","trashMultiMediaRestore":"The chosen media were restored back to the image bank","generalOr":"or","collection.created":"Collection created","passwordStrength":"Strength","cropCheckRight":"Check the right margin.","trashMulitMediaDelete":"The chosen medias were deleted","access.requestSentFor":"has sent an access request for","cropButtonDownload":"Crop & download","generalExpand":"expand","uploadMax":"Wow! You reached the maximum of our uploader, which can handle up to 250 files! The first 250 files of your selection will now be uploaded.","validate.OnlyAlphanumericAndUnderscoreAllowed":"Invalid character. Use only letters, numbers and underscore (_). No leading or trailing spaces allowed.","generalAdd":"Add","request.login":"You must log in to request the download of the asset(s).","cropCheckLeft":"Check the left margin.","propertyNoProperty":"Clear selection","brandstoreReorderError":"Couldn't reorder products","errorHeading":"Oops, something went wrong!","duplicateRemoved":"Duplicates were removed successfully!","downloadTask":"Close this message to continue working. You will receive a notification when your download is ready.","noresults":"There are currently no results","media.personal.edit.noaccess":"You can only edit your personal assets","deletingDependency":"Removing dependency...","movingAssets":"Moving assets..","FilesSharingNoConnection":"It looks like you lost your internet connection. We will continue your transfer as soon as the connection resumes.","waitingroomAccess":"Before your media will be published to the image bank, it will first be sent for approval. When audited you will receive a notification.","assetDownloadsTotal":"total downloads","collection.saved":"The collection has been updated.","profileCantDelete":"This profile cannot be deleted. First change the profile of the linked users.","dependencyError":"Cannot remove dependency right now","generalName":"Name","generalUser":"User","activity.sendWithDropbox":"has sent you files with External Uploader","disclaimer.loading":"Checking for disclaimer..","uploadNewWindow":"Uploading may take some time. While you're waiting you can already start Tagging, setting up Brands & Categories, and more!","generalBy":"by","cropCheckBottom":"Check the bottom margin.","metaHighlighted":"The highlighted fields are required","preparingDownload":"We are preparing your download, please wait...","captcha.incorrectToken":"The text you've entered is incorrect","FilesSharingError":"Something went wrong with the upload. Please try again, or contact support if problems persist.","profileDeleted":"Deleting profile..","clickToView":"Click to view","cropNoPathQuad":"Incorrect path defined for this asset, cannot show minimum crop area","mediaRequest":"Request media","generalTaskDownloadReady":"is ready","workflow.SelectUser":"Select a user","brandDeleted":"Brand deleted.","generalDownload":"Download","error.filesModified":"The files have been modified. A new zip file is in the making. Please refresh the screen.","generalNoResultsFor":"No results for","saving":"Saving","duplicate.noDuplicateFound":"No duplicates found","validate.NoSpacesAllowed":"Invalid character. Use only letters, numbers, dash (-) and underscore (_).","mediaLoading":"The selected media is being loaded..","generalFocusPointSaved":"Focus point saved.","disclaimer.restrictions":"The following restriction is in effect","media.detailConvertError":"Error converting media","brandstoreShowLess":"Show less","downloadTaskInProgress":"edits/downloads in progress","removingMedia":"Removing media from collection.","brandstore.reorder.InvalidInput":"Invalid input was used for reorder.","cropNoPath":"No path defined for this asset, cannot show minimum crop area.","brandstore.reorder.ProductNotFound":"Product couldn't be found for reorder.","addOption":"Add option","generalYes":"Yes","uploadComplete":"Upload completed!","generalInactive":"Inactive","noFiltersFound":"No filters were found.","generalSettings":"Settings","generalAccept":"Accept","categoryRemoving":"Removing category...","convertingFailed":"Converting failed","cropButtonNewAsset":"Crop & create new asset","collection.callbackMessage":"Your collection has been created/modified. You can view this collection right away or continue with what you were doing.","duplicateRemoving":"Removing duplicates, please wait...","cropSelectedAreaError":"Please crop only over the allowed area.","meta.confirmRemove":"Are you sure you want to remove the selected media from this option?","meta.titleRemove":"Remove media from option","generalNo":"No","ajaxFailed":"Connection failed, try again.","error.enablepopup":"Please enable pop-ups in your browser settings","presetRequired":"For some assets a specific workflow is required","activity.noTasks":"You have no tasks","dateTimeFormat":"MM/DD/YYYY HH:mm","downloadtask.progress":"edits/downloads in progress","mediaRemoved":"Media is removed from collection.","generalCheckboxMsg":"No item was checked. Please chose items to delete or restore.","continue":"Continue","goToMedia":"Go to your media","workflow.Cancel":"Cancel","downloadNotifyReady":"You'll receive an email when your requested files are ready for download.","deletingMedia":"Deleting media","generalDeleted":"Deleted","selectAll":"Select all","editTitle":"Update title","cropCheckTop":"Check the top margin.","validate.NoSpecialAllowed":"Invalid character. Use only letters, numbers, dash (-) and underscore (_).","generalHide":"Hide","generalOnlineURL":"Online link URL","validate.Invalid":"Invalid input","task.progress":"edit(s) in progress","validateAjaxCheck":"This value already exists","workflow.NeedsChanges":"Needs changes","generalSaveSelected":"Save selected files","meta.confirmSubtitle":"After saving the media will be removed from this option","requestRequested":"Requested","noBrandSelected":"Please select a brand before saving.","transferbox.error":"Something went wrong processing your file. Please contact the administrator of this portal.","workflow.Campaign":"Campaign","brandAdded":"Brand added","relatedAssets":"related assets","generalFilesAdded":"Your files have been added","sessionExpired":"Your session has expired","brandstore.reorder.InvalidProductAmount":"Invalid quantity was selected for product.","categoryDeleted":"The category has been deleted","generalFocusPointErrorSaving":"Error saving the focus point.","download.requestSent":"has sent a download request.","brandstoreReadyToOrder":"Ready to order","generalWatch":"View","filesNotFound":"The requested files could not be found :( please try again later..","Integration":"Integration","sendForApproval":"Send for approval","waitingroomOptionAccess":"In order to add media to this option you need permission. Your media will first be send for approval. When audited you will receive a notification.","DateAdded":"Date added","workflow.GroupManagement":"Group Management","generalDone":"Done","generalOkay":"OK","generalStart":"Start","collections.editShare":"Edit share","generalStepViolation":"Input a multiple of {1}","generalLoading":"Loading","generalFiles":"Files","categoryAdded":"added category","workflow.Remove":"Remove","mediaBelongs":"This asset belongs to","generalNone":"None","dependencySaveError":"Cannot save dependency right now","simpleSaveError":"you need to edit at least one field in order to be able to save","requestApproval":"Approval request: {1}","permissions.manage":"Manage permissions","generalError":"Something went wrong, please try again later.","generalAddTo":"Add to %s","workflow.Close":"Close","upload.whitelist.warning.long":"This file type does not meet security guidelines. Verify the file type.","saved":"Saved","requestSend":"A request has been sent","generalCroppingFailed":"Cropping the asset failed. Please try again later.","taskInProgress":"edit(s) in progress","uploadImage":"Upload image","loadingCollections":"Loading collections...","collection.modified":"Collection modified","meta.createDuplicateInfo":"In order to create a duplicate, please go to Metaproperties management or contact your Admin.","brandstoreReadMore":"Read more","validate.InvalidNr":"Not a valid number","generalAudit":"Audit","generalFocusPointErrorRetrieving":"Error retrieving the focus point.","mediaSavingChanges":"Saving media...","adddescription":"Add description","workflow.DeleteConfirmation":"Are you sure you want to remove {1}?","brandstore.goToJob":"Go to product","preset.presetUpdated":"Preset updated","generalGroupDeleted":"Group deleted","generalSelectAll":"Select all","showMedia":"Show for which media","editTask":"Close this message to continue working. You will receive a notification when your edit is ready."});
+        });
+    </script>
+    
+
+
+    <script>
+        window.csrf = "e44fb80ec88c78e0777ecd76c7cfcc584241f423";
+        window.getStaticURL = "https\x3a//d8ejoa1fys2rk\x2ecloudfront\x2enet/5\x2e0\x2e5";
+    </script>
+    
+        <script>window.userId = "D950BBC2-FB04-461F-B26F26DADCB60091"</script>
+    
+
+    
+    <script>
+        window.bynder = window.bynder || {};
+
+        window.bynder.user = {
+            id: 'D950BBC2-FB04-461F-B26F26DADCB60091',
+            name: '',
+        };
+
+        
+        if (window.bynder.user.id) {
+            window.bynder.user.id =
+                window.bynder.user.id.substring(0, 23) + '-' + window.bynder.user.id.substring(23);
+            window.bynder.user.id = window.bynder.user.id.toLowerCase();
+        }
+    </script>
+
+    <script>
+        window.parsley.options.excluded = "input[type=button], input[type=submit], input[type=reset], input[type=hidden], [disabled], :hidden, div.invisible *";
+    </script>
+
+    
+
+    
+
+    
+        
+    
+
+    
+        <script src="/includes/node_modules/historyjs/scripts/bundled/html4%2Bhtml5/jquery.history.js"></script>
+    
+
+    
+    
+        
+        
+            <script src="https://d8ejoa1fys2rk.cloudfront.net/frontend/0.1.389/scripts/templates/components.js"></script>
+        
+    
+
+    
+
+    
+    
+
+    <script src="https://d8ejoa1fys2rk.cloudfront.net/static/A8584E448D028E97A966D5CAF1ADAD40.cache.js" type="text/javascript"></script>
+    
+        <script src="https://d8ejoa1fys2rk.cloudfront.net/static/2D443B3CFA1C0AE1AF5DFEB58126BD1D.cache.js" type="text/javascript"></script>
+    
+    
+        <input id="file-input" type="file" name="main-uploader-input-field" style="display: none;" multiple="multiple"/>
+        <script>
+            window.filesServiceEnabled = true;
+        </script>
+         <script src="https://d8ejoa1fys2rk.cloudfront.net/static/13510B93895983ACD4A6C686ED095D43.cache.js" type="text/javascript"></script>
+     
+
+    
+    
+        
+    
+
+    
+
+    <script type="text/javascript">
+        (function($) {
+            $(function() {
+                bynder.Locale = "en\x5fUS";
+                moment.locale(bynder.Locale);
+                if (is.set($.fn.datetimepicker) && is.set($.fn.datetimepicker.defaults)) {
+                    $.fn.datetimepicker.defaults.locale = bynder.Locale;
+                }
+
+                
+                
+                
+                
+                    bynder.interceptors.DownloadInterceptor.register("download-select", ["selection","collection", "share"]);
+                
+                
+                    bynder.interceptors.DownloadInterceptor.register("download-request");
+                
+                
+                
+                
+                    bynder.helpers.MediaHelper.usePopover();
+                
+                
+                
+
+                if (bynder.modules.SessionKeepAlive) {
+                    new bynder.modules.SessionKeepAlive().start();
+                }
+
+                
+
+                
+                
+                    bynder.Config.setSetting(
+                        'useMetaKeyProduct',
+                        false
+                    );
+                
+                
+
+                
+            });
+        })(jQuery);
+    </script>
+
+    <script type="text/javascript">
+    function deleteCookies(names) {
+        names.forEach(name => {
+            document.cookie = name + '=; expires=Thu, 30 Jun 2024 00:00:01 GMT; path=/';
+        });
+    }
+
+    deleteCookies(['AMP_13ccbb3500', 'AMP_ca378e6cd9', 'AMP_cfcc16528b', 'AMP_TEST', 'AMP_TLDTEST']);
+</script>
+
+
+    <script>
+        bynder.track = function (title, props) {};
+
+        var amplitude = window.amplitude || null;
+    </script>
+
+
+
+    
+        
+    
+        
+  <script>
+      bynder.track = function (title, props) {};
+  </script>
+
+
+    
+
+    
+    
+    
+
+
+
+
+            
+            
+        
+                
+	
+
+<script>
+    bynder.Bynder.use("bynder.modules.Language", function(Language) {
+        Language.addKeys({"workflow.MetapropertyManagement":"Metaproperty Management","admin.homepage":"Homepage","generalBack":"Back","spotlightHelp.operators.or.example":"E.g. ocean {or} mountains","user-outofoffice.EndDate":"End date","upload.versionUpdater":"Mass Version Updater","admin.advancedSettings":"Advanced settings","workflow.Job":"Job","spotlightHelp.operators.combinations.content":"All the search operators mentioned above can also be used together.","workflow.ManageGroups":"Manage groups","activity.noTasks":"You have no tasks","spotlightHelp.shortcuts.nav":"Keyboard Shortcuts","downloadtask.progress":"edits/downloads in progress","workflow.No":"No","tags.allTagsFor":"All tags for","admin.userManagement":"User Management","workflow.Cancel":"Cancel","user.requests":"User Access Requests","spotlightHelp.operators.title":"Search Operators","spotlight.textInImage":"Text-in-Image","user-outofoffice.StartDate":"Start date","spotlightHelp.title":"Search Help","spotlightHelp.operators.combinations.example":"E.g. bicycle {andnot} city","collections.allFor":"All collections for","user-outofoffice.BackupUnavailable":"This person is unavailable in the selected time range. Please adjust your dates or select someone else.","download.progress":"download(s) being prepared","generalResultsFor":"Results for","spotlightHelp.shortcuts.title":"Keyboard shortcuts","user-outofoffice.SetOutOfOfficeClear":"Clear out of office","spotlight.text":"Text","admin.trash":"Trash","workflow.NoGroup":"No groups found","generalChangeHistory":"Change history","generalErrorSavingChanges":"Error saving changes","generalLogin":"Login","workflow.CreateNew":"Create new","task.progress":"edit(s) in progress","admin.groupManagement":"Group Management","admin.metapropertiesmanagement":"Metaproperties management","admin.reporting":"Reporting","workflow.YesRemove":"Yes, remove","quarantine.quarantine":"Quarantine","admin.workflow":"Workflow","generalCancel":"Cancel","workflow.RoleManagement":"Role Management","workflow.Name":"Name","save":"Save","spotlight.showMetaPropertyResults":"All {1} results for {2}","admin.portalSettings":"Portal settings","workflow.Campaign":"Campaign","generalTags":"Tags","workflow.StartAddGroup":"Start adding your first group","workflow.EditGroup":"Edit group","generalAnotherSearch":"Why not try another search?","adminExtra.newsManagement":"News Management","spotlight.transcript":"Transcript","news.addNews":"Add news","access.requestSentFor":"has sent an access request for","workflow.FTEManagement":"FTE Management","admin.accountManagement":"Account Management","LoginLostPassword":"Lost password?","spotlightHelp.operators.or.title":"OR operator","brandstore.MyCart":"My cart","spotlightHelp.shortcuts.down.key":"Arrow Down","workflow.TaskAdd":"Add task","download.requestSent":"has sent a download request.","generalWatch":"View","user-outofoffice.SetYourselfAsOutOfOffice":"Set yourself as out of office","noresults":"There are currently no results","user.editProfile":"Edit profile","admin.permissionManagement":"Permission Management","user-outofoffice.UserHasOverlapingOOO":"You are already set as out of office in this time range","workflow.GroupManagement":"Group Management","workflow.TemplateManagement":"Template Management","workflow.CampaignManagement":"Campaign Management","GeneralCopyright":"Copyright","waitingroom.waitingroom":"Waiting room","spotlightHelp.operators.combinations.title":"Combinations","user-outofoffice.Description.KeepReceivingNotifications":"Stay in the loop while you're unavailable","transfer.history":"Transfer history","spotlightHelp.shortcuts.up.key":"Arrow Up","admin.usersRights":"Users & rights","admin.taxonomy":"Taxonomy","generalCategories":"Categories","activity.sendWithDropbox":"has sent you files with External Uploader","generalMore":"More","spotlightHelp.operators.and.title":"AND operator","generalLanguage":"Language","workflow.StageAdd":"Add stage","workflow.AddPreset":"Add preset","user-outofoffice.KeepReceivingNotifications":"Keep receiving notifications","request.requestAccess":"Register a new account","workflow.Remove":"Remove","cart.youHaveNoItems":"You have no products in your cart","admin.cockpit":"Users & Storage","user-outofoffice.SetOutOfOfficeSuccess":"Your out of office has been set successfully","workflow.Save":"Save","admin.editCurrentAccount":"Edit current account","workflow.AddGroup":"Add group","spotlightHelp.shortcuts.close.key":"ESC","brandstore.orderHistory":"Order history","upload.bareUploader":"Mass Uploader","duplicate.find":"Find duplicates","generalUploadMedia":"Upload media","workflow.campaigns.allFor":"All campaigns for","user-outofoffice.SearchForAUser":"Search for a user","spotlightHelp.recentSearches":"Recent Searches","styleguide.pagesAllFor":"Styleguide pages for {1}","spotlightHelp.shortcuts.close.title":"Close search","generalTaskDownloadReady":"is ready","spotlightHelp.operators.nav":"Search Operators","admin.brandTemplates":"Brand templates","workflow.Close":"Close","user-outofoffice.BackupUser":"Set as backup user","spotlightHelp.operators.or.content":"Use OR between your search terms to find results that match any of your terms.","workflow.PresetManagement":"Preset Management","confirm.RemoveGroup":"Remove group","admin.insights":"Insights","user-outofoffice.MainAlreadyBackup":"You are set as backup for another user in the selected time range. Please adjust your dates.","generalDownload":"Download","generalNoResultsFor":"No results for","cart.total":"Cart total","generalPassword":"Password","generalQuickLinks":"Quick links","generalEmailUsername":"Email/Username","brands.makeNew":"Create new brand","spotlight.searchSomething":"Want to search for something?","spotlightHelp.operators.quotes.content":"Wrap your search in “” to find results that are an exact match.","spotlightHelp.shortcuts.view.title":"View results","spotlightHelp.operators.not.title":"NOT operator","convertGuidelines":"Convert Guidelines to PDF","admin.lookAndFeel":"Look & feel","workflow.Users":"Users","admin.analytics":"Analytics","generalLogout":"Logout","workflow.jobs":"Jobs","generalClear":"Clear","activity.yourTasks":"Your tasks","workflow.AddAsset":"Add asset","admin.smartfilterManagement":"Smartfilter Management","spotlightHelp.shortcuts.down.title":"Navigate to next result","admin.bynderSuperadmin":"Bynder superadmin","includeVat":"Inc. VAT","generalBrands":"Brands","spotlightHelp.shortcuts.up.title":"Navigate to previous result","spotlightHelp.operators.not.example":"E.g. {not} forest","spotlightHelp.operators.and.example":"E.g. boston {and} hotel","spotlightHelp.operators.quotes.title":"Double quotes","generalAudit":"Audit","user-outofoffice.IsOutOfOfficeUntil":"Out of office until {1}","user-outofoffice.SetOutOfOfficeClearError":"We weren’t able to clear your out of office, please try again later.","generalSettings":"Settings","user-outofoffice.SetOutOfOfficeClearSuccess":"Your out of office has been cleared successfully","spotlightHelp.operators.quotes.example":"E.g. “ocean view”","cart.goToMy":"Go to my cart","workflow.VariableManagement":"Variable Management","spotlightHelp.operators.and.content":"Use AND between your search terms to find results that match all your terms.","spotlightHelp.shortcuts.view.key":"ENTER","brandstore.goTo":"Go to brandstore","spotlightHelp.operators.not.content":"Use NOT before a search term to exclude results that match that term."});
+    });
+</script>
+
+
+
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var $el = $('.popup-notification');
+			$el.each(function() {
+				var $self = $(this);
+				$self.find('.close').on('click', function(e) {
+					e.preventDefault();
+					$self.removeClass('show');
+					if ($self.find('input[name="dont-show-again"]').prop('checked')) {
+						var date = new Date();
+						// Expire after 1 week
+						date.setDate(date.getDate() + 7);
+						document.cookie = $self.data('name') +'=1;expires=' + date.toGMTString() + ';path=/';
+					}
+					// Remove the notification after 300ms (because of the animation)
+					setTimeout(function() {
+						$self.remove();
+					}, 300);
+				});
+				setTimeout(function() {
+					$self.not('[data-name=bynder-insiders]').addClass('show');
+				}, 500);
+			});
+		});
+	</script>
+
+	
+        
+
+	
+
+
+
+
+	
+    
+
+
+
+	<div id="rootMessageBox" class="update info"></div>
+
+	<header class="base">
+		<div class="admin-bar clearfix" id="rootHeaderTopBar"></div>
+		<section class="nav-bar clearfix" id="rootHeaderNavigation"></section>
+		
+
+
+  
+    <div class="tool-bar clearfix">
+      
+        
+
+		
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+		
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+<div class="filters-holder">
+	<ul class="filters clearfix">
+		
+
+			
+			
+
+			
+			
+					
+					
+
+					
+					
+
+					
+					
+					
+
+					
+						<li class="filter filter-meta lazy-filter rootSmartFilterMetaSelect"
+							data-lazy="true"
+							data-filter-id=BCE836DB-1BF6-4C61-A7673F1911FA5100
+							>
+							<a href="#" class="filter-button" tabindex="-1">
+								<i class="fa fa&#32;fa-bookmark-o"></i> Asset Info <i class="fa fa-caret-down"></i>
+							</a>
+						</li>
+					
+				
+		
+
+			
+			
+
+			
+			
+					
+					
+
+					
+					
+
+					
+					
+					
+
+					
+						<li class="filter filter-meta lazy-filter rootSmartFilterMetaSelect"
+							data-lazy="true"
+							data-filter-id=6FD9E617-79CE-482D-8DCCAA6E7E273634
+							>
+							<a href="#" class="filter-button" tabindex="-1">
+								 Campaign/Event <i class="fa fa-caret-down"></i>
+							</a>
+						</li>
+					
+				
+		
+
+			
+			
+
+			
+			
+					
+					
+
+					
+					
+
+					
+					
+					
+
+					
+						<li class="filter filter-meta lazy-filter rootSmartFilterMetaSelect"
+							data-lazy="true"
+							data-filter-id=DD2EFB4D-0FD7-40AF-A0680413F0490615
+							>
+							<a href="#" class="filter-button" tabindex="-1">
+								 Subject <i class="fa fa-caret-down"></i>
+							</a>
+						</li>
+					
+				
+		
+
+			
+			
+
+			
+			
+					
+					
+
+					
+					
+
+					
+					
+					
+
+					
+						<li class="filter filter-meta lazy-filter rootSmartFilterMetaSelect"
+							data-lazy="true"
+							data-filter-id=4781ED6B-DA04-4A15-89308F896A3F8828
+							>
+							<a href="#" class="filter-button" tabindex="-1">
+								 Academics <i class="fa fa-caret-down"></i>
+							</a>
+						</li>
+					
+				
+		
+
+			
+			
+
+			
+			
+					
+
+
+
+<li class="filter tags-dropdown microfrontendTags">
+
+	<a href="#" title="Filter&#32;Tags" class="filter-button tags" tabindex="-1">
+		<i class="fa fa-toggle-on"></i> Tags <i class="fa fa-caret-down"></i>
+	</a>
+	<div class="filter-level-container tags">
+		<div class="filter-level large first" id="tagFilter">
+			<div class="manual-tags">
+				
+			</div>
+			
+				<div class="ai-tags">
+					<h2>Automated Tags</h2>
+					
+				</div>
+			
+		</div>
+	</div>
+
+</li>
+
+				
+		
+
+			
+			
+
+			
+			
+					
+
+	<li class="filter advanced" id="rootSmartFilterAdvanced">
+	
+		<a href="#" title="Filter&#32;Advanced" class="filter-button" tabindex="-1">
+			<i class="fa fa-sliders"></i>
+			Advanced
+			<i class="fa fa-caret-down"></i>
+		</a>
+	
+	</li>
+
+</li>
+
+				
+		
+		
+	</ul>
+</div>
+<span class="filter-navigation" style="display: none;">
+	<a href="#" class="prev-filter filter-nav-btn disabled"><i class="fa fa-chevron-left"></i></a>
+	<a href="#" class="next-filter filter-nav-btn"><i class="fa fa-chevron-right"></i></a>
+</span>
+
+<ul id="select-actions" class="actions-bar group-btns">
+	<li class="select">
+		<a href="#" class="group-btn tip-trigger select-all" tabindex="-1">
+			<i class="fa fa-refresh fa-spin"></i>
+		</a>
+	</li>
+	<li class="select">
+		<a href="#" class="group-btn tip-trigger select-dropdown">
+			<i class="fa fa-caret-down"></i>
+		</a>
+		<ul class="auto-complete selective">
+			<li>
+				<a href="#" class="select-all">
+					Select all <strong><span>0</span></strong>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="select-visible">
+					Select visible media <strong><span></span></strong>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="select-none select-none-button">
+					Select none <strong></strong>
+				</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+
+	
+      
+
+      
+        
+          
+
+    
+        
+      
+    </div>
+  
+
+
+	</header>
+
+	<div id="rootHeader" data-backend="coldfusion"></div>
+
+    
+        
+        <meta name="b-ds-new-branding" content="" data-b-ds-new-branding="on">
+    
+
+
+<script type="text/javascript" src="/v7/header/js/app.bundle.js"></script>
+
+            
+
+            
+
+	<script type="text/javascript">
+		$(function(){
+			bynder.search.FilterHelper.setSearchParams(
+				bynder.helpers.ApplicationHelper.jsonBase64decode("eyJPUkRFUlRZUEUiOiJkZXNjIiwiT1JERVJCWSI6ImRhdGVDcmVhdGVkIGRlc2MgZGVzYyJ9"));
+			bynder.search.FilterHelper.setupTextFilter();
+
+			bynder.track("Collection Detail View Opened", {
+				"product_category": "Core",
+				"functional_area" : "Collections",
+			})
+		});
+	</script>
+	<script type="text/javascript">
+		window.bynder = window.bynder || {}
+		window.bynder.collections = window.bynder.collections || {};
+		window.bynder.collections.currentUser = {
+			"id": "D950BBC2-FB04-461F-B26F26DADCB60091",
+			"firstname": "",
+			"lastname": "",
+			"email": "",
+			"infix": ""
+		};
+		window.bynder.collections.filtersPermissions = {"collectionType":{"list":true,"outbox":true,"inbox":true,"online":true}};
+		
+	</script>
+	
+		<div id="rootActiveFilterBar">
+		</div>
+	
+	<div class="content-container single-collection clearfix" data-interceptor="" id="collection-view" data-id="B7627C62-C9B5-45AA-AB1449E6582A24A9" >
+		<div id="single-collection-top" class="single-collection-top-detail">
+			<div id="single-collection-top-left">
+				<h1>
+					
+						Collections
+					
+					/ <strong>Carleton University Logos</strong>
+				</h1>
+			</div>
+			<div class="single-collection-top-right">
+				<ul class="cta-main-container">
+					<li id="rootCollectionSettingsMenu"></li>
+					
+					
+					
+						
+        
+        
+		
+        
+        
+        
+						
+						
+        
+        
+        
+							<li>
+								
+									
+								
+								<a class="cta-main media-downloads disabled hidden "
+										href="#"
+										data-type="collection"
+										data-id="B7627C62-C9B5-45AA-AB1449E6582A24A9">
+									<i class="fa fa-download"></i> Download
+									<span class="counter">(<span class="selected-results"></span>)</span>
+								</a>
+							</li>
+						
+					
+				</ul>
+			</div>
+		</div>
+		
+		<div id="collectionDetailContent">
+			<div id="rootCollectionDetailSidebar"></div>
+			<div id="collection-media" class="clearfix">
+				
+
+    
+    <script>
+        
+
+        window.bynder.propsAssetOverview = {
+            isPopoverEnabled: 66 !== 0,
+            isDuplicateFinderEnabled: true,
+            hasNewGridViewCard: 
+        false,
+            hasNewSimilaritySearch: false,
+            hasMigratedFeaturesSplit: 
+        false,
+            hasRequestIdHeaderSplit: 
+        false,
+            defaultViewType: "grid",
+            smartFilters: [{"icon":"fa fa-bookmark-o","closeOnSelect":0,"labels":{"en_US":"Asset Info"},"zindex":1,"dateCreated":"May, 04 2021 17:07:38 +0000","fullscreen":0,"id":"BCE836DB-1BF6-4C61-A7673F1911FA5100","type":"meta","metaproperties":[{"isHidden":0,"dependencyId":"","isMultiFilter":1,"showOptionsBasedOnDependencies":0,"showImage":0,"zindex":1,"showCounter":1,"name":"Asset_Type","id":"FF58A46B-51CF-4551-860C673F1CAB9E0C","type":"smart-single","showDownloadButton":0,"showNULLOption":0,"isDrilldown":1},{"isHidden":0,"dependencyId":"","isMultiFilter":1,"showOptionsBasedOnDependencies":0,"showImage":0,"zindex":2,"showCounter":1,"name":"Asset_Sub-Type","id":"A824B225-F856-46D2-AB70A48065ECB774","type":"smart-single","showDownloadButton":0,"showNULLOption":0,"isDrilldown":1},{"isHidden":0,"dependencyId":"","isMultiFilter":1,"showOptionsBasedOnDependencies":0,"showImage":0,"zindex":3,"showCounter":1,"name":"Usage_Rights","id":"9BB8FB24-47F0-49EF-A9C236733DEE2574","type":"smart-single","showDownloadButton":0,"showNULLOption":0,"isDrilldown":1},{"isHidden":0,"dependencyId":"","isMultiFilter":1,"showOptionsBasedOnDependencies":0,"showImage":0,"zindex":4,"showCounter":1,"name":"Quality","id":"6E132E50-8969-4D56-B5DE04C00894B4D7","type":"smart-single","showDownloadButton":0,"showNULLOption":0,"isDrilldown":1},{"isHidden":0,"dependencyId":"","isMultiFilter":1,"showOptionsBasedOnDependencies":0,"showImage":0,"zindex":5,"showCounter":1,"name":"Year","id":"0ADC8336-B03D-469B-ACA9E33DF4E5C857","type":"smart-single","showDownloadButton":0,"showNULLOption":0,"isDrilldown":1}],"lazy":0,"LABEL":"Asset Info"},{"icon":"","closeOnSelect":0,"labels":{"en_US":"Campaign/Event"},"zindex":2,"dateCreated":"May, 04 2021 17:07:38 +0000","fullscreen":0,"id":"6FD9E617-79CE-482D-8DCCAA6E7E273634","type":"meta","metaproperties":[{"isHidden":0,"dependencyId":"","isMultiFilter":1,"showOptionsBasedOnDependencies":0,"showImage":0,"zindex":1,"showCounter":1,"name":"Campaign","id":"708B4B30-C5B0-49F2-947D9ADCC869A880","type":"smart-single","showDownloadButton":0,"showNULLOption":0,"isDrilldown":1},{"isHidden":0,"dependencyId":"","isMultiFilter":1,"showOptionsBasedOnDependencies":0,"showImage":0,"zindex":2,"showCounter":1,"name":"Event","id":"4FD68F28-9889-45F5-A7A5401E968AC649","type":"smart-single","showDownloadButton":0,"showNULLOption":0,"isDrilldown":1}],"lazy":0,"LABEL":"Campaign/Event"},{"icon":"","closeOnSelect":0,"labels":{"en_US":"Subject"},"zindex":3,"dateCreated":"June, 02 2021 00:00:00 +0000","fullscreen":0,"id":"DD2EFB4D-0FD7-40AF-A0680413F0490615","type":"meta","metaproperties":[{"isHidden":0,"dependencyId":"","isMultiFilter":1,"showOptionsBasedOnDependencies":0,"showImage":0,"zindex":1,"showCounter":1,"name":"People","id":"6E9CDEF1-633E-4F21-BF97E1663F2940CC","type":"smart-single","showDownloadButton":0,"showNULLOption":0,"isDrilldown":1},{"isHidden":0,"dependencyId":"","isMultiFilter":1,"showOptionsBasedOnDependencies":0,"showImage":0,"zindex":2,"showCounter":1,"name":"ExecutiveFacultyResearcher_Name","id":"9AA276F2-2035-4965-ACFC37FD4EF2588C","type":"smart-single","showDownloadButton":0,"showNULLOption":0,"isDrilldown":1},{"isHidden":0,"dependencyId":"","isMultiFilter":1,"showOptionsBasedOnDependencies":0,"showImage":0,"zindex":3,"showCounter":1,"name":"Subject__Theme","id":"EAED3FDF-29E3-4AEA-83EA29EDC420CF15","type":"smart-single","showDownloadButton":0,"showNULLOption":0,"isDrilldown":1},{"isHidden":0,"dependencyId":"","isMultiFilter":1,"showOptionsBasedOnDependencies":0,"showImage":0,"zindex":4,"showCounter":1,"name":"Location","id":"7AE07422-E407-4DA6-A44D9F58485C4CCC","type":"smart-single","showDownloadButton":0,"showNULLOption":0,"isDrilldown":1},{"isHidden":0,"dependencyId":"","isMultiFilter":1,"showOptionsBasedOnDependencies":0,"showImage":0,"zindex":5,"showCounter":1,"name":"Photographer","id":"8C3EBBAE-05B0-46C1-BB3C99E62634749A","type":"smart-single","showDownloadButton":0,"showNULLOption":0,"isDrilldown":1}],"lazy":0,"LABEL":"Subject"},{"icon":"","closeOnSelect":0,"labels":{"en_US":"Academics"},"zindex":4,"dateCreated":"June, 02 2021 00:00:00 +0000","fullscreen":0,"id":"4781ED6B-DA04-4A15-89308F896A3F8828","type":"meta","metaproperties":[{"isHidden":0,"dependencyId":"","isMultiFilter":1,"showOptionsBasedOnDependencies":0,"showImage":0,"zindex":0,"showCounter":1,"name":"Faculties","id":"02D0A84C-EAFB-424B-86CA40738280A154","type":"smart-single","showDownloadButton":0,"showNULLOption":0,"isDrilldown":1},{"isHidden":0,"dependencyId":"","isMultiFilter":1,"showOptionsBasedOnDependencies":0,"showImage":0,"zindex":1,"showCounter":1,"name":"Department","id":"D891ED09-ED88-431E-8B0C598A5AB5BE29","type":"smart-single","showDownloadButton":0,"showNULLOption":0,"isDrilldown":1},{"isHidden":0,"dependencyId":"","isMultiFilter":1,"showOptionsBasedOnDependencies":0,"showImage":0,"zindex":2,"showCounter":1,"name":"Programs","id":"CAE03948-0373-4AC6-9F8CFF42D95A84A8","type":"smart-single","showDownloadButton":0,"showNULLOption":0,"isDrilldown":1},{"isHidden":0,"dependencyId":"","isMultiFilter":1,"showOptionsBasedOnDependencies":0,"showImage":0,"zindex":3,"showCounter":1,"name":"Majors","id":"5FC02F02-8B34-4037-BED4B5E8C09F4461","type":"smart-single","showDownloadButton":0,"showNULLOption":0,"isDrilldown":1}],"lazy":0,"LABEL":"Academics"},{"icon":"","closeOnSelect":0,"labels":{"en_US":"Tags"},"zindex":10,"dateCreated":"May, 04 2021 17:07:38 +0000","fullscreen":0,"id":"27AD603D-B8F2-4A10-9A36E6DCEF9F0902","type":"tags","lazy":0,"METAPROPERTIES":[],"LABEL":"Tags"},{"icon":"","closeOnSelect":0,"labels":{"en_US":"Advanced"},"zindex":11,"dateCreated":"May, 04 2021 17:07:38 +0000","fullscreen":0,"id":"F1C77F92-B067-4579-BB0A47BC964CDF96","type":"advanced","lazy":0,"METAPROPERTIES":[],"LABEL":"Advanced"}],
+            firstPage: '',
+            collectionId: "B7627C62-C9B5-45AA-AB1449E6582A24A9",
+            collectionRecipientShareId: "",
+            defaultSortOrderBy: "dateCreated",
+            defaultSortOrderType: "desc",
+            isCompactView: false,
+            savedFilters: {"ORDERTYPE":"desc","ORDERBY":"dateCreated desc desc"}, 
+            metaproperties: {"People":{"isMultiselect":1,"isHidden":0,"isDisplayField":1,"isMultifilter":0,"showInContactSheetView":0,"hasSubLevel":false,"sortKey":22,"showInGridView":0,"isRequired":0,"showInListView":0,"tagName":"","isMainfilter":1,"isFilterable":1,"showInSpotlight":0,"name":"People","IsZipPregenerated":0,"hidePublic":0,"createDuringApply":0,"label":"People","showNULLOption":0,"isApiField":1,"dependencies":"","showInDuplicateView":0,"zindex":81,"writeTagNames":"","spotlightFilterAction":"media","id":"6E9CDEF1-633E-4F21-BF97E1663F2940CC","type":"select2","isSearchable":1,"isDrilldown":1,"hideNonDependentOptions":0,"useDependencies":0,"isEditable":1},"Quality":{"isMultiselect":0,"isHidden":0,"isDisplayField":1,"isMultifilter":0,"showInContactSheetView":0,"hasSubLevel":false,"sortKey":17,"showInGridView":0,"isRequired":0,"showInListView":0,"tagName":"","isMainfilter":1,"isFilterable":1,"showInSpotlight":0,"name":"Quality","IsZipPregenerated":0,"hidePublic":0,"createDuringApply":0,"label":"Quality","showNULLOption":0,"isApiField":1,"dependencies":"","showInDuplicateView":0,"zindex":40,"writeTagNames":"","spotlightFilterAction":"media","id":"6E132E50-8969-4D56-B5DE04C00894B4D7","type":"select","isSearchable":1,"isDrilldown":1,"hideNonDependentOptions":0,"useDependencies":0,"isEditable":1},"Rights_Notes":{"isMultiselect":0,"isHidden":0,"isDisplayField":1,"isMultifilter":0,"showInContactSheetView":0,"hasSubLevel":false,"sortKey":16,"showInGridView":0,"isRequired":0,"showInListView":0,"tagName":"","isMainfilter":1,"isFilterable":1,"showInSpotlight":0,"name":"Rights_Notes","IsZipPregenerated":0,"hidePublic":0,"createDuringApply":1,"label":"Rights Notes","showNULLOption":0,"isApiField":1,"dependencies":"","showInDuplicateView":0,"zindex":35,"writeTagNames":"","spotlightFilterAction":"media","id":"DFC7B0DC-A01E-42FC-898FAE67B0207F06","type":"longtext","isSearchable":1,"isDrilldown":1,"hideNonDependentOptions":0,"useDependencies":0,"isEditable":1},"Model_Release":{"isMultiselect":0,"isHidden":0,"isDisplayField":1,"isMultifilter":0,"showInContactSheetView":0,"hasSubLevel":false,"sortKey":11,"showInGridView":0,"isRequired":0,"showInListView":0,"tagName":"","isMainfilter":1,"isFilterable":1,"showInSpotlight":0,"name":"Model_Release","IsZipPregenerated":0,"hidePublic":0,"createDuringApply":0,"label":"Model Release","showNULLOption":0,"isApiField":1,"dependencies":"065111F4-A8AE-41F9-86D99269B87CCBFB,8E8431AD-21F2-4242-8D2466081760B9D9,A94A6DC1-6DE4-41CC-835C585541B4180A","showInDuplicateView":0,"zindex":31,"writeTagNames":"","spotlightFilterAction":"media","id":"23B2A8EF-8424-4A9A-97798E3453B75022","type":"select2","isSearchable":1,"isDrilldown":1,"hideNonDependentOptions":0,"useDependencies":0,"isEditable":1},"Location":{"isMultiselect":1,"isHidden":0,"isDisplayField":1,"isMultifilter":0,"showInContactSheetView":0,"hasSubLevel":false,"sortKey":26,"showInGridView":0,"isRequired":0,"showInListView":0,"tagName":"","isMainfilter":1,"isFilterable":1,"showInSpotlight":0,"name":"Location","IsZipPregenerated":0,"hidePublic":0,"createDuringApply":0,"label":"Location","showNULLOption":0,"isApiField":1,"dependencies":"","showInDuplicateView":0,"zindex":121,"writeTagNames":"","spotlightFilterAction":"media","id":"7AE07422-E407-4DA6-A44D9F58485C4CCC","type":"select2","isSearchable":1,"isDrilldown":1,"hideNonDependentOptions":0,"useDependencies":0,"isEditable":1},"linkedassets":{"isMultiselect":0,"isHidden":0,"isDisplayField":1,"isMultifilter":0,"showInContactSheetView":0,"hasSubLevel":false,"sortKey":59,"showInGridView":0,"isRequired":0,"showInListView":0,"tagName":"","isMainfilter":1,"isFilterable":1,"showInSpotlight":0,"name":"linkedassets","IsZipPregenerated":0,"hidePublic":0,"createDuringApply":1,"label":"Related Assets","showNULLOption":0,"isApiField":0,"dependencies":"","showInDuplicateView":0,"zindex":801,"writeTagNames":"","spotlightFilterAction":"media","id":"4EB293F9-2A7D-4345-BDF4AFA2E838FC7C","type":"linked_assets","isSearchable":1,"isDrilldown":1,"hideNonDependentOptions":0,"useDependencies":0,"isEditable":1},"Year":{"isMultiselect":0,"isHidden":0,"isDisplayField":1,"isMultifilter":0,"showInContactSheetView":0,"hasSubLevel":false,"sortKey":21,"showInGridView":0,"isRequired":0,"showInListView":0,"tagName":"","isMainfilter":1,"isFilterable":1,"showInSpotlight":0,"name":"Year","IsZipPregenerated":0,"hidePublic":0,"createDuringApply":0,"label":"Year","showNULLOption":0,"isApiField":1,"dependencies":"","showInDuplicateView":0,"zindex":71,"writeTagNames":"","spotlightFilterAction":"media","id":"0ADC8336-B03D-469B-ACA9E33DF4E5C857","type":"select2","isSearchable":1,"isDrilldown":1,"hideNonDependentOptions":0,"useDependencies":0,"isEditable":1},"Asset_Type":{"isMultiselect":0,"isHidden":0,"isDisplayField":1,"isMultifilter":0,"showInContactSheetView":0,"hasSubLevel":false,"sortKey":1,"showInGridView":0,"isRequired":1,"showInListView":0,"tagName":"","isMainfilter":1,"isFilterable":1,"showInSpotlight":0,"name":"Asset_Type","IsZipPregenerated":0,"hidePublic":0,"createDuringApply":0,"label":"Asset Type","showNULLOption":0,"isApiField":1,"dependencies":"","showInDuplicateView":0,"zindex":10,"writeTagNames":"","spotlightFilterAction":"media","id":"FF58A46B-51CF-4551-860C673F1CAB9E0C","type":"select2","isSearchable":1,"isDrilldown":1,"hideNonDependentOptions":0,"useDependencies":0,"isEditable":1},"ExecutiveFacultyResearcher_Name":{"isMultiselect":1,"isHidden":0,"isDisplayField":1,"isMultifilter":0,"showInContactSheetView":0,"hasSubLevel":false,"sortKey":23,"showInGridView":0,"isRequired":0,"showInListView":0,"tagName":"","isMainfilter":1,"isFilterable":1,"showInSpotlight":0,"name":"ExecutiveFacultyResearcher_Name","IsZipPregenerated":0,"hidePublic":0,"createDuringApply":1,"label":"Executive/Faculty/Researcher Name","showNULLOption":0,"isApiField":1,"dependencies":"","showInDuplicateView":0,"zindex":101,"writeTagNames":"","spotlightFilterAction":"media","id":"9AA276F2-2035-4965-ACFC37FD4EF2588C","type":"autocomplete","isSearchable":1,"isDrilldown":1,"hideNonDependentOptions":0,"useDependencies":0,"isEditable":1},"Event":{"isMultiselect":1,"isHidden":0,"isDisplayField":1,"isMultifilter":0,"showInContactSheetView":0,"hasSubLevel":false,"sortKey":20,"showInGridView":0,"isRequired":0,"showInListView":0,"tagName":"","isMainfilter":1,"isFilterable":1,"showInSpotlight":0,"name":"Event","IsZipPregenerated":0,"hidePublic":0,"createDuringApply":1,"label":"Event","showNULLOption":0,"isApiField":1,"dependencies":"","showInDuplicateView":0,"zindex":61,"writeTagNames":"","spotlightFilterAction":"media","id":"4FD68F28-9889-45F5-A7A5401E968AC649","type":"autocomplete","isSearchable":1,"isDrilldown":1,"hideNonDependentOptions":0,"useDependencies":0,"isEditable":1},"Department":{"isMultiselect":1,"isHidden":0,"isDisplayField":1,"isMultifilter":0,"showInContactSheetView":0,"hasSubLevel":false,"sortKey":28,"showInGridView":0,"isRequired":0,"showInListView":0,"tagName":"","isMainfilter":1,"isFilterable":1,"showInSpotlight":0,"name":"Department","IsZipPregenerated":0,"hidePublic":0,"createDuringApply":0,"label":"Department/School/Institute","showNULLOption":0,"isApiField":1,"dependencies":"08B6824B-C7CD-4CFD-9800E8B2BAFAB97C,1A2ECDF7-1892-4B18-B1EBFE8669429EB7,21720FEE-723A-40A0-8D92071F8FC99581,44427457-C42C-4398-9FB29F8A5528E88F,4AE7657D-ED24-4C82-B7C807191CD04966,565B5B3E-8FF6-418F-94F463F66A5282D5,D09C7D6D-5CC9-40D3-A7B781B314F66599","showInDuplicateView":0,"zindex":136,"writeTagNames":"","spotlightFilterAction":"media","id":"D891ED09-ED88-431E-8B0C598A5AB5BE29","type":"select2","isSearchable":1,"isDrilldown":1,"hideNonDependentOptions":0,"useDependencies":0,"isEditable":1},"Asset_Owner":{"isMultiselect":0,"isHidden":0,"isDisplayField":1,"isMultifilter":0,"showInContactSheetView":0,"hasSubLevel":false,"sortKey":14,"showInGridView":0,"isRequired":1,"showInListView":0,"tagName":"","isMainfilter":1,"isFilterable":0,"showInSpotlight":0,"name":"Asset_Owner","IsZipPregenerated":0,"hidePublic":0,"createDuringApply":1,"label":"Asset Owner (Type your department/faculty)","showNULLOption":0,"isApiField":0,"dependencies":"","showInDuplicateView":0,"zindex":32,"writeTagNames":"","spotlightFilterAction":"media","id":"D10BD7F1-B5BF-4F50-A56DB1681B3273CE","type":"text","isSearchable":1,"isDrilldown":1,"hideNonDependentOptions":0,"useDependencies":0,"isEditable":1},"Use_Exp":{"isMultiselect":0,"isHidden":0,"isDisplayField":1,"isMultifilter":0,"showInContactSheetView":0,"hasSubLevel":false,"sortKey":15,"showInGridView":0,"isRequired":0,"showInListView":0,"tagName":"","isMainfilter":1,"isFilterable":0,"showInSpotlight":0,"name":"Use_Exp","IsZipPregenerated":0,"hidePublic":0,"createDuringApply":1,"label":"Usage Rights Description","showNULLOption":0,"isApiField":0,"dependencies":"","showInDuplicateView":0,"zindex":33,"writeTagNames":"","spotlightFilterAction":"media","id":"1D9EFD6A-7844-49AE-ABC32194B3C8DD51","type":"text","isSearchable":1,"isDrilldown":0,"hideNonDependentOptions":0,"useDependencies":0,"isEditable":1},"Subject__Theme":{"isMultiselect":1,"isHidden":0,"isDisplayField":1,"isMultifilter":0,"showInContactSheetView":0,"hasSubLevel":false,"sortKey":25,"showInGridView":0,"isRequired":0,"showInListView":0,"tagName":"","isMainfilter":1,"isFilterable":1,"showInSpotlight":0,"name":"Subject__Theme","IsZipPregenerated":0,"hidePublic":0,"createDuringApply":0,"label":"Subject/Theme","showNULLOption":0,"isApiField":1,"dependencies":"","showInDuplicateView":0,"zindex":111,"writeTagNames":"","spotlightFilterAction":"media","id":"EAED3FDF-29E3-4AEA-83EA29EDC420CF15","type":"select2","isSearchable":1,"isDrilldown":1,"hideNonDependentOptions":0,"useDependencies":0,"isEditable":1},"Photographer":{"isMultiselect":0,"isHidden":0,"isDisplayField":1,"isMultifilter":0,"showInContactSheetView":0,"hasSubLevel":false,"sortKey":24,"showInGridView":0,"isRequired":0,"showInListView":0,"tagName":"","isMainfilter":1,"isFilterable":1,"showInSpotlight":0,"name":"Photographer","IsZipPregenerated":0,"hidePublic":0,"createDuringApply":1,"label":"Photographer/Videographer","showNULLOption":0,"isApiField":1,"dependencies":"","showInDuplicateView":0,"zindex":106,"writeTagNames":"","spotlightFilterAction":"media","id":"8C3EBBAE-05B0-46C1-BB3C99E62634749A","type":"autocomplete","isSearchable":1,"isDrilldown":1,"hideNonDependentOptions":0,"useDependencies":0,"isEditable":1},"Faculties":{"isMultiselect":1,"isHidden":0,"isDisplayField":1,"isMultifilter":0,"showInContactSheetView":0,"hasSubLevel":false,"sortKey":27,"showInGridView":0,"isRequired":0,"showInListView":0,"tagName":"","isMainfilter":1,"isFilterable":1,"showInSpotlight":0,"name":"Faculties","IsZipPregenerated":0,"hidePublic":0,"createDuringApply":0,"label":"Faculties","showNULLOption":0,"isApiField":1,"dependencies":"","showInDuplicateView":0,"zindex":131,"writeTagNames":"","spotlightFilterAction":"media","id":"02D0A84C-EAFB-424B-86CA40738280A154","type":"select2","isSearchable":1,"isDrilldown":1,"hideNonDependentOptions":0,"useDependencies":0,"isEditable":1},"Modified":{"isMultiselect":0,"isHidden":0,"isDisplayField":1,"isMultifilter":0,"showInContactSheetView":0,"hasSubLevel":false,"sortKey":18,"showInGridView":0,"isRequired":0,"showInListView":0,"tagName":"","isMainfilter":1,"isFilterable":1,"showInSpotlight":0,"name":"Modified","IsZipPregenerated":0,"hidePublic":0,"createDuringApply":0,"label":"Modified","showNULLOption":0,"isApiField":1,"dependencies":"","showInDuplicateView":0,"zindex":41,"writeTagNames":"","spotlightFilterAction":"media","id":"A41E1DB3-EFFA-4E93-A5A8F0DE8C91066D","type":"select","isSearchable":1,"isDrilldown":1,"hideNonDependentOptions":0,"useDependencies":0,"isEditable":1},"Campaign":{"isMultiselect":1,"isHidden":0,"isDisplayField":1,"isMultifilter":0,"showInContactSheetView":0,"hasSubLevel":false,"sortKey":19,"showInGridView":0,"isRequired":0,"showInListView":0,"tagName":"","isMainfilter":1,"isFilterable":1,"showInSpotlight":0,"name":"Campaign","IsZipPregenerated":0,"hidePublic":0,"createDuringApply":1,"label":"Campaign","showNULLOption":0,"isApiField":1,"dependencies":"","showInDuplicateView":0,"zindex":51,"writeTagNames":"","spotlightFilterAction":"media","id":"708B4B30-C5B0-49F2-947D9ADCC869A880","type":"autocomplete","isSearchable":1,"isDrilldown":1,"hideNonDependentOptions":0,"useDependencies":0,"isEditable":1},"Asset_Sub-Type":{"isMultiselect":1,"isHidden":0,"isDisplayField":1,"isMultifilter":0,"showInContactSheetView":0,"hasSubLevel":false,"sortKey":2,"showInGridView":0,"isRequired":1,"showInListView":0,"tagName":"","isMainfilter":1,"isFilterable":1,"showInSpotlight":0,"name":"Asset_Sub-Type","IsZipPregenerated":0,"hidePublic":0,"createDuringApply":0,"label":"Asset Sub-Type","showNULLOption":0,"isApiField":1,"dependencies":"21CD77F2-8251-4FC1-BCF0DEAF53876B83,3703A281-2A8E-4696-887FA5E4DCA8F2EB,3755A39C-6868-42A5-8DB6F6788F2394CE,4FDC6D2E-D980-4E11-A671FEF493478299,6CCDDF04-489F-4B8D-B36284629B322D5C,714F0069-0A89-4507-B69D283D2FD69281,C1E3ED78-CF8C-4629-AB89E86B7C763D68,FA7947E4-D037-4100-9238103305C31E47","showInDuplicateView":0,"zindex":20,"writeTagNames":"","spotlightFilterAction":"media","id":"A824B225-F856-46D2-AB70A48065ECB774","type":"select","isSearchable":1,"isDrilldown":1,"hideNonDependentOptions":0,"useDependencies":0,"isEditable":1},"Majors":{"isMultiselect":1,"isHidden":0,"isDisplayField":1,"isMultifilter":0,"showInContactSheetView":0,"hasSubLevel":false,"sortKey":36,"showInGridView":0,"isRequired":0,"showInListView":0,"tagName":"","isMainfilter":1,"isFilterable":1,"showInSpotlight":0,"name":"Majors","IsZipPregenerated":0,"hidePublic":0,"createDuringApply":0,"label":"Majors","showNULLOption":0,"isApiField":1,"dependencies":"02494B2D-5CA6-43F8-B4A4E2491AA2EF8E,0DCEB507-CB46-48EE-A88B4135997FE2E6,226FC857-79BD-42B8-A2BF89234827B787,26AE53FF-0DF8-4CE2-86F765F254EE039A,2CC7CFF0-F272-47B5-B4786CFB85C9FC09,47626295-A06A-47FD-94394068591D8FD0,4787B2B2-9CF7-45ED-A0AF6C49C6795BA7,4D4025DA-EAA0-441B-99849C2C48A3B319,59785CF9-D3C0-4DC1-BD69D9FCEC247C56,6C7DCD50-38F9-4274-BC655397945CA630,799D23CF-5DC1-4F66-B1C9909604485BF2,7F7FED5E-2763-4BCD-846F0BC7E3E482C5,836616D6-08E2-4319-AFD630E5651095C0,A4B24FBA-6BD8-4615-A91B6866542A3264,A7E23025-7936-48E2-8C84A3E10120C6EA,AC20DB8B-666E-47FE-AFA6A3AF228C7943,B3F2F364-EDBB-4E44-A543A423B2F208A5,B4C4DC96-3053-48D7-B1911A41819C4E51,C13B08DD-0C5E-4E39-ABC12AB15FAF0132,DEFE6CD1-7E75-4759-8BE6FD7DA1590C87,DFF451AE-2614-4FB0-BD25A59C2C06EF36,F2266D4F-930E-45DF-B043E7671432B967","showInDuplicateView":0,"zindex":151,"writeTagNames":"","spotlightFilterAction":"media","id":"5FC02F02-8B34-4037-BED4B5E8C09F4461","type":"select2","isSearchable":1,"isDrilldown":1,"hideNonDependentOptions":0,"useDependencies":0,"isEditable":1},"Extension":{"isMultiselect":1,"isHidden":0,"isDisplayField":1,"isMultifilter":0,"showInContactSheetView":0,"hasSubLevel":false,"sortKey":58,"showInGridView":0,"isRequired":0,"showInListView":0,"tagName":"","isMainfilter":0,"isFilterable":1,"showInSpotlight":0,"name":"Extension","IsZipPregenerated":0,"hidePublic":0,"createDuringApply":1,"label":"File Type","showNULLOption":0,"isApiField":1,"dependencies":"","showInDuplicateView":0,"zindex":201,"writeTagNames":"","spotlightFilterAction":"media","id":"4786BE2F-4507-4545-AFFC62FE2C6479FF","type":"autocomplete","isSearchable":1,"isDrilldown":1,"hideNonDependentOptions":0,"useDependencies":0,"isEditable":0},"Programs":{"isMultiselect":1,"isHidden":0,"isDisplayField":1,"isMultifilter":0,"showInContactSheetView":0,"hasSubLevel":false,"sortKey":35,"showInGridView":0,"isRequired":0,"showInListView":0,"tagName":"","isMainfilter":1,"isFilterable":1,"showInSpotlight":0,"name":"Programs","IsZipPregenerated":0,"hidePublic":0,"createDuringApply":0,"label":"Programs","showNULLOption":0,"isApiField":1,"dependencies":"","showInDuplicateView":0,"zindex":141,"writeTagNames":"","spotlightFilterAction":"media","id":"CAE03948-0373-4AC6-9F8CFF42D95A84A8","type":"select2","isSearchable":1,"isDrilldown":1,"hideNonDependentOptions":0,"useDependencies":1,"isEditable":1},"Usage_Rights":{"isMultiselect":0,"isHidden":0,"isDisplayField":1,"isMultifilter":0,"showInContactSheetView":0,"hasSubLevel":false,"sortKey":10,"showInGridView":0,"isRequired":1,"showInListView":0,"tagName":"","isMainfilter":1,"isFilterable":1,"showInSpotlight":0,"name":"Usage_Rights","IsZipPregenerated":0,"hidePublic":0,"createDuringApply":0,"label":"Usage Rights","showNULLOption":0,"isApiField":1,"dependencies":"","showInDuplicateView":0,"zindex":30,"writeTagNames":"","spotlightFilterAction":"media","id":"9BB8FB24-47F0-49EF-A9C236733DEE2574","type":"select2","isSearchable":1,"isDrilldown":1,"hideNonDependentOptions":0,"useDependencies":0,"isEditable":1}},
+            hasNoUsersuggest: 0 !== 0,
+            hasNewActiveFilterbar: true,
+        };
+    </script>
+    <div id="rootAssetOverviewV3"></div>
+
+
+			</div>
+		</div>
+		<div id="collection-detail"
+			>
+			
+		</div>
+	</div>
+
+
+            
+            
+    <div id="request-box">
+        <div class="acceptOverlay request-overlay">
+            <div class="request-content">
+                <header class="clearfix">
+                    <i class="icon-download"></i>
+                    <h1>Download reason</h1>
+                    <p>Please specify the reason for this download</p>
+                </header>
+                <div class="content">
+                    <form>
+                        <textarea 
+                            data-parsley-required-message="This&#32;field&#32;is&#32;required." 
+                            data-parsley-required="true"></textarea>
+                    </form>
+                </div>
+                <button class="action-btn cancel">
+                    Cancel
+                </button>
+                <button class="action-btn blue send">
+                    Send
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+        
+	<div id="confirm-modal" class="alert hidden transition fadeFromTopStart">
+		<p class="title"><b>Are you sure you want to delete “icon-cross.png”?</b></p>
+		<p class="sub-title">This item will be deleted immediately. You can’t undo this action.</p>
+		<a href="#" class="close"><i class="fa fa-times"></i></a>
+		<a href="#" class="action-btn action-cancel">Cancel</a>
+		<a href="#" class="action-btn action-ok blue hidden">Ok, I'll just <b>wait here</b></a>
+		<a href="#" class="action-btn action-confirm red"><span class="action">Delete</span> <span class="type">Files</span></a>
+	</div>
+
+
+        <div id="bynder-modal-container"></div>
+        <div id="rootDownloadFormModal"></div>
+        
+
+    
+        
+        <meta name="b-ds-new-branding" content="" data-b-ds-new-branding="on">
+    
+
+    <div id="rootPrivacyPolicyModal"></div>
+    <div
+        id="bynderParamountRoot"
+        style="display: none;"
+    ></div>
+    <script type="text/javascript">
+        
+        
+            var baseUrl = '/v7/paramount/js/';
+        
+
+        var manifest = 'manifest.json';
+        var scriptId =  'paramount-microfrontend-script';
+        var localUrl = 'https://localhost:3018/';
+
+        var isDevelopment = baseUrl.includes('bynder-frontend') || false;
+
+        function appendScript(url){
+            var script = document.createElement('script');
+
+            script.type = 'module';
+            script.src = url;
+            script.setAttribute('id', scriptId);
+
+            document.body.appendChild(script);
+        };
+
+        function getAppBundle($, url, callback ) {
+                $.ajax({
+                        type: 'get',
+                        url: url + manifest,
+
+                        success: function (templateData) {
+                            var value = templateData['app.js'];
+                            appendScript(url + value)
+                        },
+                        error: function (e) {
+                            callback(e);
+                        }
+                });
+        }
+
+        if(isDevelopment) {
+            (function($) {
+                getAppBundle($, localUrl, function () {
+                    getAppBundle($, baseUrl, function (e) {
+                            console.error(e)
+                        })
+                })
+
+            })(jQuery);
+        }
+        else {
+            (function($) {
+                getAppBundle($, baseUrl, function (e) {
+                        console.error(e)
+                    })
+            })(jQuery);
+        }
+    </script>
+
+
+        
