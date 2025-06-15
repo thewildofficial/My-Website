@@ -632,24 +632,7 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
 </div>
 
-<h2 class="gradient-text animate-fade-in" style="margin-top: 60px;">💡 Core Philosophies</h2>
-<div class="philosophy-grid animate-fade-in">
-    <div class="philosophy-card delay-100">
-        <h3>The War on Heteronomy</h3>
-        <p>"The premier mark of autonomy is AUTODIDACTISM: the ability to self learn... If a tool or heuristic doesn't meet your needs... take the time to build your own."</p>
-        <a href="/posts/thewaragainstheteronomy/">Read More →</a>
-    </div>
-    <div class="philosophy-card delay-200">
-        <h3>Agency Over Intelligence</h3>
-        <p>"Any major boon that's attributed to a disrupter's intelligence is often actually the result of their agency – their capacity to act decisively and effectively in the world."</p>
-        <a href="/posts/thewaragainstheteronomy/">Read More →</a>
-    </div>
-    <div class="philosophy-card delay-300">
-        <h3>Authenticity in a Digital World</h3>
-        <p>"The mass-churning out of content only elicits the desire for the experience of that which is truly authentic: authentic friendship, real love, true intellectual novelty..."</p>
-        <a href="/posts/technofeudalism-and-the-return-to-the-real/">Read More →</a>
-    </div>
-</div>
+
 
 <script>
 // Add animation trigger on scroll

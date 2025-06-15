@@ -84,6 +84,8 @@
   </url><url>
     <loc>//localhost:1313/prometheus/</loc>
   </url><url>
+    <loc>//localhost:1313/resume/</loc>
+  </url><url>
     <loc>//localhost:1313/about/</loc>
   </url><url>
     <loc>//localhost:1313/authors/</loc>
