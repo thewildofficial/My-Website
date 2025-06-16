@@ -1,0 +1,14 @@
+{
+  "name": "my-website-stagewise",
+  "version": "1.0.0",
+  "description": "Stagewise integration for Hugo site",
+  "private": true,
+  "scripts": {
+    "install-dev": "npm install",
+    "hugo-dev": "hugo server -D",
+    "hugo-build": "hugo"
+  },
+  "devDependencies": {
+    "@stagewise/toolbar": "^0.4.8"
+  }
+} 
