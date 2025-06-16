@@ -6,7 +6,8 @@ title: "About"
 <div class="hero-content">
 <h1>Aban</h1>
 <p class="location-tag">19 • Ottawa 🇨🇦 • Bangalore 🇮🇳</p>
-<p class="tagline">Building tools that serve human potential</p>
+<p class="location-tag">IIT Madras • SST</p>
+<p class="tagline">Building tools that extend human potential</p>
 </div>
 </div>
 
@@ -89,23 +90,23 @@ title: "About"
 
 <div class="agency-manifesto">
 <div class="manifesto-header">
-<h3>The Agency Imperative</h3>
+<h3>On Autonomy</h3>
 <div class="energy-pulse"></div>
 </div>
 <div class="manifesto-content">
-<p>In a world of infinite possibilities, the difference between dreamers and builders isn't intelligence—it's the audacity to act. While others debate feasibility, agents reshape reality through sheer force of will.</p>
+<p>True autonomy isn't about rejecting all external influence—it's about consciously choosing which influences align with your values. Most people mistake busyness for agency, confusing motion with meaningful action. The autodidact builds their own curriculum; the autonomous person builds their own world.</p>
 <div class="agency-stats">
 <div class="agency-metric">
-<span class="metric-value">∞</span>
-<span class="metric-label">Possibilities</span>
+<span class="metric-value">Build</span>
+<span class="metric-label">Don't Settle</span>
 </div>
 <div class="agency-metric">
-<span class="metric-value">1</span>
-<span class="metric-label">You</span>
+<span class="metric-value">Act</span>
+<span class="metric-label">Don't Wait</span>
 </div>
 <div class="agency-metric">
-<span class="metric-value">0</span>
-<span class="metric-label">Excuses</span>
+<span class="metric-value">Shape</span>
+<span class="metric-label">Don't Follow</span>
 </div>
 </div>
 </div>
