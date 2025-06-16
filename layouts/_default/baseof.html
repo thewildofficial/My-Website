@@ -54,13 +54,8 @@
 	<script src="{{ $theme_script.Permalink }}" {{ printf "integrity=%q" $theme_script.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>
 
 <!-- Stagewise Toolbar (Development Only) -->
-{{ if eq (getenv "HUGO_ENV") "development" }}
-<script type="module">
-  import { initToolbar } from 'https://cdn.jsdelivr.net/npm/@stagewise/toolbar/+esm';
-  const stagewiseConfig = { plugins: [] };
-  initToolbar(stagewiseConfig);
-</script>
-{{ end }}
+{{ $stagewise := resources.Get "js/stagewise.js" | minify | fingerprint -}}
+<script src="{{ $stagewise.Permalink }}" {{ printf "integrity=%q" $stagewise.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>
 <!-- End Stagewise Toolbar -->
 
 {{- if templates.Exists "partials/extra-foot.html" -}}
