@@ -362,21 +362,20 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
     <div class="journey-step journey-step-1">
         <div class="journey-content">
-            <h2 class="gradient-text">Foundations in Ottawa <span class="flag-emoji">🇨🇦</span></h2>
-            <p>I began my formal journey in Computer Science at Carleton University, building a strong foundation in algorithmic thinking and software development while nurturing a community of like-minded builders.</p>
+            <h2 class="gradient-text">Technical Arsenal <span class="flag-emoji">⚙️</span></h2>
+            <p>From low-level systems programming in C++ to high-level AI orchestration with Python, I've built expertise across the full technology stack. My passion for cybersecurity has earned me top 2% ranking on TryHackMe, while my systems knowledge spans from RFID hardware design to distributed cloud architectures.</p>
         </div>
     </div>
     <div class="journey-step journey-step-2">
         <div class="journey-content">
-            <h2 class="gradient-text">The New Frontier</h2>
-            <blockquote>"To be in software in 2025 is to be a cowboy in 1900... The open range is closing, fences are going up, and the rules are changing. This isn't just a shift; it's a reckoning."</blockquote>
-            <p>Recognizing the paradigm shift, I made the cowboy's choice: to ride out towards the new, untamed frontier of AI, trading established comfort for the chance to build on truly new ground.</p>
+            <h2 class="gradient-text">Global Impact <span class="flag-emoji">🌍</span></h2>
+            <p>My projects have reached over 5,000+ users globally through Project Skilltree, while GeoMonitor provides real-time insights to analysts worldwide. From winning Mars colonization competitions to mentoring peers in algorithmic thinking, I focus on building solutions that scale beyond individual use cases.</p>
         </div>
     </div>
     <div class="journey-step journey-step-3">
         <div class="journey-content">
-            <h2 class="gradient-text">Forging the Future in Bangalore <span class="flag-emoji">🇮🇳</span></h2>
-            <p>Now, I am immersed in one of India's most selective tech programs at Scalar, while simultaneously pursuing a BS in Data Science from IIT Madras. This dual path is an intentional act of forging—combining deep industry practice with rigorous academic theory.</p>
+            <h2 class="gradient-text">Innovation Philosophy <span class="flag-emoji">🚀</span></h2>
+            <p>I believe in solving problems at their mathematical core rather than surface symptoms. Whether it's using Bayesian statistics for probability visualization or NLP for geopolitical analysis, my approach combines rigorous theory with practical implementation to create truly intelligent systems.</p>
         </div>
     </div>
 </div>
