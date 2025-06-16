@@ -1,7 +1,7 @@
 ---
 title: "The Art of Human Connection: How to become the leader of your tribe"
 date: 2021-12-10T19:49:54+05:30
-draft: true
+draft: false
 toc: true
 images:
 tags: 

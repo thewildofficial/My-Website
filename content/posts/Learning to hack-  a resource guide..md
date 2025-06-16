@@ -1,7 +1,7 @@
 ---
 title: "Learning to Hack: A Resource Guide"
 date: 2021-05-16T10:54:36+05:30
-draft: true
+draft: false
 toc: false
 images:
 tags: 

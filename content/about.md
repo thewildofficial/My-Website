@@ -1,12 +1,22 @@
 ---
-title: "About"
+title: ""
 ---
 
 <div class="about-hero">
 <div class="hero-content">
 <h1>Aban</h1>
 <p class="location-tag">19 • Ottawa 🇨🇦 • Bangalore 🇮🇳</p>
-<p class="location-tag">IIT Madras • SST</p>
+<p class="location-tag institution-line">
+  <span class="mini-institution">
+    <img src="/images/logos/iit-madras-logo.png" alt="IIT Madras" class="mini-logo">
+    IIT Madras
+  </span>
+  •
+  <span class="mini-institution">
+    <img src="/images/logos/scaler-logo.png" alt="SST" class="mini-logo">
+    SST
+  </span>
+</p>
 <p class="tagline">Building tools that extend human potential</p>
 </div>
 </div>
@@ -14,9 +24,11 @@ title: "About"
 <div class="about-grid">
 
 <div class="core-section">
-<h2>Who I Am</h2>
-<p>I think deeply about technology's role in human agency. Currently studying Data Science at IIT Madras while engineering at Scalar School of Technology. After my first year at Carleton, I chose to forge my own path—true autonomy means having the courage to write your own story.</p>
-</div>
+<h2>Who Am I?</h2>
+<p>I think deeply about technology’s role in human agency.
+I’m currently studying Data Science at IIT Madras while engineering solutions at Scaler School of Technology — a dual path designed to merge theory with applied innovation.
+After completing my first year at Carleton University, I chose to forge my own path.
+Because true autonomy, to me, means having the courage to write your own story.</p></div>
 
 <div class="interests-section">
 <h2>What Drives Me</h2>

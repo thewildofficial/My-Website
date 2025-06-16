@@ -2,7 +2,7 @@
 author: "thewildofficial"
 date: 2021-07-07
 title: Benefits of Cold Showers
-draft: true
+draft: false
 katex: true
 description: The popularity of cold showers have exploded in the last few years...but why?
 tags: 
