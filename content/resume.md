@@ -560,4 +560,3 @@ Co-authored and published first book on artificial intelligence from a teenager'
 - Website: [abanhasan.net](https://abanhasan.net)
 - GitHub: [thewildofficial](https://github.com/thewildofficial)
 - TryHackMe: [thewildofficial](https://tryhackme.com/p/thewildofficial)
-</code_block_to_apply_changes_from> 

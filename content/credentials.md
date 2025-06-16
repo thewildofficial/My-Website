@@ -100,7 +100,7 @@ markup: "html"
     <div class="credential-card" data-institution="scalar">
       <div class="shimmer"></div>
       <div class="card-header">
-        <div class="institution-logo"><img src="/images/logos/scaler-logo.svg" alt="Scalar Logo"></div>
+        <div class="institution-logo"><img src="/images/logos/scaler-logo.png" alt="Scalar Logo"></div>
         <div class="institution-info">
           <h3>Scalar School of Technology</h3>
           <p class="program">Full-Stack Development & Algorithmic Problem Solving</p>

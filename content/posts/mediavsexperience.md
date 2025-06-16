@@ -1,7 +1,7 @@
 ---
 title: "Learning From Media vs Learning From Experience: Which Is Better?"
 date: 2021-11-28T17:23:57+05:30
-draft: true
+draft: false
 toc: false
 images:
 tags: 

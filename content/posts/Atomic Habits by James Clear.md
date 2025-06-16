@@ -2,7 +2,7 @@
 author: "thewildofficial"
 date: 2021-06-26
 title: Atomic Habits by James Clear:Book Review
-draft: true
+draft: false
 katex: true
 description: 
 tags: 

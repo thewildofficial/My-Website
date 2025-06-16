@@ -121,10 +121,94 @@
       <description></description>
     </item>
     <item>
-      <title>Self-Improvement</title>
+      <title>Self Improvement</title>
       <link>//localhost:1313/tags/self-improvement/</link>
       <pubDate>Fri, 16 Jun 2023 00:08:35 +0530</pubDate>
       <guid>//localhost:1313/tags/self-improvement/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Friendship</title>
+      <link>//localhost:1313/tags/friendship/</link>
+      <pubDate>Fri, 10 Dec 2021 19:49:54 +0530</pubDate>
+      <guid>//localhost:1313/tags/friendship/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Productivity</title>
+      <link>//localhost:1313/tags/productivity/</link>
+      <pubDate>Fri, 10 Dec 2021 19:49:54 +0530</pubDate>
+      <guid>//localhost:1313/tags/productivity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Social Skills</title>
+      <link>//localhost:1313/tags/social-skills/</link>
+      <pubDate>Fri, 10 Dec 2021 19:49:54 +0530</pubDate>
+      <guid>//localhost:1313/tags/social-skills/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Discipline</title>
+      <link>//localhost:1313/tags/discipline/</link>
+      <pubDate>Sun, 05 Dec 2021 11:01:26 +0530</pubDate>
+      <guid>//localhost:1313/tags/discipline/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Learning</title>
+      <link>//localhost:1313/tags/learning/</link>
+      <pubDate>Sun, 28 Nov 2021 17:23:57 +0530</pubDate>
+      <guid>//localhost:1313/tags/learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Internet</title>
+      <link>//localhost:1313/tags/internet/</link>
+      <pubDate>Sun, 21 Nov 2021 18:53:12 +0530</pubDate>
+      <guid>//localhost:1313/tags/internet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Studying</title>
+      <link>//localhost:1313/tags/studying/</link>
+      <pubDate>Sun, 08 Aug 2021 18:45:50 +0530</pubDate>
+      <guid>//localhost:1313/tags/studying/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Well-Being</title>
+      <link>//localhost:1313/tags/well-being/</link>
+      <pubDate>Sat, 31 Jul 2021 20:31:06 +0530</pubDate>
+      <guid>//localhost:1313/tags/well-being/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typing</title>
+      <link>//localhost:1313/tags/typing/</link>
+      <pubDate>Sat, 17 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/typing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Motivation</title>
+      <link>//localhost:1313/tags/motivation/</link>
+      <pubDate>Tue, 29 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/motivation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Book Review</title>
+      <link>//localhost:1313/tags/book-review/</link>
+      <pubDate>Sat, 26 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/book-review/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hacking</title>
+      <link>//localhost:1313/tags/hacking/</link>
+      <pubDate>Sun, 16 May 2021 10:54:36 +0530</pubDate>
+      <guid>//localhost:1313/tags/hacking/</guid>
       <description></description>
     </item>
   </channel>
