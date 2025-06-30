@@ -69,6 +69,17 @@
   margin-bottom: 15px;
 }
 
+.project-card h3 {
+  background: linear-gradient(45deg, #6B8DD6, #C490C4, #6B8DD6);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 4s ease infinite;
+  font-weight: 600;
+  margin-top: 0;
+}
+
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
@@ -144,6 +155,13 @@
   align-items: center;
   font-size: 1.2em;
   margin-bottom: 10px;
+  background: linear-gradient(45deg, #6B8DD6, #C490C4, #6B8DD6);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 4s ease infinite;
+  font-weight: 600;
 }
 
 .extracurricular-icon {
@@ -174,7 +192,13 @@
 .philosophy-card h3 {
   font-size: 1.3em;
   margin: 0 0 15px 0;
-  color: #fff;
+  background: linear-gradient(45deg, #6B8DD6, #C490C4, #6B8DD6);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 4s ease infinite;
+  font-weight: 600;
   border-left: 3px solid #B06AB3;
   padding-left: 10px;
 }
@@ -288,6 +312,18 @@
 
 .flag-emoji {
     opacity: 1 !important;
+}
+
+/* Timeline title styling */
+.timeline-title {
+  background: linear-gradient(45deg, #6B8DD6, #C490C4, #6B8DD6);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 4s ease infinite;
+  font-weight: 600;
+  margin-top: 0;
 }
 </style>
 
@@ -516,8 +552,8 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <div class="project-card animate-fade-in delay-400">
-  <h3>🚀 Scalar School of Technology</h3>
-  <p>Currently attending Scalar School of Technology in Bangalore 🇮🇳 — one of India's most selective tech programs with an acceptance rate of around 3%. The curriculum focuses on building rock-solid fundamentals in computer science, algorithms, and system design, learning alongside some of the brightest minds in tech.</p>
+  <h3>🚀 Scaler School of Technology</h3>
+  <p>Currently attending Scaler School of Technology in Bangalore 🇮🇳 — one of India's most selective tech programs with an acceptance rate of around 3%. The curriculum focuses on building rock-solid fundamentals in computer science, algorithms, and system design, learning alongside some of the brightest minds in tech.</p>
   <div class="tech-tags">
     <span class="tech-tag">Advanced Algorithms</span>
     <span class="tech-tag">System Design</span>
@@ -527,7 +563,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="project-card animate-fade-in delay-500">
   <h3>📊 IIT Madras - BS Data Science & Applications</h3>
-  <p>Pursuing the 4-year Bachelor's degree program in Data Science and Applications from IIT Madras in parallel with my Scalar studies. This program combines statistical foundations with practical applications, giving me a comprehensive understanding of how data drives decision-making in the modern world.</p>
+  <p>Pursuing the 4-year Bachelor's degree program in Data Science and Applications from IIT Madras in parallel with my Scaler studies. This program combines statistical foundations with practical applications, giving me a comprehensive understanding of how data drives decision-making in the modern world.</p>
   <div class="tech-tags">
     <span class="tech-tag">Statistical Modeling</span>
     <span class="tech-tag">Machine Learning</span>
@@ -663,7 +699,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="timeline-item" style="position: relative; margin-bottom: 30px; padding-right: 50%; clear: both; text-align: right;">
     <div class="timeline-content project-card" style="position: relative; margin-right: 30px;">
       <span class="timeline-date" style="position: absolute; right: -110px; background: linear-gradient(45deg, #B06AB3, #4568DC); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8em;">2019</span>
-      <h3>Published "Perspective AI"</h3>
+      <h3 class="timeline-title">Published "Perspective AI"</h3>
       <p>Co-authored and published my first book on artificial intelligence from a teenager's perspective.</p>
     </div>
   </div>
@@ -671,23 +707,23 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="timeline-item" style="position: relative; margin-bottom: 30px; padding-left: 50%; clear: both;">
     <div class="timeline-content project-card" style="position: relative; margin-left: 30px;">
       <span class="timeline-date" style="position: absolute; left: -110px; background: linear-gradient(45deg, #4568DC, #B06AB3); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8em;">2020</span>
-      <h3>Clevered.com Internship</h3>
+      <h3 class="timeline-title">Clevered.com Internship</h3>
       <p>Completed a 4-month AI internship mentored by an Oxford professor, developing sentiment analysis for social media.</p>
     </div>
   </div>
   
   <div class="timeline-item" style="position: relative; margin-bottom: 30px; padding-right: 50%; clear: both; text-align: right;">
     <div class="timeline-content project-card" style="position: relative; margin-right: 30px;">
-      <span class="timeline-date" style="position: absolute; right: -110px; background: linear-gradient(45deg, #B06AB3, #4568DC); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8em;">2022</span>
-      <h3>IIT Ropar AI Program</h3>
-      <p>Started the prestigious IIT program on Artificial Intelligence to deepen my knowledge in this rapidly evolving field.</p>
+      <span class="timeline-date" style="position: absolute; right: -110px; background: linear-gradient(45deg, #B06AB3, #4568DC); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8em;">2021-22</span>
+      <h3 class="timeline-title">Boards, JEE and Competitive Exams</h3>
+      <p>Intensive preparation period focusing on Indian board examinations and competitive entrance tests, building strong foundations in mathematics, physics, and analytical thinking that would prove crucial for my technical journey ahead.</p>
     </div>
   </div>
   
   <div class="timeline-item" style="position: relative; margin-bottom: 30px; padding-left: 50%; clear: both;">
     <div class="timeline-content project-card" style="position: relative; margin-left: 30px;">
       <span class="timeline-date" style="position: absolute; left: -110px; background: linear-gradient(45deg, #4568DC, #B06AB3); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8em;">2023</span>
-      <h3>Carleton Year 1 🇨🇦</h3>
+      <h3 class="timeline-title">Carleton Year 1 🇨🇦</h3>
       <p>Completed the first year of my Computer Science degree at Carleton University, where I built a strong foundation and a community of like-minded peers before pivoting to a more specialized path.</p>
     </div>
   </div>
@@ -695,7 +731,15 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="timeline-item" style="position: relative; margin-bottom: 30px; padding-right: 50%; clear: both; text-align: right;">
     <div class="timeline-content project-card" style="position: relative; margin-right: 30px;">
       <span class="timeline-date" style="position: absolute; right: -110px; background: linear-gradient(45deg, #B06AB3, #4568DC); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8em;">2024</span>
-      <h3>Return to Bangalore 🇮🇳</h3>
+      <h3 class="timeline-title">IIT Ropar AI Program</h3>
+      <p>Started the prestigious IIT program on Artificial Intelligence to deepen my knowledge in this rapidly evolving field.</p>
+    </div>
+  </div>
+  
+  <div class="timeline-item" style="position: relative; margin-bottom: 30px; padding-right: 50%; clear: both; text-align: right;">
+    <div class="timeline-content project-card" style="position: relative; margin-right: 30px;">
+      <span class="timeline-date" style="position: absolute; right: -110px; background: linear-gradient(45deg, #B06AB3, #4568DC); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8em;">2025</span>
+      <h3 class="timeline-title">Return to Bangalore 🇮🇳</h3>
       <p>Made the strategic decision to return to India to attend Scalar School of Technology and pursue a parallel degree from IIT Madras, focusing on deep, specialized tech education.</p>
     </div>
   </div>
@@ -703,8 +747,16 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="timeline-item" style="position: relative; margin-bottom: 30px; padding-left: 50%; clear: both;">
     <div class="timeline-content project-card" style="position: relative; margin-left: 30px;">
       <span class="timeline-date" style="position: absolute; left: -110px; background: linear-gradient(45deg, #4568DC, #B06AB3); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8em;">2025</span>
-      <h3>GeoMonitor Launch</h3>
+      <h3 class="timeline-title">GeoMonitor Launch</h3>
       <p>Developed and launched the cross-platform geopolitical news aggregator with AI-powered translation and analysis.</p>
+    </div>
+  </div>
+  
+  <div class="timeline-item" style="position: relative; margin-bottom: 30px; padding-right: 50%; clear: both; text-align: right;">
+    <div class="timeline-content project-card" style="position: relative; margin-right: 30px;">
+      <span class="timeline-date" style="position: absolute; right: -110px; background: linear-gradient(45deg, #B06AB3, #4568DC); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8em;">2025-2029</span>
+      <h3 class="timeline-title">Undergraduate Degree in Computer Science</h3>
+      <p>Pursuing intensive tech education at Scaler School of Technology in Bangalore, focusing on building rock-solid fundamentals in computer science, algorithms, and system design, along with a BS in Data Science & Applications from IIT Madras (IITM).</p>
     </div>
   </div>
 </div>
