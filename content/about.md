@@ -17,7 +17,7 @@ title: ""
     SST
   </span>
 </p>
-<p class="tagline">Building tools that extend human potential</p>
+<p class="tagline">Building tools that amplify human potential!</p>
 </div>
 </div>
 
