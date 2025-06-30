@@ -97,12 +97,12 @@ markup: "html"
 <section class="credentials-section" id="current-studies">
   <h2><i class="fas fa-book-open"></i> Current Studies</h2>
   <div class="credentials-grid">
-    <div class="credential-card" data-institution="scalar">
+    <div class="credential-card" data-institution="scaler">
       <div class="shimmer"></div>
       <div class="card-header">
-        <div class="institution-logo"><img src="/images/logos/scaler-logo.png" alt="Scalar Logo"></div>
+        <div class="institution-logo"><img src="/images/logos/scaler-logo.png" alt="Scaler Logo"></div>
         <div class="institution-info">
-          <h3>Scalar School of Technology</h3>
+          <h3>Scaler School of Technology</h3>
           <p class="program">Full-Stack Development & Algorithmic Problem Solving</p>
         </div>
         <span class="status-badge current">Currently Enrolled</span>
@@ -110,7 +110,7 @@ markup: "html"
       <div class="card-content">
         <p class="description">Intensive program focused on advanced software engineering and scalable system design. Admission rate approximately 3%.</p>
         <div class="card-actions">
-          <a href="/credentials/scalar-acceptance.pdf" class="doc-link" target="_blank" aria-label="View Scalar School Acceptance Letter">📄 View Acceptance</a>
+          <a href="/credentials/sst-offer.pdf" class="doc-link" target="_blank" aria-label="View Scaler School Offer Letter">📄 View Offer</a>
         </div>
       </div>
     </div>
@@ -154,7 +154,7 @@ markup: "html"
           <span class="progress-text">90% Complete</span>
         </div>
         <div class="card-actions">
-          <a href="/credentials/iit-ropar-result.pdf" class="doc-link" target="_blank" aria-label="View IIT Ropar AI/ML Program Results">📄 View Results</a>
+          <a href="/credentials/IIT-Ropar.jpeg" class="doc-link" target="_blank" aria-label="View IIT Ropar Offer Letter">📄 View Offer</a>
         </div>
       </div>
     </div>
@@ -177,7 +177,6 @@ markup: "html"
       <div class="card-content">
         <p class="description">Merit-based scholarship awarded for academic performance prior to university entry.</p>
         <div class="card-actions">
-          <a href="/credentials/carleton-scholarship.pdf" class="doc-link" target="_blank" aria-label="View Carleton University Scholarship Letter">📄 View Award</a>
         </div>
       </div>
     </div>
