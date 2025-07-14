@@ -1,7 +1,7 @@
  ---
 title: "Deep Work by Cal Newport:Book Review"
 date: 2021-06-08T11:57:29+05:30
-draft: false
+draft: true
 toc: false
 images:
 katex: true

@@ -1,7 +1,7 @@
  ---
 title: "How to Pick a Programming Language"
 date: 2021-08-20T12:33:41+05:30
-draft: false
+draft: true
 
 ---
 
