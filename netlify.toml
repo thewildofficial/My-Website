@@ -1,0 +1,22 @@
+[build]
+  publish = "public"
+  command = "hugo --minify --gc"
+
+[build.environment]
+  HUGO_VERSION = "0.118.2"
+  HUGO_ENV = "production"
+
+[context.production]
+  command = "hugo --minify --gc --baseURL https://www.abanhasan.net"
+
+[context.deploy-preview]
+  command = "hugo --buildDrafts --buildFuture --baseURL $DEPLOY_PRIME_URL"
+
+[context.deploy-preview.environment]
+  HUGO_VERSION = "0.118.2"
+
+[context.branch-deploy]
+  command = "hugo --buildDrafts --buildFuture --baseURL $DEPLOY_PRIME_URL"
+
+[context.branch-deploy.environment]
+  HUGO_VERSION = "0.118.2"

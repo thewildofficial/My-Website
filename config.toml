@@ -1,9 +1,11 @@
-baseURL = "/"
+baseURL = "https://www.abanhasan.net"
 languageCode = "en-us"
 title = "Aban Hasan"
 theme = "hermit"
 enableEmoji = true
 googleAnalyticsID = "G-G3F606BLYN"
+# Disable livereload in production
+disableLiveReload = true
 
 [taxonomies]
   tag = "tags"

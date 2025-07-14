@@ -5,8 +5,12 @@
   "private": true,
   "scripts": {
     "install-dev": "npm install",
-    "hugo-dev": "hugo server -D",
-    "hugo-build": "hugo"
+    "dev": "hugo server -D --bind 0.0.0.0 --baseURL http://localhost:1313",
+    "hugo-dev": "hugo server -D --bind 0.0.0.0 --baseURL http://localhost:1313",
+    "build": "hugo --minify --gc --baseURL https://www.abanhasan.net",
+    "hugo-build": "hugo --minify --gc --baseURL https://www.abanhasan.net",
+    "clean": "rm -rf public resources",
+    "preview": "hugo server --disableFastRender --baseURL https://www.abanhasan.net"
   },
   "devDependencies": {
     "@stagewise/toolbar": "^0.4.8"
