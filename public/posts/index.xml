@@ -1,28 +1,11 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>Posts on Aban Hasan</title>
-		<link>//localhost:1313/posts/</link>
-		<description>Recent content in Posts on Aban Hasan</description>
-		<generator>Hugo -- gohugo.io</generator>
-		<language>en</language>
-		<lastBuildDate>Mon, 14 Jul 2025 13:28:19 +0530</lastBuildDate>
-		<atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-		
-		<item>
-			<title>Grain, Vitality, and the Lamarckian Lens: An Essay on Diet, Environment, and Cultural Morphology</title>
-			<link>//localhost:1313/posts/grain-vitality-and-the-lamarckian-lens/</link>
-			<pubDate>Mon, 14 Jul 2025 13:28:19 +0530</pubDate>
-			
-			<guid>//localhost:1313/posts/grain-vitality-and-the-lamarckian-lens/</guid>
-			<description>&lt;!-- Image Prompt: Header Image - An artistic, conceptual image blending imagery of wheat/grain, a DNA helix, and the silhouette of a human form, suggesting environmental inputs sculpting biology. --&gt;
-&lt;p&gt;
-  &lt;img src=&#34;//localhost:1313/images/grain-dna-morphology.png&#34; alt=&#34;An artistic representation of grain and DNA shaping human vitality&#34;&gt;
-&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;The most emaciated, low-vitality cultures that racists berate eat the most grain.&amp;rdquo;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;This is an ugly observation. The kind of statement that hangs in the air, thick with the weight of unsavory history. The typical response is to recoil, to dismiss it as a crude stereotype and nothing more. But what if, instead of dismissing it, we dared to dissect it? What if we could flip this ugly statement from a tool of racial prejudice into a fruitful scientific question?&lt;/p&gt;</description>
-			<content type="html"><![CDATA[<!-- Image Prompt: Header Image - An artistic, conceptual image blending imagery of wheat/grain, a DNA helix, and the silhouette of a human form, suggesting environmental inputs sculpting biology. -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Aban Hasan</title><link>https://www.abanhasan.net/posts/</link><description>Recent content in Posts on Aban Hasan</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 14 Jul 2025 13:28:19 +0530</lastBuildDate><atom:link href="https://www.abanhasan.net/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Grain, Vitality, and the Lamarckian Lens: An Essay on Diet, Environment, and Cultural Morphology</title><link>https://www.abanhasan.net/posts/grain-vitality-and-the-lamarckian-lens/</link><pubDate>Mon, 14 Jul 2025 13:28:19 +0530</pubDate><guid>https://www.abanhasan.net/posts/grain-vitality-and-the-lamarckian-lens/</guid><description>&lt;!-- Image Prompt: Header Image - An artistic, conceptual image blending imagery of wheat/grain, a DNA helix, and the silhouette of a human form, suggesting environmental inputs sculpting biology. -->
+&lt;p>
+&lt;img src="https://www.abanhasan.net/images/grain-dna-morphology.png" alt="An artistic representation of grain and DNA shaping human vitality">
+&lt;/p>
+&lt;blockquote>
+&lt;p>&amp;ldquo;The most emaciated, low-vitality cultures that racists berate eat the most grain.&amp;rdquo;&lt;/p>
+&lt;/blockquote>
+&lt;p>This is an ugly observation. The kind of statement that hangs in the air, thick with the weight of unsavory history. The typical response is to recoil, to dismiss it as a crude stereotype and nothing more. But what if, instead of dismissing it, we dared to dissect it? What if we could flip this ugly statement from a tool of racial prejudice into a fruitful scientific question?&lt;/p></description><content type="html"><![CDATA[<!-- Image Prompt: Header Image - An artistic, conceptual image blending imagery of wheat/grain, a DNA helix, and the silhouette of a human form, suggesting environmental inputs sculpting biology. -->
 <p>
   <img src="/images/grain-dna-morphology.png" alt="An artistic representation of grain and DNA shaping human vitality">
 </p>
@@ -202,22 +185,12 @@ document.addEventListener('DOMContentLoaded', function() {
   // Add click event to manually rotate
   document.querySelector('.ray-peat-tribute').addEventListener('click', rotateQuote);
 });
-</script> ]]></content>
-		</item>
-		
-		<item>
-			<title>Silicon &amp; Six-Shooters: AI as Manifest Destiny</title>
-			<link>//localhost:1313/posts/cowboys/</link>
-			<pubDate>Fri, 23 May 2025 00:00:00 +0000</pubDate>
-			
-			<guid>//localhost:1313/posts/cowboys/</guid>
-			<description>&lt;blockquote&gt;
-&lt;p&gt;To be in software in 2025 is to be a cowboy in 1900. You&amp;rsquo;re living on the precipice of a bygone era, one that you barely comprehend is gone, as the industrial giants and their Pinkerton armies push you further west, towards an unknown horizon. The open range is closing, fences are going up, and the rules are changing. This isn&amp;rsquo;t just a shift; it&amp;rsquo;s a reckoning.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-  &lt;img src=&#34;//localhost:1313/images/cowboy_city.png&#34; alt=&#34;A lone cowboy gazing at a futuristic city skyline&#34;&gt;
-&lt;/p&gt;</description>
-			<content type="html"><![CDATA[<blockquote>
+</script> ]]></content></item><item><title>Silicon &amp; Six-Shooters: AI as Manifest Destiny</title><link>https://www.abanhasan.net/posts/cowboys/</link><pubDate>Fri, 23 May 2025 00:00:00 +0000</pubDate><guid>https://www.abanhasan.net/posts/cowboys/</guid><description>&lt;blockquote>
+&lt;p>To be in software in 2025 is to be a cowboy in 1900. You&amp;rsquo;re living on the precipice of a bygone era, one that you barely comprehend is gone, as the industrial giants and their Pinkerton armies push you further west, towards an unknown horizon. The open range is closing, fences are going up, and the rules are changing. This isn&amp;rsquo;t just a shift; it&amp;rsquo;s a reckoning.&lt;/p>
+&lt;/blockquote>
+&lt;p>
+&lt;img src="https://www.abanhasan.net/images/cowboy_city.png" alt="A lone cowboy gazing at a futuristic city skyline">
+&lt;/p></description><content type="html"><![CDATA[<blockquote>
 <p>To be in software in 2025 is to be a cowboy in 1900. You&rsquo;re living on the precipice of a bygone era, one that you barely comprehend is gone, as the industrial giants and their Pinkerton armies push you further west, towards an unknown horizon. The open range is closing, fences are going up, and the rules are changing. This isn&rsquo;t just a shift; it&rsquo;s a reckoning.</p>
 </blockquote>
 <p>
@@ -321,19 +294,9 @@ But the other problem remains: <strong>Energy</strong>.</p>
   <span class="tooltiptext">A term for a latent psychic or mystical energy force, popularized in 19th-century esoteric literature.</span>
 </span> —that innate drive and creative force—and a desire for genuine innovation may lie in navigating this new internal and external frontier. It&rsquo;s about asking uncomfortable questions, exploring ethical wildernesses AI opens up, and building alternative systems or modes of expression that don&rsquo;t require massive capital&rsquo;s sanction.</p>
 <p>The cowboy spirit adapts. It transcends. It finds the new range, however alien. The age of AI is not just an end; it&rsquo;s a new, wild beginning for those brave enough to ride into it.</p>
-]]></content>
-		</item>
-		
-		<item>
-			<title>Feeding the Hydra: Musings on Cyberslavery</title>
-			<link>//localhost:1313/posts/cyber-slaves/</link>
-			<pubDate>Sun, 13 Apr 2025 10:00:00 +0000</pubDate>
-			
-			<guid>//localhost:1313/posts/cyber-slaves/</guid>
-			<description>&lt;p&gt;Clarity.&lt;/p&gt;
-&lt;p&gt;All we seek is clarity. Yet, it appears that everything around us – everything we see, everything we touch – is designed to be noisy, to disrupt every thought we have before it can fully form. Entire teams of researchers, scientists, psychologists devote their lives to finding and &amp;ldquo;pulling the right&amp;rdquo; switch in our minds, optimizing for engagement, for distraction.&lt;/p&gt;
-&lt;p&gt;Our inherent capital – the finite time and vibrant youth we possess – is systematically siphoned off to feed the mainframe, the ever-hungry digital systems that thrive on our attention.&lt;/p&gt;</description>
-			<content type="html"><![CDATA[<p>Clarity.</p>
+]]></content></item><item><title>Feeding the Hydra: Musings on Cyberslavery</title><link>https://www.abanhasan.net/posts/cyber-slaves/</link><pubDate>Sun, 13 Apr 2025 10:00:00 +0000</pubDate><guid>https://www.abanhasan.net/posts/cyber-slaves/</guid><description>&lt;p>Clarity.&lt;/p>
+&lt;p>All we seek is clarity. Yet, it appears that everything around us – everything we see, everything we touch – is designed to be noisy, to disrupt every thought we have before it can fully form. Entire teams of researchers, scientists, psychologists devote their lives to finding and &amp;ldquo;pulling the right&amp;rdquo; switch in our minds, optimizing for engagement, for distraction.&lt;/p>
+&lt;p>Our inherent capital – the finite time and vibrant youth we possess – is systematically siphoned off to feed the mainframe, the ever-hungry digital systems that thrive on our attention.&lt;/p></description><content type="html"><![CDATA[<p>Clarity.</p>
 <p>All we seek is clarity. Yet, it appears that everything around us – everything we see, everything we touch – is designed to be noisy, to disrupt every thought we have before it can fully form. Entire teams of researchers, scientists, psychologists devote their lives to finding and &ldquo;pulling the right&rdquo; switch in our minds, optimizing for engagement, for distraction.</p>
 <p>Our inherent capital – the finite time and vibrant youth we possess – is systematically siphoned off to feed the mainframe, the ever-hungry digital systems that thrive on our attention.</p>
 <!-- Image Prompt 1: Header Image -->
@@ -382,26 +345,16 @@ But the other problem remains: <strong>Energy</strong>.</p>
 <p>But before we can find solutions, before we can even fully grapple with the alternatives, we must <em>start asking the question</em>. Loudly. Persistently.</p>
 <p>For you can&rsquo;t find an answer to a question that isn&rsquo;t even being seriously discussed.</p>
 <p>Clarity. Perhaps the first step towards it is acknowledging how much of it we&rsquo;ve lost, and demanding the space to seek it once more.</p>
-]]></content>
-		</item>
-		
-		<item>
-			<title>The War Against Heteronomy</title>
-			<link>//localhost:1313/posts/thewaragainstheteronomy/</link>
-			<pubDate>Mon, 31 Mar 2025 08:38:35 +0530</pubDate>
-			
-			<guid>//localhost:1313/posts/thewaragainstheteronomy/</guid>
-			<description>&lt;p&gt;
-  &lt;img src=&#34;//localhost:1313/images/autonomy-header.jpg&#34; alt=&#34;A person standing at a crossroads with multiple paths branching outward&#34;&gt;
-&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Image: The Pathways of Choice - representing the autonomy that comes from recognizing our power to choose&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&#34;prelude&#34;&gt;Prelude&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Our Great War&amp;rsquo;s a spiritual war. Our Great Depression is our lives.&lt;/p&gt;
-&lt;p&gt;— Tyler Durden, Fight Club&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Recently, I came across a thread on X by the brilliant Andrej Karpathy, which made me reflect deeply on the nature of action and its relation to both individual fulfillment and collective progress.&lt;/p&gt;</description>
-			<content type="html"><![CDATA[<p>
+]]></content></item><item><title>The War Against Heteronomy</title><link>https://www.abanhasan.net/posts/thewaragainstheteronomy/</link><pubDate>Mon, 31 Mar 2025 08:38:35 +0530</pubDate><guid>https://www.abanhasan.net/posts/thewaragainstheteronomy/</guid><description>&lt;p>
+&lt;img src="https://www.abanhasan.net/images/autonomy-header.jpg" alt="A person standing at a crossroads with multiple paths branching outward">
+&lt;/p>
+&lt;p>&lt;em>Image: The Pathways of Choice - representing the autonomy that comes from recognizing our power to choose&lt;/em>&lt;/p>
+&lt;h2 id="prelude">Prelude&lt;/h2>
+&lt;blockquote>
+&lt;p>Our Great War&amp;rsquo;s a spiritual war. Our Great Depression is our lives.&lt;/p>
+&lt;p>— Tyler Durden, Fight Club&lt;/p>
+&lt;/blockquote>
+&lt;p>Recently, I came across a thread on X by the brilliant Andrej Karpathy, which made me reflect deeply on the nature of action and its relation to both individual fulfillment and collective progress.&lt;/p></description><content type="html"><![CDATA[<p>
   <img src="/images/autonomy-header.jpg" alt="A person standing at a crossroads with multiple paths branching outward">
 </p>
 <p><em>Image: The Pathways of Choice - representing the autonomy that comes from recognizing our power to choose</em></p>
@@ -581,18 +534,8 @@ But the other problem remains: <strong>Energy</strong>.</p>
 </li>
 </ol>
 </div>
-]]></content>
-		</item>
-		
-		<item>
-			<title>Technofeudalism and the Return to the Real</title>
-			<link>//localhost:1313/posts/technofeudalism-and-the-return-to-the-real/</link>
-			<pubDate>Thu, 23 Jan 2025 12:34:29 +0530</pubDate>
-			
-			<guid>//localhost:1313/posts/technofeudalism-and-the-return-to-the-real/</guid>
-			<description>&lt;p&gt;What makes the modern manifestation of cloud capital, integral to the &lt;a href=&#34;https://thebeautifultruth.org/the-basics/what-is-technofeudalism/&#34;&gt;Technofeudalism&lt;/a&gt; system we live under, is that it&amp;rsquo;s impossible to go anywhere without having it glaring at you. It hovers above the heads of modern people like a cloud, taking all our attention and carefully curating it, effectively extracting life energy and transmuting it into data and narrative.&lt;/p&gt;
-&lt;p&gt;Nick Land extensively talks about hyperstition, and the memesis we see via social media enables false narratives to take on a life of their own, often manufactured by the techno-oligarchs themselves in service of their political ambitions.&lt;/p&gt;</description>
-			<content type="html"><![CDATA[<p>What makes the modern manifestation of cloud capital, integral to the <a href="https://thebeautifultruth.org/the-basics/what-is-technofeudalism/">Technofeudalism</a> system we live under, is that it&rsquo;s impossible to go anywhere without having it glaring at you. It hovers above the heads of modern people like a cloud, taking all our attention and carefully curating it, effectively extracting life energy and transmuting it into data and narrative.</p>
+]]></content></item><item><title>Technofeudalism and the Return to the Real</title><link>https://www.abanhasan.net/posts/technofeudalism-and-the-return-to-the-real/</link><pubDate>Thu, 23 Jan 2025 12:34:29 +0530</pubDate><guid>https://www.abanhasan.net/posts/technofeudalism-and-the-return-to-the-real/</guid><description>&lt;p>What makes the modern manifestation of cloud capital, integral to the &lt;a href="https://thebeautifultruth.org/the-basics/what-is-technofeudalism/">Technofeudalism&lt;/a> system we live under, is that it&amp;rsquo;s impossible to go anywhere without having it glaring at you. It hovers above the heads of modern people like a cloud, taking all our attention and carefully curating it, effectively extracting life energy and transmuting it into data and narrative.&lt;/p>
+&lt;p>Nick Land extensively talks about hyperstition, and the memesis we see via social media enables false narratives to take on a life of their own, often manufactured by the techno-oligarchs themselves in service of their political ambitions.&lt;/p></description><content type="html"><![CDATA[<p>What makes the modern manifestation of cloud capital, integral to the <a href="https://thebeautifultruth.org/the-basics/what-is-technofeudalism/">Technofeudalism</a> system we live under, is that it&rsquo;s impossible to go anywhere without having it glaring at you. It hovers above the heads of modern people like a cloud, taking all our attention and carefully curating it, effectively extracting life energy and transmuting it into data and narrative.</p>
 <p>Nick Land extensively talks about hyperstition, and the memesis we see via social media enables false narratives to take on a life of their own, often manufactured by the techno-oligarchs themselves in service of their political ambitions.</p>
 <p>In my experience of leaving social media, I go through an almost &ldquo;withdrawal period.&rdquo; That&rsquo;s how satanic the modern system has become. For the first week of leaving Instagram, I felt genuine FOMO, with self-directed copes imagining all the &ldquo;connections&rdquo; I&rsquo;d be losing, all the &ldquo;opportunities&rdquo; I&rsquo;d be missing out on (which is true, but not in the way I&rsquo;d imagine).</p>
 <p>Now that I&rsquo;ve been silenced on X, I have naturally found an aversion for the platform, due to its express ability to create self-propelled narratives for the user to confirm their own confirmation biases, as well as the heavy-handedness of Elon Musk on a platform that should ostensibly be &ldquo;free speech&rdquo; based.</p>
@@ -618,19 +561,9 @@ But the other problem remains: <strong>Energy</strong>.</p>
 <p>It&rsquo;s an obvious truth that there would be tremendous social and psychological upheaval when machines encroach on the central identities of a human being, which is their life&rsquo;s work/occupation. I believe in some ways, this will resuscitate an understanding of how fake and superficial many aspects of modern living are, from abstractions and bureaucratizations of the most basic human needs and impulses.</p>
 <p>My hope for humanity in a post-AI future is a realization of how fragile and fallacious our institutions are, and how easily they&rsquo;ve been co-opted by artificial bureaucracy, from the level of &ldquo;paper money&rdquo; that is worth more than what&rsquo;s printed on it, to the absolute cog-ification of the human being in the modern workplace.</p>
 <p>It&rsquo;s easy to become blackpilled on the subject, especially with the systematic brainwashing that&rsquo;s becoming evident day by day on the technofeudal plantations—but I do think there is a natural correction that&rsquo;s imminent, with many people wishing to return to that which is natural and authentic.</p>
-]]></content>
-		</item>
-		
-		<item>
-			<title>Neuroplasticity: How to Manipulate Reality</title>
-			<link>//localhost:1313/posts/neuroplasticity---how-to-manipulate-reality/</link>
-			<pubDate>Fri, 16 Jun 2023 00:08:35 +0530</pubDate>
-			
-			<guid>//localhost:1313/posts/neuroplasticity---how-to-manipulate-reality/</guid>
-			<description>&lt;h2 id=&#34;the-remarkable-capacity-for-change-in-the-human-brain&#34;&gt;The Remarkable Capacity for Change in the Human Brain&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;Most people go through their entire lives without truly understanding the astonishing potential for change that exists within the human brain.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;It is commonly believed that our capacity for learning diminishes over time, with the assumption that we can only learn effectively during our childhood years. While this may be true for the majority, I argue that by following specific protocols, not only can we sustain learning throughout our lives, but we can also enhance it.&lt;/p&gt;</description>
-			<content type="html"><![CDATA[<h2 id="the-remarkable-capacity-for-change-in-the-human-brain">The Remarkable Capacity for Change in the Human Brain</h2>
+]]></content></item><item><title>Neuroplasticity: How to Manipulate Reality</title><link>https://www.abanhasan.net/posts/neuroplasticity---how-to-manipulate-reality/</link><pubDate>Fri, 16 Jun 2023 00:08:35 +0530</pubDate><guid>https://www.abanhasan.net/posts/neuroplasticity---how-to-manipulate-reality/</guid><description>&lt;h2 id="the-remarkable-capacity-for-change-in-the-human-brain">The Remarkable Capacity for Change in the Human Brain&lt;/h2>
+&lt;p>&lt;em>Most people go through their entire lives without truly understanding the astonishing potential for change that exists within the human brain.&lt;/em>&lt;/p>
+&lt;p>It is commonly believed that our capacity for learning diminishes over time, with the assumption that we can only learn effectively during our childhood years. While this may be true for the majority, I argue that by following specific protocols, not only can we sustain learning throughout our lives, but we can also enhance it.&lt;/p></description><content type="html"><![CDATA[<h2 id="the-remarkable-capacity-for-change-in-the-human-brain">The Remarkable Capacity for Change in the Human Brain</h2>
 <p><em>Most people go through their entire lives without truly understanding the astonishing potential for change that exists within the human brain.</em></p>
 <p>It is commonly believed that our capacity for learning diminishes over time, with the assumption that we can only learn effectively during our childhood years. While this may be true for the majority, I argue that by following specific protocols, not only can we sustain learning throughout our lives, but we can also enhance it.</p>
 <p>The primary reason why most individuals experience cognitive decline as they age is not due to irreversible neurological degeneration (which is a real phenomenon but can be slowed and even reversed), but rather because they cease to create new mental models.</p>
@@ -680,19 +613,9 @@ b) Not smoke</p>
 <h2 id="thought-analysis">Thought Analysis</h2>
 <p>You must be your own scientist. Experiment with multiple stimuli, schedules, and routines, and decide what works. Use the agency to generate a report on what kinds of behaviors led to different trains of thought.</p>
 <p>By repeating these steps over a long enough time frame, you will have successfully rewired your mind. Congratulations!</p>
-]]></content>
-		</item>
-		
-		<item>
-			<title>How to Type Faster</title>
-			<link>//localhost:1313/posts/how-to-type-faster/</link>
-			<pubDate>Sat, 17 Jul 2021 00:00:00 +0000</pubDate>
-			
-			<guid>//localhost:1313/posts/how-to-type-faster/</guid>
-			<description>&lt;h1 id=&#34;typing-has-become-and-exceedingly-useful-skill-over-the-last-few-years&#34;&gt;Typing has become and exceedingly useful skill over the last few years.&lt;/h1&gt;
-&lt;p&gt;My journey started with a single link. A friend wanted to compare our typing speeds. At the time, i was pretty slow, having to look down at my keyboard every time I wanted to type a single character (I cringe at the thought, in retrospect).
-At the time, everyone were much faster than me, I was at a slow 25 WPM and didn&amp;rsquo;t care much about it.&lt;/p&gt;</description>
-			<content type="html"><![CDATA[<h1 id="typing-has-become-and-exceedingly-useful-skill-over-the-last-few-years">Typing has become and exceedingly useful skill over the last few years.</h1>
+]]></content></item><item><title>How to Type Faster</title><link>https://www.abanhasan.net/posts/how-to-type-faster/</link><pubDate>Sat, 17 Jul 2021 00:00:00 +0000</pubDate><guid>https://www.abanhasan.net/posts/how-to-type-faster/</guid><description>&lt;h1 id="typing-has-become-and-exceedingly-useful-skill-over-the-last-few-years">Typing has become and exceedingly useful skill over the last few years.&lt;/h1>
+&lt;p>My journey started with a single link. A friend wanted to compare our typing speeds. At the time, i was pretty slow, having to look down at my keyboard every time I wanted to type a single character (I cringe at the thought, in retrospect).
+At the time, everyone were much faster than me, I was at a slow 25 WPM and didn&amp;rsquo;t care much about it.&lt;/p></description><content type="html"><![CDATA[<h1 id="typing-has-become-and-exceedingly-useful-skill-over-the-last-few-years">Typing has become and exceedingly useful skill over the last few years.</h1>
 <p>My journey started with a single link. A friend wanted to compare our typing speeds. At the time, i was pretty slow, having to look down at my keyboard every time I wanted to type a single character (I cringe at the thought, in retrospect).
 At the time, everyone were much faster than me, I was at a slow 25 WPM and didn&rsquo;t care much about it.</p>
 <p>However, in late 2020,I realized the importance of being able to type fast, and have been (and still am!) practicing every single day.</p>
@@ -723,8 +646,4 @@ I time block my calendar to do about 15 mins of deliberate typing practice every
 <h2 id="other-resources">Other Resources</h2>
 <p><a href="https://www.youtube.com/watch?v=1ArVtCQqQRE">Ali Abdaal&rsquo;s video</a>, along with <a href="https://www.youtube.com/watch?v=oOdfefV2R1I">NoThisIsJohn&rsquo;s</a> provided me a solid foundation, with additional, more nuanced tips…if you want to learn more about the art of typing, be sure to head on there!</p>
 <p>Remember,<strong>practice makes perfect!</strong></p>
-]]></content>
-		</item>
-		
-	</channel>
-</rss>
+]]></content></item></channel></rss>

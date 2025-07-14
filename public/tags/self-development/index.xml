@@ -1,19 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Self-Development on Aban Hasan</title>
-    <link>//localhost:1313/tags/self-development/</link>
-    <description>Recent content in Self-Development on Aban Hasan</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 31 Mar 2025 08:38:35 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/self-development/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The War Against Heteronomy</title>
-      <link>//localhost:1313/posts/thewaragainstheteronomy/</link>
-      <pubDate>Mon, 31 Mar 2025 08:38:35 +0530</pubDate>
-      <guid>//localhost:1313/posts/thewaragainstheteronomy/</guid>
-      <description>&lt;p&gt;&#xA;  &lt;img src=&#34;//localhost:1313/images/autonomy-header.jpg&#34; alt=&#34;A person standing at a crossroads with multiple paths branching outward&#34;&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Image: The Pathways of Choice - representing the autonomy that comes from recognizing our power to choose&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;prelude&#34;&gt;Prelude&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Our Great War&amp;rsquo;s a spiritual war. Our Great Depression is our lives.&lt;/p&gt;&#xA;&lt;p&gt;— Tyler Durden, Fight Club&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Recently, I came across a thread on X by the brilliant Andrej Karpathy, which made me reflect deeply on the nature of action and its relation to both individual fulfillment and collective progress.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Self-Development on Aban Hasan</title><link>https://www.abanhasan.net/tags/self-development/</link><description>Recent content in Self-Development on Aban Hasan</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 31 Mar 2025 08:38:35 +0530</lastBuildDate><atom:link href="https://www.abanhasan.net/tags/self-development/index.xml" rel="self" type="application/rss+xml"/><item><title>The War Against Heteronomy</title><link>https://www.abanhasan.net/posts/thewaragainstheteronomy/</link><pubDate>Mon, 31 Mar 2025 08:38:35 +0530</pubDate><guid>https://www.abanhasan.net/posts/thewaragainstheteronomy/</guid><description>&lt;p>
+ &lt;img src="https://www.abanhasan.net/images/autonomy-header.jpg" alt="A person standing at a crossroads with multiple paths branching outward">
+&lt;/p>
+&lt;p>&lt;em>Image: The Pathways of Choice - representing the autonomy that comes from recognizing our power to choose&lt;/em>&lt;/p>
+&lt;h2 id="prelude">Prelude&lt;/h2>
+&lt;blockquote>
+&lt;p>Our Great War&amp;rsquo;s a spiritual war. Our Great Depression is our lives.&lt;/p>
+&lt;p>— Tyler Durden, Fight Club&lt;/p>
+&lt;/blockquote>
+&lt;p>Recently, I came across a thread on X by the brilliant Andrej Karpathy, which made me reflect deeply on the nature of action and its relation to both individual fulfillment and collective progress.&lt;/p></description></item></channel></rss>
