@@ -3,7 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2025-05-23T00:00:00+00:00</lastmod>
+    <lastmod>2025-07-14T09:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/</loc>
+    <lastmod>2025-07-14T09:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/agency/</loc>
+    <lastmod>2025-07-14T13:28:19+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/biology/</loc>
+    <lastmod>2025-07-14T13:28:19+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/culture/</loc>
+    <lastmod>2025-07-14T13:28:19+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/diet/</loc>
+    <lastmod>2025-07-14T13:28:19+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/epigenetics/</loc>
+    <lastmod>2025-07-14T13:28:19+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/grain-vitality-lamarckian-lens/</loc>
+    <lastmod>2025-07-14T13:28:19+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/philosophy/</loc>
+    <lastmod>2025-07-14T13:28:19+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/science/</loc>
+    <lastmod>2025-07-14T13:28:19+05:30</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2025-07-14T13:28:19+05:30</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/ai/</loc>
     <lastmod>2025-05-23T00:00:00+00:00</lastmod>
@@ -20,26 +50,14 @@
     <loc>//localhost:1313/tags/innovation/</loc>
     <lastmod>2025-05-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/philosophy/</loc>
-    <lastmod>2025-05-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/</loc>
-    <lastmod>2025-05-23T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/posts/cowboys/</loc>
     <lastmod>2025-05-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/society/</loc>
     <lastmod>2025-05-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
-    <lastmod>2025-05-23T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/tags/technology/</loc>
     <lastmod>2025-05-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/agency/</loc>
-    <lastmod>2025-04-13T10:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/attention-economy/</loc>
     <lastmod>2025-04-13T10:00:00+00:00</lastmod>
@@ -65,15 +83,6 @@
     <loc>//localhost:1313/posts/technofeudalism-and-the-return-to-the-real/</loc>
     <lastmod>2025-01-23T12:34:29+05:30</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/bioenergetics/</loc>
-    <lastmod>2025-01-15T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/nutrition/</loc>
-    <lastmod>2025-01-15T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/grain-vitality-and-the-lamarckian-lens/</loc>
-    <lastmod>2025-01-15T10:00:00+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/credentials/</loc>
     <lastmod>2024-01-15T00:00:00+00:00</lastmod>
   </url><url>
@@ -94,21 +103,6 @@
   </url><url>
     <loc>//localhost:1313/tags/typing/</loc>
     <lastmod>2021-07-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/atomic-habits-by-james-clear/</loc>
-    <lastmod>2021-06-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/book-review/</loc>
-    <lastmod>2021-06-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/productivity/</loc>
-    <lastmod>2021-06-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/hacking/</loc>
-    <lastmod>2021-05-16T10:54:36+05:30</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/learning-to-hack---a-resource-guide./</loc>
-    <lastmod>2021-05-16T10:54:36+05:30</lastmod>
   </url><url>
     <loc>//localhost:1313/portfolio/</loc>
   </url><url>
