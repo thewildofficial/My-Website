@@ -1,7 +1,7 @@
 ---
 title: "Doing What You Got to Do: A Systematic Pathway to Success"
 date: 2021-12-05T11:01:26+05:30
-draft: false
+draft: true
 toc: false
 images:
 tags: 

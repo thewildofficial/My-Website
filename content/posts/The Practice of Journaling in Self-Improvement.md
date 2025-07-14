@@ -2,7 +2,7 @@
 author: "thewildofficial"
 date: 2021-07-25
 title: The Practice of Journaling in Self-Improvement
-draft: false
+draft: true
 katex: true
 description: Journaling is one of those soft-skills often attributed to highly successful people and intellectuals alike...but Why? In this blog post i aim to explain the appeal of journalling (and how you can impliment it yourself!)
 tags: 
