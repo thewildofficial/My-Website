@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Book Review on Aban Hasan</title>
-    <link>//localhost:1313/tags/book-review/</link>
+    <link>http://localhost:1313/tags/book-review/</link>
     <description>Recent content in Book Review on Aban Hasan</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 26 Jun 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/book-review/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/book-review/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Atomic Habits by James Clear:Book Review</title>
-      <link>//localhost:1313/posts/atomic-habits-by-james-clear/</link>
+      <link>http://localhost:1313/posts/atomic-habits-by-james-clear/</link>
       <pubDate>Sat, 26 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/atomic-habits-by-james-clear/</guid>
+      <guid>http://localhost:1313/posts/atomic-habits-by-james-clear/</guid>
       <description>&lt;h2 id=&#34;this-is-a-legendary-book-its-reputation-proceeds-it&#34;&gt;This is a legendary book, its reputation proceeds it.&lt;/h2&gt;&#xA;&lt;p&gt;All the productivity greats like &lt;a href=&#34;https://www.youtube.com/user/electrickeye91&#34;&gt;Thomas Frank&lt;/a&gt; and &lt;a href=&#34;https://www.youtube.com/c/aliabdaal/videos&#34;&gt;Ali Abdaal&lt;/a&gt; have recommended it…so this month I have decided to check it out.&lt;/p&gt;&#xA;&lt;p&gt;And boy, does it deliver.&lt;/p&gt;&#xA;&lt;h2 id=&#34;core-ideas&#34;&gt;Core ideas&lt;/h2&gt;&#xA;&lt;p&gt;First, I think we should define what an “Atomic Habit” really is.&#xA;Many of us think that to be successful, we should do great feats…but in fact, that is &lt;strong&gt;not&lt;/strong&gt; true at all!&#xA;The Greatest achievements come from the smallest changes that are done &lt;em&gt;consistently&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Digital Minimalism by Cal Newport: Book Review</title>
-      <link>//localhost:1313/posts/digital-minimilism-by-cal-newport--book-review/</link>
+      <link>http://localhost:1313/posts/digital-minimilism-by-cal-newport--book-review/</link>
       <pubDate>Wed, 16 Jun 2021 16:06:37 +0530</pubDate>
-      <guid>//localhost:1313/posts/digital-minimilism-by-cal-newport--book-review/</guid>
+      <guid>http://localhost:1313/posts/digital-minimilism-by-cal-newport--book-review/</guid>
       <description>&lt;h2 id=&#34;yet-another-cal-newport-review-ay&#34;&gt;Yet Another Cal Newport Review, ay?&lt;/h2&gt;&#xA;&lt;p&gt;You may be beginning to notice a pattern here. But seriously, The man is such an intuitive and practical writer.&lt;/p&gt;&#xA;&lt;p&gt;If you are anything like me, you may find that a lot of precious time gets sucked away by the internet, or digital world. In fact, this has become such a problem that &lt;a href=&#34;https://www.pewresearch.org/internet/2015/04/09/teens-social-media-technology-2015/&#34;&gt;92% of teens go online daily, and 24% say they go online “almost constantly.”&lt;/a&gt;&#xA;The internet may be really useful, but if it manages to control US, we know that we are making some serious mistakes.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Deep Work by Cal Newport:Book Review</title>
-      <link>//localhost:1313/posts/deep-work-by-cal-newport-book-review/</link>
+      <link>http://localhost:1313/posts/deep-work-by-cal-newport-book-review/</link>
       <pubDate>Tue, 08 Jun 2021 11:57:29 +0530</pubDate>
-      <guid>//localhost:1313/posts/deep-work-by-cal-newport-book-review/</guid>
+      <guid>http://localhost:1313/posts/deep-work-by-cal-newport-book-review/</guid>
       <description>&lt;h1 id=&#34;productivity-books-we-all-read-them&#34;&gt;Productivity books, we all read them&lt;/h1&gt;&#xA;&lt;p&gt;kinda is becoming my guilty pleasure at this point. However, I have to give the book “Deep Work” some credit.&#xA;Although this is my second reading, I still find enormous meaning from it.&lt;/p&gt;&#xA;&lt;p&gt;The book is a non-fiction thesis on how “knowledge work” is valued in the economy, and how top achievers actually succeed. It also tackles the idea of “information overload” in our modern digital age.&lt;/p&gt;</description>
     </item>
   </channel>

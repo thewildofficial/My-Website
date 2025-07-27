@@ -25,17 +25,17 @@ This document outlines the setup and requirements for the credentials page.
 - `waterloo-laurier-offer.pdf`
 - `carleton-transcript.pdf`
 - `scalar-acceptance.pdf`
-- `iit-madras-enrollment.pdf`
 - `iit-ropar-result.pdf`
 - `carleton-scholarship.pdf`
 - `clevered-ai-certificate.pdf`
+- `bits-pilani-enrollment.pdf`
 
 #### Logos (place in `static/images/logos/`)
 - `waterloo_logo.png`
 - `waterloo_laurier_logo.png`
 - `carleton_logo.png`
 - `scalar_logo.png`
-- `iitm_logo.png`
+- `bits-pilani-logo.png`
 - `iitrpr_logo.png`
 - `oxford_logo.png`
 

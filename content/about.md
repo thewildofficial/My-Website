@@ -6,7 +6,7 @@ title: "About"
 <div class="hero-content">
 <h1>Aban</h1>
 <p class="location-tag">19 • Ottawa 🇨🇦 • Bangalore 🇮🇳</p>
-<p class="location-tag">IIT Madras • SST</p>
+<p class="location-tag">BITS Pilani • SST</p>
 <p class="tagline">Building tools that extend human potential</p>
 </div>
 </div>
@@ -15,7 +15,7 @@ title: "About"
 
 <div class="core-section">
 <h2>Who I Am</h2>
-<p>I think deeply about technology's role in human agency. Currently studying Data Science at IIT Madras while engineering at Scalar School of Technology. After my first year at Carleton, I chose to forge my own path—true autonomy means having the courage to write your own story.</p>
+<p>I think deeply about technology's role in human agency. Currently studying Computer Science at BITS Pilani while engineering at Scalar School of Technology. After my first year at Carleton, I chose to forge my own path—true autonomy means having the courage to write your own story.</p>
 </div>
 
 <div class="interests-section">
@@ -217,7 +217,6 @@ title: "About"
 <div class="favorite-quote">"There are no two words in the English language more harmful than 'good job'."</div>
 </div>
 <div class="favorite-year">2014</div>
-</div>
 </div>
 </div>
 </div>

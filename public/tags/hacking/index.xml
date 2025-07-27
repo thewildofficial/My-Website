@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hacking on Aban Hasan</title>
-    <link>/tags/hacking/</link>
+    <link>http://localhost:1313/tags/hacking/</link>
     <description>Recent content in Hacking on Aban Hasan</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 16 May 2021 10:54:36 +0530</lastBuildDate>
-    <atom:link href="/tags/hacking/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/hacking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learning to Hack: A Resource Guide</title>
-      <link>/posts/learning-to-hack---a-resource-guide./</link>
+      <link>http://localhost:1313/posts/learning-to-hack---a-resource-guide./</link>
       <pubDate>Sun, 16 May 2021 10:54:36 +0530</pubDate>
-      <guid>/posts/learning-to-hack---a-resource-guide./</guid>
+      <guid>http://localhost:1313/posts/learning-to-hack---a-resource-guide./</guid>
       <description>&lt;h2 id=&#34;being-a-hacker-sounds-really-cool&#34;&gt;&lt;strong&gt;Being a hacker sounds really cool.&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;But how do you become one?&lt;/p&gt;&#xA;&lt;p&gt;In this resource guide, i will try to tackle this question by identifying a few essential &lt;em&gt;skills and websites&lt;/em&gt; that helped (and is continuing to help) me learn how to hack.&lt;/p&gt;&#xA;&lt;h1 id=&#34;1-googling&#34;&gt;1. googling&lt;/h1&gt;&#xA;&lt;p&gt;This is one of the most underrated and valuable skills to have as someone who works with computers. Being able to &lt;em&gt;find information&lt;/em&gt; and &lt;em&gt;research&lt;/em&gt; will certainly get you further in the cybersphere.&lt;/p&gt;</description>
     </item>
   </channel>

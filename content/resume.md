@@ -302,7 +302,7 @@
 <div class="gradient-border">
   <div class="intro-box">
     <h2 class="gradient-text">Professional Summary</h2>
-    <p>Passionate technologist with expertise in AI/ML, cybersecurity, and full-stack development. Currently pursuing advanced education at Scalar School of Technology (3% acceptance rate) and IIT Madras BS Data Science program. Proven track record of building impactful projects that serve thousands of users, with strong foundations in algorithms, system design, and emerging technologies.</p>
+    <p>Passionate technologist with expertise in AI/ML, cybersecurity, and full-stack development. Currently pursuing advanced education at Scalar School of Technology (3% acceptance rate) and BITS Pilani BS Computer Science program. Proven track record of building impactful projects that serve thousands of users, with strong foundations in algorithms, system design, and emerging technologies.</p>
   </div>
 </div>
 
@@ -338,14 +338,14 @@
   </div>
 
   <div class="project-card">
-    <h3>IIT Madras - Remote</h3>
-    <p><strong>BS Data Science & Applications</strong> | 2024 - Present</p>
-    <p>4-year Bachelor's degree program combining statistical foundations with practical applications in data science and machine learning.</p>
+    <h3>BITS Pilani - Remote</h3>
+    <p><strong>Bachelor of Science in Computer Science</strong> | 2024 - Present</p>
+    <p>4-year Bachelor's degree program from one of India's premier technical institutions, combining strong theoretical foundations with practical applications in computer science and software engineering.</p>
     <div class="tech-tags">
-      <span class="tech-tag">Statistical Modeling</span>
-      <span class="tech-tag">Machine Learning</span>
-      <span class="tech-tag">Data Analytics</span>
-      <span class="tech-tag">Python</span>
+      <span class="tech-tag">Computer Science</span>
+      <span class="tech-tag">Software Engineering</span>
+      <span class="tech-tag">Data Structures & Algorithms</span>
+      <span class="tech-tag">Programming</span>
     </div>
   </div>
 
@@ -540,7 +540,7 @@
 Developed and launched cross-platform geopolitical news aggregator with AI-powered translation and analysis.
 
 **2024** - **Return to Bangalore 🇮🇳**  
-Strategic decision to attend Scalar School of Technology and pursue parallel degree from IIT Madras.
+Strategic decision to attend Scalar School of Technology and pursue parallel degree from BITS Pilani.
 
 **2023** - **Carleton Year 1 🇨🇦**  
 Completed first year of Computer Science degree, building strong foundation before pivoting to specialized path.

@@ -562,13 +562,13 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <div class="project-card animate-fade-in delay-500">
-  <h3>📊 IIT Madras - BS Data Science & Applications</h3>
-  <p>Pursuing the 4-year Bachelor's degree program in Data Science and Applications from IIT Madras in parallel with my Scaler studies. This program combines statistical foundations with practical applications, giving me a comprehensive understanding of how data drives decision-making in the modern world.</p>
+  <h3>📊 BITS Pilani - Bachelor of Science in Computer Science</h3>
+  <p>Pursuing the 4-year Bachelor's degree program in Computer Science from BITS Pilani in parallel with my Scaler studies. This program combines strong theoretical foundations with practical applications, giving me a comprehensive understanding of computer science fundamentals and advanced software engineering principles.</p>
   <div class="tech-tags">
-    <span class="tech-tag">Statistical Modeling</span>
-    <span class="tech-tag">Machine Learning</span>
-    <span class="tech-tag">Data Analytics</span>
-    <span class="tech-tag">Python</span>
+    <span class="tech-tag">Computer Science</span>
+    <span class="tech-tag">Software Engineering</span>
+    <span class="tech-tag">Data Structures & Algorithms</span>
+    <span class="tech-tag">Programming</span>
   </div>
 </div>
 
@@ -740,7 +740,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="timeline-content project-card" style="position: relative; margin-right: 30px;">
       <span class="timeline-date" style="position: absolute; right: -110px; background: linear-gradient(45deg, #B06AB3, #4568DC); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8em;">2025</span>
       <h3 class="timeline-title">Return to Bangalore 🇮🇳</h3>
-      <p>Made the strategic decision to return to India to attend Scalar School of Technology and pursue a parallel degree from IIT Madras, focusing on deep, specialized tech education.</p>
+      <p>Made the strategic decision to return to India to attend Scalar School of Technology and pursue a parallel degree from BITS Pilani, focusing on deep, specialized tech education.</p>
     </div>
   </div>
   
@@ -756,7 +756,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="timeline-content project-card" style="position: relative; margin-right: 30px;">
       <span class="timeline-date" style="position: absolute; right: -110px; background: linear-gradient(45deg, #B06AB3, #4568DC); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8em;">2025-2029</span>
       <h3 class="timeline-title">Undergraduate Degree in Computer Science</h3>
-      <p>Pursuing intensive tech education at Scaler School of Technology in Bangalore, focusing on building rock-solid fundamentals in computer science, algorithms, and system design, along with a BS in Data Science & Applications from IIT Madras (IITM).</p>
+      <p>Pursuing intensive tech education at Scaler School of Technology in Bangalore, focusing on building rock-solid fundamentals in computer science, algorithms, and system design, along with a Bachelor of Science in Computer Science from BITS Pilani.</p>
     </div>
   </div>
 </div>
