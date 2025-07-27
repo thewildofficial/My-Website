@@ -562,7 +562,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <div class="project-card animate-fade-in delay-500">
-  <h3>📊 BITS Pilani - Bachelor of Science in Computer Science</h3>
+  <h3>📊 BITS Pilani - Bachelor in Computer Science</h3>
   <p>Pursuing the 4-year Bachelor's degree program in Computer Science from BITS Pilani in parallel with my Scaler studies. This program combines strong theoretical foundations with practical applications, giving me a comprehensive understanding of computer science fundamentals and advanced software engineering principles.</p>
   <div class="tech-tags">
     <span class="tech-tag">Computer Science</span>

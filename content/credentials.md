@@ -121,7 +121,7 @@ markup: "html"
         <div class="institution-logo"><img src="/images/logos/bits-pilani-logo.png" alt="BITS Pilani Logo"></div>
         <div class="institution-info">
           <h3>BITS Pilani</h3>
-          <p class="program">Bachelor of Science in Computer Science</p>
+          <p class="program">Bachelor in Computer Science</p>
         </div>
         <span class="status-badge current">Year 1 Ongoing</span>
       </div>
