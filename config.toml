@@ -64,5 +64,3 @@ disableLiveReload = true
     weight = 1
     languageName = "English"
     contentDir = "content"
-    # This tells Hugo to use the default language (en)
-    params = [ "author", "description", "social" ]  # Optional, just for consistency
