@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Internet on Aban Hasan</title>
-    <link>//localhost:1313/tags/internet/</link>
+    <link>http://localhost:1313/tags/internet/</link>
     <description>Recent content in Internet on Aban Hasan</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 21 Nov 2021 18:53:12 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/internet/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/internet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Internet:Advantages and Disadvantages</title>
-      <link>//localhost:1313/posts/the-internet---advantages-and-disadvantages/</link>
+      <link>http://localhost:1313/posts/the-internet---advantages-and-disadvantages/</link>
       <pubDate>Sun, 21 Nov 2021 18:53:12 +0530</pubDate>
-      <guid>//localhost:1313/posts/the-internet---advantages-and-disadvantages/</guid>
+      <guid>http://localhost:1313/posts/the-internet---advantages-and-disadvantages/</guid>
       <description>&lt;h2 id=&#34;foreword&#34;&gt;Foreword&lt;/h2&gt;&#xA;&lt;p&gt;Hello dear reader! This is a college essay i wrote a couple of weeks ago for a school project, I thought why not upload it on my blog, since i havent done that in so long lol.&lt;/p&gt;&#xA;&lt;p&gt;Well, dont take this as an actual post, more of a filler that you may or may not want to read :D&lt;/p&gt;&#xA;&lt;h1 id=&#34;the-advantages-and-disadvantages-of-the-internet-college-essay&#34;&gt;The Advantages and disadvantages of the internet: college essay&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;For better or for worse,&#xA;The internet has become a ubiquitous tool in our modern-day existence.&#xA;It has become a means of propagating communication,scholarly research, Ideas.&#xA;The internet is a repository containing all of known human history.&#xA;It is a place to turn to when you want to find unique solutions.&#xA;However, Not everything is sunshine and rainbows in the interwebs. There are serious concerns that will have to be addressed for what we call the internet a constructive,free and complimentary platform&lt;/p&gt;</description>
     </item>
   </channel>

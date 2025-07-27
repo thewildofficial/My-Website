@@ -746,14 +746,14 @@ document.addEventListener('DOMContentLoaded', function() {
 &lt;div class="hero-content">
 &lt;h1>Aban&lt;/h1>
 &lt;p class="location-tag">19 • Ottawa 🇨🇦 • Bangalore 🇮🇳&lt;/p>
-&lt;p class="location-tag">IIT Madras • SST&lt;/p>
+&lt;p class="location-tag">BITS Pilani • SST&lt;/p>
 &lt;p class="tagline">Building tools that extend human potential&lt;/p>
 &lt;/div>
 &lt;/div>
 &lt;div class="about-grid">
 &lt;div class="core-section">
 &lt;h2>Who I Am&lt;/h2>
-&lt;p>I think deeply about technology's role in human agency. Currently studying Data Science at IIT Madras while engineering at Scalar School of Technology. After my first year at Carleton, I chose to forge my own path—true autonomy means having the courage to write your own story.&lt;/p>
+&lt;p>I think deeply about technology's role in human agency. Currently studying Computer Science at BITS Pilani while engineering at Scalar School of Technology. After my first year at Carleton, I chose to forge my own path—true autonomy means having the courage to write your own story.&lt;/p>
 &lt;/div>
 &lt;div class="interests-section">
 &lt;h2>What Drives Me&lt;/h2>
