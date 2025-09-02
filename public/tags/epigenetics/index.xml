@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Epigenetics on Aban Hasan</title>
-    <link>http://localhost:60191/tags/epigenetics/</link>
+    <link>http://localhost:1313/tags/epigenetics/</link>
     <description>Recent content in Epigenetics on Aban Hasan</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 14 Jul 2025 13:28:19 +0530</lastBuildDate>
-    <atom:link href="http://localhost:60191/tags/epigenetics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/epigenetics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Grain, Vitality, and the Lamarckian Lens: An Essay on Diet, Environment, and Cultural Morphology</title>
-      <link>http://localhost:60191/posts/grain-vitality-and-the-lamarckian-lens/</link>
+      <link>http://localhost:1313/posts/grain-vitality-and-the-lamarckian-lens/</link>
       <pubDate>Mon, 14 Jul 2025 13:28:19 +0530</pubDate>
-      <guid>http://localhost:60191/posts/grain-vitality-and-the-lamarckian-lens/</guid>
-      <description>&lt;!-- Image Prompt: Header Image - An artistic, conceptual image blending imagery of wheat/grain, a DNA helix, and the silhouette of a human form, suggesting environmental inputs sculpting biology. --&gt;&#xA;&lt;p&gt;&#xA;  &lt;img src=&#34;http://localhost:60191/images/grain-dna-morphology.png&#34; alt=&#34;An artistic representation of grain and DNA shaping human vitality&#34;&gt;&#xA;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;The most emaciated, low-vitality cultures that racists berate eat the most grain.&amp;rdquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;This is an ugly observation. The kind of statement that hangs in the air, thick with the weight of unsavory history. The typical response is to recoil, to dismiss it as a crude stereotype and nothing more. But what if, instead of dismissing it, we dared to dissect it? What if we could flip this ugly statement from a tool of racial prejudice into a fruitful scientific question?&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/grain-vitality-and-the-lamarckian-lens/</guid>
+      <description>&lt;!-- Image Prompt: Header Image - An artistic, conceptual image blending imagery of wheat/grain, a DNA helix, and the silhouette of a human form, suggesting environmental inputs sculpting biology. --&gt;&#xA;&lt;p&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/images/grain-dna-morphology.png&#34; alt=&#34;An artistic representation of grain and DNA shaping human vitality&#34;&gt;&#xA;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;The most emaciated, low-vitality cultures that racists berate eat the most grain.&amp;rdquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;This is an ugly observation. The kind of statement that hangs in the air, thick with the weight of unsavory history. The typical response is to recoil, to dismiss it as a crude stereotype and nothing more. But what if, instead of dismissing it, we dared to dissect it? What if we could flip this ugly statement from a tool of racial prejudice into a fruitful scientific question?&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

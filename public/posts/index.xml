@@ -1,22 +1,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Posts on Aban Hasan</title>
-		<link>http://localhost:60191/posts/</link>
+		<link>http://localhost:1313/posts/</link>
 		<description>Recent content in Posts on Aban Hasan</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en</language>
 		<lastBuildDate>Mon, 14 Jul 2025 13:28:19 +0530</lastBuildDate>
-		<atom:link href="http://localhost:60191/posts/index.xml" rel="self" type="application/rss+xml" />
+		<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
 		
 		<item>
 			<title>Grain, Vitality, and the Lamarckian Lens: An Essay on Diet, Environment, and Cultural Morphology</title>
-			<link>http://localhost:60191/posts/grain-vitality-and-the-lamarckian-lens/</link>
+			<link>http://localhost:1313/posts/grain-vitality-and-the-lamarckian-lens/</link>
 			<pubDate>Mon, 14 Jul 2025 13:28:19 +0530</pubDate>
 			
-			<guid>http://localhost:60191/posts/grain-vitality-and-the-lamarckian-lens/</guid>
+			<guid>http://localhost:1313/posts/grain-vitality-and-the-lamarckian-lens/</guid>
 			<description>&lt;!-- Image Prompt: Header Image - An artistic, conceptual image blending imagery of wheat/grain, a DNA helix, and the silhouette of a human form, suggesting environmental inputs sculpting biology. --&gt;
 &lt;p&gt;
-  &lt;img src=&#34;http://localhost:60191/images/grain-dna-morphology.png&#34; alt=&#34;An artistic representation of grain and DNA shaping human vitality&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/images/grain-dna-morphology.png&#34; alt=&#34;An artistic representation of grain and DNA shaping human vitality&#34;&gt;
 &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&amp;ldquo;The most emaciated, low-vitality cultures that racists berate eat the most grain.&amp;rdquo;&lt;/p&gt;
@@ -207,15 +207,15 @@ document.addEventListener('DOMContentLoaded', function() {
 		
 		<item>
 			<title>Silicon &amp; Six-Shooters: AI as Manifest Destiny</title>
-			<link>http://localhost:60191/posts/cowboys/</link>
+			<link>http://localhost:1313/posts/cowboys/</link>
 			<pubDate>Fri, 23 May 2025 00:00:00 +0000</pubDate>
 			
-			<guid>http://localhost:60191/posts/cowboys/</guid>
+			<guid>http://localhost:1313/posts/cowboys/</guid>
 			<description>&lt;blockquote&gt;
 &lt;p&gt;To be in software in 2025 is to be a cowboy in 1900. You&amp;rsquo;re living on the precipice of a bygone era, one that you barely comprehend is gone, as the industrial giants and their Pinkerton armies push you further west, towards an unknown horizon. The open range is closing, fences are going up, and the rules are changing. This isn&amp;rsquo;t just a shift; it&amp;rsquo;s a reckoning.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;
-  &lt;img src=&#34;http://localhost:60191/images/cowboy_city.png&#34; alt=&#34;A lone cowboy gazing at a futuristic city skyline&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/images/cowboy_city.png&#34; alt=&#34;A lone cowboy gazing at a futuristic city skyline&#34;&gt;
 &lt;/p&gt;</description>
 			<content type="html"><![CDATA[<blockquote>
 <p>To be in software in 2025 is to be a cowboy in 1900. You&rsquo;re living on the precipice of a bygone era, one that you barely comprehend is gone, as the industrial giants and their Pinkerton armies push you further west, towards an unknown horizon. The open range is closing, fences are going up, and the rules are changing. This isn&rsquo;t just a shift; it&rsquo;s a reckoning.</p>
@@ -326,10 +326,10 @@ But the other problem remains: <strong>Energy</strong>.</p>
 		
 		<item>
 			<title>Feeding the Hydra: Musings on Cyberslavery</title>
-			<link>http://localhost:60191/posts/cyber-slaves/</link>
+			<link>http://localhost:1313/posts/cyber-slaves/</link>
 			<pubDate>Sun, 13 Apr 2025 10:00:00 +0000</pubDate>
 			
-			<guid>http://localhost:60191/posts/cyber-slaves/</guid>
+			<guid>http://localhost:1313/posts/cyber-slaves/</guid>
 			<description>&lt;p&gt;Clarity.&lt;/p&gt;
 &lt;p&gt;All we seek is clarity. Yet, it appears that everything around us – everything we see, everything we touch – is designed to be noisy, to disrupt every thought we have before it can fully form. Entire teams of researchers, scientists, psychologists devote their lives to finding and &amp;ldquo;pulling the right&amp;rdquo; switch in our minds, optimizing for engagement, for distraction.&lt;/p&gt;
 &lt;p&gt;Our inherent capital – the finite time and vibrant youth we possess – is systematically siphoned off to feed the mainframe, the ever-hungry digital systems that thrive on our attention.&lt;/p&gt;</description>
@@ -387,12 +387,12 @@ But the other problem remains: <strong>Energy</strong>.</p>
 		
 		<item>
 			<title>The War Against Heteronomy</title>
-			<link>http://localhost:60191/posts/thewaragainstheteronomy/</link>
+			<link>http://localhost:1313/posts/thewaragainstheteronomy/</link>
 			<pubDate>Mon, 31 Mar 2025 08:38:35 +0530</pubDate>
 			
-			<guid>http://localhost:60191/posts/thewaragainstheteronomy/</guid>
+			<guid>http://localhost:1313/posts/thewaragainstheteronomy/</guid>
 			<description>&lt;p&gt;
-  &lt;img src=&#34;http://localhost:60191/images/autonomy-header.jpg&#34; alt=&#34;A person standing at a crossroads with multiple paths branching outward&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/images/autonomy-header.jpg&#34; alt=&#34;A person standing at a crossroads with multiple paths branching outward&#34;&gt;
 &lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Image: The Pathways of Choice - representing the autonomy that comes from recognizing our power to choose&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;prelude&#34;&gt;Prelude&lt;/h2&gt;
@@ -586,10 +586,10 @@ But the other problem remains: <strong>Energy</strong>.</p>
 		
 		<item>
 			<title>Technofeudalism and the Return to the Real</title>
-			<link>http://localhost:60191/posts/technofeudalism-and-the-return-to-the-real/</link>
+			<link>http://localhost:1313/posts/technofeudalism-and-the-return-to-the-real/</link>
 			<pubDate>Thu, 23 Jan 2025 12:34:29 +0530</pubDate>
 			
-			<guid>http://localhost:60191/posts/technofeudalism-and-the-return-to-the-real/</guid>
+			<guid>http://localhost:1313/posts/technofeudalism-and-the-return-to-the-real/</guid>
 			<description>&lt;p&gt;What makes the modern manifestation of cloud capital, integral to the &lt;a href=&#34;https://thebeautifultruth.org/the-basics/what-is-technofeudalism/&#34;&gt;Technofeudalism&lt;/a&gt; system we live under, is that it&amp;rsquo;s impossible to go anywhere without having it glaring at you. It hovers above the heads of modern people like a cloud, taking all our attention and carefully curating it, effectively extracting life energy and transmuting it into data and narrative.&lt;/p&gt;
 &lt;p&gt;Nick Land extensively talks about hyperstition, and the memesis we see via social media enables false narratives to take on a life of their own, often manufactured by the techno-oligarchs themselves in service of their political ambitions.&lt;/p&gt;</description>
 			<content type="html"><![CDATA[<p>What makes the modern manifestation of cloud capital, integral to the <a href="https://thebeautifultruth.org/the-basics/what-is-technofeudalism/">Technofeudalism</a> system we live under, is that it&rsquo;s impossible to go anywhere without having it glaring at you. It hovers above the heads of modern people like a cloud, taking all our attention and carefully curating it, effectively extracting life energy and transmuting it into data and narrative.</p>
@@ -623,10 +623,10 @@ But the other problem remains: <strong>Energy</strong>.</p>
 		
 		<item>
 			<title>Neuroplasticity: How to Manipulate Reality</title>
-			<link>http://localhost:60191/posts/neuroplasticity---how-to-manipulate-reality/</link>
+			<link>http://localhost:1313/posts/neuroplasticity---how-to-manipulate-reality/</link>
 			<pubDate>Fri, 16 Jun 2023 00:08:35 +0530</pubDate>
 			
-			<guid>http://localhost:60191/posts/neuroplasticity---how-to-manipulate-reality/</guid>
+			<guid>http://localhost:1313/posts/neuroplasticity---how-to-manipulate-reality/</guid>
 			<description>&lt;h2 id=&#34;the-remarkable-capacity-for-change-in-the-human-brain&#34;&gt;The Remarkable Capacity for Change in the Human Brain&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;Most people go through their entire lives without truly understanding the astonishing potential for change that exists within the human brain.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;It is commonly believed that our capacity for learning diminishes over time, with the assumption that we can only learn effectively during our childhood years. While this may be true for the majority, I argue that by following specific protocols, not only can we sustain learning throughout our lives, but we can also enhance it.&lt;/p&gt;</description>
@@ -685,10 +685,10 @@ b) Not smoke</p>
 		
 		<item>
 			<title>The Art of Human Connection: How to become the leader of your tribe</title>
-			<link>http://localhost:60191/posts/the-art-of-human-connection--how-to-make-friends/</link>
+			<link>http://localhost:1313/posts/the-art-of-human-connection--how-to-make-friends/</link>
 			<pubDate>Fri, 10 Dec 2021 19:49:54 +0530</pubDate>
 			
-			<guid>http://localhost:60191/posts/the-art-of-human-connection--how-to-make-friends/</guid>
+			<guid>http://localhost:1313/posts/the-art-of-human-connection--how-to-make-friends/</guid>
 			<description>&lt;h3 id=&#34;are-you-an-extrovert-or-introvert&#34;&gt;Are you an Extrovert or Introvert?&lt;/h3&gt;
 &lt;p&gt;Irrelevant question.
 Why? Because all of us need, and deserve, a meaningful social connection, regardless of how we feel like in social situations.
@@ -743,10 +743,10 @@ You are the top. You are hanging out with Adonis, Maximus and Ares. These type o
 		
 		<item>
 			<title>Doing What You Got to Do: A Systematic Pathway to Success</title>
-			<link>http://localhost:60191/posts/doing-what-you-got-to-do--a-systematic-pathway-to-success/</link>
+			<link>http://localhost:1313/posts/doing-what-you-got-to-do--a-systematic-pathway-to-success/</link>
 			<pubDate>Sun, 05 Dec 2021 11:01:26 +0530</pubDate>
 			
-			<guid>http://localhost:60191/posts/doing-what-you-got-to-do--a-systematic-pathway-to-success/</guid>
+			<guid>http://localhost:1313/posts/doing-what-you-got-to-do--a-systematic-pathway-to-success/</guid>
 			<description>&lt;h3 id=&#34;there-is-something-extremely-important-that-i-have-learned-over-the-last-few-months&#34;&gt;There is something extremely important that I have learned over the last few months.&lt;/h3&gt;
 &lt;p&gt;If one has gotten into their self-improvement journey, they will eventually realize one thing: you would have to &lt;strong&gt;do the hard work, ESPECIALLY when you don&amp;rsquo;t feel like it&lt;/strong&gt;.
 There is great power in getting something hard or boring to become a routine habit just by doing it repeatedly. Imagine going to the gym in the morning without a single word of protest every day. Or… studying for 6 hours with no feelings of resentment.&lt;/p&gt;</description>
@@ -773,10 +773,10 @@ I fought the mental battle, allotted some time to get this all written down.</p>
 		
 		<item>
 			<title>Learning From Media vs Learning From Experience: Which Is Better?</title>
-			<link>http://localhost:60191/posts/mediavsexperience/</link>
+			<link>http://localhost:1313/posts/mediavsexperience/</link>
 			<pubDate>Sun, 28 Nov 2021 17:23:57 +0530</pubDate>
 			
-			<guid>http://localhost:60191/posts/mediavsexperience/</guid>
+			<guid>http://localhost:1313/posts/mediavsexperience/</guid>
 			<description>&lt;h2 id=&#34;times-have-changed&#34;&gt;Times have changed.&lt;/h2&gt;
 &lt;p&gt;Today, the man who can adapt the fastest and handle the most information is the man who wins.&lt;/p&gt;
 &lt;p&gt;This shift in focus of the economy from physical labor to &lt;em&gt;intellectual&lt;/em&gt; labor has created an industry around learning, in contrast to education.&lt;/p&gt;
@@ -817,10 +817,10 @@ Therefore, it would be very useful to have a sort of model in which you moderate
 		
 		<item>
 			<title>The Internet:Advantages and Disadvantages</title>
-			<link>http://localhost:60191/posts/the-internet---advantages-and-disadvantages/</link>
+			<link>http://localhost:1313/posts/the-internet---advantages-and-disadvantages/</link>
 			<pubDate>Sun, 21 Nov 2021 18:53:12 +0530</pubDate>
 			
-			<guid>http://localhost:60191/posts/the-internet---advantages-and-disadvantages/</guid>
+			<guid>http://localhost:1313/posts/the-internet---advantages-and-disadvantages/</guid>
 			<description>&lt;h2 id=&#34;foreword&#34;&gt;Foreword&lt;/h2&gt;
 &lt;p&gt;Hello dear reader! This is a college essay i wrote a couple of weeks ago for a school project, I thought why not upload it on my blog, since i havent done that in so long lol.&lt;/p&gt;
 &lt;p&gt;Well, dont take this as an actual post, more of a filler that you may or may not want to read :D&lt;/p&gt;
@@ -865,10 +865,10 @@ The advantages may outweigh the disadvantages in case you know how to use the in
 		
 		<item>
 			<title>How to Pick a Programming Language</title>
-			<link>http://localhost:60191/posts/how-to-pick-a-programming-language/</link>
+			<link>http://localhost:1313/posts/how-to-pick-a-programming-language/</link>
 			<pubDate>Fri, 20 Aug 2021 12:33:41 +0530</pubDate>
 			
-			<guid>http://localhost:60191/posts/how-to-pick-a-programming-language/</guid>
+			<guid>http://localhost:1313/posts/how-to-pick-a-programming-language/</guid>
 			<description>&lt;h2 id=&#34;software-really-is-a-beautiful-thing&#34;&gt;Software really is a beautiful thing.&lt;/h2&gt;
 &lt;p&gt;We often take the magical applications we use every single day for granted. Chances are that if you are reading this, you are curious on how to make your own, but you find the dozens of languages and frameworks intimidating.
 I hope to guide you through the SE world through this blog post, and clear up the misconceptions one may have.&lt;/p&gt;
@@ -936,10 +936,10 @@ You could set a similar goal and consume a tonne of information that gives you a
 		
 		<item>
 			<title>The Mental Drain of Studying and How to Deal With It</title>
-			<link>http://localhost:60191/posts/the-mental-drain-of-studying-and-how-to-deal-with-it/</link>
+			<link>http://localhost:1313/posts/the-mental-drain-of-studying-and-how-to-deal-with-it/</link>
 			<pubDate>Sun, 08 Aug 2021 18:45:50 +0530</pubDate>
 			
-			<guid>http://localhost:60191/posts/the-mental-drain-of-studying-and-how-to-deal-with-it/</guid>
+			<guid>http://localhost:1313/posts/the-mental-drain-of-studying-and-how-to-deal-with-it/</guid>
 			<description>&lt;h3 id=&#34;the-mental-drain-of-studying&#34;&gt;The mental drain of Studying&lt;/h3&gt;
 &lt;p&gt;A lot of us approach studying as a chore just because our parents, teachers and society in general expects us to do well in our academics. The academic journey can be rather inundating and boring. The very thought of studying and examinations can cause a lot of distress for students(at least I can speak for myself).&lt;/p&gt;
 &lt;h3 id=&#34;why-can-be-studying-so-difficult&#34;&gt;Why can be studying so difficult&lt;/h3&gt;
@@ -1057,10 +1057,10 @@ Think of a painter who is completely absorbed in his art. He could go hours pain
 		
 		<item>
 			<title>Eating Clean: How to Maintain a Guilt Free Calorie Defict</title>
-			<link>http://localhost:60191/posts/eating-clean--how-to-maintain-a-guilt-free-calorie-defict/</link>
+			<link>http://localhost:1313/posts/eating-clean--how-to-maintain-a-guilt-free-calorie-defict/</link>
 			<pubDate>Sat, 31 Jul 2021 20:31:06 +0530</pubDate>
 			
-			<guid>http://localhost:60191/posts/eating-clean--how-to-maintain-a-guilt-free-calorie-defict/</guid>
+			<guid>http://localhost:1313/posts/eating-clean--how-to-maintain-a-guilt-free-calorie-defict/</guid>
 			<description>&lt;h3 id=&#34;why-eat-cleaner&#34;&gt;Why eat cleaner&lt;/h3&gt;
 &lt;p&gt;You may have noticed it, our foods have gotten more &lt;strong&gt;processed and less nutritious&lt;/strong&gt; in the last hundred years.
 Nutrition has commercially lost all value.
@@ -1139,10 +1139,10 @@ The best way to start losing fat is to eliminate bad eating habits, such as spor
 		
 		<item>
 			<title>The Practice of Journaling in Self-Improvement</title>
-			<link>http://localhost:60191/posts/the-practice-of-journaling-in-self-improvement/</link>
+			<link>http://localhost:1313/posts/the-practice-of-journaling-in-self-improvement/</link>
 			<pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
 			
-			<guid>http://localhost:60191/posts/the-practice-of-journaling-in-self-improvement/</guid>
+			<guid>http://localhost:1313/posts/the-practice-of-journaling-in-self-improvement/</guid>
 			<description>&lt;blockquote&gt;
 &lt;p&gt;“Fill your paper with the breathings of your heart.” – William Wordsworth&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1194,10 +1194,10 @@ You can also do weekly and monthly review, where instead of thinking in the scal
 		
 		<item>
 			<title>How to Type Faster</title>
-			<link>http://localhost:60191/posts/how-to-type-faster/</link>
+			<link>http://localhost:1313/posts/how-to-type-faster/</link>
 			<pubDate>Sat, 17 Jul 2021 00:00:00 +0000</pubDate>
 			
-			<guid>http://localhost:60191/posts/how-to-type-faster/</guid>
+			<guid>http://localhost:1313/posts/how-to-type-faster/</guid>
 			<description>&lt;h1 id=&#34;typing-has-become-and-exceedingly-useful-skill-over-the-last-few-years&#34;&gt;Typing has become and exceedingly useful skill over the last few years.&lt;/h1&gt;
 &lt;p&gt;My journey started with a single link. A friend wanted to compare our typing speeds. At the time, i was pretty slow, having to look down at my keyboard every time I wanted to type a single character (I cringe at the thought, in retrospect).
 At the time, everyone were much faster than me, I was at a slow 25 WPM and didn&amp;rsquo;t care much about it.&lt;/p&gt;</description>
@@ -1237,10 +1237,10 @@ I time block my calendar to do about 15 mins of deliberate typing practice every
 		
 		<item>
 			<title>Benefits of Cold Showers</title>
-			<link>http://localhost:60191/posts/benefits-of-cold-showers/</link>
+			<link>http://localhost:1313/posts/benefits-of-cold-showers/</link>
 			<pubDate>Wed, 07 Jul 2021 00:00:00 +0000</pubDate>
 			
-			<guid>http://localhost:60191/posts/benefits-of-cold-showers/</guid>
+			<guid>http://localhost:1313/posts/benefits-of-cold-showers/</guid>
 			<description>&lt;h2 id=&#34;cold-showers-are-becoming-cool-again&#34;&gt;Cold Showers are becoming cool again.&lt;/h2&gt;
 &lt;p&gt;From the lifestyles of US Marines, to the legendary Wim Hof (AKA the Iceman), cold showers have become synonymous with the Healthy Grind set.
 Many reports, backed by plenty of &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5025014/&#34;&gt;studies&lt;/a&gt; have found pretty eye-opening benefits from this seemingly trivial ritual. Some benefits often talked about are:&lt;/p&gt;
@@ -1283,10 +1283,10 @@ It may be extremely uncomfortable for about 5 seconds, but the feeling passes so
 		
 		<item>
 			<title>The Concept of Motivation:How to Always Get Things Done</title>
-			<link>http://localhost:60191/posts/the-concept-of-motivation---how-to-always-get-things-done/</link>
+			<link>http://localhost:1313/posts/the-concept-of-motivation---how-to-always-get-things-done/</link>
 			<pubDate>Tue, 29 Jun 2021 00:00:00 +0000</pubDate>
 			
-			<guid>http://localhost:60191/posts/the-concept-of-motivation---how-to-always-get-things-done/</guid>
+			<guid>http://localhost:1313/posts/the-concept-of-motivation---how-to-always-get-things-done/</guid>
 			<description>&lt;h2 id=&#34;motivation-has-a-shelf-life&#34;&gt;Motivation has a shelf life.&lt;/h2&gt;
 &lt;p&gt;It changes like the weather.
 Although it is a seasonal phenomenon, it still carries a great deal of power.&lt;/p&gt;
@@ -1322,10 +1322,10 @@ To give an example, today I feel particularly lethargic. However, I want to beco
 		
 		<item>
 			<title>Atomic Habits by James Clear:Book Review</title>
-			<link>http://localhost:60191/posts/atomic-habits-by-james-clear/</link>
+			<link>http://localhost:1313/posts/atomic-habits-by-james-clear/</link>
 			<pubDate>Sat, 26 Jun 2021 00:00:00 +0000</pubDate>
 			
-			<guid>http://localhost:60191/posts/atomic-habits-by-james-clear/</guid>
+			<guid>http://localhost:1313/posts/atomic-habits-by-james-clear/</guid>
 			<description>&lt;h2 id=&#34;this-is-a-legendary-book-its-reputation-proceeds-it&#34;&gt;This is a legendary book, its reputation proceeds it.&lt;/h2&gt;
 &lt;p&gt;All the productivity greats like &lt;a href=&#34;https://www.youtube.com/user/electrickeye91&#34;&gt;Thomas Frank&lt;/a&gt; and &lt;a href=&#34;https://www.youtube.com/c/aliabdaal/videos&#34;&gt;Ali Abdaal&lt;/a&gt; have recommended it…so this month I have decided to check it out.&lt;/p&gt;
 &lt;p&gt;And boy, does it deliver.&lt;/p&gt;
@@ -1411,10 +1411,10 @@ Sure, I used to use them and all was fine for a few days but with life, changes 
 		
 		<item>
 			<title>Digital Minimalism by Cal Newport: Book Review</title>
-			<link>http://localhost:60191/posts/digital-minimilism-by-cal-newport--book-review/</link>
+			<link>http://localhost:1313/posts/digital-minimilism-by-cal-newport--book-review/</link>
 			<pubDate>Wed, 16 Jun 2021 16:06:37 +0530</pubDate>
 			
-			<guid>http://localhost:60191/posts/digital-minimilism-by-cal-newport--book-review/</guid>
+			<guid>http://localhost:1313/posts/digital-minimilism-by-cal-newport--book-review/</guid>
 			<description>&lt;h2 id=&#34;yet-another-cal-newport-review-ay&#34;&gt;Yet Another Cal Newport Review, ay?&lt;/h2&gt;
 &lt;p&gt;You may be beginning to notice a pattern here. But seriously, The man is such an intuitive and practical writer.&lt;/p&gt;
 &lt;p&gt;If you are anything like me, you may find that a lot of precious time gets sucked away by the internet, or digital world. In fact, this has become such a problem that &lt;a href=&#34;https://www.pewresearch.org/internet/2015/04/09/teens-social-media-technology-2015/&#34;&gt;92% of teens go online daily, and 24% say they go online “almost constantly.”&lt;/a&gt;
@@ -1452,10 +1452,10 @@ If we are reasonable with this power, we will succeed as a species.</p>
 		
 		<item>
 			<title>The Importance of Sleep in Learning</title>
-			<link>http://localhost:60191/posts/the-importance-of-sleep-in-learning/</link>
+			<link>http://localhost:1313/posts/the-importance-of-sleep-in-learning/</link>
 			<pubDate>Fri, 11 Jun 2021 23:49:25 +0530</pubDate>
 			
-			<guid>http://localhost:60191/posts/the-importance-of-sleep-in-learning/</guid>
+			<guid>http://localhost:1313/posts/the-importance-of-sleep-in-learning/</guid>
 			<description>&lt;p&gt;I am writing this blog post at 11:55 AM out of a great need to express my thoughts about sleep,the tame death that envelopes us all.&lt;/p&gt;
 &lt;p&gt;I find that in our modern world,sleep is often put aside,or even overlooked. I have recently found a &lt;a href=&#34;https://www.cdc.gov/media/releases/2016/p0215-enough-sleep.html&#34;&gt;study&lt;/a&gt; by the american goverment that asserts that 1 in 3 adults &lt;strong&gt;are chronically sleep deprived.&lt;/strong&gt; These numbers are shocking and should make us reconsider our &lt;em&gt;view&lt;/em&gt; on sleep.&lt;/p&gt;</description>
 			<content type="html"><![CDATA[<p>I am writing this blog post at 11:55 AM out of a great need to express my thoughts about sleep,the tame death that envelopes us all.</p>
@@ -1476,10 +1476,10 @@ hundreds of cells die and new cells <em>should</em> be able to regenerate in a h
 		
 		<item>
 			<title>Deep Work by Cal Newport:Book Review</title>
-			<link>http://localhost:60191/posts/deep-work-by-cal-newport-book-review/</link>
+			<link>http://localhost:1313/posts/deep-work-by-cal-newport-book-review/</link>
 			<pubDate>Tue, 08 Jun 2021 11:57:29 +0530</pubDate>
 			
-			<guid>http://localhost:60191/posts/deep-work-by-cal-newport-book-review/</guid>
+			<guid>http://localhost:1313/posts/deep-work-by-cal-newport-book-review/</guid>
 			<description>&lt;h1 id=&#34;productivity-books-we-all-read-them&#34;&gt;Productivity books, we all read them&lt;/h1&gt;
 &lt;p&gt;kinda is becoming my guilty pleasure at this point. However, I have to give the book “Deep Work” some credit.
 Although this is my second reading, I still find enormous meaning from it.&lt;/p&gt;
@@ -1512,10 +1512,10 @@ I highly recommend the book to anyone who has the hunger for success in this eve
 		
 		<item>
 			<title>Learning to Hack: A Resource Guide</title>
-			<link>http://localhost:60191/posts/learning-to-hack---a-resource-guide./</link>
+			<link>http://localhost:1313/posts/learning-to-hack---a-resource-guide./</link>
 			<pubDate>Sun, 16 May 2021 10:54:36 +0530</pubDate>
 			
-			<guid>http://localhost:60191/posts/learning-to-hack---a-resource-guide./</guid>
+			<guid>http://localhost:1313/posts/learning-to-hack---a-resource-guide./</guid>
 			<description>&lt;h2 id=&#34;being-a-hacker-sounds-really-cool&#34;&gt;&lt;strong&gt;Being a hacker sounds really cool.&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;But how do you become one?&lt;/p&gt;
 &lt;p&gt;In this resource guide, i will try to tackle this question by identifying a few essential &lt;em&gt;skills and websites&lt;/em&gt; that helped (and is continuing to help) me learn how to hack.&lt;/p&gt;

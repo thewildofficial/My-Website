@@ -115,24 +115,24 @@ markup: "html"
       </div>
     </div>
 
-    <div class="credential-card" data-institution="bits-pilani">
+    <div class="credential-card" data-institution="iit-madras">
       <div class="shimmer"></div>
       <div class="card-header">
-        <div class="institution-logo"><img src="/images/logos/bits-pilani-logo.png" alt="BITS Pilani Logo"></div>
+        <div class="institution-logo"><img src="/images/logos/iit-madras-logo.png" alt="IIT Madras Logo"></div>
         <div class="institution-info">
-          <h3>BITS Pilani</h3>
-          <p class="program">Bachelor in Computer Science</p>
+          <h3>IIT Madras</h3>
+          <p class="program">BS, Data Science and Applications</p>
         </div>
         <span class="status-badge current">Year 1 Ongoing</span>
       </div>
       <div class="card-content">
-        <p class="description">Building comprehensive foundation in computer science, algorithms, and software engineering at one of India's premier technical institutions.</p>
+        <p class="description">Building theoretical and practical foundation in data analysis, machine learning, and statistical modeling.</p>
         <div class="progress-container">
           <div class="progress-bar"><div class="progress-fill" style="width: 25%;"></div></div>
           <span class="progress-text">25% Complete</span>
         </div>
         <div class="card-actions">
-          <a href="/credentials/bits-pilani-enrollment.pdf" class="doc-link" target="_blank" aria-label="View BITS Pilani Enrollment Confirmation">📄 View Enrollment</a>
+          <a href="/credentials/iit-madras-enrollment.pdf" class="doc-link" target="_blank" aria-label="View IIT Madras Enrollment Confirmation">📄 View Enrollment</a>
         </div>
       </div>
     </div>

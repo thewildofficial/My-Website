@@ -1,6 +1,32 @@
+{{ define "head" }}
+<!-- GitHub API Configuration -->
+<script>
+  window.GITHUB_CONFIG = {
+    username: '{{ .Site.Params.githubUsername | default "thewildofficial" }}',
+    apiUrl: 'https://api.github.com',
+    refreshInterval: 300000, // 5 minutes
+    maxCommits: 100,
+    maxRepos: 50,
+    maxEvents: 100
+  };
+  
+  // Gemini API Key configuration
+  // For local development: Replace 'YOUR_API_KEY_HERE' with your actual API key
+  // For production: This will be overridden by Netlify's build process
+  window.GEMINI_API_KEY = 'YOUR_API_KEY_HERE';
+</script>
+
+<!-- Load Enhanced Styles -->
+<link rel="stylesheet" href="{{ "css/github-monitor-enhanced.css" | relURL }}">
+{{ end }}
+
+{{ define "header" }}
+{{ partial "header.html" . }}
+{{ end }}
+
 {{ define "main" }}
-<div class="github-monitor-page">
-  <div class="container">
+<main class="site-main section-inner thin animated fadeIn faster">
+  <div class="github-monitor-page">
     <header class="page-header">
       <h1>{{ .Title }}</h1>
       <p class="page-description">{{ .Description }}</p>
@@ -10,27 +36,15 @@
       {{ .Content }}
     </div>
   </div>
-</div>
+</main>
 
-<!-- GitHub API Configuration -->
-<script>
-  window.GITHUB_CONFIG = {
-    username: '{{ .Site.Params.githubUsername | default "thewildofficial" }}',
-    apiUrl: 'https://api.github.com',
-    refreshInterval: 300000, // 5 minutes
-    maxCommits: 50,
-    maxRepos: 20
-  };
-  
-  // Gemini API Key configuration
-  // For local development: Replace 'YOUR_API_KEY_HERE' with your actual API key
-  // For production: This will be overridden by Netlify's build process
-  window.GEMINI_API_KEY = 'YOUR_API_KEY_HERE';
-</script>
-
-<!-- Load GitHub Monitor Script -->
-<script src="{{ "js/github-monitor.js" | relURL }}"></script>
+<!-- Load Enhanced GitHub Monitor Script -->
+<script src="{{ "js/github-monitor-enhanced.js" | relURL }}"></script>
 
 <!-- Local development configuration - DO NOT use in production -->
 <script src="{{ "local-config.js" | relURL }}"></script>
+{{ end }}
+
+{{ define "footer" }}
+{{ partialCached "footer.html" . }}
 {{ end }}
