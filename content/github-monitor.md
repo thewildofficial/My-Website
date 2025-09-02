@@ -7,6 +7,11 @@ layout: "github-monitor"
 description: "Real-time monitoring of GitHub activity with AI-powered insights"
 ---
 
+<header class="page-header">
+  <h1>GitHub Monitor</h1>
+  <p class="page-description">Real-time monitoring of development activity with AI-powered insights and comprehensive metrics</p>
+</header>
+
 <div class="github-monitor-header">
   <div class="status-indicator">
     <div id="connection-status" class="status-dot offline"></div>

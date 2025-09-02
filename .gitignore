@@ -8,3 +8,4 @@ temp
 
 # Local development configuration with API keys
 local-config.js
+/.playwright-mcp

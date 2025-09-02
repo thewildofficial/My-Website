@@ -27,24 +27,19 @@
 {{ define "main" }}
 <main class="site-main section-inner thin animated fadeIn faster">
   <div class="github-monitor-page">
-    <header class="page-header">
-      <h1>{{ .Title }}</h1>
-      <p class="page-description">{{ .Description }}</p>
-    </header>
-
     <div class="monitor-content">
       {{ .Content }}
     </div>
   </div>
 </main>
+{{ end }}
+
+{{ define "footer" }}
+{{ partialCached "footer.html" . }}
 
 <!-- Load Enhanced GitHub Monitor Script -->
 <script src="{{ "js/github-monitor-enhanced.js" | relURL }}"></script>
 
 <!-- Local development configuration - DO NOT use in production -->
 <script src="{{ "local-config.js" | relURL }}"></script>
-{{ end }}
-
-{{ define "footer" }}
-{{ partialCached "footer.html" . }}
 {{ end }}

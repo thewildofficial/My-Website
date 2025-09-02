@@ -44,16 +44,24 @@ class EnhancedGitHubMonitor {
   }
 
   async init() {
+    console.log('Starting Enhanced GitHub Monitor initialization...');
     try {
       this.setupEventListeners();
       this.updateConnectionStatus('loading', 'Initializing...');
       
+      console.log('Loading Gemini API key...');
       await this.loadGeminiApiKey();
+      console.log('Gemini API key loaded:', this.geminiApiKey ? 'Yes' : 'No');
+      
+      console.log('Loading GitHub data...');
       await this.loadAllGitHubData();
+      console.log('GitHub data loaded successfully');
+      
       this.startAutoRefresh();
       
       this.updateConnectionStatus('online', 'Connected');
       this.updateLastSync();
+      console.log('Enhanced GitHub Monitor initialization complete');
     } catch (error) {
       console.error('Failed to initialize Enhanced GitHub Monitor:', error);
       this.updateConnectionStatus('offline', 'Connection failed');
@@ -125,9 +133,11 @@ class EnhancedGitHubMonitor {
   }
 
   async loadAllGitHubData() {
+    console.log('Starting to load GitHub data...');
     this.updateConnectionStatus('loading', 'Loading GitHub data...');
     
     try {
+      console.log('Fetching GitHub events, repos, and user stats...');
       // Load data in parallel for better performance
       const [events, repos, userStats] = await Promise.all([
         this.fetchGitHubData(`/users/${this.config.username}/events?per_page=${this.config.maxEvents}`),
@@ -135,20 +145,30 @@ class EnhancedGitHubMonitor {
         this.fetchGitHubData(`/users/${this.config.username}`)
       ]);
 
+      console.log('GitHub data received:', {
+        events: events.length,
+        repos: repos.length,
+        userStats: userStats.login
+      });
+
       this.data.events = events;
       this.data.repositories = repos;
       this.data.userStats = userStats;
 
       // Process and categorize events
+      console.log('Processing events...');
       this.processEvents(events);
       
       // Calculate advanced metrics
+      console.log('Calculating metrics...');
       await this.calculateMetrics();
       
       // Update all UI components
+      console.log('Updating UI...');
       this.updateAllUI();
       
       this.lastUpdate = new Date();
+      console.log('GitHub data loading complete');
     } catch (error) {
       console.error('Failed to load GitHub data:', error);
       throw error;
@@ -693,6 +713,7 @@ Keep it professional, insightful, and concise. Focus on patterns and meaningful 
 
   // Helper methods
   async fetchGitHubData(endpoint) {
+    console.log('Fetching GitHub API endpoint:', endpoint);
     const response = await fetch(`${this.config.apiUrl}${endpoint}`, {
       headers: {
         'Accept': 'application/vnd.github.v3+json',
@@ -701,10 +722,13 @@ Keep it professional, insightful, and concise. Focus on patterns and meaningful 
     });
 
     if (!response.ok) {
+      console.error('GitHub API error:', response.status, response.statusText);
       throw new Error(`GitHub API error: ${response.status}`);
     }
 
-    return await response.json();
+    const data = await response.json();
+    console.log('GitHub API response received for:', endpoint, 'Items:', Array.isArray(data) ? data.length : 'object');
+    return data;
   }
 
   getLanguageColor(language) {
@@ -930,7 +954,13 @@ Keep it professional, insightful, and concise. Focus on patterns and meaningful 
 
 // Initialize the enhanced monitor when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-  window.githubMonitor = new EnhancedGitHubMonitor();
+  console.log('DOM loaded, initializing Enhanced GitHub Monitor...');
+  try {
+    window.githubMonitor = new EnhancedGitHubMonitor();
+    console.log('Enhanced GitHub Monitor initialized successfully');
+  } catch (error) {
+    console.error('Failed to initialize Enhanced GitHub Monitor:', error);
+  }
 });
 
 // Add some additional CSS for the new components
