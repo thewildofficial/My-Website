@@ -66,7 +66,10 @@ exports.handler = async (event, context) => {
     // Generate content
     const result = await model.generateContent(prompt);
     const response = await result.response;
-    const summary = response.text();
+    let summary = response.text();
+
+    // Clean up the response - remove markdown code block tags
+    summary = summary.replace(/```html\s*/g, '').replace(/```\s*$/g, '').trim();
 
     return {
       statusCode: 200,
