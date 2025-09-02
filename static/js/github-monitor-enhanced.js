@@ -122,14 +122,9 @@ class EnhancedGitHubMonitor {
   }
 
   async loadGeminiApiKey() {
-    // Try to load from local config or environment
-    if (window.GEMINI_API_KEY && window.GEMINI_API_KEY !== 'YOUR_API_KEY_HERE') {
-      this.geminiApiKey = window.GEMINI_API_KEY;
-    } else if (window.LOCAL_CONFIG?.geminiApiKey) {
-      this.geminiApiKey = window.LOCAL_CONFIG.geminiApiKey;
-    } else {
-      console.warn('Gemini API key not found. AI summaries will be disabled.');
-    }
+    // Server-side AI analysis - no client-side API key needed
+    this.geminiApiKey = 'server-side';
+    console.log('Using server-side AI analysis');
   }
 
   async loadAllGitHubData() {
@@ -555,15 +550,6 @@ class EnhancedGitHubMonitor {
   }
 
   async generateAISummaryWithCache() {
-    if (!this.geminiApiKey) {
-      const summaryContentElement = document.getElementById('summary-content');
-      if (summaryContentElement) {
-        summaryContentElement.innerHTML = 
-          '<div class="error-message">AI summary unavailable - Gemini API key not configured</div>';
-      }
-      return;
-    }
-
     // Check cache first
     const cached = this.loadFromCache(this.cacheKeys.summary);
     const dataHash = this.generateDataHash();
@@ -596,20 +582,19 @@ class EnhancedGitHubMonitor {
     }
 
     try {
-      const prompt = this.buildEnhancedSummaryPrompt();
-      const response = await this.callGeminiAPI(prompt);
+      const response = await this.callServerSideAI();
       
       if (summaryContent) {
-        summaryContent.innerHTML = response;
+        summaryContent.innerHTML = response.summary;
       }
       const lastUpdatedElement = document.getElementById('last-updated');
       if (lastUpdatedElement) {
-        lastUpdatedElement.textContent = this.formatTime(new Date());
+        lastUpdatedElement.textContent = this.formatTime(new Date(response.timestamp));
       }
       
       // Cache the result
       this.saveToCache(this.cacheKeys.summary, {
-        content: response,
+        content: response.summary,
         dataHash: this.generateDataHash(),
         timestamp: Date.now()
       });
@@ -621,94 +606,33 @@ class EnhancedGitHubMonitor {
     }
   }
 
-  buildEnhancedSummaryPrompt() {
-    const recentCommits = this.data.commits.slice(0, 10).map(commit => {
-      const message = commit.payload?.commits?.[0]?.message || 'No message';
-      return `• ${commit.repo.name}: ${this.truncateText(message, 60)}`;
-    }).join('\n');
 
-    const topRepos = this.data.repositories.slice(0, 5).map(repo => 
-      `• ${repo.name} (${repo.language || 'N/A'}) - ${repo.stargazers_count} stars`
-    ).join('\n');
 
-    const languages = Object.entries(this.data.languageStats)
-      .sort(([,a], [,b]) => b.size - a.size)
-      .slice(0, 3)
-      .map(([lang, data]) => `${lang} (${data.percentage}%)`)
-      .join(', ');
+  async callServerSideAI() {
+    const githubData = {
+      commits: this.data.commits,
+      repositories: this.data.repositories,
+      metrics: this.data.metrics,
+      languageStats: this.data.languageStats
+    };
 
-    const metrics = this.data.metrics || {};
-    const velocity = metrics.velocity || {};
-    const streak = metrics.streak || {};
+    // Use local config URL if available, otherwise use default
+    const functionUrl = window.LOCAL_CONFIG?.serverFunctionUrl || '/.netlify/functions/generate-summary';
 
-    return `Create a professional developer portfolio summary from this comprehensive GitHub activity data:
-
-RECENT COMMITS (${this.data.commits.length} total):
-${recentCommits}
-
-TOP REPOSITORIES:
-${topRepos}
-
-DEVELOPMENT METRICS:
-• Commits this week: ${velocity.week || 0}
-• Commits this month: ${velocity.month || 0}
-• Current streak: ${streak.current || 0} days
-• Active repositories: ${metrics.repoHealth?.active || 0}
-
-TECHNOLOGY STACK:
-${languages}
-
-Respond with clean HTML using this structure:
-
-<div class="ai-summary">
-<h4>🎯 Current Focus</h4>
-<p>[2-3 sentences about main development areas and projects]</p>
-
-<h4>⚡ Development Velocity</h4>
-<p>[Insights about coding activity and productivity patterns]</p>
-
-<h4>🛠️ Technology Stack</h4>
-<p>[Analysis of languages and tools being used]</p>
-
-<h4>📈 Growth & Impact</h4>
-<p>[Commentary on repository health, contributions, and development trends]</p>
-</div>
-
-Keep it professional, insightful, and concise. Focus on patterns and meaningful insights rather than just listing data.`;
-  }
-
-  async callGeminiAPI(prompt) {
-    if (!this.geminiApiKey) {
-      throw new Error('Gemini API key not available');
-    }
-
-    const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${this.geminiApiKey}`,
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          contents: [{
-            parts: [{ text: prompt }]
-          }],
-          generationConfig: {
-            temperature: 0.7,
-            topK: 40,
-            topP: 0.95,
-            maxOutputTokens: 2048
-          }
-        })
-      }
-    );
+    const response = await fetch(functionUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ githubData })
+    });
 
     if (!response.ok) {
-      throw new Error(`Gemini API error: ${response.status}`);
+      const errorData = await response.json();
+      throw new Error(errorData.error || `Server error: ${response.status}`);
     }
 
-    const data = await response.json();
-    return data.candidates?.[0]?.content?.parts?.[0]?.text || 'Failed to generate summary';
+    return await response.json();
   }
 
   // Helper methods
