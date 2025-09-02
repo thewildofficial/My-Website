@@ -1,0 +1,11 @@
+// Local Development Configuration Template
+// Copy this file to local-config.js and replace YOUR_API_KEY_HERE with your actual API key
+// DO NOT commit local-config.js to git
+
+// Replace 'YOUR_API_KEY_HERE' with your actual Gemini API key for local testing
+const LOCAL_GEMINI_API_KEY = 'YOUR_API_KEY_HERE';
+
+// This will be used by the GitHub monitor in local development
+if (typeof window !== 'undefined' && window.GEMINI_API_KEY === 'YOUR_API_KEY_HERE') {
+  window.GEMINI_API_KEY = LOCAL_GEMINI_API_KEY;
+}

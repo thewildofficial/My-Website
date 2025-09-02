@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Frontier on Aban Hasan</title>
-    <link>http://localhost:1313/tags/frontier/</link>
+    <link>http://localhost:60191/tags/frontier/</link>
     <description>Recent content in Frontier on Aban Hasan</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 23 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/frontier/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:60191/tags/frontier/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Silicon &amp; Six-Shooters: AI as Manifest Destiny</title>
-      <link>http://localhost:1313/posts/cowboys/</link>
+      <link>http://localhost:60191/posts/cowboys/</link>
       <pubDate>Fri, 23 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/cowboys/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;To be in software in 2025 is to be a cowboy in 1900. You&amp;rsquo;re living on the precipice of a bygone era, one that you barely comprehend is gone, as the industrial giants and their Pinkerton armies push you further west, towards an unknown horizon. The open range is closing, fences are going up, and the rules are changing. This isn&amp;rsquo;t just a shift; it&amp;rsquo;s a reckoning.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/images/cowboy_city.png&#34; alt=&#34;A lone cowboy gazing at a futuristic city skyline&#34;&gt;&#xA;&lt;/p&gt;</description>
+      <guid>http://localhost:60191/posts/cowboys/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;To be in software in 2025 is to be a cowboy in 1900. You&amp;rsquo;re living on the precipice of a bygone era, one that you barely comprehend is gone, as the industrial giants and their Pinkerton armies push you further west, towards an unknown horizon. The open range is closing, fences are going up, and the rules are changing. This isn&amp;rsquo;t just a shift; it&amp;rsquo;s a reckoning.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&#xA;  &lt;img src=&#34;http://localhost:60191/images/cowboy_city.png&#34; alt=&#34;A lone cowboy gazing at a futuristic city skyline&#34;&gt;&#xA;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
