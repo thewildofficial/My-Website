@@ -17,7 +17,74 @@ class GitHubMonitor {
     this.lastUpdate = null;
     this.isLoading = false;
     
+    // Caching properties
+    this.cacheKey = 'github-monitor-cache';
+    this.summaryCache = this.loadSummaryCache();
+    
     this.init();
+  }
+
+  // Cache management methods
+  loadSummaryCache() {
+    try {
+      const cached = localStorage.getItem(this.cacheKey);
+      return cached ? JSON.parse(cached) : null;
+    } catch (error) {
+      console.warn('Failed to load summary cache:', error);
+      return null;
+    }
+  }
+
+  saveSummaryCache(data) {
+    try {
+      localStorage.setItem(this.cacheKey, JSON.stringify({
+        ...data,
+        timestamp: Date.now()
+      }));
+    } catch (error) {
+      console.warn('Failed to save summary cache:', error);
+    }
+  }
+
+  generateDataHash(commits, pullRequests, repos) {
+    // Create a simple hash based on recent activity
+    const latestCommit = commits[0]?.created_at || '';
+    const latestPR = pullRequests[0]?.created_at || '';
+    const repoCount = repos.length;
+    const hashString = `${latestCommit}-${latestPR}-${repoCount}`;
+    
+    // Simple hash function
+    let hash = 0;
+    for (let i = 0; i < hashString.length; i++) {
+      const char = hashString.charCodeAt(i);
+      hash = ((hash << 5) - hash) + char;
+      hash = hash & hash; // Convert to 32bit integer
+    }
+    return Math.abs(hash).toString();
+  }
+
+  shouldRegenerateSummary(commits, pullRequests, repos) {
+    if (!this.summaryCache) {
+      console.log('No cache found, generating new summary');
+      return true;
+    }
+
+    const currentHash = this.generateDataHash(commits, pullRequests, repos);
+    const cacheAge = Date.now() - (this.summaryCache.timestamp || 0);
+    const maxCacheAge = 6 * 60 * 60 * 1000; // 6 hours
+
+    if (this.summaryCache.dataHash !== currentHash) {
+      console.log('Data changed, regenerating summary');
+      return true;
+    }
+
+    if (cacheAge > maxCacheAge) {
+      console.log('Cache expired, regenerating summary');
+      return true;
+    }
+
+    console.log('Using cached summary');
+    return false;
   }
 
   async init() {
@@ -38,10 +105,20 @@ class GitHubMonitor {
     
     console.log('Gemini API Key status:', this.geminiApiKey ? 'Found' : 'Not found');
     console.log('API Key value:', this.geminiApiKey === 'YOUR_API_KEY_HERE' ? 'Placeholder' : 'Set');
+    console.log('Full API key (first 10 chars):', this.geminiApiKey ? this.geminiApiKey.substring(0, 10) + '...' : 'null');
     
-    if (!this.geminiApiKey || this.geminiApiKey === 'YOUR_API_KEY_HERE') {
-      console.warn('Gemini API key not found or is placeholder. AI summaries will be disabled.');
+    // Check if it's a valid API key (starts with AIza and is longer than 20 chars)
+    const isValidApiKey = this.geminiApiKey && 
+                         this.geminiApiKey !== 'YOUR_API_KEY_HERE' && 
+                         this.geminiApiKey.length > 20 && 
+                         this.geminiApiKey.startsWith('AIza');
+    
+    if (!isValidApiKey) {
+      console.warn('Gemini API key not found, is placeholder, or invalid. AI summaries will be disabled.');
+      console.warn('Expected: API key starting with "AIza" and longer than 20 characters');
       this.geminiApiKey = null;
+    } else {
+      console.log('Gemini API key loaded successfully');
     }
   }
 
@@ -63,7 +140,7 @@ class GitHubMonitor {
       this.updateRepoOverview(repos);
       
       if (this.geminiApiKey) {
-        await this.generateAISummary(commits, pullRequests, repos);
+        await this.generateAISummaryWithCache(commits, pullRequests, repos);
       } else {
         this.showSummaryPlaceholder();
       }
@@ -142,15 +219,96 @@ class GitHubMonitor {
     const repoCount = repos.length;
     document.getElementById('repo-count').textContent = repoCount;
 
-    // Update language stats
+    // Update language stats with icons
     const languages = this.extractLanguages(repos);
     const topLanguages = Object.entries(languages)
       .sort(([,a], [,b]) => b - a)
-      .slice(0, 3)
-      .map(([lang]) => lang)
-      .join(', ');
+      .slice(0, 3);
     
-    document.getElementById('language-stats').textContent = topLanguages || 'Various';
+    const languageIcons = this.getLanguageIcons(topLanguages);
+    document.getElementById('language-stats').innerHTML = languageIcons;
+  }
+
+  getLanguageIcons(languages) {
+    const badgeMap = {
+      'JavaScript': 'javascript',
+      'TypeScript': 'typescript',
+      'Python': 'python',
+      'Java': 'java',
+      'C++': 'c++',
+      'C#': 'csharp',
+      'Go': 'go',
+      'Rust': 'rust',
+      'PHP': 'php',
+      'Ruby': 'ruby',
+      'Swift': 'swift',
+      'Kotlin': 'kotlin',
+      'HTML': 'html5',
+      'CSS': 'css3',
+      'Shell': 'shell',
+      'Dockerfile': 'docker',
+      'Vue': 'vue.js',
+      'React': 'react',
+      'Angular': 'angular',
+      'Node.js': 'node.js',
+      'C': 'c',
+      'R': 'r',
+      'Scala': 'scala',
+      'Perl': 'perl',
+      'Lua': 'lua',
+      'Haskell': 'haskell',
+      'Clojure': 'clojure',
+      'Elixir': 'elixir',
+      'Erlang': 'erlang',
+      'F#': 'fsharp',
+      'OCaml': 'ocaml',
+      'Julia': 'julia',
+      'MATLAB': 'matlab',
+      'Assembly': 'assembly',
+      'PowerShell': 'powershell',
+      'Bash': 'bash',
+      'Zsh': 'zsh',
+      'Fish': 'fish',
+      'Makefile': 'make',
+      'CMake': 'cmake',
+      'YAML': 'yaml',
+      'JSON': 'json',
+      'XML': 'xml',
+      'Markdown': 'markdown',
+      'TeX': 'latex',
+      'Roff': 'roff',
+      'Vim script': 'vim',
+      'Emacs Lisp': 'emacs',
+      'Lisp': 'lisp',
+      'Scheme': 'scheme',
+      'Prolog': 'prolog',
+      'Smalltalk': 'smalltalk',
+      'COBOL': 'cobol',
+      'Fortran': 'fortran',
+      'Pascal': 'pascal',
+      'Ada': 'ada',
+      'Delphi': 'delphi',
+      'Visual Basic': 'visualbasic',
+      'Objective-C': 'objective-c',
+      'Objective-C++': 'objective-c++',
+      'Dart': 'dart',
+      'Flutter': 'flutter',
+      'React Native': 'react',
+      'Xamarin': 'xamarin',
+      'Ionic': 'ionic',
+      'Cordova': 'cordova',
+      'PhoneGap': 'phonegap',
+      'Titanium': 'titanium',
+      'Unity': 'unity',
+      'Unreal Engine': 'unrealengine',
+      'Godot': 'godot'
+    };
+
+    return languages.map(([lang, count]) => {
+      const badgeName = badgeMap[lang] || 'code';
+      const badgeUrl = `https://img.shields.io/badge/${encodeURIComponent(lang)}-3670A0?style=for-the-badge&logo=${badgeName}&logoColor=ffdd54`;
+      return `<img src="${badgeUrl}" alt="${lang}" title="${lang} (${count} repos)" style="height: 20px; margin: 0 2px;" />`;
+    }).join('');
   }
 
   extractLanguages(repos) {
@@ -170,14 +328,14 @@ class GitHubMonitor {
     const activities = [
       ...commits.slice(0, 10).map(commit => ({
         type: 'commit',
-        title: commit.payload.commits[0]?.message || 'Commit',
+        title: this.truncateCommitMessage(commit.payload.commits[0]?.message || 'Commit'),
         description: `Pushed to ${commit.repo.name}`,
         time: new Date(commit.created_at),
         url: `https://github.com/${commit.repo.name}/commit/${commit.payload.head}`
       })),
       ...pullRequests.slice(0, 5).map(pr => ({
         type: 'pr',
-        title: pr.title,
+        title: this.truncateCommitMessage(pr.title),
         description: `Pull request #${pr.number}`,
         time: new Date(pr.created_at),
         url: pr.html_url
@@ -203,6 +361,33 @@ class GitHubMonitor {
     `).join('');
   }
 
+  truncateCommitMessage(message) {
+    if (!message) return 'Commit';
+    
+    // Remove common prefixes and clean up
+    let cleanMessage = message
+      .replace(/^(feat|fix|docs|style|refactor|test|chore|perf|ci|build|revert)(\(.+\))?:?\s*/i, '')
+      .replace(/^(\w+):\s*/, '')
+      .trim();
+    
+    // If still too long, truncate intelligently
+    if (cleanMessage.length > 60) {
+      // Try to break at a sentence or word boundary
+      const truncated = cleanMessage.substring(0, 57);
+      const lastSpace = truncated.lastIndexOf(' ');
+      const lastPeriod = truncated.lastIndexOf('.');
+      const breakPoint = Math.max(lastSpace, lastPeriod);
+      
+      if (breakPoint > 30) {
+        cleanMessage = cleanMessage.substring(0, breakPoint) + '...';
+      } else {
+        cleanMessage = cleanMessage.substring(0, 57) + '...';
+      }
+    }
+    
+    return cleanMessage;
+  }
+
   updateRepoOverview(repos) {
     const repoContainer = document.getElementById('repo-overview');
     
@@ -223,6 +408,37 @@ class GitHubMonitor {
         </div>
       </div>
     `).join('');
+  }
+
+  async generateAISummaryWithCache(commits, pullRequests, repos) {
+    const summaryContainer = document.getElementById('summary-content');
+    
+    // Check if we should regenerate the summary
+    if (!this.shouldRegenerateSummary(commits, pullRequests, repos)) {
+      // Use cached summary
+      summaryContainer.innerHTML = `
+        <div class="ai-summary cached">
+          ${this.summaryCache.summary}
+          <div class="cache-indicator">
+            <small><i class="fas fa-clock"></i> Cached summary from ${new Date(this.summaryCache.timestamp).toLocaleString()}</small>
+          </div>
+        </div>
+      `;
+      return;
+    }
+
+    // Generate new summary
+    await this.generateAISummary(commits, pullRequests, repos);
+    
+    // Cache the new summary
+    const newSummary = summaryContainer.querySelector('.ai-summary')?.innerHTML;
+    if (newSummary) {
+      this.saveSummaryCache({
+        summary: newSummary,
+        dataHash: this.generateDataHash(commits, pullRequests, repos)
+      });
+      this.summaryCache = this.loadSummaryCache();
+    }
   }
 
   async generateAISummary(commits, pullRequests, repos) {
@@ -262,28 +478,40 @@ class GitHubMonitor {
   }
 
   buildSummaryPrompt(commits, pullRequests, repos) {
-    return `Analyze this GitHub activity and create a concise summary with bullet points. Focus on what this developer is actively working on.
+    // Clean and summarize commit messages
+    const cleanCommits = commits.slice(0, 8).map(c => {
+      const cleanMessage = this.truncateCommitMessage(c.message);
+      return `• ${c.repo}: ${cleanMessage}`;
+    }).join('\n');
 
-Recent Commits (last 15):
-${commits.slice(0, 15).map(c => `• ${c.repo}: ${c.message}`).join('\n')}
+    return `Create a professional developer portfolio summary from this GitHub activity:
 
-Open Pull Requests:
-${pullRequests.map(pr => `• ${pr.repo}: ${pr.title}`).join('\n')}
+COMMITS:
+${cleanCommits}
 
-Active Repositories:
-${repos.slice(0, 8).map(r => `• ${r.name} (${r.language}): ${r.description || 'No description'}`).join('\n')}
+REPOS:
+${repos.slice(0, 5).map(r => `• ${r.name} (${r.language || 'N/A'})`).join('\n')}
 
-Provide a brief summary with bullet points covering:
-• Current focus areas and projects
-• Technologies being used
-• Recent activity patterns
+Respond with HTML using exactly this format:
 
-Keep it concise and use bullet points for easy reading.`;
+<div class="ai-summary">
+<h4>🔍 Current Focus:</h4>
+<p>[Main project areas]</p>
+
+<h4>💻 Technologies:</h4>
+<p>[Languages and tools]</p>
+
+<h4>📈 Recent Activity:</h4>
+<p>[Key updates]</p>
+</div>
+
+Keep it concise and professional.`;
   }
 
   async callGeminiAPI(prompt) {
     try {
-      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${this.geminiApiKey}`, {
+      console.log('Making Gemini API call with prompt length:', prompt.length);
+      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${this.geminiApiKey}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -298,11 +526,13 @@ Keep it concise and use bullet points for easy reading.`;
             temperature: 0.7,
             topK: 40,
             topP: 0.95,
-            maxOutputTokens: 1024,
+            maxOutputTokens: 2048,
           }
         })
       });
 
+      console.log('Gemini API response status:', response.status);
+      
       if (!response.ok) {
         const errorText = await response.text();
         console.error('Gemini API error:', response.status, errorText);
@@ -310,13 +540,47 @@ Keep it concise and use bullet points for easy reading.`;
       }
 
       const data = await response.json();
+      console.log('Gemini API response:', data);
       
-      if (!data.candidates || !data.candidates[0] || !data.candidates[0].content) {
-        console.error('Invalid Gemini API response:', data);
-        throw new Error('Invalid response from Gemini API');
+      if (!data.candidates || !data.candidates[0]) {
+        console.error('No candidates in Gemini API response:', data);
+        throw new Error('No candidates in response from Gemini API');
       }
       
-      return data.candidates[0].content.parts[0].text;
+      const candidate = data.candidates[0];
+      
+      // Check for safety ratings that might block content
+      if (candidate.finishReason === 'SAFETY') {
+        console.warn('Content was blocked by safety filters:', candidate.safetyRatings);
+        throw new Error('Content was blocked by Gemini safety filters. Try a different prompt.');
+      }
+      
+      if (!candidate.content) {
+        console.error('No content in candidate:', candidate);
+        console.error('Candidate finish reason:', candidate.finishReason);
+        console.error('Safety ratings:', candidate.safetyRatings);
+        throw new Error(`No content in response. Finish reason: ${candidate.finishReason}`);
+      }
+      
+      if (!candidate.content.parts || !candidate.content.parts[0]) {
+        console.error('No parts in content:', candidate.content);
+        console.error('Full candidate:', candidate);
+        
+        // Handle MAX_TOKENS case - sometimes the response is truncated but still usable
+        if (candidate.finishReason === 'MAX_TOKENS' && candidate.content && candidate.content.parts && candidate.content.parts.length > 0) {
+          console.warn('Response was truncated due to MAX_TOKENS, but attempting to use partial content');
+          return candidate.content.parts[0]?.text || 'AI summary was truncated due to length limits.';
+        }
+        
+        throw new Error('No parts in content from Gemini API');
+      }
+      
+      if (!candidate.content.parts[0].text) {
+        console.error('No text in first part:', candidate.content.parts[0]);
+        throw new Error('No text content in response parts');
+      }
+      
+      return candidate.content.parts[0].text;
     } catch (error) {
       console.error('Gemini API call failed:', error);
       throw error;
@@ -329,8 +593,29 @@ Keep it concise and use bullet points for easy reading.`;
       <div class="summary-placeholder">
         <p>AI-powered summaries with Gemini 2.5 Flash are currently unavailable.</p>
         <p>Please check your environment configuration.</p>
+        <button onclick="githubMonitor.testApiKey()" class="btn">Test API Key</button>
       </div>
     `;
+  }
+
+  testApiKey() {
+    console.log('=== API Key Test ===');
+    console.log('Window GEMINI_API_KEY:', window.GEMINI_API_KEY);
+    console.log('This instance API key:', this.geminiApiKey);
+    console.log('API key length:', this.geminiApiKey ? this.geminiApiKey.length : 0);
+    console.log('Is placeholder:', this.geminiApiKey === 'YOUR_API_KEY_HERE');
+    console.log('Starts with AIza:', this.geminiApiKey ? this.geminiApiKey.startsWith('AIza') : false);
+    
+    const isValidApiKey = this.geminiApiKey && 
+                         this.geminiApiKey !== 'YOUR_API_KEY_HERE' && 
+                         this.geminiApiKey.length > 20 && 
+                         this.geminiApiKey.startsWith('AIza');
+    
+    if (isValidApiKey) {
+      alert('✅ API key is valid and loaded! Check console for details.');
+    } else {
+      alert('❌ API key not found or invalid.\n\nTo fix:\n1. Edit local-config.js\n2. Replace YOUR_API_KEY_HERE with your actual Gemini API key\n3. Get API key from: https://makersuite.google.com/app/apikey');
+    }
   }
 
   updateLastUpdatedTime() {
