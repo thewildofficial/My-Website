@@ -1,0 +1,768 @@
+/* Enhanced GitHub Monitor - Ultra Minimalist Design */
+
+/* Inherit from site theme */
+.github-monitor-page {
+  background: transparent;
+  color: var(--color-text);
+  padding: 0;
+  font-family: "Trebuchet MS", Verdana, "Verdana Ref", "Segoe UI", Candara, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  line-height: 1.6;
+  letter-spacing: .06em;
+}
+
+/* Clean header following site patterns */
+.page-header {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.page-header h1 {
+  font-size: 1.5rem;
+  margin-bottom: .5em;
+  font-weight: normal;
+  letter-spacing: .06em;
+}
+
+.page-description {
+  font-size: .9em;
+  opacity: .8;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Minimal status bar */
+.github-monitor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5em;
+  padding: .8em 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, .2);
+  font-size: .8em;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: .4em;
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", Menlo, Monaco, "Lucida Console", monospace;
+  opacity: .8;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  transition: all .3s ease;
+}
+
+.status-dot.online { background: #28a745; }
+.status-dot.offline { background: #dc3545; }
+.status-dot.loading { 
+  background: #ffc107;
+  animation: pulse 1.5s infinite;
+}
+
+.refresh-controls {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-size: .75em;
+}
+
+.refresh-button {
+  background: none;
+  border: none;
+  color: var(--color-text);
+  cursor: pointer;
+  opacity: .6;
+  transition: all .3s ease;
+  padding: .2em;
+}
+
+.refresh-button:hover {
+  opacity: 1;
+  transform: rotate(90deg);
+}
+
+.auto-refresh-toggle {
+  display: flex;
+  align-items: center;
+  gap: .4em;
+  opacity: .8;
+}
+
+/* Minimal toggle switch */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 16px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, .2);
+  transition: .3s;
+  border-radius: 16px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 2px;
+  bottom: 2px;
+  background-color: var(--color-text);
+  transition: .3s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: var(--color-theme);
+}
+
+input:checked + .slider:before {
+  transform: translateX(12px);
+}
+
+/* Clean stats grid with improved language box */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5em;
+  margin-bottom: 3em;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 1.2em .8em;
+  background: transparent;
+  border-bottom: 1px dashed rgba(255, 255, 255, .1);
+  transition: all .3s ease;
+}
+
+.stat-card:hover {
+  border-bottom-color: rgba(255, 255, 255, .3);
+}
+
+.stat-card.primary {
+  border-bottom-color: var(--color-theme);
+}
+
+/* Language box spans full width and centers content */
+.stat-card.wide {
+  grid-column: 1 / -1; /* Spans full width */
+  text-align: center;
+  padding: 1.5em;
+}
+
+.stat-icon {
+  font-size: 1.2em;
+  margin-bottom: .4em;
+  opacity: .7;
+}
+
+.stat-content {
+  display: flex;
+  flex-direction: column;
+  gap: .2em;
+}
+
+.stat-label {
+  font-size: .7em;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  opacity: .6;
+  font-weight: normal;
+}
+
+.stat-number {
+  font-size: 1.4em;
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", Menlo, Monaco, "Lucida Console", monospace;
+  line-height: 1;
+  margin: .2em 0;
+}
+
+.stat-trend {
+  font-size: .65em;
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", Menlo, Monaco, "Lucida Console", monospace;
+  opacity: .7;
+}
+
+.stat-detail {
+  font-size: .65em;
+  opacity: .6;
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", Menlo, Monaco, "Lucida Console", monospace;
+}
+
+/* Language breakdown - centered and symmetric */
+.language-breakdown {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5em;
+  justify-content: center;
+  margin-top: .8em;
+  max-width: 100%;
+}
+
+.language-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: .3em;
+  padding: .3em .6em;
+  font-size: .7em;
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", Menlo, Monaco, "Lucida Console", monospace;
+  opacity: .8;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, .05);
+  transition: all .3s ease;
+  white-space: nowrap;
+}
+
+.language-tag:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, .1);
+}
+
+.language-icon {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+/* Clean summary section */
+.summary-container {
+  margin-bottom: 3em;
+  padding: 1.5em 0;
+  border-top: 1px dashed rgba(255, 255, 255, .2);
+  border-bottom: 1px dashed rgba(255, 255, 255, .2);
+}
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.summary-header h3 {
+  margin: 0;
+  font-size: .9em;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  opacity: .8;
+}
+
+.summary-controls {
+  display: flex;
+  align-items: center;
+  gap: .8em;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  color: var(--color-text);
+  cursor: pointer;
+  opacity: .6;
+  transition: all .3s ease;
+  padding: .2em;
+}
+
+.icon-button:hover {
+  opacity: 1;
+}
+
+.last-updated {
+  font-size: .7em;
+  opacity: .6;
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", Menlo, Monaco, "Lucida Console", monospace;
+}
+
+.summary-content {
+  line-height: 1.6;
+  font-size: .9em;
+}
+
+.summary-content h4 {
+  font-size: .85em;
+  margin: 1.2em 0 .6em 0;
+  opacity: .9;
+  font-weight: normal;
+}
+
+.summary-content p {
+  margin: .6em 0;
+  opacity: .85;
+}
+
+/* Simplified metrics */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  margin-bottom: 3em;
+}
+
+.metric-card {
+  padding: 1em 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, .1);
+}
+
+.metric-card h4 {
+  margin: 0 0 .8em 0;
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  opacity: .7;
+  font-weight: normal;
+}
+
+.chart-container, .heatmap-container, .health-metrics {
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .8em;
+  opacity: .6;
+}
+
+/* Clean timeline */
+.timeline-container {
+  margin-bottom: 3em;
+  padding: 1.5em 0;
+  border-top: 1px dashed rgba(255, 255, 255, .2);
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2em;
+}
+
+.timeline-header h3 {
+  margin: 0;
+  font-size: .9em;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  opacity: .8;
+}
+
+.timeline-filters {
+  display: flex;
+  gap: .3em;
+}
+
+.filter-btn {
+  background: none;
+  border: none;
+  padding: .3em .6em;
+  font-size: .7em;
+  color: var(--color-text);
+  cursor: pointer;
+  opacity: .6;
+  transition: all .3s ease;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.filter-btn:hover {
+  opacity: .9;
+}
+
+.filter-btn.active {
+  opacity: 1;
+  border-bottom: 1px solid var(--color-theme);
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: .8em;
+  padding: .8em 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, .05);
+  font-size: .85em;
+  transition: all .3s ease;
+}
+
+.timeline-item:hover {
+  opacity: 1;
+  padding-left: .5em;
+}
+
+.timeline-icon {
+  opacity: .6;
+  min-width: 16px;
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.timeline-description {
+  margin-bottom: .3em;
+  opacity: .9;
+}
+
+.timeline-meta {
+  display: flex;
+  gap: 1em;
+  font-size: .8em;
+  opacity: .6;
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", Menlo, Monaco, "Lucida Console", monospace;
+}
+
+/* Minimal repository section */
+.repo-section {
+  padding: 1.5em 0;
+  border-top: 1px dashed rgba(255, 255, 255, .2);
+}
+
+.repo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5em;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.repo-header h3 {
+  margin: 0;
+  font-size: .9em;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  opacity: .8;
+}
+
+.repo-controls {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-size: .75em;
+}
+
+.sort-controls {
+  display: flex;
+  align-items: center;
+  gap: .4em;
+  opacity: .8;
+}
+
+.sort-controls select {
+  background: transparent;
+  border: none;
+  color: var(--color-text);
+  font-size: .9em;
+  cursor: pointer;
+  opacity: .8;
+}
+
+.view-controls {
+  display: flex;
+  gap: .2em;
+}
+
+.view-btn {
+  background: none;
+  border: none;
+  padding: .3em .6em;
+  font-size: .7em;
+  color: var(--color-text);
+  cursor: pointer;
+  opacity: .6;
+  transition: all .3s ease;
+  text-transform: uppercase;
+}
+
+.view-btn.active {
+  opacity: 1;
+  border-bottom: 1px solid var(--color-theme);
+}
+
+/* Repository grid */
+.repo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5em;
+}
+
+.repo-grid.list-view {
+  grid-template-columns: 1fr;
+}
+
+.repo-card {
+  padding: 1em;
+  border-bottom: 1px dashed rgba(255, 255, 255, .1);
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.repo-card:hover {
+  border-bottom-color: rgba(255, 255, 255, .3);
+  padding-left: 1.5em;
+}
+
+.repo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: .6em;
+}
+
+.repo-name {
+  margin: 0;
+  font-size: .9em;
+  font-weight: normal;
+  opacity: .9;
+}
+
+.repo-stats {
+  display: flex;
+  gap: .6em;
+  font-size: .7em;
+  opacity: .6;
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", Menlo, Monaco, "Lucida Console", monospace;
+}
+
+.repo-description {
+  font-size: .8em;
+  opacity: .7;
+  margin-bottom: .8em;
+  line-height: 1.4;
+}
+
+.repo-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .7em;
+  opacity: .6;
+}
+
+.repo-language {
+  display: flex;
+  align-items: center;
+  gap: .3em;
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", Menlo, Monaco, "Lucida Console", monospace;
+}
+
+.language-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.repo-updated {
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", Menlo, Monaco, "Lucida Console", monospace;
+}
+
+/* Loading states */
+.loading-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8em;
+  padding: 2em;
+  opacity: .6;
+  font-size: .85em;
+}
+
+.loading-spinner {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(255, 255, 255, .2);
+  border-top: 1px solid var(--color-text);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Footer */
+.monitor-footer {
+  margin-top: 3em;
+  padding: 1.5em 0;
+  border-top: 1px dashed rgba(255, 255, 255, .2);
+  text-align: center;
+}
+
+.footer-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+  font-size: .7em;
+  opacity: .6;
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", Menlo, Monaco, "Lucida Console", monospace;
+  flex-wrap: wrap;
+}
+
+.separator {
+  opacity: .4;
+}
+
+/* Error states */
+.error-message {
+  padding: 1em;
+  text-align: center;
+  font-size: .85em;
+  opacity: .7;
+  border: 1px dashed rgba(220, 53, 69, .3);
+  border-radius: 4px;
+}
+
+/* Animations */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .5; }
+}
+
+/* Enhanced metric displays */
+.velocity-stats, .health-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: .8em;
+  text-align: center;
+}
+
+.velocity-item, .health-item {
+  display: flex;
+  flex-direction: column;
+  gap: .2em;
+}
+
+.velocity-number, .health-number {
+  font-size: 1.2em;
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", Menlo, Monaco, "Lucida Console", monospace;
+  opacity: .9;
+}
+
+.velocity-label, .health-label {
+  font-size: .6em;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  opacity: .6;
+}
+
+.language-chart {
+  display: flex;
+  flex-direction: column;
+  gap: .6em;
+}
+
+.lang-bar {
+  display: flex;
+  align-items: center;
+  gap: .4em;
+  font-size: .75em;
+}
+
+.lang-name {
+  min-width: 60px;
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", Menlo, Monaco, "Lucida Console", monospace;
+  opacity: .8;
+  font-size: .7em;
+}
+
+.lang-progress {
+  flex: 1;
+  height: 4px;
+  background: rgba(255, 255, 255, .1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.lang-fill {
+  height: 100%;
+  transition: width .5s ease;
+}
+
+.lang-percent {
+  min-width: 30px;
+  text-align: right;
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", Menlo, Monaco, "Lucida Console", monospace;
+  opacity: .6;
+  font-size: .65em;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .github-monitor-header {
+    flex-direction: column;
+    gap: .8em;
+    text-align: center;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+  
+  .stat-card.wide {
+    grid-column: 1 / -1; /* Still spans full width on mobile */
+  }
+  
+  .metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+  }
+  
+  .repo-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: .8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: .8em;
+  }
+  
+  .stat-card.wide {
+    grid-column: 1 / -1; /* Full width on small mobile too */
+  }
+  
+  .repo-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .language-breakdown {
+    gap: .3em;
+  }
+  
+  .language-tag {
+    font-size: .65em;
+    padding: .2em .4em;
+  }
+}
+
+/* Focus states for accessibility */
+button:focus,
+select:focus,
+input:focus {
+  outline: 1px solid var(--color-theme);
+  outline-offset: 1px;
+}
