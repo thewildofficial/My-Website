@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="github-monitor-page">
+  <div class="container">
+    <header class="page-header">
+      <h1>{{ .Title }}</h1>
+      <p class="page-description">{{ .Description }}</p>
+    </header>
+
+    <div class="monitor-content">
+      {{ .Content }}
+    </div>
+  </div>
+</div>
+
+<!-- GitHub API Configuration -->
+<script>
+  window.GITHUB_CONFIG = {
+    username: '{{ .Site.Params.githubUsername | default "thewildofficial" }}',
+    apiUrl: 'https://api.github.com',
+    refreshInterval: 300000, // 5 minutes
+    maxCommits: 50,
+    maxRepos: 20
+  };
+  
+  // Gemini API Key configuration
+  // For local development: Replace 'YOUR_API_KEY_HERE' with your actual API key
+  // For production: This will be overridden by Netlify's build process
+  window.GEMINI_API_KEY = 'YOUR_API_KEY_HERE';
+</script>
+
+<!-- Load GitHub Monitor Script -->
+<script src="{{ "js/github-monitor.js" | relURL }}"></script>
+
+<!-- Local development configuration - DO NOT use in production -->
+<script src="{{ "local-config.js" | relURL }}"></script>
+{{ end }}
