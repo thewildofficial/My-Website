@@ -1,43 +1,122 @@
-{{ define "head" }}
+{{ define "main" }}
+<div class="github-monitor-page enhanced-monitor">
+  <div class="container">
+    <header class="page-header">
+      <h1>{{ .Title }}</h1>
+      <p class="page-description">{{ .Description }}</p>
+      <div class="connection-status">
+        <span id="connection-status" class="status-dot"></span>
+        <span id="status-text" class="status-text">Initializing...</span>
+        <span class="sync-meta">Last sync: <span id="sync-time">--:--</span> • Next: <span id="next-update-time">--:--</span></span>
+      </div>
+      <div class="toolbar">
+        <button id="refresh-btn" class="btn small">Refresh</button>
+        <label class="toggle">
+          <input type="checkbox" id="auto-refresh" checked>
+          <span>Auto</span>
+        </label>
+        <button id="regenerate-summary" class="btn small secondary">Regenerate Summary</button>
+        <div class="repo-view-toggle">
+          <button id="grid-view" class="view-btn active">Grid</button>
+            <button id="list-view" class="view-btn">List</button>
+        </div>
+        <select id="repo-sort" class="sort-select">
+          <option value="updated">Recently Updated</option>
+          <option value="stars">Stars</option>
+          <option value="name">Name</option>
+        </select>
+      </div>
+    </header>
+
+    <div class="monitor-grid">
+      <!-- Stats Panel -->
+      <section class="panel stats-panel">
+        <h3 class="panel-title">Stats</h3>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-label">Commits</div>
+            <div class="stat-number" id="commit-count">--</div>
+            <div class="stat-trend" id="commit-trend"></div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Open PRs</div>
+            <div class="stat-number" id="pr-count">--</div>
+            <div class="stat-trend" id="pr-status"></div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Repos</div>
+            <div class="stat-number" id="repo-count">--</div>
+            <div class="stat-trend" id="repo-detail"></div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Streak</div>
+            <div class="stat-number" id="streak-count">--</div>
+            <div class="stat-trend" id="streak-detail"></div>
+          </div>
+        </div>
+        <div class="language-stats" id="language-stats"></div>
+        <div class="velocity-chart" id="velocity-chart"></div>
+        <div class="language-chart" id="language-chart"></div>
+        <div class="repo-health" id="repo-health"></div>
+      </section>
+
+      <!-- AI Summary -->
+      <section class="panel summary-panel">
+        <div class="summary-header">
+          <h3>AI Analysis</h3>
+          <div class="last-updated">Last updated: <span id="last-updated">--</span></div>
+        </div>
+        <div id="summary-content" class="summary-content">
+          <div class="loading-indicator"><div class="loading-spinner"></div>Loading summary...</div>
+        </div>
+      </section>
+
+      <!-- Timeline -->
+      <section class="panel timeline-panel">
+        <h3>Activity Timeline</h3>
+        <div class="timeline-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="commit">Commits</button>
+          <button class="filter-btn" data-filter="pr">PRs</button>
+          <button class="filter-btn" data-filter="issue">Issues</button>
+        </div>
+        <div id="timeline-content" class="timeline-content">
+          <div class="loading-indicator"><div class="loading-spinner"></div>Loading activity...</div>
+        </div>
+      </section>
+
+      <!-- Repositories -->
+      <section class="panel repos-panel">
+        <h3>Repositories</h3>
+        <div id="repo-overview" class="repo-grid">
+          <div class="loading-indicator"><div class="loading-spinner"></div>Loading repositories...</div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
 <!-- GitHub API Configuration -->
 <script>
   window.GITHUB_CONFIG = {
     username: '{{ .Site.Params.githubUsername | default "thewildofficial" }}',
     apiUrl: 'https://api.github.com',
     refreshInterval: 300000, // 5 minutes
-    maxCommits: 100,
-    maxRepos: 50,
-    maxEvents: 100
+    maxCommits: 50,
+    maxRepos: 20
   };
-  
-  // Server-side AI analysis - no client-side API key needed
-  window.GEMINI_API_KEY = 'server-side';
+
+  // Gemini API Key not exposed; AI summary is pre-generated server-side into /data/github-ai-content.json
+  window.GEMINI_API_KEY = null;
 </script>
-
-<!-- Load Enhanced Styles -->
-<link rel="stylesheet" href="{{ "css/github-monitor-enhanced.css" | relURL }}">
-{{ end }}
-
-{{ define "header" }}
-{{ partial "header.html" . }}
-{{ end }}
-
-{{ define "main" }}
-<main class="site-main section-inner thin animated fadeIn faster">
-  <div class="github-monitor-page">
-    <div class="monitor-content">
-      {{ .Content }}
-    </div>
-  </div>
-</main>
-{{ end }}
-
-{{ define "footer" }}
-{{ partialCached "footer.html" . }}
 
 <!-- Load Enhanced GitHub Monitor Script -->
 <script src="{{ "js/github-monitor-enhanced.js" | relURL }}"></script>
+<!-- Pre-generated AI summary JSON is fetched by the enhanced script -->
 
-<!-- Local development configuration - DO NOT use in production -->
-<script src="{{ "local-config.js" | relURL }}"></script>
+<!-- Local development only: load optional config & placeholder key -->
+{{ if ne hugo.Environment "production" }}
+  <script>window.GEMINI_API_KEY = 'YOUR_API_KEY_HERE';</script>
+  <script src="{{ "local-config.js" | relURL }}"></script>
+{{ end }}
 {{ end }}

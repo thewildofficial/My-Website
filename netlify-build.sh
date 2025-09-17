@@ -1,26 +1,18 @@
 #!/bin/bash
 
 # Netlify Build Script for GitHub Monitor
-# This script builds the site and installs function dependencies
+# This script injects the GEMINI_API_KEY environment variable into the template
 
 echo "Starting Netlify build process..."
 
-# Check if GEMINI_API_KEY is set for server-side functions
+echo "Checking Gemini API key (server-side only)..."
 if [ -z "$GEMINI_API_KEY" ]; then
-    echo "Warning: GEMINI_API_KEY environment variable is not set"
-    echo "AI summaries will be disabled in production"
+    echo "Warning: GEMINI_API_KEY not set. AI summary will be a placeholder." 
 fi
 
-# Install function dependencies
-echo "Installing function dependencies..."
-cd netlify/functions
-if [ -f "package.json" ]; then
-    npm install --production
-    echo "Function dependencies installed"
-else
-    echo "No function dependencies to install"
-fi
-cd ../..
+# Run server-side AI summary generator BEFORE Hugo so file is available in /static
+echo "Running server-side AI content generation..."
+node scripts/generate-ai-content.js || echo "AI generation script failed; continuing without AI summary"
 
 # Run Hugo build
 echo "Building site with Hugo..."
