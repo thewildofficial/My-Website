@@ -15,7 +15,7 @@ title: "About"
 
 <div class="core-section">
 <h2>Who Am I?</h2>
-<p>I think deeply about technology's role in human agency. Currently studying Computer Science at BITS Pilani while engineering at Scalar School of Technology. After my first year at Carleton, I chose to forge my own path—true autonomy means having the courage to write your own story.</p>
+<p>I think deeply about technology's role in human agency. Currently studying Computer Science at BITS Pilani while engineering at Scaler School of Technology. After my first year at Carleton, I chose to forge my own path—true autonomy means having the courage to write your own story.</p>
 </div>
 
 <div class="interests-section">
