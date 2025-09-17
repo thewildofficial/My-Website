@@ -1,14 +1,14 @@
 [build]
   publish = "public"
-  command = "./netlify-build.sh"
-  functions = "netlify/functions"
+  command = "hugo --minify --gc --baseURL https://www.abanhasan.net"
+  functions = "netlify/functions-disabled"
 
 [build.environment]
   HUGO_VERSION = "0.118.2"
   HUGO_ENV = "production"
 
 [context.production]
-  command = "./netlify-build.sh"
+  command = "hugo --minify --gc --baseURL https://www.abanhasan.net"
 
 [context.deploy-preview]
   command = "hugo --buildDrafts --buildFuture --baseURL $DEPLOY_PRIME_URL"
