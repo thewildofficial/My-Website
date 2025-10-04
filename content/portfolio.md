@@ -479,6 +479,18 @@ document.addEventListener('DOMContentLoaded', function() {
 <h1 class="gradient-text animate-fade-in">🛠️ Featured Projects</h1>
 
 <div class="project-card animate-fade-in delay-100">
+  <h3><a href="https://goingbananas.dev/" target="_blank">🍌 Going Bananas</a></h3>
+  <p>Led the development of an AI-powered browser extension that analyzes legal documents instantly, protecting users from unfair clauses and hidden risks. As team lead for the Google GenAI hackathon submission, I orchestrated the creation of a low-latency caching system and API architecture that achieves 95% risk detection rate with 18-second average analysis time.</p>
+  <div class="tech-tags">
+    <span class="tech-tag">AI/ML</span>
+    <span class="tech-tag">Browser Extension</span>
+    <span class="tech-tag">NLP</span>
+    <span class="tech-tag">Legal Tech</span>
+    <span class="tech-tag">Team Leadership</span>
+  </div>
+</div>
+
+<div class="project-card animate-fade-in delay-200">
   <h3><a href="https://geomonitor.abanhasan.net/" target="_blank">🌎 GeoMonitor</a></h3>
   <p>A sophisticated real-time geopolitical news aggregator that analyzes global flashpoints using advanced AI. The system automatically translates content from multiple languages, ranks significance, and visualizes developments on interactive maps. This cross-platform solution provides crucial geopolitical insights through visual representation and intelligent analysis.</p>
   <div class="tech-tags">
@@ -489,7 +501,7 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </div>
 
-<div class="project-card animate-fade-in delay-200">
+<div class="project-card animate-fade-in delay-300">
   <h3><a href="https://www.projectskilltree.com/" target="_blank">🌱 Project Skilltree</a></h3>
   <p>A revolutionary discord bot/app used by over 5,000+ users which aims to gamify the journey of self improvement. I was instrumental in developing significant parts of the bot interface and API, creating an engaging system that helps users track their growth and stay motivated.</p>
   <div class="tech-tags">
@@ -500,7 +512,7 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </div>
 
-<div class="project-card animate-fade-in delay-300">
+<div class="project-card animate-fade-in delay-400">
   <h3><a href="https://thewildofficial.github.io/monkey-typewriter/" target="_blank">🐒 Monkey Typewriter Simulation</a></h3>
   <p>An elegant visualization of the famous "infinite monkey theorem" using Bayesian statistics. This interactive algorithm demonstrates how long it would take a monkey randomly typing to produce specific literary works. The simulation provides insights into probability theory and randomness through an engaging visual interface.</p>
   <div class="tech-tags">
@@ -510,7 +522,7 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </div>
 
-<div class="project-card animate-fade-in delay-400">
+<div class="project-card animate-fade-in delay-500">
   <h3>🧠 Clevered.com Internship <a href="/documents/Aban-AI Internship.pdf" target="_blank">[View Certificate]</a></h3>
   <p>Successfully completed a 4-month long internship on Artificial Intelligence(AI), mentored by a senior Oxford professor. I developed a project that involved a website which predicts and forecasts sentiment and emotional response of any tweet using Natural Language Processing (NLP).</p>
   <div class="tech-tags">
@@ -521,7 +533,7 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </div>
 
-<div class="project-card animate-fade-in delay-500">
+<div class="project-card animate-fade-in delay-100">
   <h3><a href="https://nexusaurora.org/" target="_blank">🚀 Nexus Aurora</a></h3>
   <p>Former project lead at Nexus Aurora, An open-source space colonization community (Winners of the <a href="https://www.marssociety.org/news/2020/10/23/top-5-winners-of-mars-city-state-design-competition-announced/" target="_blank">2020 Mars Society City State Competition</a>). My work involved designing door security systems using RFIDs, facilitating discussions about sports and linguistics on Mars, and developing the community's Discord bot.</p>
   <div class="tech-tags">
@@ -531,12 +543,12 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </div>
 
-<div class="project-card animate-fade-in delay-100">
+<div class="project-card animate-fade-in delay-200">
   <h3><a href="https://www.amazon.com/Perspective-Artificial-Intelligence-Aban-Hasan/dp/1678985988" target="_blank">📚 Perspective AI</a></h3>
   <p>I co-authored this book along with a schoolmate during my grade 8. It presents a teenager's perspective on the advent of artificial intelligence, and how we predict AI will impact our lives and the future. This early work demonstrates my long-standing interest in the ethical and social implications of technology.</p>
 </div>
 
-<div class="project-card animate-fade-in delay-200">
+<div class="project-card animate-fade-in delay-300">
   <h3><a href="https://tryhackme.com/p/thewildofficial" target="_blank">🔐 TryHackMe and CTFs</a></h3>
   <p>I have always had a deep interest in cybersecurity, and this obsession has led me to being ranked in the top 2% of hackers on tryhackme.com, a website which organizes hacking challenges. My passion for security has equipped me with a strong foundation in defensive and offensive security practices.</p>
   <div class="tech-tags">
@@ -546,12 +558,12 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </div>
 
-<div class="project-card animate-fade-in delay-300">
+<div class="project-card animate-fade-in delay-400">
   <h3><a href="https://www.iitrpr.ac.in/iit-ropar-ai" target="_blank">🎓 IIT Ropar Minor in AI/ML</a></h3>
   <p>Currently in my final semester of the prestigious Minor Degree from the IIT program on Artificial Intelligence. This program has equipped me with crucial knowledge in a rapidly transforming digital landscape, preparing me to navigate both the opportunities and challenges of advanced AI systems.</p>
 </div>
 
-<div class="project-card animate-fade-in delay-400">
+<div class="project-card animate-fade-in delay-500">
   <h3>🚀 Scaler School of Technology</h3>
   <p>Currently attending Scaler School of Technology in Bangalore 🇮🇳 — one of India's most selective tech programs with an acceptance rate of around 3%. The curriculum focuses on building rock-solid fundamentals in computer science, algorithms, and system design, learning alongside some of the brightest minds in tech.</p>
   <div class="tech-tags">
@@ -561,7 +573,7 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </div>
 
-<div class="project-card animate-fade-in delay-500">
+<div class="project-card animate-fade-in delay-100">
   <h3>📊 BITS Pilani - Bachelor in Computer Science</h3>
   <p>Pursuing the 4-year Bachelor's degree program in Computer Science from BITS Pilani in parallel with my Scaler studies. This program combines strong theoretical foundations with practical applications, giving me a comprehensive understanding of computer science fundamentals and advanced software engineering principles.</p>
   <div class="tech-tags">

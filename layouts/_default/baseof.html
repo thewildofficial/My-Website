@@ -63,7 +63,19 @@
 {{- end }}
 
 <!-- Umami Analytics -->
-<script defer src="https://cloud.umami.is/script.js" data-website-id="3cdd3019-b071-4bdc-bbaa-b57689ffce5a"></script>
+<script>
+  // Load Umami analytics asynchronously to prevent blocking
+  (function() {
+    const script = document.createElement('script');
+    script.src = 'https://cloud.umami.is/script.js';
+    script.setAttribute('data-website-id', '3cdd3019-b071-4bdc-bbaa-b57689ffce5a');
+    script.async = true;
+    script.onerror = function() {
+      console.log('Umami analytics failed to load (likely blocked by content blocker)');
+    };
+    document.head.appendChild(script);
+  })();
+</script>
 <!-- End Umami Analytics -->
 
 </body>

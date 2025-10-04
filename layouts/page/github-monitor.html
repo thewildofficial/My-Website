@@ -1,3 +1,8 @@
+{{ define "head" }}
+<!-- GitHub Monitor CSS -->
+<link rel="stylesheet" href="{{ "css/github-monitor.css" | relURL }}">
+{{ end }}
+
 {{ define "main" }}
 <div class="github-monitor-page enhanced-monitor">
   <div class="container">
@@ -80,7 +85,7 @@
           <button class="filter-btn" data-filter="pr">PRs</button>
           <button class="filter-btn" data-filter="issue">Issues</button>
         </div>
-        <div id="timeline-content" class="timeline-content">
+        <div id="activity-timeline" class="timeline-content">
           <div class="loading-indicator"><div class="loading-spinner"></div>Loading activity...</div>
         </div>
       </section>
@@ -110,13 +115,9 @@
   window.GEMINI_API_KEY = null;
 </script>
 
-<!-- Load Enhanced GitHub Monitor Script -->
-<script src="{{ "js/github-monitor-enhanced.js" | relURL }}"></script>
-<!-- Pre-generated AI summary JSON is fetched by the enhanced script -->
+<!-- Load GitHub Monitor Script -->
+<script src="{{ "js/github-monitor.js" | relURL }}"></script>
 
-<!-- Local development only: load optional config & placeholder key -->
-{{ if ne hugo.Environment "production" }}
-  <script>window.GEMINI_API_KEY = 'YOUR_API_KEY_HERE';</script>
-  <script src="{{ "local-config.js" | relURL }}"></script>
-{{ end }}
+<!-- API key is never exposed to client-side for security -->
+<script>window.GEMINI_API_KEY = null;</script>
 {{ end }}

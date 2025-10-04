@@ -457,3 +457,250 @@
   background: rgba(255, 51, 133, 0.2);
   border-color: rgba(255, 51, 133, 0.4);
 }
+
+/* Enhanced Button Styles */
+.btn {
+  background: #ff3385;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.btn:hover {
+  background: #e62d73;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 51, 133, 0.3);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn.small {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.75rem;
+}
+
+.btn.secondary {
+  background: transparent;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+.btn.secondary:hover {
+  background: var(--border-color);
+  color: var(--text-color);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Toolbar Buttons */
+.toolbar .btn {
+  margin-right: 0.5rem;
+}
+
+.toolbar .btn:last-child {
+  margin-right: 0;
+}
+
+/* View Toggle Buttons */
+.view-btn {
+  background: transparent;
+  color: var(--faded-text);
+  border: 1px solid var(--border-color);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.view-btn.active {
+  background: #ff3385;
+  color: white;
+  border-color: #ff3385;
+}
+
+.view-btn:hover:not(.active) {
+  background: var(--border-color);
+  color: var(--text-color);
+}
+
+/* Filter Buttons */
+.filter-btn {
+  background: transparent;
+  color: var(--faded-text);
+  border: 1px solid var(--border-color);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: all 0.2s ease;
+  margin-right: 0.3rem;
+}
+
+.filter-btn.active {
+  background: #ff3385;
+  color: white;
+  border-color: #ff3385;
+}
+
+.filter-btn:hover:not(.active) {
+  background: var(--border-color);
+  color: var(--text-color);
+}
+
+/* Icon Buttons */
+.icon-button {
+  background: transparent;
+  color: var(--faded-text);
+  border: 1px solid var(--border-color);
+  padding: 0.4rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-button:hover {
+  background: var(--border-color);
+  color: var(--text-color);
+}
+
+/* Toggle Switch */
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: var(--text-color);
+}
+
+.toggle input[type="checkbox"] {
+  display: none;
+}
+
+.toggle span {
+  background: var(--border-color);
+  width: 2rem;
+  height: 1rem;
+  border-radius: 1rem;
+  position: relative;
+  transition: background 0.2s ease;
+}
+
+.toggle span::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 0.75rem;
+  height: 0.75rem;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.toggle input[type="checkbox"]:checked + span {
+  background: #ff3385;
+}
+
+.toggle input[type="checkbox"]:checked + span::after {
+  transform: translateX(1rem);
+}
+
+/* Sort Select */
+.sort-select {
+  background: transparent;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sort-select:hover {
+  border-color: #ff3385;
+}
+
+.sort-select:focus {
+  outline: none;
+  border-color: #ff3385;
+  box-shadow: 0 0 0 2px rgba(255, 51, 133, 0.2);
+}
+
+/* Repository Grid Enhancements */
+.repo-meta {
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  color: var(--faded-text);
+}
+
+.repo-updated {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.language-tag {
+  background: rgba(255, 51, 133, 0.1);
+  color: #ff3385;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.no-repos {
+  text-align: center;
+  padding: 2rem;
+  color: var(--faded-text);
+}
+
+.no-repos p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* AI Analysis Meta */
+.ai-analysis-meta {
+  margin-top: 1rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.ai-analysis-meta small {
+  color: var(--faded-text);
+  font-size: 0.7rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.ai-analysis-meta i {
+  margin-right: 0.3rem;
+  color: #ff3385;
+}
