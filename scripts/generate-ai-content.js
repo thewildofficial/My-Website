@@ -34,7 +34,7 @@ async function getActivity() {
   const pushEvents = events.filter(e => e.type === 'PushEvent');
   const commits = pushEvents.slice(0, 20).map(e => ({
     repo: e.repo.name,
-    message: e.payload?.commits?.[0]?.message || 'Commit',
+    message: (e.payload && e.payload.commits && e.payload.commits[0] && e.payload.commits[0].message) || 'Commit',
     time: e.created_at
   }));
   const repos = await fetchJSON(`https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=30`);
@@ -66,7 +66,7 @@ async function callGemini(prompt) {
         if (res.statusCode >= 200 && res.statusCode < 300) {
           try {
             const json = JSON.parse(data);
-            const text = json.candidates?.[0]?.content?.parts?.[0]?.text || '';
+            const text = (json.candidates && json.candidates[0] && json.candidates[0].content && json.candidates[0].content.parts && json.candidates[0].content.parts[0] && json.candidates[0].content.parts[0].text) || '';
             resolve(text);
           } catch(e){ reject(e); }
         } else {

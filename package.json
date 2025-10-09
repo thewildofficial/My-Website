@@ -12,6 +12,9 @@
     "clean": "rm -rf public resources",
     "preview": "hugo server --disableFastRender --baseURL https://www.abanhasan.net"
   },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0"
+  },
   "devDependencies": {
     "@stagewise/toolbar": "^0.4.8"
   }

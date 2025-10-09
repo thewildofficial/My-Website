@@ -6,6 +6,7 @@
 [build.environment]
   HUGO_VERSION = "0.118.2"
   HUGO_ENV = "production"
+  NODE_VERSION = "18"
 
 [context.production]
   command = "./netlify-build.sh"
