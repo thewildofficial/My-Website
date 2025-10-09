@@ -6,8 +6,15 @@
     <description>Recent content in Technology on Aban Hasan</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 23 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Oct 2025 17:45:27 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Asymmetry of Asynchrony</title>
+      <link>http://localhost:1313/posts/the-asymmetry-of-asynchrony/</link>
+      <pubDate>Thu, 09 Oct 2025 17:45:27 +0530</pubDate>
+      <guid>http://localhost:1313/posts/the-asymmetry-of-asynchrony/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;Time is decoupled from action.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;One of my favorite programming paradigms—one that has countless analogues in our complex modern world—is &lt;strong&gt;asynchrony&lt;/strong&gt;. We take it for granted that we can request a service, allow it to execute in the background, and receive what we want in a &lt;em&gt;reasonable&lt;/em&gt; amount of time. This was one of the great transformative processes of our 21st-century world, something technologically infeasible before the rise of the telephone. Modern systems are designed to never wait.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Silicon &amp; Six-Shooters: AI as Manifest Destiny</title>
       <link>http://localhost:1313/posts/cowboys/</link>
