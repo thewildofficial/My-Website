@@ -16,3 +16,6 @@ local-config.js
 
 # Local Netlify folder
 .netlify
+
+# Obsidian vault configuration (personal editor settings)
+.obsidian/
