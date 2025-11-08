@@ -1,13 +1,15 @@
 {
-  "name": "my-website-stagewise",
+  "name": "my-website",
   "version": "1.0.0",
-  "description": "Stagewise integration for Hugo site",
+  "description": "Personal website built with Hugo",
   "private": true,
   "scripts": {
     "install-dev": "npm install",
     "dev": "hugo server -D --bind 0.0.0.0 --baseURL http://localhost:1313",
     "hugo-dev": "hugo server -D --bind 0.0.0.0 --baseURL http://localhost:1313",
     "dev:full": "node scripts/local-dev-server.js & hugo server -D --bind 0.0.0.0 --baseURL http://localhost:1313",
+    "netlify:dev": "netlify dev",
+    "netlify:build": "netlify build",
     "build": "hugo --minify --gc --baseURL https://www.abanhasan.net",
     "hugo-build": "hugo --minify --gc --baseURL https://www.abanhasan.net",
     "clean": "rm -rf public resources",
@@ -17,7 +19,5 @@
     "@google/generative-ai": "^0.21.0",
     "dotenv": "^16.4.5"
   },
-  "devDependencies": {
-    "@stagewise/toolbar": "^0.4.8"
-  }
+  "devDependencies": {}
 } 

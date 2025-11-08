@@ -71,6 +71,38 @@ exports.handler = async (event) => {
 
     if (graphData.errors) {
       console.error('GraphQL errors', graphData.errors);
+      
+      // Check for token lifetime errors
+      const tokenLifetimeErrors = graphData.errors.filter(err => 
+        err.message && err.message.includes('forbids access via a fine-grained personal access tokens if the token\'s lifetime is greater than 366 days')
+      );
+      
+      if (tokenLifetimeErrors.length > 0) {
+        // Extract unique organization names and token URL
+        const orgs = new Set();
+        let tokenUrl = '';
+        tokenLifetimeErrors.forEach(err => {
+          const orgMatch = err.message.match(/The '([^']+)' organization/);
+          if (orgMatch) orgs.add(orgMatch[1]);
+          const urlMatch = err.message.match(/https:\/\/github\.com\/settings\/personal-access-tokens\/\d+/);
+          if (urlMatch) tokenUrl = urlMatch[0];
+        });
+        
+        const orgList = Array.from(orgs).join(', ');
+        const errorMsg = `Your GitHub token lifetime exceeds 366 days, which is forbidden by ${orgs.size > 1 ? 'organizations' : 'organization'}: ${orgList}. ` +
+          `Please update your token's expiration date to 366 days or less at: ${tokenUrl || 'https://github.com/settings/personal-access-tokens'}`;
+        
+        return {
+          statusCode: 403,
+          headers: corsHeaders(),
+          body: JSON.stringify({ 
+            error: 'GitHub token lifetime too long',
+            details: errorMsg,
+            tokenUrl: tokenUrl || 'https://github.com/settings/personal-access-tokens'
+          })
+        };
+      }
+      
       throw new Error(graphData.errors.map(err => err.message).join('; '));
     }
 
@@ -165,6 +197,25 @@ exports.handler = async (event) => {
     };
   } catch (error) {
     console.error('github-data error', error);
+    
+    // Check if it's a token lifetime error
+    if (error.message && error.message.includes('forbids access via a fine-grained personal access tokens if the token\'s lifetime is greater than 366 days')) {
+      const orgMatch = error.message.match(/The '([^']+)' organization/);
+      const urlMatch = error.message.match(/https:\/\/github\.com\/settings\/personal-access-tokens\/\d+/);
+      const org = orgMatch ? orgMatch[1] : 'some organizations';
+      const tokenUrl = urlMatch ? urlMatch[0] : 'https://github.com/settings/personal-access-tokens';
+      
+      return {
+        statusCode: 403,
+        headers: corsHeaders(),
+        body: JSON.stringify({ 
+          error: 'GitHub token lifetime too long',
+          details: `Your GitHub token lifetime exceeds 366 days, which is forbidden by ${org}. Please update your token's expiration date to 366 days or less.`,
+          tokenUrl: tokenUrl
+        })
+      };
+    }
+    
     return {
       statusCode: 500,
       headers: corsHeaders(),
@@ -276,6 +327,7 @@ function mapPullRequests(nodes) {
   return (nodes || []).map(node => ({
     id: `${node.baseRepository?.nameWithOwner || 'repo'}#${node.number}`,
     title: node.title,
+    body: node.body || null,
     state: node.state,
     html_url: node.url,
     created_at: node.createdAt,
@@ -456,6 +508,7 @@ async function enrichActivities(events, token) {
   const recentActivities = [];
   const repoVelocity = new Map();
   const commitDetailFetches = [];
+  const prDetailFetches = [];
 
   uniqueEvents.forEach(event => {
     const type = event.type;
@@ -499,7 +552,7 @@ async function enrichActivities(events, token) {
       });
     } else if (type === 'PullRequestEvent' && event.payload?.pull_request) {
       const pr = event.payload.pull_request;
-      recentActivities.push({
+      const prEntry = {
         type: 'pr',
         title: `${capitalize(event.payload.action || 'updated')} PR #${pr.number}: ${truncate(pr.title || '', 100)}`,
         description: truncate(pr.body || '', 240),
@@ -507,12 +560,33 @@ async function enrichActivities(events, token) {
         time: createdAt,
         url: pr.html_url,
         metadata: {
+          number: pr.number,
           additions: pr.additions || 0,
           deletions: pr.deletions || 0,
           merged: Boolean(pr.merged),
-          state: pr.state
+          state: pr.state,
+          filesChanged: pr.changed_files
         }
-      });
+      };
+      recentActivities.push(prEntry);
+
+      // Fetch full PR details to get complete body for AI summarization
+      if (pr.number && repoName) {
+        prDetailFetches.push(
+          fetchREST(`/repos/${repoName}/pulls/${pr.number}`, token)
+            .then(fullPR => {
+              // Update with full PR body if available
+              if (fullPR.body && fullPR.body.length > (pr.body || '').length) {
+                prEntry.description = fullPR.body;
+              }
+              // Update metadata with accurate data
+              prEntry.metadata.additions = fullPR.additions || prEntry.metadata.additions;
+              prEntry.metadata.deletions = fullPR.deletions || prEntry.metadata.deletions;
+              prEntry.metadata.filesChanged = fullPR.changed_files || prEntry.metadata.filesChanged;
+            })
+            .catch(() => {})
+        );
+      }
     } else if (type === 'IssuesEvent' && event.payload?.issue) {
       const issue = event.payload.issue;
       recentActivities.push({
@@ -527,7 +601,7 @@ async function enrichActivities(events, token) {
     }
   });
 
-  await Promise.all(commitDetailFetches);
+  await Promise.all([...commitDetailFetches, ...prDetailFetches]);
 
   recentActivities.sort((a, b) => new Date(b.time) - new Date(a.time));
 
@@ -696,6 +770,7 @@ function buildDashboardQuery() {
         recentPullRequests: pullRequests(first: $prLimit, orderBy: { field: UPDATED_AT, direction: DESC }) {
           nodes {
             title
+            body
             url
             createdAt
             updatedAt

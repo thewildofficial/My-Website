@@ -8,4 +8,11 @@ temp
 
 # Local development configuration with API keys
 local-config.js
+.env
+.env.local
+.env.*.local
+
 /.playwright-mcp
+
+# Local Netlify folder
+.netlify

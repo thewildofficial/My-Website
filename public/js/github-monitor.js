@@ -184,7 +184,14 @@ class GitHubMonitor {
     };
 
     try {
-      const response = await fetch('/.netlify/functions/github-data', {
+      // Detect if we're running locally and use the correct endpoint
+      const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+      const isNetlifyDev = window.location.port === '8888';
+      const githubDataEndpoint = isLocalhost && !isNetlifyDev
+        ? 'http://localhost:8888/.netlify/functions/github-data'
+        : '/.netlify/functions/github-data';
+      
+      const response = await fetch(githubDataEndpoint, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -193,10 +200,12 @@ class GitHubMonitor {
       });
 
       if (!response.ok) {
-        // If 404, fall back to direct API calls (local dev without netlify dev)
+        // If 404, the function isn't available
         if (response.status === 404) {
-          console.warn('Netlify function not available, falling back to direct GitHub API');
-          return await this.fetchAllData();
+          const errorMsg = isLocalhost
+            ? 'Netlify function not available. Make sure `netlify dev` is running on port 8888, or access the site through `netlify dev` (http://localhost:8888) instead of Hugo directly.'
+            : 'GitHub data service is not available. Please check your deployment configuration.';
+          throw new Error(errorMsg);
         }
         
         let errorMessage = `Server error ${response.status}`;
@@ -212,10 +221,13 @@ class GitHubMonitor {
       const data = await response.json();
       return this.normaliseState(data);
     } catch (error) {
-      // Network errors or other failures - fall back to direct API
+      // Network errors - provide helpful guidance
       if (error.message.includes('Failed to fetch') || error.message.includes('NetworkError')) {
-        console.warn('Netlify function unavailable, using direct GitHub API fallback');
-        return await this.fetchAllData();
+        const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+        const errorMsg = isLocalhost
+          ? 'Netlify function not available. Make sure `netlify dev` is running on port 8888, or access the site through `netlify dev` (http://localhost:8888) instead of Hugo directly.'
+          : 'GitHub data service is not available. Please check your deployment configuration.';
+        throw new Error(errorMsg);
       }
       throw error;
     }
@@ -303,91 +315,13 @@ class GitHubMonitor {
   }
 
   async fetchAllData() {
-    // Use Promise.allSettled to handle partial failures gracefully
-    const results = await Promise.allSettled([
-      this.fetchProfile().catch(err => {
-        console.error('Failed to fetch profile:', err);
-        return null;
-      }),
-      this.fetchRepositories().catch(err => {
-        console.error('Failed to fetch repositories:', err);
-        return [];
-      }),
-      this.fetchPullRequests().catch(err => {
-        console.error('Failed to fetch pull requests:', err);
-        return [];
-      }),
-      this.fetchIssues().catch(err => {
-        console.error('Failed to fetch issues:', err);
-        return { open: 0, closed: 0, samples: { open: [], closed: [] } };
-      }),
-      this.fetchActivity().catch(err => {
-        console.error('Failed to fetch activity:', err);
-        return {
-          commitsLast7: 0,
-          commitsLast30: 0,
-          dailyCounts: new Map(),
-          weeklySeries: [],
-          heatmap: [],
-          streak: { current: 0, longest: 0 },
-          repoVelocity: new Map(),
-          recent: []
-        };
-      })
-    ]);
-
-    const profile = results[0].status === 'fulfilled' ? results[0].value : null;
-    const repos = results[1].status === 'fulfilled' ? results[1].value : [];
-    const pullRequests = results[2].status === 'fulfilled' ? results[2].value : [];
-    const issues = results[3].status === 'fulfilled' ? results[3].value : { open: 0, closed: 0, samples: { open: [], closed: [] } };
-    const activity = results[4].status === 'fulfilled' ? results[4].value : {
-      commitsLast7: 0,
-      commitsLast30: 0,
-      dailyCounts: new Map(),
-      weeklySeries: [],
-      heatmap: [],
-      streak: { current: 0, longest: 0 },
-      repoVelocity: new Map(),
-      recent: []
-    };
-
-    if (!profile) {
-      throw new Error('Unable to fetch GitHub profile. Please check your username and try again.');
-    }
-
-    const repoLanguages = await this.fetchRepoLanguages(repos).catch(err => {
-      console.error('Failed to fetch repo languages:', err);
-      return { byRepo: {}, totals: {} };
-    });
-
-    const metrics = this.computeMetrics({ profile, repos, pullRequests, issues, activity, repoLanguages });
-    const insights = this.buildInsights({ profile, repos, metrics, activity });
-
-    // Format to match normaliseState expectations
-    return this.normaliseState({
-      profile,
-      repos,
-      pullRequests,
-      issues,
-      repoLanguages,
-      metrics,
-      insights,
-      organizations: [],
-      contributionTotals: {
-        commits: activity.commitsLast30 || 0,
-        issues: (issues.open || 0) + (issues.closed || 0),
-        pullRequests: pullRequests.length,
-        reviews: 0
-      },
-      activity: {
-        commitsLast7: activity.commitsLast7 || 0,
-        commitsLast30: activity.commitsLast30 || 0,
-        weeklySeries: activity.weeklySeries || [],
-        heatmap: activity.heatmap || [],
-        streak: activity.streak || { current: 0, longest: 0 },
-        recent: activity.recent || []
-      }
-    });
+    // This method is deprecated - direct GitHub API calls from browser fail due to CORS
+    // All requests should go through the Netlify function
+    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    const errorMsg = isLocalhost
+      ? 'Direct GitHub API access is not available from the browser due to CORS restrictions. Please run `netlify dev` to use the GitHub data function, or deploy to Netlify for production use.'
+      : 'GitHub data service is not available. Please ensure the Netlify function is properly deployed and configured.';
+    throw new Error(errorMsg);
   }
 
   async fetchProfile() {
@@ -1168,6 +1102,13 @@ class GitHubMonitor {
         const typeLabel = item.type === 'pr' ? 'PR' : item.type === 'issue' ? 'Issue' : 'Commit';
         const typeClass = `activity-type-${item.type}`;
         
+        // For PRs, add a placeholder for AI summary that will be loaded asynchronously
+        const aiSummaryPlaceholder = item.type === 'pr' && item.url
+          ? `<div class="pr-ai-summary" data-pr-url="${this.escapeHtml(item.url)}" data-pr-title="${this.escapeHtml(item.title)}" data-pr-body="${this.escapeHtml(item.description || '')}" data-pr-additions="${item.metadata?.additions || 0}" data-pr-deletions="${item.metadata?.deletions || 0}" data-pr-files="${item.metadata?.filesChanged || 0}">
+              <div class="pr-summary-loading">Generating AI summary...</div>
+            </div>`
+          : '';
+        
         return `
           <div class="activity-item ${typeClass}">
             <svg class="activity-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1185,13 +1126,99 @@ class GitHubMonitor {
                 <span class="activity-repo">${this.escapeHtml(item.repo || '')}</span>
                 <span class="activity-time">${this.formatTimeAgo(item.time)}</span>
               </div>
-              ${description}
+              ${aiSummaryPlaceholder}
+              ${description && item.type !== 'pr' ? description : ''}
               ${stats}
             </div>
           </div>
         `;
       })
       .join('');
+
+    // Load AI summaries for PRs asynchronously
+    this.loadPRSummaries();
+  }
+
+  async loadPRSummaries() {
+    const prElements = document.querySelectorAll('.pr-ai-summary');
+    
+    console.log(`[PR Summaries] Found ${prElements.length} PRs to summarize`);
+    
+    prElements.forEach(async (element) => {
+      const prUrl = element.getAttribute('data-pr-url');
+      const prTitle = element.getAttribute('data-pr-title');
+      const prBody = element.getAttribute('data-pr-body');
+      const additions = parseInt(element.getAttribute('data-pr-additions') || '0');
+      const deletions = parseInt(element.getAttribute('data-pr-deletions') || '0');
+      const filesChanged = parseInt(element.getAttribute('data-pr-files') || '0');
+
+      console.log(`[PR Summaries] Processing PR: ${prTitle}`, { prUrl, hasBody: !!prBody, bodyLength: prBody?.length });
+
+      // If no body, try to show a message
+      if (!prBody || prBody.trim().length < 10) {
+        console.warn(`[PR Summaries] PR ${prTitle} has no body or very short body, skipping AI summary`);
+        element.innerHTML = '<p class="activity-description" style="opacity: 0.6; font-style: italic;">No description available</p>';
+        return;
+      }
+
+      try {
+        const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+        const endpoint = isLocalhost && window.location.port !== '8888'
+          ? 'http://localhost:8888/.netlify/functions/generate-pr-summary'
+          : '/.netlify/functions/generate-pr-summary';
+
+        console.log(`[PR Summaries] Fetching summary from: ${endpoint}`);
+
+        const response = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            prData: {
+              url: prUrl,
+              title: prTitle,
+              body: prBody,
+              additions,
+              deletions,
+              filesChanged
+            }
+          })
+        });
+
+        console.log(`[PR Summaries] Response status: ${response.status}`);
+
+        if (response.ok) {
+          const data = await response.json();
+          console.log(`[PR Summaries] Got summary for ${prTitle}:`, data.summary ? 'Yes' : 'No');
+          if (data.summary) {
+            element.innerHTML = `<p class="pr-ai-summary-text" style="font-style: italic; opacity: 0.9;">${this.escapeHtml(data.summary)}</p>`;
+          } else {
+            // Fallback to original description if no summary
+            if (prBody) {
+              element.innerHTML = `<p class="activity-description">${this.escapeHtml(prBody)}</p>`;
+            } else {
+              element.innerHTML = '';
+            }
+          }
+        } else {
+          const errorText = await response.text();
+          console.error(`[PR Summaries] Error ${response.status}:`, errorText);
+          // Fallback to original description on error
+          if (prBody) {
+            element.innerHTML = `<p class="activity-description">${this.escapeHtml(prBody)}</p>`;
+          } else {
+            element.innerHTML = '';
+          }
+        }
+      } catch (error) {
+        console.error('[PR Summaries] Failed to load PR summary:', error);
+        // Fallback to original description
+        if (prBody) {
+          element.innerHTML = `<p class="activity-description">${this.escapeHtml(prBody)}</p>`;
+        } else {
+          element.innerHTML = '';
+        }
+      }
+    });
   }
 
   renderActivityStats(metadata) {
@@ -1467,24 +1494,9 @@ class GitHubMonitor {
   }
 
   async apiFetch(url) {
-    const headers = {
-      Accept: 'application/vnd.github+json',
-      'X-GitHub-Api-Version': '2022-11-28'
-    };
-
-    const response = await fetch(url, { headers });
-    if (!response.ok) {
-      let message = `GitHub API error ${response.status}`;
-      try {
-        const body = await response.json();
-        if (body?.message) message = body.message;
-      } catch (error) {
-        // ignore json parse errors
-      }
-      throw new Error(message);
-    }
-
-    return response.json();
+    // This method is deprecated - direct GitHub API calls from browser fail due to CORS
+    // All requests should go through the Netlify function
+    throw new Error('Direct GitHub API access is not available. Please use the Netlify function endpoint.');
   }
 
   buildHeatmap(dailyCounts) {

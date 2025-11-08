@@ -1,7 +1,21 @@
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const { buildSummaryPrompt } = require('./generate-summary-utils.js');
+const { getCachedInsights, setCachedInsights } = require('./ai-insights-cache.js');
 
 exports.handler = async (event, context) => {
+  // Handle CORS preflight FIRST
+  if (event.httpMethod === 'OPTIONS') {
+    return {
+      statusCode: 200,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Content-Type',
+        'Access-Control-Allow-Methods': 'POST, OPTIONS'
+      },
+      body: ''
+    };
+  }
+
   // Only allow POST requests
   if (event.httpMethod !== 'POST') {
     return {
@@ -15,20 +29,46 @@ exports.handler = async (event, context) => {
     };
   }
 
-  // Handle CORS preflight
-  if (event.httpMethod === 'OPTIONS') {
-    return {
-      statusCode: 200,
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Headers': 'Content-Type',
-        'Access-Control-Allow-Methods': 'POST, OPTIONS'
-      },
-      body: ''
-    };
-  }
-
   try {
+    // Parse request body
+    const { githubData } = JSON.parse(event.body);
+    if (!githubData) {
+      return {
+        statusCode: 400,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ error: 'GitHub data is required' })
+      };
+    }
+
+    // Extract username for cache key
+    const username = githubData.config?.username || githubData.profile?.login || 'unknown';
+    
+    console.log(`[Cache] Checking cache for username: ${username}`);
+    
+    // Check cache first
+    const cached = getCachedInsights(username);
+    if (cached) {
+      console.log(`[Cache] HIT for ${username} - returning cached insights`);
+      return {
+        statusCode: 200,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Content-Type': 'application/json',
+          'X-Cache': 'HIT'
+        },
+        body: JSON.stringify({ 
+          summary: cached.summary,
+          timestamp: new Date(cached.timestamp).toISOString(),
+          cached: true
+        })
+      };
+    }
+
+    console.log(`[Cache] MISS for ${username} - generating new insights`);
+
     // Get API key from environment variable
     const apiKey = process.env.GEMINI_API_KEY;
     if (!apiKey) {
@@ -41,19 +81,6 @@ exports.handler = async (event, context) => {
         body: JSON.stringify({ 
           error: 'Gemini API key not configured on server' 
         })
-      };
-    }
-
-    // Parse request body
-    const { githubData } = JSON.parse(event.body);
-    if (!githubData) {
-      return {
-        statusCode: 400,
-        headers: {
-          'Access-Control-Allow-Origin': '*',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ error: 'GitHub data is required' })
       };
     }
 
@@ -85,15 +112,20 @@ exports.handler = async (event, context) => {
     // Clean up the response - remove markdown code block tags
     summary = summary.replace(/```html\s*/g, '').replace(/```\s*$/g, '').trim();
 
+    // Store in cache
+    setCachedInsights(username, summary);
+
     return {
       statusCode: 200,
       headers: {
         'Access-Control-Allow-Origin': '*',
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'X-Cache': 'MISS'
       },
       body: JSON.stringify({ 
         summary: summary,
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
+        cached: false
       })
     };
 
