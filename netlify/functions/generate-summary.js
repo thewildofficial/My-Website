@@ -1,6 +1,21 @@
 const { GoogleGenerativeAI } = require('@google/generative-ai');
+const { buildSummaryPrompt } = require('./generate-summary-utils.js');
+const { getCachedInsights, setCachedInsights } = require('./ai-insights-cache.js');
 
 exports.handler = async (event, context) => {
+  // Handle CORS preflight FIRST
+  if (event.httpMethod === 'OPTIONS') {
+    return {
+      statusCode: 200,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Content-Type',
+        'Access-Control-Allow-Methods': 'POST, OPTIONS'
+      },
+      body: ''
+    };
+  }
+
   // Only allow POST requests
   if (event.httpMethod !== 'POST') {
     return {
@@ -14,20 +29,59 @@ exports.handler = async (event, context) => {
     };
   }
 
-  // Handle CORS preflight
-  if (event.httpMethod === 'OPTIONS') {
-    return {
-      statusCode: 200,
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Headers': 'Content-Type',
-        'Access-Control-Allow-Methods': 'POST, OPTIONS'
-      },
-      body: ''
-    };
-  }
-
   try {
+    // Parse request body
+    const { githubData } = JSON.parse(event.body);
+    if (!githubData) {
+      return {
+        statusCode: 400,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ error: 'GitHub data is required' })
+      };
+    }
+
+    // Extract username for cache key - validate it exists
+    const username = githubData.config?.username || githubData.profile?.login;
+    
+    if (!username || username.trim() === '') {
+      return {
+        statusCode: 400,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ 
+          error: 'GitHub username is required. Provide either githubData.config.username or githubData.profile.login'
+        })
+      };
+    }
+    
+    console.log(`[Cache] Checking cache for username: ${username}`);
+    
+    // Check cache first
+    const cached = getCachedInsights(username);
+    if (cached) {
+      console.log(`[Cache] HIT for ${username} - returning cached insights`);
+      return {
+        statusCode: 200,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Content-Type': 'application/json',
+          'X-Cache': 'HIT'
+        },
+        body: JSON.stringify({ 
+          summary: cached.summary,
+          timestamp: new Date(cached.timestamp).toISOString(),
+          cached: true
+        })
+      };
+    }
+
+    console.log(`[Cache] MISS for ${username} - generating new insights`);
+
     // Get API key from environment variable
     const apiKey = process.env.GEMINI_API_KEY;
     if (!apiKey) {
@@ -43,48 +97,65 @@ exports.handler = async (event, context) => {
       };
     }
 
-    // Parse request body
-    const { githubData } = JSON.parse(event.body);
-    if (!githubData) {
-      return {
-        statusCode: 400,
-        headers: {
-          'Access-Control-Allow-Origin': '*',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ error: 'GitHub data is required' })
-      };
-    }
-
     // Initialize Gemini AI
     const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash-exp' });
+    const primaryModelId = process.env.GEMINI_MODEL || 'gemini-2.5-pro';
+    const primaryModel = genAI.getGenerativeModel({ model: primaryModelId });
 
-    // Build the prompt
+    // Build the prompt using shared utility
     const prompt = buildSummaryPrompt(githubData);
 
-    // Generate content
-    const result = await model.generateContent(prompt);
-    const response = await result.response;
+    // Generate content with fallback to 2.5 Flash if Pro is unavailable
+    let response;
+    try {
+      const result = await primaryModel.generateContent(prompt);
+      response = await result.response;
+    } catch (primaryError) {
+      if (primaryModelId === 'gemini-2.5-flash') {
+        throw primaryError;
+      }
+      console.warn('Primary Gemini model failed, attempting fallback:', primaryError.message);
+      const fallbackModel = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
+      const fallbackResult = await fallbackModel.generateContent(prompt);
+      response = await fallbackResult.response;
+    }
+
     let summary = response.text();
 
     // Clean up the response - remove markdown code block tags
     summary = summary.replace(/```html\s*/g, '').replace(/```\s*$/g, '').trim();
 
+    // Store in cache
+    setCachedInsights(username, summary);
+
     return {
       statusCode: 200,
       headers: {
         'Access-Control-Allow-Origin': '*',
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'X-Cache': 'MISS'
       },
       body: JSON.stringify({ 
         summary: summary,
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
+        cached: false
       })
     };
 
   } catch (error) {
     console.error('Error generating AI summary:', error);
+    
+    // Provide more detailed error information
+    const errorDetails = {
+      error: 'Failed to generate AI summary',
+      message: error.message || 'Unknown error',
+      type: error.name || 'Error'
+    };
+    
+    // Include stack trace in development
+    if (process.env.NODE_ENV === 'development') {
+      errorDetails.stack = error.stack;
+    }
     
     return {
       statusCode: 500,
@@ -92,71 +163,7 @@ exports.handler = async (event, context) => {
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ 
-        error: 'Failed to generate AI summary',
-        details: process.env.NODE_ENV === 'development' ? error.message : undefined
-      })
+      body: JSON.stringify(errorDetails)
     };
   }
 };
-
-function buildSummaryPrompt(githubData) {
-  const { commits, repositories, metrics, languageStats } = githubData;
-  
-  const recentCommits = commits.slice(0, 10).map(commit => {
-    const message = commit.payload?.commits?.[0]?.message || 'No message';
-    return `• ${commit.repo.name}: ${truncateText(message, 60)}`;
-  }).join('\n');
-
-  const topRepos = repositories.slice(0, 5).map(repo => 
-    `• ${repo.name} (${repo.language || 'N/A'}) - ${repo.stargazers_count} stars`
-  ).join('\n');
-
-  const languages = Object.entries(languageStats)
-    .sort(([,a], [,b]) => b.size - a.size)
-    .slice(0, 3)
-    .map(([lang, data]) => `${lang} (${data.percentage}%)`)
-    .join(', ');
-
-  const velocity = metrics?.velocity || {};
-  const streak = metrics?.streak || {};
-
-  return `Create a professional developer portfolio summary from this comprehensive GitHub activity data:
-
-RECENT COMMITS (${commits.length} total):
-${recentCommits}
-
-TOP REPOSITORIES:
-${topRepos}
-
-DEVELOPMENT METRICS:
-• Commits this week: ${velocity.week || 0}
-• Commits this month: ${velocity.month || 0}
-• Current streak: ${streak.current || 0} days
-• Active repositories: ${metrics?.repoHealth?.active || 0}
-
-TECHNOLOGY STACK:
-${languages}
-
-Respond with clean HTML using this structure:
-
-<div class="ai-summary">
-<h4>🎯 Current Focus</h4>
-<p>[2-3 sentences about main development areas and projects]</p>
-
-<h4>⚡ Development Velocity</h4>
-<p>[Insights about coding activity and productivity patterns]</p>
-
-<h4>🛠️ Technology Stack</h4>
-<p>[Analysis of languages and tools being used]</p>
-
-<h4>📈 Growth & Impact</h4>
-<p>[Commentary on repository health, contributions, and development trends]</p>
-</div>
-
-Keep it professional, insightful, and concise. Focus on patterns and meaningful insights rather than just listing data.`;
-}
-
-function truncateText(text, length) {
-  return text.length > length ? text.substring(0, length) + '...' : text;
-}

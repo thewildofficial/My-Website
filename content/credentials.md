@@ -145,14 +145,10 @@ markup: "html"
           <h3>IIT Ropar (via Masai School)</h3>
           <p class="program">Advanced Certification in AI/ML</p>
         </div>
-        <span class="status-badge final-sem">Final Semester</span>
+        <span class="status-badge awarded">Completed</span>
       </div>
       <div class="card-content">
         <p class="description">15-credit certification focusing on industry-aligned AI and Machine Learning applications.</p>
-        <div class="progress-container">
-          <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
-          <span class="progress-text">90% Complete</span>
-        </div>
         <div class="card-actions">
           <a href="/credentials/IIT-Ropar.jpeg" class="doc-link" target="_blank" aria-label="View IIT Ropar Offer Letter">📄 View Offer</a>
         </div>

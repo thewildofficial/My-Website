@@ -1,123 +1,255 @@
 {{ define "head" }}
-<!-- GitHub Monitor CSS -->
 <link rel="stylesheet" href="{{ "css/github-monitor.css" | relURL }}">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js" defer></script>
+{{ end }}
+
+{{ define "header" }}
+  {{ partial "header.html" . }}
 {{ end }}
 
 {{ define "main" }}
-<div class="github-monitor-page enhanced-monitor">
-  <div class="container">
-    <header class="page-header">
-      <h1>{{ .Title }}</h1>
-      <p class="page-description">{{ .Description }}</p>
-      <div class="connection-status">
-        <span id="connection-status" class="status-dot"></span>
-        <span id="status-text" class="status-text">Initializing...</span>
-        <span class="sync-meta">Last sync: <span id="sync-time">--:--</span> • Next: <span id="next-update-time">--:--</span></span>
+<div class="github-monitor">
+  <div class="monitor-container">
+    <!-- Header -->
+    <header class="monitor-header">
+      <div class="header-content">
+        <h1>GitHub Activity</h1>
+        <p class="subtitle">Deep analytics and AI insights across your development workflow</p>
       </div>
-      <div class="toolbar">
-        <button id="refresh-btn" class="btn small">Refresh</button>
-        <label class="toggle">
-          <input type="checkbox" id="auto-refresh" checked>
-          <span>Auto</span>
-        </label>
-        <button id="regenerate-summary" class="btn small secondary">Regenerate Summary</button>
-        <div class="repo-view-toggle">
-          <button id="grid-view" class="view-btn active">Grid</button>
-            <button id="list-view" class="view-btn">List</button>
+      <div class="header-controls">
+        <div class="status-indicator">
+          <span id="status-dot" class="status-dot loading"></span>
+          <span id="status-text" class="status-text">Loading...</span>
         </div>
-        <select id="repo-sort" class="sort-select">
-          <option value="updated">Recently Updated</option>
-          <option value="stars">Stars</option>
-          <option value="name">Name</option>
-        </select>
+        <button id="refresh-btn" class="refresh-btn" aria-label="Refresh dashboard">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.3"/>
+          </svg>
+        </button>
       </div>
     </header>
 
-    <div class="monitor-grid">
-      <!-- Stats Panel -->
-      <section class="panel stats-panel">
-        <h3 class="panel-title">Stats</h3>
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="stat-label">Commits</div>
-            <div class="stat-number" id="commit-count">--</div>
-            <div class="stat-trend" id="commit-trend"></div>
+    <!-- Profile Overview -->
+    <section class="profile-section" aria-label="Developer overview">
+      <div class="profile-card" id="profile-card">
+        <div class="profile-avatar skeleton" id="profile-avatar"></div>
+        <div class="profile-details">
+          <div class="profile-name">
+            <h2 id="profile-name" class="skeleton">Loading profile...</h2>
+            <span class="profile-tag" id="profile-handle">@github</span>
           </div>
-          <div class="stat-card">
-            <div class="stat-label">Open PRs</div>
-            <div class="stat-number" id="pr-count">--</div>
-            <div class="stat-trend" id="pr-status"></div>
+          <p id="profile-bio" class="profile-bio skeleton">Stay tuned while we load your GitHub story...</p>
+          <div class="profile-meta" id="profile-meta">
+            <span class="skeleton">Followers • --</span>
+            <span class="skeleton">Following • --</span>
+            <span class="skeleton">Public Repos • --</span>
           </div>
-          <div class="stat-card">
-            <div class="stat-label">Repos</div>
-            <div class="stat-number" id="repo-count">--</div>
-            <div class="stat-trend" id="repo-detail"></div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-label">Streak</div>
-            <div class="stat-number" id="streak-count">--</div>
-            <div class="stat-trend" id="streak-detail"></div>
+          <div class="profile-tags" id="profile-tags">
+            <span class="profile-tag skeleton">Loading focus...</span>
           </div>
         </div>
-        <div class="language-stats" id="language-stats"></div>
-        <div class="velocity-chart" id="velocity-chart"></div>
-        <div class="language-chart" id="language-chart"></div>
-        <div class="repo-health" id="repo-health"></div>
-      </section>
+      </div>
 
-      <!-- AI Summary -->
-      <section class="panel summary-panel">
-        <div class="summary-header">
-          <h3>AI Analysis</h3>
-          <div class="last-updated">Last updated: <span id="last-updated">--</span></div>
+      <div class="insights-banner" id="insights-banner">
+        <div class="insight-card highlight">
+          <span class="metric-subtitle">Current Focus</span>
+          <div class="insight-metric" id="insight-focus-title">--</div>
+          <p class="insight-description" id="insight-focus-description">AI will highlight the most active projects shortly.</p>
         </div>
-        <div id="summary-content" class="summary-content">
-          <div class="loading-indicator"><div class="loading-spinner"></div>Loading summary...</div>
+        <div class="insight-card">
+          <span class="metric-subtitle">Velocity</span>
+          <div class="insight-metric" id="insight-velocity">--</div>
+          <p class="insight-description" id="insight-velocity-description">Commits across the last 30 days and current streak.</p>
         </div>
-      </section>
+        <div class="insight-card">
+          <span class="metric-subtitle">Stack Signal</span>
+          <div class="insight-metric" id="insight-stack">--</div>
+          <p class="insight-description" id="insight-stack-description">Top languages and repositories shaping your work.</p>
+        </div>
+      </div>
+    </section>
 
-      <!-- Timeline -->
-      <section class="panel timeline-panel">
-        <h3>Activity Timeline</h3>
-        <div class="timeline-filters">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="commit">Commits</button>
-          <button class="filter-btn" data-filter="pr">PRs</button>
-          <button class="filter-btn" data-filter="issue">Issues</button>
+    <!-- Key Metrics -->
+    <section class="metrics-section" aria-label="Key metrics">
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-label">Repositories</div>
+          <div class="metric-value" id="repo-count">--</div>
+          <div class="metric-subtitle">Total public projects</div>
         </div>
-        <div id="activity-timeline" class="timeline-content">
-          <div class="loading-indicator"><div class="loading-spinner"></div>Loading activity...</div>
+        <div class="metric-card">
+          <div class="metric-label">Commits (30d)</div>
+          <div class="metric-value" id="commit-count">--</div>
+          <div class="metric-trend" id="commit-trend"></div>
         </div>
-      </section>
+        <div class="metric-card">
+          <div class="metric-label">Open PRs</div>
+          <div class="metric-value" id="pr-count">--</div>
+          <div class="metric-subtitle">Across all repositories</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Languages</div>
+          <div class="metric-value" id="language-count">--</div>
+          <div class="metric-subtitle">Actively used</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Stars</div>
+          <div class="metric-value" id="stars-count">--</div>
+          <div class="metric-trend" id="stars-trend"></div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Forks</div>
+          <div class="metric-value" id="forks-count">--</div>
+          <div class="metric-subtitle">Community engagement</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Followers</div>
+          <div class="metric-value" id="followers-count">--</div>
+          <div class="metric-subtitle">Developers watching</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Following</div>
+          <div class="metric-value" id="following-count">--</div>
+          <div class="metric-subtitle">Voices you track</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Issues (Open)</div>
+          <div class="metric-value" id="issues-open-count">--</div>
+          <div class="metric-subtitle">Authored or assigned</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Issues (Closed)</div>
+          <div class="metric-value" id="issues-closed-count">--</div>
+          <div class="metric-trend" id="issues-trend"></div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Current Streak</div>
+          <div class="metric-value" id="streak-current">--</div>
+          <div class="metric-subtitle">Days of continuous commits</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Longest Streak</div>
+          <div class="metric-value" id="streak-longest">--</div>
+          <div class="metric-subtitle">Historical best</div>
+        </div>
+      </div>
+    </section>
 
-      <!-- Repositories -->
-      <section class="panel repos-panel">
-        <h3>Repositories</h3>
-        <div id="repo-overview" class="repo-grid">
-          <div class="loading-indicator"><div class="loading-spinner"></div>Loading repositories...</div>
+    <!-- Analytics & Visualisations -->
+    <section class="analytics-section" aria-label="Analytics visuals">
+      <div class="analytics-grid">
+        <div class="chart-card">
+          <div class="chart-header">
+            <h3>Language Distribution</h3>
+            <span class="chart-meta">Stack focus</span>
+          </div>
+          <div class="chart-canvas-wrapper">
+            <canvas id="language-chart" aria-label="Language distribution chart"></canvas>
+          </div>
+          <div class="chart-footer" id="language-chart-footer">Loading language distribution…</div>
         </div>
-      </section>
-    </div>
+
+        <div class="chart-card">
+          <div class="chart-header">
+            <h3>Contribution Velocity</h3>
+            <span class="chart-meta">Last 12 weeks</span>
+          </div>
+          <div class="chart-canvas-wrapper">
+            <canvas id="velocity-chart" aria-label="Contribution velocity chart"></canvas>
+          </div>
+          <div class="chart-footer" id="velocity-chart-footer">Tracking commit cadence over time.</div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-header">
+            <h3>Repository Health</h3>
+            <span class="chart-meta">Top projects</span>
+          </div>
+          <div class="chart-canvas-wrapper">
+            <canvas id="repo-health-chart" aria-label="Repository health radar chart"></canvas>
+          </div>
+          <div class="chart-footer" id="repo-health-footer">Activity, stars, issues, and freshness per repository.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="heatmap-card" aria-label="Contribution heatmap">
+      <div class="chart-header">
+        <h3>Contribution Heatmap</h3>
+        <span class="chart-meta">Past 90 days</span>
+      </div>
+      <div id="heatmap-container" class="heatmap-grid" aria-live="polite"></div>
+      <div class="heatmap-legend">
+        <span><span class="heatmap-swatch level-0"></span>Idle</span>
+        <span><span class="heatmap-swatch level-1"></span>Light</span>
+        <span><span class="heatmap-swatch level-2"></span>Focused</span>
+        <span><span class="heatmap-swatch level-3"></span>Intense</span>
+        <span><span class="heatmap-swatch level-4"></span>On fire</span>
+      </div>
+    </section>
+
+    <!-- Languages -->
+    <section class="languages-section" aria-label="Language breakdown">
+      <h2 class="section-title">Languages</h2>
+      <div class="languages-breakdown">
+        <div id="language-summary" class="languages-summary">
+          <div class="loading-state">Compiling language insights…</div>
+        </div>
+        <div id="languages-container" class="languages-container">
+          <div class="loading-state">Loading languages…</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Insights -->
+    <section class="ai-section" aria-label="AI powered insights">
+      <div class="ai-section-header">
+        <h2 class="section-title">AI-Powered Insights</h2>
+        <div class="ai-section-actions">
+          <button id="ai-refresh-btn" class="ai-action-btn primary">Generate Insights</button>
+          <button id="ai-copy-btn" class="ai-action-btn" aria-label="Copy AI insights to clipboard">Copy</button>
+        </div>
+      </div>
+      <div id="ai-insights-container" class="ai-insights">
+        <div class="ai-placeholder">AI will synthesise your activity once data is ready.</div>
+      </div>
+      <div class="ai-timestamp" id="ai-insights-timestamp"></div>
+    </section>
+
+    <!-- Recent Activity -->
+    <section class="activity-section" aria-label="Recent activity">
+      <h2 class="section-title">Recent Activity</h2>
+      <div id="activity-container" class="activity-container">
+        <div class="loading-state">Loading activity…</div>
+      </div>
+    </section>
+
+    <!-- Repositories -->
+    <section class="repos-section" aria-label="Repositories">
+      <div class="section-header">
+        <h2 class="section-title">Repositories</h2>
+        <div class="view-controls" role="tablist" aria-label="Repository layout toggle">
+          <button id="grid-view-btn" class="view-btn active" data-view="grid" role="tab" aria-selected="true">Grid</button>
+          <button id="list-view-btn" class="view-btn" data-view="list" role="tab" aria-selected="false">List</button>
+        </div>
+      </div>
+      <div id="repos-container" class="repos-container grid-view">
+        <div class="loading-state">Loading repositories…</div>
+      </div>
+    </section>
   </div>
 </div>
 
-<!-- GitHub API Configuration -->
 <script>
   window.GITHUB_CONFIG = {
     username: '{{ .Site.Params.githubUsername | default "thewildofficial" }}',
-    apiUrl: 'https://api.github.com',
-    refreshInterval: 300000, // 5 minutes
-    maxCommits: 50,
-    maxRepos: 20
+    refreshInterval: 300000,
+    maxCommits: 60,
+    maxRepos: 24,
+    maxIssues: 50,
+    cacheExpiryMinutes: 30,
+    orgs: {{ if .Site.Params.githubOrgs }}{{ .Site.Params.githubOrgs | jsonify }}{{ else }}[]{{ end }}
   };
-
-  // Gemini API Key not exposed; AI summary is pre-generated server-side into /data/github-ai-content.json
-  window.GEMINI_API_KEY = null;
 </script>
-
-<!-- Load GitHub Monitor Script -->
-<script src="{{ "js/github-monitor.js" | relURL }}"></script>
-
-<!-- API key is never exposed to client-side for security -->
-<script>window.GEMINI_API_KEY = null;</script>
+<script src="{{ "js/github-monitor.js" | relURL }}" defer></script>
 {{ end }}

@@ -25,6 +25,7 @@ disableLiveReload = true
   customJS = ["js/toc.js", "js/credential-viewer.js", "js/about.js", "js/portfolio.js"]
   homeSubtitle = "Always Improving..."
   githubUsername = "thewildofficial"
+  githubOrgs = []
 
   [[params.social]]
     name = "github"

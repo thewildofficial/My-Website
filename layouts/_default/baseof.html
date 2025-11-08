@@ -53,11 +53,6 @@
 	{{ $theme_script := resources.Get "js/theme-control.js" | minify | fingerprint -}}
 	<script src="{{ $theme_script.Permalink }}" {{ printf "integrity=%q" $theme_script.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>
 
-<!-- Stagewise Toolbar (Development Only) -->
-{{ $stagewise := resources.Get "js/stagewise.js" | minify | fingerprint -}}
-<script src="{{ $stagewise.Permalink }}" {{ printf "integrity=%q" $stagewise.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>
-<!-- End Stagewise Toolbar -->
-
 {{- if templates.Exists "partials/extra-foot.html" -}}
 {{ partial "extra-foot.html" . }}
 {{- end }}
