@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Systems-Thinking on Aban Hasan</title>
-    <link>http://localhost:1313/tags/systems-thinking/</link>
+    <link>https://www.abanhasan.net/tags/systems-thinking/</link>
     <description>Recent content in Systems-Thinking on Aban Hasan</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 09 Oct 2025 17:45:27 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/systems-thinking/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.abanhasan.net/tags/systems-thinking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Asymmetry of Asynchrony</title>
-      <link>http://localhost:1313/posts/the-asymmetry-of-asynchrony/</link>
+      <link>https://www.abanhasan.net/posts/the-asymmetry-of-asynchrony/</link>
       <pubDate>Thu, 09 Oct 2025 17:45:27 +0530</pubDate>
-      <guid>http://localhost:1313/posts/the-asymmetry-of-asynchrony/</guid>
+      <guid>https://www.abanhasan.net/posts/the-asymmetry-of-asynchrony/</guid>
       <description>&lt;div class=&#34;intro-box&#34;&gt;&#xA;One of my favorite programming paradigms is &lt;strong&gt;asynchrony&lt;/strong&gt;, and it has profound analogues in our complex modern world. We take it for granted that we can request a service, let it run in the background, and receive results in a &lt;em&gt;reasonable&lt;/em&gt; amount of time.&#xA;&lt;p&gt;This was one of the great transformative processes of our 21st century world, something technologically infeasible before the rise of the telephone.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Modern systems are designed to never wait. Time is decoupled from action.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>
