@@ -56,6 +56,9 @@ class GitHubMonitor {
       orgs: this.config.orgs
     });
 
+    // Check for cached AI insights immediately
+    await this.checkCachedAIInsights();
+
     try {
       await this.loadData();
       this.updateStatus('online', 'Connected');
@@ -165,6 +168,8 @@ class GitHubMonitor {
       this.state = fresh;
       this.saveCache(fresh);
       this.renderAll({ fromCache: false });
+      // Always try to generate/update insights with fresh data
+      // This will use cache if available, or generate new ones
       await this.generateAIInsights();
       this.updateStatus('online', 'Updated');
     } catch (error) {
@@ -1345,17 +1350,83 @@ class GitHubMonitor {
     }
   }
 
+  /**
+   * Check for cached AI insights early on page load
+   * This allows showing cached insights immediately without waiting for full data load
+   */
+  async checkCachedAIInsights() {
+    const container = document.getElementById('ai-insights-container');
+    if (!container) return;
+
+    // Only check cache if we haven't already loaded insights
+    if (this.aiState.lastSummary) return;
+
+    try {
+      // Prepare minimal payload with just username for cache check
+      const minimalPayload = {
+        config: {
+          username: this.config.username,
+          orgs: this.config.orgs || []
+        },
+        profile: { login: this.config.username }
+      };
+
+      const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+      const aiEndpoint = isLocalhost 
+        ? 'http://localhost:8888/.netlify/functions/generate-summary'
+        : '/.netlify/functions/generate-summary';
+      
+      const response = await fetch(aiEndpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ githubData: minimalPayload })
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        // If cached data is returned, display it immediately
+        if (data.cached && data.summary) {
+          const cleanedSummary = data.summary.replace(/```html\s*/g, '').replace(/```\s*$/g, '').trim();
+          container.innerHTML = cleanedSummary;
+          this.aiState.lastSummary = cleanedSummary;
+          this.aiState.timestamp = data.timestamp || new Date().toISOString();
+          
+          const timestampEl = document.getElementById('ai-insights-timestamp');
+          if (timestampEl && this.aiState.timestamp) {
+            const timestamp = new Date(this.aiState.timestamp);
+            timestampEl.textContent = `Last updated ${timestamp.toLocaleString()}`;
+          }
+          console.log('[AI Insights] Loaded cached insights immediately');
+        }
+      }
+    } catch (error) {
+      // Silently fail - we'll try again after data loads
+      console.debug('[AI Insights] Cache check failed, will try again after data loads:', error.message);
+    }
+  }
+
   async generateAIInsights({ force = false } = {}) {
     if (this.aiState.isGenerating) return;
-    if (!force && this.aiState.lastSummary) return;
+    // Skip if we already have a summary and force is false
+    // Note: We allow it to run after data loads even if cached insights were shown,
+    // because the backend will return cached data if available, or generate new ones if cache expired
+    if (!force && this.aiState.lastSummary && !this.state.profile) {
+      // Only skip if we have summary but no profile data yet (still loading initial data)
+      return;
+    }
 
     const container = document.getElementById('ai-insights-container');
     const timestampEl = document.getElementById('ai-insights-timestamp');
     if (!container) return;
 
     this.aiState.isGenerating = true;
-    container.innerHTML = '<div class="ai-placeholder skeleton">Synthesising AI insights…</div>';
-    if (timestampEl) timestampEl.textContent = '';
+    // Only show loading state if we don't already have cached content displayed
+    if (!this.aiState.lastSummary) {
+      container.innerHTML = '<div class="ai-placeholder skeleton">Synthesising AI insights…</div>';
+    }
+    if (timestampEl && !this.aiState.timestamp) {
+      timestampEl.textContent = '';
+    }
 
     try {
       const payload = this.prepareAIPayload();
@@ -1410,11 +1481,14 @@ class GitHubMonitor {
     } catch (error) {
       console.error('Failed to generate AI insights:', error);
       const errorMsg = error.message || 'Unknown error';
-      container.innerHTML = `<div class="ai-placeholder">
-        <p><strong>AI insights unavailable.</strong></p>
-        <p style="font-size: 0.875rem; opacity: 0.8;">${this.escapeHtml(errorMsg)}</p>
-        <p style="font-size: 0.875rem; opacity: 0.8; margin-top: 0.5rem;">Check console for details or try again later.</p>
-      </div>`;
+      // Only show error if we don't have cached content
+      if (!this.aiState.lastSummary) {
+        container.innerHTML = `<div class="ai-placeholder">
+          <p><strong>AI insights unavailable.</strong></p>
+          <p style="font-size: 0.875rem; opacity: 0.8;">${this.escapeHtml(errorMsg)}</p>
+          <p style="font-size: 0.875rem; opacity: 0.8; margin-top: 0.5rem;">Check console for details or try again later.</p>
+        </div>`;
+      }
     } finally {
       this.aiState.isGenerating = false;
     }

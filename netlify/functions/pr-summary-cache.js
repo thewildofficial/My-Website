@@ -86,7 +86,7 @@ async function generatePRSummary(prData) {
   }
 
   const genAI = new GoogleGenerativeAI(apiKey);
-  const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash-exp' });
+  const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
 
   const prompt = `Summarize this GitHub Pull Request in 2-3 sentences. Focus on what changes were made and why. Be concise and technical.
 
@@ -113,26 +113,27 @@ Provide a concise summary:`;
 
 /**
  * Get PR summary (with caching)
+ * Returns { summary: string | null, cached: boolean }
  */
 async function getPRSummary(prData) {
   if (!prData.url) {
-    return null;
+    return { summary: null, cached: false };
   }
 
   // Check cache first
   const cached = getCachedPRSummary(prData.url);
   if (cached) {
-    return cached;
+    return { summary: cached, cached: true };
   }
 
   // Generate new summary
   try {
     const summary = await generatePRSummary(prData);
     setCachedPRSummary(prData.url, summary);
-    return summary;
+    return { summary, cached: false };
   } catch (error) {
     console.error('Failed to generate PR summary:', error);
-    return null;
+    return { summary: null, cached: false };
   }
 }
 

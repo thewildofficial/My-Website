@@ -43,8 +43,21 @@ exports.handler = async (event, context) => {
       };
     }
 
-    // Extract username for cache key
-    const username = githubData.config?.username || githubData.profile?.login || 'unknown';
+    // Extract username for cache key - validate it exists
+    const username = githubData.config?.username || githubData.profile?.login;
+    
+    if (!username || username.trim() === '') {
+      return {
+        statusCode: 400,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ 
+          error: 'GitHub username is required. Provide either githubData.config.username or githubData.profile.login'
+        })
+      };
+    }
     
     console.log(`[Cache] Checking cache for username: ${username}`);
     

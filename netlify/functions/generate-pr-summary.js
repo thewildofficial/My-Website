@@ -43,7 +43,7 @@ exports.handler = async (event) => {
       };
     }
 
-    const summary = await getPRSummary(prData);
+    const { summary, cached } = await getPRSummary(prData);
 
     return {
       statusCode: 200,
@@ -53,7 +53,7 @@ exports.handler = async (event) => {
       },
       body: JSON.stringify({ 
         summary: summary || null,
-        cached: summary !== null
+        cached
       })
     };
 
