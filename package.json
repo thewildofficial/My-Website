@@ -7,13 +7,15 @@
     "install-dev": "npm install",
     "dev": "hugo server -D --bind 0.0.0.0 --baseURL http://localhost:1313",
     "hugo-dev": "hugo server -D --bind 0.0.0.0 --baseURL http://localhost:1313",
+    "dev:full": "node scripts/local-dev-server.js & hugo server -D --bind 0.0.0.0 --baseURL http://localhost:1313",
     "build": "hugo --minify --gc --baseURL https://www.abanhasan.net",
     "hugo-build": "hugo --minify --gc --baseURL https://www.abanhasan.net",
     "clean": "rm -rf public resources",
     "preview": "hugo server --disableFastRender --baseURL https://www.abanhasan.net"
   },
   "dependencies": {
-    "@google/generative-ai": "^0.21.0"
+    "@google/generative-ai": "^0.21.0",
+    "dotenv": "^16.4.5"
   },
   "devDependencies": {
     "@stagewise/toolbar": "^0.4.8"

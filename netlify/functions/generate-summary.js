@@ -1,4 +1,5 @@
 const { GoogleGenerativeAI } = require('@google/generative-ai');
+const { buildSummaryPrompt } = require('./generate-summary-utils.js');
 
 exports.handler = async (event, context) => {
   // Only allow POST requests
@@ -58,14 +59,27 @@ exports.handler = async (event, context) => {
 
     // Initialize Gemini AI
     const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash-exp' });
+    const primaryModelId = process.env.GEMINI_MODEL || 'gemini-2.5-pro';
+    const primaryModel = genAI.getGenerativeModel({ model: primaryModelId });
 
-    // Build the prompt
+    // Build the prompt using shared utility
     const prompt = buildSummaryPrompt(githubData);
 
-    // Generate content
-    const result = await model.generateContent(prompt);
-    const response = await result.response;
+    // Generate content with fallback to 2.5 Flash if Pro is unavailable
+    let response;
+    try {
+      const result = await primaryModel.generateContent(prompt);
+      response = await result.response;
+    } catch (primaryError) {
+      if (primaryModelId === 'gemini-2.5-flash') {
+        throw primaryError;
+      }
+      console.warn('Primary Gemini model failed, attempting fallback:', primaryError.message);
+      const fallbackModel = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
+      const fallbackResult = await fallbackModel.generateContent(prompt);
+      response = await fallbackResult.response;
+    }
+
     let summary = response.text();
 
     // Clean up the response - remove markdown code block tags
@@ -86,77 +100,25 @@ exports.handler = async (event, context) => {
   } catch (error) {
     console.error('Error generating AI summary:', error);
     
+    // Provide more detailed error information
+    const errorDetails = {
+      error: 'Failed to generate AI summary',
+      message: error.message || 'Unknown error',
+      type: error.name || 'Error'
+    };
+    
+    // Include stack trace in development
+    if (process.env.NODE_ENV === 'development') {
+      errorDetails.stack = error.stack;
+    }
+    
     return {
       statusCode: 500,
       headers: {
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ 
-        error: 'Failed to generate AI summary',
-        details: process.env.NODE_ENV === 'development' ? error.message : undefined
-      })
+      body: JSON.stringify(errorDetails)
     };
   }
 };
-
-function buildSummaryPrompt(githubData) {
-  const { commits, repositories, metrics, languageStats } = githubData;
-  
-  const recentCommits = commits.slice(0, 10).map(commit => {
-    const message = commit.payload?.commits?.[0]?.message || 'No message';
-    return `• ${commit.repo.name}: ${truncateText(message, 60)}`;
-  }).join('\n');
-
-  const topRepos = repositories.slice(0, 5).map(repo => 
-    `• ${repo.name} (${repo.language || 'N/A'}) - ${repo.stargazers_count} stars`
-  ).join('\n');
-
-  const languages = Object.entries(languageStats)
-    .sort(([,a], [,b]) => b.size - a.size)
-    .slice(0, 3)
-    .map(([lang, data]) => `${lang} (${data.percentage}%)`)
-    .join(', ');
-
-  const velocity = metrics?.velocity || {};
-  const streak = metrics?.streak || {};
-
-  return `Create a professional developer portfolio summary from this comprehensive GitHub activity data:
-
-RECENT COMMITS (${commits.length} total):
-${recentCommits}
-
-TOP REPOSITORIES:
-${topRepos}
-
-DEVELOPMENT METRICS:
-• Commits this week: ${velocity.week || 0}
-• Commits this month: ${velocity.month || 0}
-• Current streak: ${streak.current || 0} days
-• Active repositories: ${metrics?.repoHealth?.active || 0}
-
-TECHNOLOGY STACK:
-${languages}
-
-Respond with clean HTML using this structure:
-
-<div class="ai-summary">
-<h4>🎯 Current Focus</h4>
-<p>[2-3 sentences about main development areas and projects]</p>
-
-<h4>⚡ Development Velocity</h4>
-<p>[Insights about coding activity and productivity patterns]</p>
-
-<h4>🛠️ Technology Stack</h4>
-<p>[Analysis of languages and tools being used]</p>
-
-<h4>📈 Growth & Impact</h4>
-<p>[Commentary on repository health, contributions, and development trends]</p>
-</div>
-
-Keep it professional, insightful, and concise. Focus on patterns and meaningful insights rather than just listing data.`;
-}
-
-function truncateText(text, length) {
-  return text.length > length ? text.substring(0, length) + '...' : text;
-}
