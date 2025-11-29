@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+    --bg-color: #000000;
+    --text-color: #d0e8f0;
+    /* Bluish white from image */
+    --highlight-color: #ffffff;
+    --code-color: #d0e8f0;
+    --border-color: #d0e8f0;
+    --divider-color: #d0e8f0;
+    --faded-text: #8aaeb8;
+    --button-bg: #000000;
+    --button-hover-bg: #1a1a1a;
+    --background: #000000;
+    --primary-text: #d0e8f0;
+    --secondary-text: #8aaeb8;
+    --hover-bg: #111111;
+    --accent-color: #d0e8f0;
+    --accent-text-color: #000000;
+}
+
+/* Scanline/Grid effect on HTML to cover everything */
+html::before {
+    content: " ";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background-size: 100% 2px, 3px 100%;
+    z-index: 9998;
+    pointer-events: none;
+}
+
+/* Top Status Bar */
+body::before {
+    content: "Signal: ▂▃▅▆▇  1  Battery: [|||]";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: #000;
+    color: var(--text-color);
+    border-bottom: 2px solid var(--border-color);
+    padding: 0 10px;
+    font-family: 'VT323', monospace;
+    font-size: 1.2rem;
+    z-index: 9999;
+}
+
+/* Bottom Action Bar */
+body::after {
+    content: "Opt.                                      Clear";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #000;
+    color: var(--text-color);
+    border-top: 2px solid var(--border-color);
+    padding: 0 20px;
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem;
+    z-index: 9999;
+    white-space: pre;
+}
+
+/* Adjust body padding to not hide content behind bars */
+body {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    font-family: 'VT323', monospace;
+    font-size: 1.4rem;
+    background-color: var(--bg-color);
+    background-image: radial-gradient(var(--faded-text) 1px, transparent 1px);
+    background-size: 4px 4px;
+    text-shadow: 0 0 2px rgba(208, 232, 240, 0.5);
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Borders for that "Screen" look */
+/* Borders for that "Screen" look */
+.site-main,
+article,
+.post-header,
+.content,
+#home-center {
+    border: 2px solid var(--border-color);
+    padding: 2.5rem;
+    box-shadow: 0 0 8px var(--text-color), inset 0 0 8px rgba(208, 232, 240, 0.2);
+    margin-bottom: 3rem;
+    background: #050505;
+    position: relative;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Specific adjustment for home center to be wider */
+#home-center {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 2rem;
+}
+
+/* Header adjustments */
+#site-header {
+    background-color: #000000;
+    border-bottom: 2px solid var(--border-color);
+    font-family: 'VT323', monospace;
+    text-transform: uppercase;
+    top: 30px;
+    /* Push down below status bar */
+}
+
+.site-branding a {
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+    text-shadow: 0 0 5px var(--highlight-color);
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    border-bottom: 1px dotted var(--highlight-color);
+}
+
+a:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color) !important;
+    text-decoration: none;
+}
+
+/* Buttons */
+button,
+.btn,
+.hdr-btn,
+.tag {
+    font-family: 'VT323', monospace;
+    border: 2px solid var(--border-color);
+    background: #000;
+    color: var(--text-color);
+    text-transform: uppercase;
+    box-shadow: 4px 4px 0px var(--faded-text);
+    border-radius: 0;
+    padding: 5px 10px;
+    transition: all 0.1s;
+}
+
+button:active,
+.btn:active,
+.hdr-btn:active,
+.tag:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px var(--faded-text);
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'VT323', monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Code blocks */
+pre {
+    border: 1px dashed var(--border-color);
+    background: #000 !important;
+    font-family: 'VT323', monospace;
+}
+
+code {
+    font-family: 'VT323', monospace;
+    color: var(--highlight-color);
+}
+
+/* Navigation */
+.site-nav a {
+    font-size: 1.4rem;
+}
+
+/* Remove old footer simulation */
+.site-footer::before {
+    display: none;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+    border-left: 1px solid var(--border-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-color);
+    border: 1px solid #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--highlight-color);
+}
