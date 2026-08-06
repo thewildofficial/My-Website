@@ -20,10 +20,8 @@ disableLiveReload = true
   relatedPosts = true
   themeColor = "#181a1b"
   code_copy_button = true
-  description = "Hi I'm Aban.This website is meant to document my journey of building my tech empire. This is my quest of becoming more competent in the realms of human endeavor which I choose to embark in"
-  customCSS = ["css/custom.css", "css/credentials.css", "css/about.css", "css/portfolio.css"]
-  customJS = ["js/toc.js", "js/credential-viewer.js", "js/about.js", "js/portfolio.js"]
-  homeSubtitle = "Always Improving..."
+  description = "Aban Hasan is a Computer Science student exploring epistemic self-awareness, interpretability, and tools for thought."
+  homeSubtitle = "Computer Science · research · writing"
   githubUsername = "thewildofficial"
   githubOrgs = []
 
@@ -32,7 +30,7 @@ disableLiveReload = true
     url = "https://github.com/thewildofficial"
   [[params.social]]
     name = "twitter"
-    url = "https://twitter.com/abantheseeker"
+    url = "https://twitter.com/AbanHResearch"
 
 [menu]
   [[menu.main]]
@@ -48,14 +46,9 @@ disableLiveReload = true
     url = "/portfolio"
     weight = 3
   [[menu.main]]
-    name = "Credentials"
+    name = "Record"
     url = "/credentials"
     weight = 4
-  [[menu.main]]
-    name = "GitHub Monitor"
-    url = "/github-monitor"
-    weight = 5
-
 # SEO TITLE : Byte Geek: Short Reads About Productivity And Technology
 
 [markup]

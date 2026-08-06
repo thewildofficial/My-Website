@@ -1,19 +1,19 @@
 @mixin dark {
-  --color-theme: #018574;
-  --color-text: #e8eef2;
-  --color-light-grey: #28282c;
-  --color-dark-grey: #181a1b;
-  --color-highlight-grey: #7d828a;
-  --color-midnightblue: #2c3e50;
+  --color-theme: #b34b4b;
+  --color-text: #eee8df;
+  --color-light-grey: #171513;
+  --color-dark-grey: #100f0e;
+  --color-highlight-grey: #82786f;
+  --color-midnightblue: #241b1b;
 }
 
 @mixin light {
-  --color-theme: #018574;
-  --color-text: #2a2a2e;
-  --color-light-grey: light(#dee7ec, 6%);
-  --color-dark-grey: light(#dee7ec, 3%);
-  --color-highlight-grey: #7d828a;
-  --color-midnightblue: #2c3e50;
+  --color-theme: #9b3939;
+  --color-text: #2b2724;
+  --color-light-grey: #f5f1eb;
+  --color-dark-grey: #eee8df;
+  --color-highlight-grey: #746b63;
+  --color-midnightblue: #ece2dc;
 }
 
 body[data-theme='light'] {

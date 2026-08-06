@@ -6,6 +6,10 @@ npm-debug.log*
 .DS_Store
 temp
 
+# Hugo build output and generated asset cache
+/public/
+/resources/_gen/
+
 # Local development configuration with API keys
 local-config.js
 .env

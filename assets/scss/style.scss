@@ -35,7 +35,169 @@ input,
 select,
 textarea {
   color: $text;
-  font-family: $fonts;
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+
+// Site layer: compact, editorial, and shared across every page.
+// Page content should use these primitives instead of embedding local style blocks.
+body {
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+#site-header {
+  box-shadow: none;
+  border-bottom: 1px solid rgba(238, 232, 223, .14);
+}
+
+.hdr-wrapper {
+  min-height: 3.8rem;
+  font-size: .92rem;
+
+  .site-branding {
+    margin-right: 1.2rem;
+    font-weight: 700;
+    letter-spacing: .02em;
+  }
+
+  .site-nav {
+    font-size: .92rem;
+  }
+}
+
+.site-main {
+  padding-bottom: 4rem;
+}
+
+.site-main > h1 {
+  margin-bottom: .35rem;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  letter-spacing: -.045em;
+  line-height: 1.15;
+}
+
+.content {
+  max-width: 44rem;
+
+  h2 {
+    margin-top: 3.2rem;
+    padding-top: .8rem;
+    border-top: 1px solid rgba(238, 232, 223, .18);
+    font-size: 1.12rem;
+    letter-spacing: .01em;
+  }
+
+  h3 {
+    margin: 1.9rem 0 .25rem;
+    font-size: 1rem;
+    letter-spacing: .01em;
+  }
+
+  p, li {
+    max-width: 42rem;
+  }
+
+  a {
+    color: $theme;
+    border-bottom: 1px solid currentColor;
+
+    &:hover {
+      color: $text;
+      text-shadow: none;
+    }
+  }
+}
+
+.eyebrow,
+.project-meta {
+  margin: 0 0 1rem;
+  color: $theme;
+  font-size: .76rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.record-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.8rem 0 3rem;
+}
+
+.record-grid--compact {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: 2.2rem;
+}
+
+.record-card {
+  display: flex;
+  min-height: 15.5rem;
+  flex-direction: column;
+  padding: 1.35rem;
+  border: 1px solid rgba(238, 232, 223, .16);
+  background: rgba(238, 232, 223, .025);
+
+  h2, h3 {
+    margin: .15rem 0 .5rem;
+    padding: 0;
+    border: 0;
+    font-size: 1.08rem;
+  }
+
+  > p:last-child { margin-top: auto; margin-bottom: 0; }
+  a { color: $theme; }
+}
+
+.record-card--current {
+  border-color: rgba(179, 75, 75, .65);
+  background: rgba(179, 75, 75, .06);
+}
+
+.record-card__meta {
+  margin: 0;
+  color: $theme;
+  font-size: .72rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.record-card__note {
+  color: $highlight-grey;
+  font-size: .88rem;
+}
+
+.record-list {
+  margin: 1.5rem 0 2.5rem;
+  border-top: 1px solid rgba(238, 232, 223, .16);
+
+  a {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: .9rem 0;
+    border-bottom: 1px solid rgba(238, 232, 223, .16);
+    color: $text;
+
+    &:hover { color: $theme; }
+  }
+
+  small { color: $highlight-grey; text-align: right; }
+}
+
+.project-meta {
+  margin: .3rem 0 1rem;
+  color: $highlight-grey;
+  font-weight: 400;
+}
+
+@media (max-width: 760px) {
+  body { font-size: 15px; }
+  .site-main { margin-top: 2.5rem; }
+  .record-grid, .record-grid--compact { grid-template-columns: 1fr; }
+  .record-card { min-height: 0; }
+  .record-list a { flex-direction: column; gap: .15rem; }
+  .record-list small { text-align: left; }
 }
 
 pre,
