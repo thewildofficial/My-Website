@@ -16,6 +16,7 @@ node scripts/generate-ai-content.js || echo "AI generation script failed; contin
 
 # Run Hugo build
 echo "Building site with Hugo..."
+mkdir -p public
 hugo --minify --gc --baseURL https://www.abanhasan.net
 
 echo "Build completed successfully!"
