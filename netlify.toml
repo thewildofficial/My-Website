@@ -12,13 +12,13 @@
   command = "./netlify-build.sh"
 
 [context.deploy-preview]
-  command = "hugo --buildDrafts --buildFuture --baseURL $DEPLOY_PRIME_URL"
+  command = "mkdir -p public && hugo --buildDrafts --buildFuture --baseURL $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
   HUGO_VERSION = "0.118.2"
 
 [context.branch-deploy]
-  command = "hugo --buildDrafts --buildFuture --baseURL $DEPLOY_PRIME_URL"
+  command = "mkdir -p public && hugo --buildDrafts --buildFuture --baseURL $DEPLOY_PRIME_URL"
 
 [context.branch-deploy.environment]
   HUGO_VERSION = "0.118.2"
